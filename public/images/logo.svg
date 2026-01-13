@@ -1,0 +1,24 @@
+<svg width="120" height="40" viewBox="0 0 120 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- VuVenu Logo Placeholder - Style Pixel/Digital -->
+
+  <!-- Background Rectangle -->
+  <rect width="120" height="40" rx="8" fill="#0F172A"/>
+
+  <!-- Pixel Elements Decoratifs -->
+  <rect x="8" y="8" width="3" height="3" fill="#BFFF00"/>
+  <rect x="108" y="8" width="3" height="3" fill="#60A5FA"/>
+  <rect x="8" y="28" width="3" height="3" fill="#C4B5FD"/>
+  <rect x="108" y="28" width="3" height="3" fill="#BFFF00"/>
+
+  <!-- Text VuVenu -->
+  <text x="20" y="25" font-family="Arial, sans-serif" font-weight="bold" font-size="14" fill="#BFFF00">
+    VuVenu
+  </text>
+
+  <!-- Spotlight/Eye Element -->
+  <circle cx="95" cy="20" r="8" fill="none" stroke="#BFFF00" stroke-width="2"/>
+  <circle cx="95" cy="20" r="3" fill="#BFFF00"/>
+
+  <!-- Small pixel in the "eye" -->
+  <rect x="93.5" y="18.5" width="3" height="3" fill="#0F172A"/>
+</svg>
