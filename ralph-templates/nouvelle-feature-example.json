@@ -1,0 +1,79 @@
+{
+  "projectName": "VuVenu - Script Generator Enhancement",
+  "branchName": "feature/script-generator-improvements",
+  "instructions": {
+    "context": "Amélioration du générateur de scripts vidéos pour commerçants réunionnais",
+    "constraints": [
+      "Respecter limites abonnement (Starter: 10/mois, Pro: 30/mois, Business: ∞)",
+      "Valider inputs avec Zod côté serveur",
+      "Sanitizer prompts avant appel Claude API",
+      "Streaming pour générations > 3s",
+      "Cache system prompts fréquents",
+      "Messages d'erreur en français",
+      "Tests pour fonctions critiques"
+    ]
+  },
+  "userStories": [
+    {
+      "id": "script-form-validation",
+      "title": "Améliorer validation du formulaire de script",
+      "priority": 1,
+      "acceptanceCriteria": [
+        "Schema Zod pour inputs utilisateur",
+        "Validation côté client avec react-hook-form",
+        "Messages d'erreur en français",
+        "Tests unitaires pour validation"
+      ],
+      "passes": false
+    },
+    {
+      "id": "subscription-limits-check",
+      "title": "Vérifier limites avant génération",
+      "priority": 1,
+      "acceptanceCriteria": [
+        "Query Supabase pour compter scripts du mois",
+        "Bloquer si limite atteinte avec message approprié",
+        "Différencier par tier (starter/pro/business)",
+        "Incrémenter compteur après génération réussie"
+      ],
+      "passes": false
+    },
+    {
+      "id": "claude-api-integration",
+      "title": "Intégrer API Claude pour génération",
+      "priority": 2,
+      "acceptanceCriteria": [
+        "Endpoint /api/generate/script sécurisé",
+        "Sanitisation des prompts utilisateur",
+        "Streaming response pour UX",
+        "Gestion erreurs API (rate limit, timeout)",
+        "Cache system prompts"
+      ],
+      "passes": false
+    },
+    {
+      "id": "ui-loading-states",
+      "title": "États de chargement et feedback UX",
+      "priority": 3,
+      "acceptanceCriteria": [
+        "Loading spinner pendant génération",
+        "Progress bar si estimation durée",
+        "Possibilité d'annuler génération",
+        "Animation smooth sur mobile"
+      ],
+      "passes": false
+    },
+    {
+      "id": "script-storage",
+      "title": "Sauvegarde et historique des scripts",
+      "priority": 3,
+      "acceptanceCriteria": [
+        "Table scripts avec RLS appropriée",
+        "Sauvegarde automatique après génération",
+        "Page liste des scripts générés",
+        "Export/copie des scripts"
+      ],
+      "passes": false
+    }
+  ]
+}

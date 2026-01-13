@@ -1,0 +1,37 @@
+{
+  "projectName": "VuVenu",
+  "branchName": "feature/",
+  "instructions": {
+    "context": "VuVenu SaaS B2B pour commerces - Next.js 14 + Supabase + Stripe",
+    "constraints": [
+      "TypeScript strict obligatoire",
+      "Mobile-first design",
+      "Server Components par défaut",
+      "RLS Supabase sur toutes les tables",
+      "Vérifier limites abonnement avant génération IA",
+      "Français dans UI et commentaires",
+      "shadcn/ui + Tailwind uniquement"
+    ],
+    "qualityGates": [
+      "npm run typecheck must pass",
+      "npm run lint must pass",
+      "npm run test must pass",
+      "No secrets in code",
+      "Manual browser verification required"
+    ]
+  },
+  "userStories": [
+    {
+      "id": "setup",
+      "title": "Setup projet et dépendances",
+      "priority": 1,
+      "acceptanceCriteria": [
+        "package.json avec scripts configurés",
+        "TypeScript config strict mode",
+        "ESLint et Prettier configurés",
+        "npm run dev fonctionne sans erreur"
+      ],
+      "passes": false
+    }
+  ]
+}
