@@ -26,10 +26,10 @@ const ImageGenerationFormSchema = z.object({
   style: z.enum(['moderne', 'vintage', 'minimaliste', 'dynamique', 'premium', 'local']),
   format: z.enum(['square', 'portrait', 'landscape', 'story']),
   colors: z.array(z.string()).optional(),
-  target: z.enum(['awareness', 'consideration', 'conversion']).default('awareness'),
-  platform: z.enum(['instagram', 'facebook', 'meta_ads', 'all']).default('meta_ads'),
-  quality: z.enum(['standard', 'high', 'premium']).default('standard'),
-  variations: z.number().min(1).max(4).default(1)
+  target: z.enum(['awareness', 'consideration', 'conversion']),
+  platform: z.enum(['instagram', 'facebook', 'meta_ads', 'all']),
+  quality: z.enum(['standard', 'high', 'premium']),
+  variations: z.number().min(1).max(4)
 })
 
 type ImageGenerationFormData = z.infer<typeof ImageGenerationFormSchema>
@@ -227,7 +227,7 @@ export function ImageGeneratorForm({
                 <FormField
                   control={form.control}
                   name="businessName"
-                  render={({ field }) => (
+                  render={({ field }: { field: any }) => (
                     <FormItem>
                       <FormLabel>Nom du Business</FormLabel>
                       <FormControl>
@@ -241,7 +241,7 @@ export function ImageGeneratorForm({
                 <FormField
                   control={form.control}
                   name="industry"
-                  render={({ field }) => (
+                  render={({ field }: { field: any }) => (
                     <FormItem>
                       <FormLabel>Secteur d'activité</FormLabel>
                       <Select onValueChange={field.onChange} defaultValue={field.value}>
@@ -279,7 +279,7 @@ export function ImageGeneratorForm({
             </CardHeader>
             <CardContent>
               <FormField
-                control={form.control}
+                control={form.control as any}
                 name="prompt"
                 render={({ field }) => (
                   <FormItem>
@@ -314,7 +314,7 @@ export function ImageGeneratorForm({
                 <FormField
                   control={form.control}
                   name="style"
-                  render={({ field }) => (
+                  render={({ field }: { field: any }) => (
                     <FormItem>
                       <FormLabel>Style visuel</FormLabel>
                       <div className="grid grid-cols-2 gap-2">
@@ -343,7 +343,7 @@ export function ImageGeneratorForm({
                 <FormField
                   control={form.control}
                   name="format"
-                  render={({ field }) => (
+                  render={({ field }: { field: any }) => (
                     <FormItem>
                       <FormLabel>Format d'image</FormLabel>
                       <div className="space-y-2">
@@ -444,7 +444,7 @@ export function ImageGeneratorForm({
                 <FormField
                   control={form.control}
                   name="quality"
-                  render={({ field }) => (
+                  render={({ field }: { field: any }) => (
                     <FormItem>
                       <FormLabel>Qualité</FormLabel>
                       <Select onValueChange={field.onChange} defaultValue={field.value}>
@@ -474,7 +474,7 @@ export function ImageGeneratorForm({
                 <FormField
                   control={form.control}
                   name="variations"
-                  render={({ field }) => (
+                  render={({ field }: { field: any }) => (
                     <FormItem>
                       <FormLabel>Variations</FormLabel>
                       <FormControl>
@@ -495,7 +495,7 @@ export function ImageGeneratorForm({
                 <FormField
                   control={form.control}
                   name="platform"
-                  render={({ field }) => (
+                  render={({ field }: { field: any }) => (
                     <FormItem>
                       <FormLabel>Plateforme cible</FormLabel>
                       <Select onValueChange={field.onChange} defaultValue={field.value}>
