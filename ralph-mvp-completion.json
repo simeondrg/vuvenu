@@ -1,0 +1,358 @@
+{
+  "projectName": "VuVenu - MVP Completion",
+  "branchName": "feature/mvp-completion",
+  "completionPromise": "MVP PRODUCTION READY",
+  "instructions": {
+    "context": "Finalisation complète du MVP VuVenu pour mise en production. Toutes les pages, composants, tests et optimisations nécessaires pour un lancement production.",
+    "constraints": [
+      "TypeScript strict obligatoire",
+      "Mobile-first design partout",
+      "Messages français dans UI",
+      "Server Components par défaut",
+      "RLS Supabase sur toutes tables",
+      "Quality gates avant chaque commit",
+      "shadcn/ui + Tailwind uniquement"
+    ],
+    "qualityGates": [
+      "npm run typecheck must pass",
+      "npm run lint must pass",
+      "No secrets in code",
+      "All pages responsive mobile-first",
+      "Error handling on all APIs"
+    ]
+  },
+  "userStories": [
+    {
+      "id": "pages-auth-complete",
+      "title": "Compléter toutes les pages d'authentification",
+      "priority": 1,
+      "acceptanceCriteria": [
+        "Page /login avec design cohérent",
+        "Page /register avec design cohérent",
+        "Page /forgot-password fonctionnelle",
+        "Page /reset-password fonctionnelle",
+        "Page /verify-email avec instructions",
+        "Toutes pages responsive mobile-first",
+        "Messages d'erreur en français",
+        "Loading states partout"
+      ],
+      "passes": false
+    },
+    {
+      "id": "page-pricing",
+      "title": "Page tarifs avec comparaison plans",
+      "priority": 1,
+      "acceptanceCriteria": [
+        "Page /pricing accessible publiquement",
+        "Comparaison Starter vs Pro vs Business",
+        "Prix clairs (59€, 119€, 249€)",
+        "Listing features par plan",
+        "Boutons CTA vers /register ou /choose-plan",
+        "Section FAQ tarifs",
+        "Design moderne et professionnel",
+        "Responsive mobile-first"
+      ],
+      "passes": false
+    },
+    {
+      "id": "page-about",
+      "title": "Page à propos VuVenu",
+      "priority": 2,
+      "acceptanceCriteria": [
+        "Page /about accessible publiquement",
+        "Présentation mission VuVenu",
+        "Pour qui (commerces locaux réunionnais)",
+        "Technologies utilisées (Claude AI, Gemini)",
+        "Section contact ou support",
+        "Design storytelling",
+        "Responsive mobile-first"
+      ],
+      "passes": false
+    },
+    {
+      "id": "page-choose-plan",
+      "title": "Page choix plan après onboarding",
+      "priority": 1,
+      "acceptanceCriteria": [
+        "Page /choose-plan après onboarding",
+        "Affichage 3 plans avec features",
+        "Sélection plan redirige vers Stripe Checkout",
+        "Possibilité skip (Starter gratuit)",
+        "Design cohérent avec /pricing",
+        "Tracking analytics choix plan",
+        "Responsive mobile-first"
+      ],
+      "passes": false
+    },
+    {
+      "id": "components-ui-complete",
+      "title": "Compléter tous composants UI nécessaires",
+      "priority": 1,
+      "acceptanceCriteria": [
+        "shadcn/ui : alert, badge, button, card, input, textarea, select installés",
+        "shadcn/ui : checkbox, slider, separator, toast installés",
+        "Loading skeleton composant créé",
+        "Error boundary composant créé",
+        "Toast notification système fonctionnel",
+        "Tous composants testés basiquement"
+      ],
+      "passes": false
+    },
+    {
+      "id": "responsive-audit",
+      "title": "Audit et fix responsive toutes pages",
+      "priority": 1,
+      "acceptanceCriteria": [
+        "Audit responsive : landing, dashboard, scripts, campaigns, settings",
+        "Fix breakpoints problématiques",
+        "Navigation mobile hamburger si nécessaire",
+        "Images optimisées pour mobile",
+        "Touch targets >= 44px",
+        "Pas de scroll horizontal sur mobile",
+        "Test sur viewport 375px (iPhone SE)"
+      ],
+      "passes": false
+    },
+    {
+      "id": "pwa-setup",
+      "title": "Configuration PWA complète",
+      "priority": 2,
+      "acceptanceCriteria": [
+        "manifest.json complet (déjà créé, vérifier)",
+        "Service worker pour offline basique",
+        "Icons PWA toutes tailles",
+        "Meta tags viewport, theme-color",
+        "Apple touch icon",
+        "Installable comme app mobile",
+        "Test installation PWA"
+      ],
+      "passes": false
+    },
+    {
+      "id": "seo-meta-tags",
+      "title": "SEO et Meta tags complets",
+      "priority": 2,
+      "acceptanceCriteria": [
+        "Meta description sur toutes pages publiques",
+        "Open Graph tags (og:title, og:description, og:image)",
+        "Twitter Card tags",
+        "Canonical URLs",
+        "robots.txt configuré (déjà créé, vérifier)",
+        "sitemap.xml généré (déjà créé, vérifier)",
+        "Structured data JSON-LD pour homepage"
+      ],
+      "passes": false
+    },
+    {
+      "id": "error-handling-apis",
+      "title": "Error handling robuste sur toutes APIs",
+      "priority": 1,
+      "acceptanceCriteria": [
+        "Try-catch sur tous endpoints API",
+        "Logging erreurs avec contexte",
+        "Messages d'erreur français user-friendly",
+        "Status codes HTTP appropriés",
+        "Validation Zod avec messages français",
+        "Rate limiting sur APIs publiques",
+        "Timeout handling"
+      ],
+      "passes": false
+    },
+    {
+      "id": "loading-states",
+      "title": "Loading states partout dans l'app",
+      "priority": 2,
+      "acceptanceCriteria": [
+        "Skeleton loaders sur dashboard",
+        "Skeleton loaders sur liste scripts",
+        "Skeleton loaders sur liste campagnes",
+        "Loading spinners sur boutons actions",
+        "Loading state génération IA (script, campagne)",
+        "Pas de flash de contenu vide",
+        "Smooth transitions"
+      ],
+      "passes": false
+    },
+    {
+      "id": "tests-critical-paths",
+      "title": "Tests des chemins critiques",
+      "priority": 2,
+      "acceptanceCriteria": [
+        "Test : Inscription → Onboarding → Dashboard",
+        "Test : Génération script basique",
+        "Test : Webhooks Stripe (unit tests)",
+        "Test : Validation limites abonnement",
+        "Test : Error handling API failures",
+        "Tests passent en local",
+        "Documentation tests"
+      ],
+      "passes": false
+    },
+    {
+      "id": "env-example",
+      "title": "Fichier .env.example complet",
+      "priority": 1,
+      "acceptanceCriteria": [
+        ".env.example avec toutes variables nécessaires",
+        "Commentaires pour chaque variable",
+        "Instructions obtention clés (Supabase, Stripe, etc)",
+        "Variables groupées par service",
+        "Format prêt à copier"
+      ],
+      "passes": false
+    },
+    {
+      "id": "readme-complete",
+      "title": "README.md complet et professionnel",
+      "priority": 1,
+      "acceptanceCriteria": [
+        "Description projet VuVenu",
+        "Stack technique",
+        "Prerequisites (Node, npm, accounts)",
+        "Installation step-by-step",
+        "Configuration .env",
+        "Commandes disponibles",
+        "Structure projet",
+        "Contribution guidelines",
+        "License"
+      ],
+      "passes": false
+    },
+    {
+      "id": "deployment-guide",
+      "title": "Guide déploiement Vercel complet",
+      "priority": 1,
+      "acceptanceCriteria": [
+        "Documentation déploiement dans docs/deployment.md",
+        "Étapes Vercel deployment",
+        "Configuration environnement variables",
+        "Configuration custom domain",
+        "Setup webhooks Stripe production",
+        "Checklist pre-launch",
+        "Troubleshooting commun"
+      ],
+      "passes": false
+    },
+    {
+      "id": "supabase-setup-guide",
+      "title": "Guide setup Supabase complet",
+      "priority": 1,
+      "acceptanceCriteria": [
+        "Documentation dans docs/supabase-setup.md",
+        "Création projet Supabase",
+        "Exécution migrations SQL",
+        "Configuration RLS policies",
+        "Configuration Auth providers",
+        "Setup Storage buckets si nécessaire",
+        "Obtention clés API",
+        "Troubleshooting"
+      ],
+      "passes": false
+    },
+    {
+      "id": "stripe-setup-guide",
+      "title": "Guide configuration Stripe complet",
+      "priority": 1,
+      "acceptanceCriteria": [
+        "Documentation dans docs/stripe-setup.md",
+        "Création compte Stripe",
+        "Création produits et prix",
+        "Configuration webhooks",
+        "Test mode vs Production mode",
+        "Cartes de test",
+        "Vérification signatures webhooks",
+        "Troubleshooting"
+      ],
+      "passes": false
+    },
+    {
+      "id": "health-check-endpoint",
+      "title": "Endpoint health check pour monitoring",
+      "priority": 2,
+      "acceptanceCriteria": [
+        "GET /api/health/status endpoint",
+        "Retourne status OK + version app",
+        "Check connexion Supabase",
+        "Check disponibilité APIs externes (optionnel)",
+        "Utilisable pour uptime monitoring",
+        "Pas d'auth requise"
+      ],
+      "passes": false
+    },
+    {
+      "id": "analytics-tracking",
+      "title": "Setup analytics basique",
+      "priority": 3,
+      "acceptanceCriteria": [
+        "Google Analytics ou Plausible intégré",
+        "Tracking pages vues",
+        "Tracking conversions (signup, subscription)",
+        "Events custom (script generated, campaign created)",
+        "Privacy-friendly (GDPR compliant)",
+        "Documentation dans README"
+      ],
+      "passes": false
+    },
+    {
+      "id": "final-smoke-tests",
+      "title": "Tests smoke finaux avant production",
+      "priority": 1,
+      "acceptanceCriteria": [
+        "Test complet parcours utilisateur end-to-end manuellement",
+        "Vérifier toutes pages chargent sans erreur",
+        "Vérifier formulaires fonctionnent",
+        "Vérifier génération IA fonctionne",
+        "Vérifier webhooks Stripe en test mode",
+        "Vérifier responsive sur mobile réel",
+        "Documenter résultats tests"
+      ],
+      "passes": false
+    },
+    {
+      "id": "configuration-checklist",
+      "title": "Générer checklist configuration manuelle finale",
+      "priority": 1,
+      "acceptanceCriteria": [
+        "Document CONFIGURATION-CHECKLIST.md créé",
+        "Liste toutes étapes config manuelle",
+        "Supabase : créer projet, migrations, RLS",
+        "Stripe : produits, webhooks, clés",
+        "Vercel : deployment, env vars, domain",
+        "Anthropic : clé API Claude",
+        "Google : clé API Gemini",
+        "Checklist vérification finale",
+        "Contacts support si problème"
+      ],
+      "passes": false
+    }
+  ],
+  "implementation_order": [
+    "components-ui-complete",
+    "pages-auth-complete",
+    "page-pricing",
+    "page-choose-plan",
+    "error-handling-apis",
+    "loading-states",
+    "responsive-audit",
+    "env-example",
+    "readme-complete",
+    "deployment-guide",
+    "supabase-setup-guide",
+    "stripe-setup-guide",
+    "health-check-endpoint",
+    "page-about",
+    "seo-meta-tags",
+    "pwa-setup",
+    "tests-critical-paths",
+    "analytics-tracking",
+    "final-smoke-tests",
+    "configuration-checklist"
+  ],
+  "success_criteria": {
+    "all_quality_gates_pass": true,
+    "all_pages_responsive": true,
+    "all_apis_error_handled": true,
+    "documentation_complete": true,
+    "ready_for_production": true
+  }
+}

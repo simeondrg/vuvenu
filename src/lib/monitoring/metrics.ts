@@ -11,9 +11,11 @@ interface UserMetrics {
   accountAge: number // jours depuis inscription
 }
 
+type SubscriptionTier = 'starter' | 'pro' | 'business'
+
 interface ScriptGenerationMetrics {
   userId: string
-  plan: string
+  plan: SubscriptionTier | string
   format: 'reels' | 'posts' | 'stories'
   tone: string
   industry: string
@@ -25,7 +27,7 @@ interface ScriptGenerationMetrics {
 
 interface CampaignMetrics {
   userId: string
-  plan: string
+  plan: SubscriptionTier | string
   campaignType: 'traffic' | 'conversions' | 'awareness'
   budget: number
   concepts: number
@@ -35,15 +37,15 @@ interface CampaignMetrics {
 
 interface ConversionMetrics {
   userId: string
-  fromPlan: string
-  toPlan: string
+  fromPlan: SubscriptionTier | string
+  toPlan: SubscriptionTier | string
   revenue: number
   trigger: 'limit_reached' | 'features' | 'manual' | 'onboarding'
 }
 
 interface UsageMetrics {
   userId: string
-  plan: string
+  plan: SubscriptionTier | string
   scriptsThisMonth: number
   campaignsThisMonth: number
   daysActive: number
@@ -294,6 +296,25 @@ export class VuVenuMetrics {
         rating: data.rating,
         feedback: data.feedback
       }
+    })
+  }
+
+  /**
+   * Méthode générique pour logger des événements business
+   */
+  static business(data: {
+    event: string
+    userId: string
+    plan?: SubscriptionTier | string
+    value?: number
+    properties?: Record<string, any>
+  }) {
+    logger.business({
+      event: data.event,
+      userId: data.userId,
+      plan: data.plan,
+      value: data.value,
+      properties: data.properties
     })
   }
 

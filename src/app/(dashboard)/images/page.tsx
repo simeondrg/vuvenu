@@ -1,6 +1,5 @@
 import { Metadata } from 'next'
-import { createServerComponentClient } from '@supabase/auth-helpers-nextjs'
-import { cookies } from 'next/headers'
+import { createClient } from '@/lib/supabase/server'
 import { redirect } from 'next/navigation'
 import { ImageGeneratorForm } from '@/components/images/image-generator-form'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
@@ -17,7 +16,7 @@ export const metadata: Metadata = {
  * Permet aux utilisateurs de créer des visuels pour leurs campagnes publicitaires
  */
 export default async function ImagesPage() {
-  const supabase = createServerComponentClient({ cookies })
+  const supabase = await createClient()
 
   // Vérification de l'authentification
   const { data: { session }, error: authError } = await supabase.auth.getSession()
@@ -48,6 +47,7 @@ export default async function ImagesPage() {
 
   // Vérification de l'abonnement pour la génération d'images
   const hasImageAccess = profile?.subscription_status === 'active' &&
+                         profile.subscription_tier !== null &&
                          ['pro', 'business'].includes(profile.subscription_tier)
 
   return (

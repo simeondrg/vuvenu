@@ -30,7 +30,7 @@ interface LogEntry {
 interface BusinessMetric {
   event: string
   userId?: string
-  plan?: 'starter' | 'pro' | 'business'
+  plan?: 'starter' | 'pro' | 'business' | string
   value?: number
   properties?: Record<string, any>
   timestamp?: string

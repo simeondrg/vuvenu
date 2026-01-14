@@ -272,7 +272,7 @@ export function AdvancedAnalytics({ userProfile, scripts, campaigns }: AdvancedA
       </div>
 
       {/* Graphiques détaillés */}
-      <Tabs defaultValue="evolution" className="w-full">
+      <Tabs value="evolution" onValueChange={() => {}} className="w-full">
         <TabsList className="grid w-full grid-cols-4">
           <TabsTrigger value="evolution">Évolution</TabsTrigger>
           <TabsTrigger value="formats">Formats</TabsTrigger>
@@ -324,7 +324,7 @@ export function AdvancedAnalytics({ userProfile, scripts, campaigns }: AdvancedA
                         cx="50%"
                         cy="50%"
                         labelLine={false}
-                        label={({ name, percent }) => `${name} ${(percent * 100).toFixed(0)}%`}
+                        label={({ name, percent }) => `${name} ${((percent ?? 0) * 100).toFixed(0)}%`}
                         outerRadius={80}
                         fill="#8884d8"
                         dataKey="value"
