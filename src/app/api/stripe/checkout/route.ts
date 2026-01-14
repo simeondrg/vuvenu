@@ -7,7 +7,7 @@
 import { NextRequest, NextResponse } from 'next/server'
 import { z } from 'zod'
 import Stripe from 'stripe'
-import { createServerClient } from '@/lib/supabase/server'
+import { createClient } from '@/lib/supabase/server'
 import { getStripePriceId, getStripeUrls, STRIPE_SECRET_KEY } from '@/lib/stripe/config'
 import { BillingPeriod, PlanTier } from '@/lib/constants/pricing'
 
@@ -16,7 +16,7 @@ if (!STRIPE_SECRET_KEY) {
 }
 
 const stripe = new Stripe(STRIPE_SECRET_KEY, {
-  apiVersion: '2024-12-18.acacia',
+  apiVersion: '2025-12-15.clover',
 })
 
 // Validation du body de la requête
@@ -41,7 +41,7 @@ export async function POST(request: NextRequest) {
     const { tier, billingPeriod } = validation.data
 
     // 2. Vérifier l'utilisateur authentifié
-    const supabase = await createServerClient()
+    const supabase = await createClient()
     const {
       data: { user },
       error: authError,

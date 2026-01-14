@@ -300,7 +300,7 @@ export default function SettingsPage() {
                     <span className="text-sm ml-1">{planDetails.priceDetail}</span>
                   )}
                 </p>
-                {planDetails.savings > 0 && (
+                {planDetails.savings && planDetails.savings > 0 && (
                   <p className="text-sm text-green-600 font-medium mt-1">
                     Vous économisez {planDetails.savings}€/an
                   </p>
