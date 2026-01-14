@@ -170,7 +170,7 @@ export function parseClaudeJsonResponse<T>(response: string): T {
  */
 export function buildOptimizedUserPrompt(
   template: 'script' | 'campaign',
-  data: Record<string, any>
+  data: any
 ): string {
   const basePrompt = USER_PROMPT_TEMPLATES[template](data)
 

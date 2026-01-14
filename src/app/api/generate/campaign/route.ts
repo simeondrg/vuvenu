@@ -184,7 +184,7 @@ Génère des concepts DIFFÉRENTS avec des angles variés pour maximiser les per
     const anthropic = getAnthropicClient()
     const message = await withResilience(
       () => anthropic.messages.create({
-        model: 'claude-3-5-sonnet-20241022',
+        model: 'claude-sonnet-4-5-20250929',
         max_tokens: 2000,
         temperature: 0.8,
         system: CAMPAIGN_SYSTEM_PROMPT,
