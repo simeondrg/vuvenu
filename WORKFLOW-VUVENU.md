@@ -29,27 +29,27 @@ PHASE 3: TESTS & POLISH
 
 ### 0.1 Prérequis ✅ (FAIT)
 
-| Tâche | Statut |
-|-------|--------|
-| Compte GitHub | ✅ |
-| Compte Vercel | ✅ |
-| Compte Supabase | ✅ |
-| Compte Stripe | ✅ |
-| Clé API Anthropic | ✅ |
-| Clé API Google AI (Gemini) | ✅ |
-| Node.js 18+ installé | ✅ |
-| Claude Code installé | ✅ |
+| Tâche                      | Statut |
+| -------------------------- | ------ |
+| Compte GitHub              | ✅     |
+| Compte Vercel              | ✅     |
+| Compte Supabase            | ✅     |
+| Compte Stripe              | ✅     |
+| Clé API Anthropic          | ✅     |
+| Clé API Google AI (Gemini) | ✅     |
+| Node.js 18+ installé       | ✅     |
+| Claude Code installé       | ✅     |
 
 ### 0.2 Fichiers de configuration ✅ (FAIT)
 
-| Fichier | Description | Statut |
-|---------|-------------|--------|
-| CLAUDE.md | Instructions projet Claude Code | ✅ |
-| .mcp.json | Configuration MCP servers | ✅ |
-| .env.local.example | Template variables environnement | ✅ |
-| PRD-VuVenu-MVP.md | Product Requirements Document | ✅ |
-| MASTER_CHECKLIST.md | 206 tâches détaillées | ✅ |
-| Guide Claude Code | Document maître 16 sections | ✅ |
+| Fichier             | Description                      | Statut |
+| ------------------- | -------------------------------- | ------ |
+| CLAUDE.md           | Instructions projet Claude Code  | ✅     |
+| .mcp.json           | Configuration MCP servers        | ✅     |
+| .env.local.example  | Template variables environnement | ✅     |
+| PRD-VuVenu-MVP.md   | Product Requirements Document    | ✅     |
+| MASTER_CHECKLIST.md | 206 tâches détaillées            | ✅     |
+| Guide Claude Code   | Document maître 16 sections      | ✅     |
 
 ### 0.3 Initialisation projet (À FAIRE SUR TON ORDI)
 
@@ -93,6 +93,7 @@ claude
 ```
 
 **Validation Phase 0** :
+
 - [ ] `npm run dev` fonctionne
 - [ ] Page localhost:3000 s'affiche
 - [ ] Repo GitHub créé
@@ -109,6 +110,7 @@ claude
 **Prompt à utiliser** (copier depuis BRANDING-VUVENU-BRIEF.md section 5.1)
 
 **Critères de validation** :
+
 - [ ] Logo reconnaissable en petit (favicon)
 - [ ] Fonctionne en monochrome
 - [ ] Déclinaisons : complet, compact, favicon, blanc, noir
@@ -132,6 +134,7 @@ claude
 ### 1.4 Export des assets
 
 **Fichiers à préparer** :
+
 ```
 /public
   /images
@@ -143,6 +146,7 @@ claude
 ```
 
 **Validation Phase 1** :
+
 - [ ] Logo final validé
 - [ ] Maquette hero validée
 - [ ] Maquette dashboard validée
@@ -157,6 +161,7 @@ claude
 Tu as **deux options** :
 
 **Option A : Mode Assisté**
+
 ```bash
 # Dans Claude Code, donner des instructions une par une
 > Crée le composant Header avec le logo
@@ -165,6 +170,7 @@ Tu as **deux options** :
 ```
 
 **Option B : Mode Ralph (Autonome)**
+
 ```bash
 # Lancer Ralph avec le PRD
 /ralph-vuvenu semaine-1-foundations
@@ -173,19 +179,21 @@ Tu as **deux options** :
 
 ### Semaine 1 : Foundations
 
-| Jour | Focus | Tâches principales |
-|------|-------|-------------------|
-| J1-J2 | Auth | Setup Supabase, Login, Register, Reset password |
-| J3 | Onboarding | Wizard 4 étapes (business info, objectifs) |
-| J4 | Layout | Dashboard shell, Sidebar, Header |
-| J5 | Profil | Page paramètres, gestion compte |
+| Jour  | Focus      | Tâches principales                              |
+| ----- | ---------- | ----------------------------------------------- |
+| J1-J2 | Auth       | Setup Supabase, Login, Register, Reset password |
+| J3    | Onboarding | Wizard 4 étapes (business info, objectifs)      |
+| J4    | Layout     | Dashboard shell, Sidebar, Header                |
+| J5    | Profil     | Page paramètres, gestion compte                 |
 
 **Commande Ralph** :
+
 ```bash
 /ralph-vuvenu semaine-1 --max-iterations 50
 ```
 
 **Validation Semaine 1** :
+
 - [ ] Un utilisateur peut s'inscrire
 - [ ] Un utilisateur peut se connecter
 - [ ] L'onboarding capture les infos business
@@ -195,18 +203,20 @@ Tu as **deux options** :
 
 ### Semaine 2 : Core Product
 
-| Jour | Focus | Tâches principales |
-|------|-------|-------------------|
+| Jour  | Focus         | Tâches principales                               |
+| ----- | ------------- | ------------------------------------------------ |
 | J1-J2 | Scripts Vidéo | Formulaire, appel API Claude, affichage résultat |
-| J3-J4 | Meta Ads | Formulaire campagne, génération concepts |
-| J5 | Images IA | Intégration Gemini pour visuels ads |
+| J3-J4 | Meta Ads      | Formulaire campagne, génération concepts         |
+| J5    | Images IA     | Intégration Gemini pour visuels ads              |
 
 **Commande Ralph** :
+
 ```bash
 /ralph-vuvenu semaine-2 --max-iterations 60
 ```
 
 **Validation Semaine 2** :
+
 - [ ] Génération de script vidéo fonctionne
 - [ ] Résultat s'affiche correctement
 - [ ] Bouton copier fonctionne
@@ -216,18 +226,20 @@ Tu as **deux options** :
 
 ### Semaine 3 : Paiement + Landing
 
-| Jour | Focus | Tâches principales |
-|------|-------|-------------------|
-| J1-J2 | Stripe | Produits, Checkout, Portal, Webhooks |
-| J3-J4 | Landing | Hero, Features, Pricing, FAQ |
-| J5 | Legal | CGV, Confidentialité, Mentions légales |
+| Jour  | Focus   | Tâches principales                     |
+| ----- | ------- | -------------------------------------- |
+| J1-J2 | Stripe  | Produits, Checkout, Portal, Webhooks   |
+| J3-J4 | Landing | Hero, Features, Pricing, FAQ           |
+| J5    | Legal   | CGV, Confidentialité, Mentions légales |
 
 **Commande Ralph** :
+
 ```bash
 /ralph-vuvenu semaine-3 --max-iterations 50
 ```
 
 **Validation Semaine 3** :
+
 - [ ] Paiement Stripe fonctionne (mode test)
 - [ ] Webhooks reçus et traités
 - [ ] Limites par plan respectées
@@ -244,6 +256,7 @@ Tu as **deux options** :
 Le wizard guidé est ce qui différencie VuVenu de Canva+ChatGPT.
 
 **Étapes du wizard Meta Ads** :
+
 1. Type de commerce
 2. Produit/Service à promouvoir
 3. Objectif de la campagne
@@ -253,6 +266,7 @@ Le wizard guidé est ce qui différencie VuVenu de Canva+ChatGPT.
 7. Personnalisation des images
 
 **Validation** :
+
 - [ ] Chaque étape a des explications claires
 - [ ] Progression visible
 - [ ] Retour en arrière possible
@@ -266,6 +280,7 @@ Le wizard guidé est ce qui différencie VuVenu de Canva+ChatGPT.
 ```
 
 **Scénarios à tester** :
+
 - [ ] Parcours inscription complet
 - [ ] Génération script vidéo
 - [ ] Création campagne Meta Ads
@@ -275,12 +290,14 @@ Le wizard guidé est ce qui différencie VuVenu de Canva+ChatGPT.
 ### 3.3 Beta test
 
 **Recruter 3-5 testeurs** :
+
 - 1 restaurateur
 - 1 salon de coiffure
 - 1 boutique
 - 1-2 autres commerces
 
 **Collecter feedback sur** :
+
 - Facilité d'utilisation
 - Qualité des scripts générés
 - Qualité des concepts ads
@@ -302,6 +319,7 @@ Le wizard guidé est ce qui différencie VuVenu de Canva+ChatGPT.
 ### Checklist pré-lancement
 
 **Technique** :
+
 - [ ] Domaine configuré (vuvenu.fr ou seencome.com)
 - [ ] SSL actif
 - [ ] Variables env production
@@ -309,12 +327,14 @@ Le wizard guidé est ce qui différencie VuVenu de Canva+ChatGPT.
 - [ ] Emails transactionnels fonctionnels
 
 **Contenu** :
+
 - [ ] Landing page finalisée
 - [ ] Pages légales complètes
 - [ ] FAQ à jour
 - [ ] Emails de bienvenue prêts
 
 **Marketing** :
+
 - [ ] Compte Instagram créé
 - [ ] Premiers posts prêts
 - [ ] Liste de prospects identifiée
@@ -375,25 +395,25 @@ vercel --prod
 
 ### Questions en attente (à décider)
 
-| Question | Options | Décision |
-|----------|---------|----------|
-| Trial gratuit ? | A) Non / B) 7 jours | À décider |
-| Support ? | A) Email seul / B) + WhatsApp | À décider |
-| Domaine ? | vuvenu.fr / seencome.com | À décider |
+| Question        | Options                       | Décision  |
+| --------------- | ----------------------------- | --------- |
+| Trial gratuit ? | A) Non / B) 7 jours           | À décider |
+| Support ?       | A) Email seul / B) + WhatsApp | À décider |
+| Domaine ?       | vuvenu.fr / seencome.com      | À décider |
 
 ---
 
 ## 📅 PLANNING SYNTHÉTIQUE
 
-| Semaine | Focus | Livrables |
-|---------|-------|-----------|
-| **S0** | Setup + Branding | Projet initialisé, logo, maquettes |
-| **S1** | Foundations | Auth, Onboarding, Dashboard |
-| **S2** | Core Product | Scripts, Meta Ads, Images IA |
-| **S3** | Paiement + Landing | Stripe, Landing, Legal |
-| **S4** | Polish + Launch | Wizard, Tests, Beta, 🚀 |
+| Semaine | Focus              | Livrables                          |
+| ------- | ------------------ | ---------------------------------- |
+| **S0**  | Setup + Branding   | Projet initialisé, logo, maquettes |
+| **S1**  | Foundations        | Auth, Onboarding, Dashboard        |
+| **S2**  | Core Product       | Scripts, Meta Ads, Images IA       |
+| **S3**  | Paiement + Landing | Stripe, Landing, Legal             |
+| **S4**  | Polish + Launch    | Wizard, Tests, Beta, 🚀            |
 
 ---
 
-*Workflow créé le 13 janvier 2026*
-*Conçu pour être utilisé avec Claude Code + Ralph Loop*
+_Workflow créé le 13 janvier 2026_
+_Conçu pour être utilisé avec Claude Code + Ralph Loop_

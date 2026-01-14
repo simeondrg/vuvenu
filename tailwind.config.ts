@@ -10,31 +10,31 @@ const config: Config = {
     extend: {
       colors: {
         // VuVenu Brand Colors from BRANDING-VUVENU-BRIEF.md
-        'vuvenu': {
-          'lime': '#BFFF00',      // Accent principal, CTA, highlights
-          'blue': '#60A5FA',      // Éléments graphiques, backgrounds
-          'violet': '#C4B5FD',    // Sections secondaires, cards
-          'rose': '#FECDD3',      // Backgrounds doux, hover states
-          'cream': '#FFFBEB',     // Background principal
-          'dark': '#0F172A',      // Texte principal
+        vuvenu: {
+          lime: '#BFFF00', // Accent principal, CTA, highlights
+          blue: '#60A5FA', // Éléments graphiques, backgrounds
+          violet: '#C4B5FD', // Sections secondaires, cards
+          rose: '#FECDD3', // Backgrounds doux, hover states
+          cream: '#FFFBEB', // Background principal
+          dark: '#0F172A', // Texte principal
         },
         // Aliases for better semantic usage
         primary: {
-          DEFAULT: '#BFFF00',      // vuvenu-lime
-          foreground: '#0F172A',   // vuvenu-dark
+          DEFAULT: '#BFFF00', // vuvenu-lime
+          foreground: '#0F172A', // vuvenu-dark
         },
         secondary: {
-          DEFAULT: '#60A5FA',      // vuvenu-blue
+          DEFAULT: '#60A5FA', // vuvenu-blue
           foreground: '#FFFFFF',
         },
         accent: {
-          DEFAULT: '#C4B5FD',      // vuvenu-violet
+          DEFAULT: '#C4B5FD', // vuvenu-violet
           foreground: '#0F172A',
         },
-        background: '#FFFBEB',     // vuvenu-cream
-        foreground: '#0F172A',     // vuvenu-dark
+        background: '#FFFBEB', // vuvenu-cream
+        foreground: '#0F172A', // vuvenu-dark
         muted: {
-          DEFAULT: '#FECDD3',      // vuvenu-rose
+          DEFAULT: '#FECDD3', // vuvenu-rose
           foreground: '#0F172A',
         },
       },
@@ -49,7 +49,7 @@ const config: Config = {
         sm: '4px',
       },
       boxShadow: {
-        'vuvenu': '0 4px 6px -1px rgba(0, 0, 0, 0.1)',
+        vuvenu: '0 4px 6px -1px rgba(0, 0, 0, 0.1)',
         'vuvenu-lg': '0 10px 15px -3px rgba(0, 0, 0, 0.1)',
       },
       animation: {

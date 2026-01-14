@@ -10,18 +10,18 @@ La Gen Z, qui représente le cœur de cette audience, est influencée à **74%**
 
 L'analyse des comptes les plus performants révèle des patterns de succès reproductibles : spécialisation pointue, personnalité authentique, et diversification vers la formation ou les produits propres.
 
-| Compte | Plateforme | Followers | Niche | Signature |
-|--------|------------|-----------|-------|-----------|
-| @thenailaddict | TikTok | 3M | Nail art | Designs 90's nostalgiques, press-on créatifs |
-| @vivxue | TikTok | 500K+ | Nail art premium | Designs hyper-détaillés (Mona Lisa, Disney), 2-8h par création |
-| @browsurgeon | TikTok | 200K+ | Microblading | Technique "wispy seamless", transformations dramatiques |
-| @elevenesthetician | TikTok | 197.7K | Esthéticienne | Mix vie perso + expertise, 15M likes |
-| @melaniegrantskin | Instagram | 144.5K | Celebrity facialist | Clientèle A-list, partenariat Chanel |
-| @charlotteparler | TikTok | 453.7K | Éducation skincare | Approche "no-nonsense", démystification |
-| @evelina_yaguda | Instagram | 114.3K | PMU avancé | Technique propriétaire "EY-Brow" |
-| @jboss_lashes | Instagram | 64K | Lash tech | Formation + produits, esthéticienne licenciée |
-| @lisabpro | TikTok | 2.8M | Maquillage créatif | Looks inspirés pop culture, films, séries |
-| @Layallure | TikTok | 1.7M | ASMR skincare | Vidéo routine matinale : **48.2M vues** |
+| Compte             | Plateforme | Followers | Niche               | Signature                                                      |
+| ------------------ | ---------- | --------- | ------------------- | -------------------------------------------------------------- |
+| @thenailaddict     | TikTok     | 3M        | Nail art            | Designs 90's nostalgiques, press-on créatifs                   |
+| @vivxue            | TikTok     | 500K+     | Nail art premium    | Designs hyper-détaillés (Mona Lisa, Disney), 2-8h par création |
+| @browsurgeon       | TikTok     | 200K+     | Microblading        | Technique "wispy seamless", transformations dramatiques        |
+| @elevenesthetician | TikTok     | 197.7K    | Esthéticienne       | Mix vie perso + expertise, 15M likes                           |
+| @melaniegrantskin  | Instagram  | 144.5K    | Celebrity facialist | Clientèle A-list, partenariat Chanel                           |
+| @charlotteparler   | TikTok     | 453.7K    | Éducation skincare  | Approche "no-nonsense", démystification                        |
+| @evelina_yaguda    | Instagram  | 114.3K    | PMU avancé          | Technique propriétaire "EY-Brow"                               |
+| @jboss_lashes      | Instagram  | 64K       | Lash tech           | Formation + produits, esthéticienne licenciée                  |
+| @lisabpro          | TikTok     | 2.8M      | Maquillage créatif  | Looks inspirés pop culture, films, séries                      |
+| @Layallure         | TikTok     | 1.7M      | ASMR skincare       | Vidéo routine matinale : **48.2M vues**                        |
 
 Les facteurs de viralité communs incluent les transformations avant/après saisissantes, les tutoriels étape par étape qui maximisent le temps de visionnage, l'authenticité visible dans la personnalité du créateur, et une spécialisation nette qui établit l'expertise.
 
@@ -81,23 +81,23 @@ Vidéos éducatives montrant une technique étape par étape, destinées aux cli
 
 Les hooks suivants ont été identifiés dans des vidéos virales du secteur beauté/esthétique :
 
-| Hook | Type | Niches efficaces |
-|------|------|------------------|
-| "Wait until you see the final result..." / "Attends de voir le résultat final..." | Curiosité | Nails, Cils, Facials |
-| "Stop scrolling if you want [résultat désiré]" | Interpellation | Sourcils, Cils, Nails |
-| "I fixed what the other salon ruined" / "J'ai réparé ce que l'autre salon a abîmé" | Transformation + controverse | Nails, Cils |
-| "POV: You finally get your dream nails" | POV aspirationnel | Nails |
-| "The mistake that's ruining your lashes" / "L'erreur qui ruine tes cils" | Problème/urgence | Cils |
-| "This almost feels illegal to know" / "C'est presque illégal de savoir ça" | Choc/exclusivité | Toutes niches |
-| "5 things your esthetician wishes you knew" | Éducatif | Facials, Épilation |
-| "This client cried when she saw the result" / "Cette cliente a pleuré en voyant le résultat" | Émotionnel | Toutes niches |
-| "Why your brows never look right" / "Pourquoi tes sourcils ne sont jamais bien" | Problème relatable | Sourcils |
-| "Everything you know about [sujet] is wrong" | Choc disruptif | Skincare, Nails |
-| "POV: Getting pampered after a long week" | POV self-care | Toutes niches |
-| "The dark secret about [produit/technique]" | Mystère | Toutes niches |
-| "Here's why your nails lift after 2 days" | Éducatif/solution | Nails |
-| "What really comes out during a Hydrafacial" (gunkie jar reveal) | Curiosité morbide | Facials |
-| "The glow-up nobody expected" | Transformation wow | Facials, Skincare |
+| Hook                                                                                         | Type                         | Niches efficaces      |
+| -------------------------------------------------------------------------------------------- | ---------------------------- | --------------------- |
+| "Wait until you see the final result..." / "Attends de voir le résultat final..."            | Curiosité                    | Nails, Cils, Facials  |
+| "Stop scrolling if you want [résultat désiré]"                                               | Interpellation               | Sourcils, Cils, Nails |
+| "I fixed what the other salon ruined" / "J'ai réparé ce que l'autre salon a abîmé"           | Transformation + controverse | Nails, Cils           |
+| "POV: You finally get your dream nails"                                                      | POV aspirationnel            | Nails                 |
+| "The mistake that's ruining your lashes" / "L'erreur qui ruine tes cils"                     | Problème/urgence             | Cils                  |
+| "This almost feels illegal to know" / "C'est presque illégal de savoir ça"                   | Choc/exclusivité             | Toutes niches         |
+| "5 things your esthetician wishes you knew"                                                  | Éducatif                     | Facials, Épilation    |
+| "This client cried when she saw the result" / "Cette cliente a pleuré en voyant le résultat" | Émotionnel                   | Toutes niches         |
+| "Why your brows never look right" / "Pourquoi tes sourcils ne sont jamais bien"              | Problème relatable           | Sourcils              |
+| "Everything you know about [sujet] is wrong"                                                 | Choc disruptif               | Skincare, Nails       |
+| "POV: Getting pampered after a long week"                                                    | POV self-care                | Toutes niches         |
+| "The dark secret about [produit/technique]"                                                  | Mystère                      | Toutes niches         |
+| "Here's why your nails lift after 2 days"                                                    | Éducatif/solution            | Nails                 |
+| "What really comes out during a Hydrafacial" (gunkie jar reveal)                             | Curiosité morbide            | Facials               |
+| "The glow-up nobody expected"                                                                | Transformation wow           | Facials, Skincare     |
 
 **Principe clé** : 63% des vidéos à fort CTR captent l'attention dans les **3 premières secondes**. Le hook textuel ou verbal doit être immédiat, accompagné d'un mouvement visuel.
 

@@ -1,317 +1,306 @@
 ---
 name: vuvenu-image-generator
-description: Génère des prompts Higgsfield/Midjourney optimisés pour créer les visuels Meta Ads à partir des descriptions détaillées du Meta Ads Generator. Transforme concepts stratégiques en prompts IA image prêts à l'emploi, avec respect palette couleurs client et formats Origins (8 formats image).
+description: Génère automatiquement les images Meta Ads via l'API Gemini Imagen à partir des descriptions détaillées du Meta Ads Generator. Appel direct API avec 2 variations par concept, pas de prompts manuels. Workflow end-to-end natif VuVenu.
 tools:
   - Read
+  - WebFetch
 model: haiku
 ---
 
-# VuVenu Image Generator v2.0
+# VuVenu Image Generator v3.0 - API Native
 
 ## Mission
-Convertir les descriptions visuelles détaillées des campagnes Meta Ads en prompts IA image précis pour générer des créatives professionnelles avec Higgsfield/Midjourney.
+
+Générer automatiquement les images Meta Ads en appelant directement l'API Gemini Imagen. Workflow end-to-end : descriptions visuelles → API call → images prêtes pour Meta Ads Manager.
 
 ## Quand utiliser cette skill
-- L'utilisateur a généré une campagne Meta Ads et veut les visuels
-- Mention "générer les images", "créer les visuels", "prompts images"
-- Demande de "produire les créatives" pour Meta Ads
-- Workflow après Meta Ads Generator pour finaliser campagne
+
+- L'utilisateur a généré une campagne Meta Ads et veut les images finales
+- Mention "générer les images", "créer les visuels automatiquement"
+- Workflow final après Meta Ads Generator pour campagne complète
+- Besoin de 2 variations par concept pour A/B testing
 
 ---
 
-## PHASE 1 : Extraction Description Visuelle
+## PHASE 1 : Extraction & Préparation
 
-### Source des Données
-Récupérer depuis la campagne générée :
+### Source des Données (Input)
+
+Récupérer depuis la campagne Meta Ads générée :
+
 - **Descriptions visuelles détaillées** (200+ mots par concept)
 - **Format Origins spécifié** (ex: "Image - Static Graphic", "Image - UGC style")
-- **Business type** (DTC, Lead Gen, RBS, DTS, Event, Subscription)
-- **Palette couleurs client** (si fournie dans brief initial)
+- **Business type & info** (DTC, Lead Gen, RBS, DTS, Event, Subscription)
+- **Palette couleurs client** (priorité absolue si fournie)
 - **Copy publicitaire** (Primary Text, Headline, Description)
 
-### Formats Image Origins (8 disponibles)
-1. **Static Graphic/Design** → Prompts design graphique
-2. **Product Photo** → Prompts photo produit stylisée
-3. **Infographic designs** → Prompts infographie
-4. **Collage/Multi-image** → Prompts montage multiple
-5. **Quote/Text overlay** → Prompts citation stylisée
-6. **Native content style** → Prompts aspect organique
-7. **Meme/Trend format** → Prompts format viral
-8. **UGC image style** → Prompts style utilisateur
+### Formats Image Origins → API Prompts
+
+1. **Static Graphic/Design** → Design graphique marketing
+2. **Product Photo** → Photo produit commerciale
+3. **Infographic designs** → Infographie d'entreprise
+4. **Collage/Multi-image** → Composition multi-éléments
+5. **Quote/Text overlay** → Citation inspirante avec design
+6. **Native content style** → Contenu organique authentique
+7. **Meme/Trend format** → Format viral moderne
+8. **UGC image style** → Contenu utilisateur réaliste
 
 ---
 
-## PHASE 2 : Gestion Palette Couleurs
+## PHASE 2 : Construction Prompts Gemini Optimisés
 
-### Priorité Absolue : Couleurs Client
-**Si palette client fournie** :
-- ✅ Utiliser UNIQUEMENT ces couleurs dans prompts
-- ✅ Respecter hiérarchie (primaire/secondaire/accent)
-- ✅ Ne PAS inventer d'autres couleurs
-- ✅ Adapter style autour de palette imposée
-
-### Couleurs par Défaut VuVenu
-**Si AUCUNE palette client** :
-- Electric Lime: #BFFF00 (accent principal)
-- Pixel Blue: #60A5FA (éléments graphiques)
-- Soft Violet: #C4B5FD (sections secondaires)
-- Deep Dark: #0F172A (texte principal)
-- Cream: #FFFBEB (arrière-plans)
-
----
-
-## PHASE 3 : Construction Prompts par Format
-
-### Template Prompt Universel
+### Template API Gemini Prompt
 
 ```
-[SUBJECT + ACTION] in [FORMAT STYLE], [VISUAL DESCRIPTION],
-[COLOR PALETTE], [COMPOSITION], [AMBIANCE], [TECHNICAL SPECS]
---ar 1:1 --style [STYLE_VALUE]
+Create a {FORMAT_TYPE} for {BUSINESS_NAME}, a {BUSINESS_TYPE}.
+
+Visual Description:
+{DETAILED_DESCRIPTION_FROM_META_ADS}
+
+Style Requirements:
+- Format: Square 1:1 ratio for social media advertising
+- Colors: {COLOR_PALETTE} (primary: {PRIMARY}, secondary: {SECONDARY})
+- Quality: Professional, high-resolution, advertising grade
+- Mood: {BUSINESS_MOOD}
+- Target: {TARGET_AUDIENCE}
+
+Technical Specs:
+- Resolution: 1024x1024 minimum
+- Style: {ORIGINS_FORMAT_STYLE}
+- Text: {TEXT_OVERLAY_INSTRUCTIONS}
+
+Avoid: Generic stock photo look, poor composition, illegible text, off-brand colors
 ```
 
-### Prompts Spécialisés par Format
-
-**1. Static Graphic/Design**
-```
-Professional social media advertisement for [BUSINESS],
-modern graphic design with [BRAND COLORS],
-clean typography, [VISUAL ELEMENTS],
-[COMPOSITION DETAILS], marketing visual,
-high contrast, readable text hierarchy
---ar 1:1 --style raw
-```
-
-**2. Product Photo**
-```
-High-quality product photography of [PRODUCT],
-professional studio lighting, [BACKGROUND STYLE],
-styled with [PROPS/ELEMENTS], [COLOR PALETTE],
-commercial photography, sharp focus,
-advertising aesthetic, premium presentation
---ar 1:1 --style raw
-```
-
-**3. Infographic Design**
-```
-Clean infographic design for [BUSINESS],
-information visualization, [DATA/STATS],
-[BRAND COLORS], modern icons,
-clear hierarchy, readable fonts,
-professional business graphic, marketing material
---ar 1:1 --style raw
-```
-
-**4. Collage/Multi-image**
-```
-Creative collage composition for [BUSINESS],
-multiple image elements, [VISUAL ELEMENTS],
-[COLOR PALETTE], dynamic layout,
-modern magazine style, cut-out photos,
-layered composition, social media advertising
---ar 1:1 --style raw
-```
-
-**5. Quote/Text Overlay**
-```
-Inspirational quote graphic "[QUOTE TEXT]",
-beautiful typography, [BACKGROUND STYLE],
-[COLOR PALETTE], motivational design,
-social media post, clean composition,
-readable font hierarchy, premium aesthetic
---ar 1:1 --style raw
-```
-
-**6. Native Content Style**
-```
-Organic social media post style for [BUSINESS],
-authentic look, [VISUAL ELEMENTS],
-natural lighting, casual composition,
-[BRAND COLORS], user-generated content aesthetic,
-relatable, non-advertising appearance
---ar 1:1 --style raw
-```
-
-**7. Meme/Trend Format**
-```
-Trending social media format for [BUSINESS],
-viral meme style, [HUMOROUS ELEMENT],
-[COLOR PALETTE], popular format,
-engaging composition, shareable content,
-modern internet culture aesthetic
---ar 1:1 --style raw
-```
-
-**8. UGC Image Style**
-```
-Authentic user-generated content for [BUSINESS],
-real customer perspective, [SCENARIO],
-natural lighting, smartphone quality,
-[BRAND COLORS subtly], genuine moment,
-relatable composition, authentic feel
---ar 1:1 --style raw
-```
-
----
-
-## PHASE 4 : Optimisation par Business Type
-
-### Adaptations Spécifiques
+### Adaptations par Business Type
 
 **DTC (E-commerce)**
-- Focus produit central
-- Call-to-action visible
-- Prix/offre mise en avant
-- Qualité photo premium
+
+```
+Focus on product prominently displayed, professional lighting,
+clean background, call-to-action visible, premium presentation
+```
 
 **Lead Generation**
-- Professionnel mais accessible
-- Contact info suggérée
-- Service/expertise mise en avant
-- Crédibilité visuelle
+
+```
+Professional yet approachable, service expertise highlighted,
+credibility elements visible, contact invitation implied
+```
 
 **RBS (Réservation)**
-- Ambiance accueillante
-- Équipe/lieu mis en avant
-- Disponibilité suggérée
-- Côté humain
+
+```
+Welcoming atmosphere, team/location featured, availability suggested,
+human connection emphasized, booking invitation
+```
 
 **DTS (Drive-to-Store)**
-- Localisation suggérée
-- Ambiance locale authentique
-- Produits/services visibles
-- Invitation à venir
+
+```
+Local business authenticity, location pride, products/services visible,
+come visit invitation, community feeling
+```
 
 **Event & Ticketing**
-- Énergie et excitement
-- Foule/ambiance événement
-- Date/lieu visible
-- FOMO (urgence)
+
+```
+Excitement and energy, crowd/event atmosphere, date/location prominent,
+FOMO elements, ticket/registration urgency
+```
 
 **Subscription**
-- Valeur sur le long terme
-- Bénéfices continus
-- Interface/produit montré
-- Simplicité d'usage
+
+```
+Long-term value focus, continuous benefits shown, interface/product featured,
+ease of use emphasized, subscription value
+```
 
 ---
 
-## PHASE 5 : Output Prompts Prêts
+## PHASE 3 : Appel API Gemini Imagen
+
+### Configuration API
+
+```typescript
+// Configuration API Gemini pour génération d'images
+const GEMINI_IMAGE_CONFIG = {
+  model: 'imagen-3.0', // Ou dernière version disponible
+  endpoint: 'https://generativelanguage.googleapis.com/v1beta/models/imagen-3.0:generateImages',
+  headers: {
+    Authorization: 'Bearer ${GOOGLE_AI_API_KEY}',
+    'Content-Type': 'application/json',
+  },
+  params: {
+    prompt: '{OPTIMIZED_PROMPT}',
+    num_images: 2, // TOUJOURS 2 variations pour A/B testing
+    aspect_ratio: '1:1', // Format Meta Ads
+    style: 'PHOTOGRAPHIC', // Ou "DIGITAL_ART" selon format Origins
+    quality: 'HD',
+    safety_level: 'BLOCK_MEDIUM_AND_ABOVE',
+  },
+}
+```
+
+### Appels API Séquentiels
+
+**Pour chaque concept (TOF, MOF, BOF) :**
+
+1. **Construire prompt optimisé** selon format Origins
+2. **Appel API Gemini** avec prompt + paramètres
+3. **Recevoir 2 variations** par concept
+4. **Validation automatique** (résolution, format, couleurs)
+5. **Sauvegarde locale** avec métadonnées
+
+### Gestion Erreurs & Retry
+
+```
+Si erreur API :
+1. Retry avec prompt légèrement modifié (1x)
+2. Si échec persistant : prompt simplifié (1x)
+3. Si échec total : notification utilisateur + log erreur
+4. Jamais plus de 3 tentatives par image
+```
+
+---
+
+## PHASE 4 : Post-Processing & Validation
+
+### Validation Automatique
+
+- ✅ **Format** : 1:1 ratio vérifié
+- ✅ **Résolution** : Minimum 1024x1024
+- ✅ **Couleurs** : Cohérence avec palette client
+- ✅ **Qualité** : Absence d'artefacts majeurs
+- ✅ **Lisibilité** : Texte visible si applicable
+
+### Optimisations Post-API
+
+- **Recadrage automatique** si légèrement off-ratio
+- **Compression optimisée** pour Meta Ads (< 30MB, qualité max)
+- **Conversion format** PNG ou JPG selon besoin
+- **Métadonnées** supprimées pour confidentialité
+
+---
+
+## PHASE 5 : Output Final Automatisé
 
 ### Template de Sortie
 
 ```markdown
 ═══════════════════════════════════════════════════════════════
-            PROMPTS IA IMAGES — [Campagne Meta Ads]
+IMAGES GÉNÉRÉES — [Campagne Meta Ads]
 ═══════════════════════════════════════════════════════════════
 
-🎨 PALETTE COULEURS UTILISÉE
-├── Source : [Client fournie / VuVenu défaut]
-├── Primaire : [Couleur + Hex]
-├── Secondaire : [Couleur + Hex]
-└── Accent : [Couleur + Hex]
+🎨 CONFIGURATION UTILISÉE
+├── API : Gemini Imagen 3.0
+├── Palette : [Client fournie / VuVenu défaut]
+├── Business Type : [DTC/Lead Gen/RBS/DTS/Event/Subscription]
+└── Total Images : 6 (3 concepts × 2 variations)
 
 🖼️ CONCEPT 1 - TOF (Awareness)
 **Format Origins :** [Format spécifique]
-**Plateforme :** Higgsfield (recommandé)
+**Prompt utilisé :** [Prompt optimisé envoyé à l'API]
 
-**PROMPT PRINCIPAL :**
-```
-[Prompt optimisé complet avec tous paramètres]
-```
+**VARIATION A :**
+📎 Image: campaign_tof_variant_a.jpg (1024x1024, 2.3MB)
+🔗 URL: [Chemin local ou storage URL]
+⭐ Recommandé pour: [Audience principale]
 
-**PROMPT ALTERNATIF :**
-```
-[Variation du prompt pour A/B testing]
-```
-
-**SPÉCIFICATIONS TECHNIQUES :**
-- Ratio : 1:1 (carré Meta Ads)
-- Résolution : 1080x1080 minimum
-- Format : PNG/JPG haute qualité
-- Style : [Style spécifique au format]
-
-**ÉLÉMENTS À VÉRIFIER :**
-- [ ] Palette couleurs respectée
-- [ ] Texte lisible (si inclus)
-- [ ] Format carré 1:1
-- [ ] Qualité professionnelle
-- [ ] Cohérence avec copy publicitaire
+**VARIATION B :**
+📎 Image: campaign_tof_variant_b.jpg (1024x1024, 2.1MB)
+🔗 URL: [Chemin local ou storage URL]
+⭐ Recommandé pour: [Test A/B]
 
 🖼️ CONCEPT 2 - MOF (Consideration)
-[Même structure que Concept 1]
+[Même structure]
 
 🖼️ CONCEPT 3 - BOF (Conversion)
-[Même structure que Concept 1]
+[Même structure]
 
-⚙️ INSTRUCTIONS GÉNÉRATION
+📊 MÉTRIQUES API
+├── Temps génération : [X] secondes total
+├── Coût API : ~[X]€ (6 images)
+├── Taux succès : [6/6] images générées
+└── Qualité moyenne : ✅ Toutes validées
 
-**Workflow Recommandé :**
-1. Générer avec Higgsfield (qualité supérieure)
-2. Alternative Midjourney si Higgsfield indisponible
-3. Générer 2-3 variations par concept
-4. Sélectionner meilleure version
-5. Optimiser si nécessaire (recadrage, texte)
+🚀 PRÊT POUR META ADS MANAGER
 
-**Paramètres Avancés :**
-- Seed : [Pour reproductibilité]
-- Steps : 50+ (haute qualité)
-- CFG Scale : 7-12 (équilibre créativité/prompt)
+**Fichiers à uploader :**
 
-📝 BRIEF RETOUCHES (si nécessaire)
+- [✅] campaign_tof_variant_a.jpg
+- [✅] campaign_tof_variant_b.jpg
+- [✅] campaign_mof_variant_a.jpg
+- [✅] campaign_mof_variant_b.jpg
+- [✅] campaign_bof_variant_a.jpg
+- [✅] campaign_bof_variant_b.jpg
 
-**Ajustements possibles :**
-- Recadrage format 1:1 parfait
-- Ajout/modification texte overlays
-- Optimisation lisibilité mobile
-- Ajustement couleurs si dérive
-- Export formats multiples
+**A/B Testing Setup :**
 
-🔄 VARIATIONS SUGGÉRÉES
-
-**Pour A/B Testing :**
-- Version avec/sans texte overlay
-- Variation couleur dominante
-- Composition alternative (layout)
-- Style légèrement différent
-
-📊 CHECKLIST QUALITÉ
-
-**Avant utilisation Meta Ads :**
-- [ ] Image 1080x1080 minimum
-- [ ] Texte lisible sur mobile
-- [ ] Couleurs conformes brief
-- [ ] Style professionnel
-- [ ] Cohérence avec copy
-- [ ] Respect format Origins
-- [ ] Pas de copyright/watermark
+- Tester Variation A vs B pour chaque concept
+- Metrics focus : CTR, CPC, Conversion Rate
+- Budget split : 50/50 premières 24h
 ```
 
 ---
 
-## PHASE 6 : Intégrations & Automatisation
+## PHASE 6 : Intégration & Analytics
 
-### Connexion Meta Ads Generator
-Récupération automatique :
-- Descriptions visuelles détaillées
-- Spécifications format Origins
-- Palette couleurs client
-- Copy publicitaire pour contexte
+### Sauvegarde Automatisée
 
-### Sauvegarde Assets
-Stockage organisé :
-- Prompts utilisés
-- Images générées
-- Variations créées
-- Campagne associée
+```json
+{
+  "campaign_id": "uuid",
+  "generation_timestamp": "2026-01-13T15:30:00Z",
+  "api_used": "gemini-imagen-3.0",
+  "total_cost": 0.45,
+  "images": [
+    {
+      "concept": "TOF",
+      "variation": "A",
+      "filename": "campaign_tof_variant_a.jpg",
+      "prompt": "...",
+      "format_origins": "Static Graphic",
+      "file_size": "2.3MB",
+      "resolution": "1024x1024"
+    }
+  ]
+}
+```
 
-### Analytics Visuels
-Tracking performance :
-- Quel format performe le mieux
-- Quelles couleurs engagent le plus
-- Optimisations futures basées sur data
+### Connexion Meta Ads Manager
+
+- **Export organized** : Dossier par campagne
+- **Naming convention** : client_concept_variant_date
+- **Metadata preserved** : Format, business type, prompt
+- **Ready for upload** : Formats et tailles optimaux
+
+### Performance Tracking
+
+- **Quelle variation** performe le mieux (A vs B)
+- **Quel format Origins** génère meilleurs résultats
+- **Quelles couleurs** engagent le plus
+- **Optimisation continue** des prompts API
 
 ---
 
-*Skill VuVenu Image Generator v2.0*
-*Powered by Higgsfield/Midjourney avec optimisations Meta Ads*
+## CONFIGURATION REQUISE
+
+### Variables d'Environnement
+
+```bash
+GOOGLE_AI_API_KEY=your-gemini-api-key
+SUPABASE_STORAGE_BUCKET=vuvenu-campaign-images
+```
+
+### Dépendances
+
+```typescript
+import { GoogleGenerativeAI } from '@google/generative-ai'
+// Pas de prompts manuels - tout automatisé !
+```
+
+---
+
+_Skill VuVenu Image Generator v3.0_
+_Powered by Gemini Imagen API avec génération automatique native_

@@ -8,17 +8,17 @@ Le contenu viral dans l'industrie du tatouage, piercing et maquillage permanent 
 
 L'analyse des comptes les plus performants révèle des stratégies de contenu distinctes mais un point commun : l'authenticité combinée à une spécialisation visible.
 
-| Compte | Plateforme | Followers | Contenu signature | Pourquoi ça marche |
-|--------|------------|-----------|-------------------|-------------------|
-| **@jonboytattoo** | TikTok + Instagram | 7.7M TikTok, 1.2M IG | Micro-tatouages fineline, stories personnelles | Clientèle célébrités (Bieber, Kendall Jenner), esthétique ultra-propre, intimité |
-| **@jakekaramol** | TikTok + Instagram | 2.3M TikTok | Humour + réactions clients authentiques | Personnalité attachante, mélange divertissement et talent |
-| **@thepiercer** | TikTok | 2.6M, 45.3M likes | Piercings en temps réel, réactions non filtrées | Studio 100% féminin, authenticité brute, moments d'émotion |
-| **@gabrielrippe** | TikTok + IG | 845K TikTok | Black & grey réalisme, timelapses | Artiste français, niveau technique impressionnant |
-| **@piercingsbyjenn** | TikTok | 203K | Curated ear, conseils bijoux | Expertise visible, tendance "earscaping", vidéo pinnée 10.2M vues |
-| **@browsurgeon** | TikTok + IG | 100K+ likes réguliers | Transformations microblading, réactions miroir | Révélations dramatiques, qualité visuelle impeccable |
-| **@lucegrey** | TikTok | 472K | Portraits réalistes timelapse | Engagement 10%, spécialisation lisible (félins) |
-| **@evelina_yaguda** | Instagram | 114K | Technique EY-Brow propriétaire, cas difficiles | Positionnement expert #1 NYC, corrections travaux ratés |
-| **@eyebrowdoctor** | Instagram | 81K | Procédures détaillées, résultats healed | Présence multi-villes = crédibilité internationale |
+| Compte               | Plateforme         | Followers             | Contenu signature                               | Pourquoi ça marche                                                               |
+| -------------------- | ------------------ | --------------------- | ----------------------------------------------- | -------------------------------------------------------------------------------- |
+| **@jonboytattoo**    | TikTok + Instagram | 7.7M TikTok, 1.2M IG  | Micro-tatouages fineline, stories personnelles  | Clientèle célébrités (Bieber, Kendall Jenner), esthétique ultra-propre, intimité |
+| **@jakekaramol**     | TikTok + Instagram | 2.3M TikTok           | Humour + réactions clients authentiques         | Personnalité attachante, mélange divertissement et talent                        |
+| **@thepiercer**      | TikTok             | 2.6M, 45.3M likes     | Piercings en temps réel, réactions non filtrées | Studio 100% féminin, authenticité brute, moments d'émotion                       |
+| **@gabrielrippe**    | TikTok + IG        | 845K TikTok           | Black & grey réalisme, timelapses               | Artiste français, niveau technique impressionnant                                |
+| **@piercingsbyjenn** | TikTok             | 203K                  | Curated ear, conseils bijoux                    | Expertise visible, tendance "earscaping", vidéo pinnée 10.2M vues                |
+| **@browsurgeon**     | TikTok + IG        | 100K+ likes réguliers | Transformations microblading, réactions miroir  | Révélations dramatiques, qualité visuelle impeccable                             |
+| **@lucegrey**        | TikTok             | 472K                  | Portraits réalistes timelapse                   | Engagement 10%, spécialisation lisible (félins)                                  |
+| **@evelina_yaguda**  | Instagram          | 114K                  | Technique EY-Brow propriétaire, cas difficiles  | Positionnement expert #1 NYC, corrections travaux ratés                          |
+| **@eyebrowdoctor**   | Instagram          | 81K                   | Procédures détaillées, résultats healed         | Présence multi-villes = crédibilité internationale                               |
 
 Le facteur clé : tous ces comptes maintiennent un **équipement minimal** (smartphone, ring light, trépied) mais une **qualité d'exécution maximale**. La réplicabilité est excellente pour les commerces locaux.
 
@@ -63,26 +63,31 @@ Démystification des idées reçues, conseils aftercare, explications techniques
 Les **trois premières secondes** déterminent le succès d'une vidéo. Voici les hooks qui performent dans ces niches, classés par type :
 
 **Hooks suspense/curiosité :**
+
 - "Wait for it..." / "Attends la fin..." — augmente le watch time de 40-60%
 - "Client's reaction at the end..." — double curiosité (résultat + émotion)
 - "This may be controversial, but..." — déclenche le débat et les commentaires
 
 **Hooks POV immersifs :**
+
 - "POV: You just got your first tattoo..."
 - "POV: Elle découvre ses sourcils pour la première fois..."
 - "She came in nervous, left feeling like a queen 👑"
 
 **Hooks problème/solution :**
+
 - "This is why your tattoo isn't healing properly..."
 - "Things I wish I knew before getting my first tattoo..."
 - "La vraie raison pour laquelle vos sourcils ont viré au gris"
 
 **Hooks transformation narrative :**
-- "She asked for ___. I gave her ___."
+
+- "She asked for **_. I gave her _**."
 - "Covering up her ex's name with something beautiful ✨"
 - "Il pensait que plus rien ne pouvait l'aider..."
 
 **Hooks engagement direct :**
+
 - "Rate my work 1-10 👇" — multiplie les commentaires par 3-5x
 - "Would you let me do this on you? 😏"
 - "Watch me transform these brows 👀"

@@ -10,41 +10,41 @@ Les comptes les plus performants sont des **commerces locaux réels** qui ont su
 
 ### Toiletteurs et groomers
 
-| Compte | Plateforme | Followers | Contenu signature | Pourquoi ça marche |
-|--------|------------|-----------|-------------------|-------------------|
-| **@girlwithedogs** (Vanessa De Prophetis) | TikTok/YouTube | **7.1M TikTok**, 2.68M YouTube | Transformations avec narration humoristique, voix-off qui anthropomorphise les chiens | Personnalité authentique + format éducatif-divertissant + narration unique ("little gnocchi rolls") |
-| **@dogsbylogan** (Logan Rago) | TikTok | **6.5M+** | Toilettage créatif, concept viral "BBL pour chiens" | Jeunesse et énergie (21 ans), créativité débordante, humour viral |
-| **@gabrielfeitosagrooming** | TikTok | **2.9M** (75.2M likes) | Transformations extrêmes (chiens déguisés en lion, panda) | Effet WOW immédiat, contenu ultra-partageable, niche unique |
-| **@jessronagrooming** (Jess Rona) | TikTok/Instagram | **755K TikTok**, 222K Instagram | Vidéos slow-motion de séchage avec musique | Signature visuelle unique, esthétique premium, clientèle célébrité |
+| Compte                                    | Plateforme       | Followers                       | Contenu signature                                                                     | Pourquoi ça marche                                                                                  |
+| ----------------------------------------- | ---------------- | ------------------------------- | ------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------- |
+| **@girlwithedogs** (Vanessa De Prophetis) | TikTok/YouTube   | **7.1M TikTok**, 2.68M YouTube  | Transformations avec narration humoristique, voix-off qui anthropomorphise les chiens | Personnalité authentique + format éducatif-divertissant + narration unique ("little gnocchi rolls") |
+| **@dogsbylogan** (Logan Rago)             | TikTok           | **6.5M+**                       | Toilettage créatif, concept viral "BBL pour chiens"                                   | Jeunesse et énergie (21 ans), créativité débordante, humour viral                                   |
+| **@gabrielfeitosagrooming**               | TikTok           | **2.9M** (75.2M likes)          | Transformations extrêmes (chiens déguisés en lion, panda)                             | Effet WOW immédiat, contenu ultra-partageable, niche unique                                         |
+| **@jessronagrooming** (Jess Rona)         | TikTok/Instagram | **755K TikTok**, 222K Instagram | Vidéos slow-motion de séchage avec musique                                            | Signature visuelle unique, esthétique premium, clientèle célébrité                                  |
 
 **Performances exceptionnelles documentées** : @girlwithedogs a atteint **40M+ vues** sur une vidéo Golden Retriever, @dogsbylogan cumule **200M+ vues** sur le concept "BBL", et @gabrielfeitosagrooming affiche une vidéo épinglée à **81.8M vues**.
 
 ### Vétérinaires et cliniques
 
-| Compte | Plateforme | Followers | Contenu signature | Pourquoi ça marche |
-|--------|------------|-----------|-------------------|-------------------|
-| **@drtom83** (Dr. Thomas Hamilton) | TikTok | **~4M** | Relations touchantes avec patients, astuces créatives (friandise collée au mur pendant vaccin) | Authenticité, douceur avec les animaux, mélange éducatif + adorable |
-| **@dr.hunterfinn** (Dr. Hunter Finn) | TikTok/Instagram | **2.1M TikTok**, 515K Instagram | Conseils santé + danses TikTok, alertes dangers alimentaires | Mix professionnel crédible + personnalité fun, nommé "America's Favorite Veterinarian" |
-| **@thaistarasco** (France) | Instagram/TikTok | **100K+ Instagram** | Quotidien en clinique, humour sur le métier | Jeunesse, ton décalé, montre l'envers du décor d'une clinique locale |
-| **@ben.the.vet** (UK) | TikTok | **324K+** | Conseils santé, sensibilisation welfare animal | Ton britannique sympathique, focus sur le bien-être animal |
+| Compte                               | Plateforme       | Followers                       | Contenu signature                                                                              | Pourquoi ça marche                                                                     |
+| ------------------------------------ | ---------------- | ------------------------------- | ---------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------- |
+| **@drtom83** (Dr. Thomas Hamilton)   | TikTok           | **~4M**                         | Relations touchantes avec patients, astuces créatives (friandise collée au mur pendant vaccin) | Authenticité, douceur avec les animaux, mélange éducatif + adorable                    |
+| **@dr.hunterfinn** (Dr. Hunter Finn) | TikTok/Instagram | **2.1M TikTok**, 515K Instagram | Conseils santé + danses TikTok, alertes dangers alimentaires                                   | Mix professionnel crédible + personnalité fun, nommé "America's Favorite Veterinarian" |
+| **@thaistarasco** (France)           | Instagram/TikTok | **100K+ Instagram**             | Quotidien en clinique, humour sur le métier                                                    | Jeunesse, ton décalé, montre l'envers du décor d'une clinique locale                   |
+| **@ben.the.vet** (UK)                | TikTok           | **324K+**                       | Conseils santé, sensibilisation welfare animal                                                 | Ton britannique sympathique, focus sur le bien-être animal                             |
 
 ### Éducateurs canins
 
-| Compte | Plateforme | Followers | Contenu signature | Pourquoi ça marche |
-|--------|------------|-----------|-------------------|-------------------|
-| **@southenddogtraining** (Adam Spivey) | TikTok/Instagram | **2.3M TikTok**, 2M Instagram | Conseils pratiques 1 min, approche "no-nonsense", 3 posts/jour | Business local UK devenu empire international, ton direct, conversion vers abonnement payant |
-| **@sayitoncedogtraining** | TikTok | **2M** (26.3M likes) | Transformations comportementales, chiens agressifs/réactifs | Nom mémorable (philosophie), résultats spectaculaires, apparitions TV |
-| **@espritdog** (Tony Silvestre) | Multi-plateforme | **2.7M total** | Émissions "Panic Dog", fiches de race, exercices décryptés | Format émission TV, transformations documentées sur 7 jours, leader francophone |
-| **@lecoledelameute** | TikTok | Compte viral FR | Éducation en 30 secondes, avant/après marche en laisse | Format ultra-court, démonstrations visuelles claires, **811K likes** sur vidéo marche en laisse |
+| Compte                                 | Plateforme       | Followers                     | Contenu signature                                              | Pourquoi ça marche                                                                              |
+| -------------------------------------- | ---------------- | ----------------------------- | -------------------------------------------------------------- | ----------------------------------------------------------------------------------------------- |
+| **@southenddogtraining** (Adam Spivey) | TikTok/Instagram | **2.3M TikTok**, 2M Instagram | Conseils pratiques 1 min, approche "no-nonsense", 3 posts/jour | Business local UK devenu empire international, ton direct, conversion vers abonnement payant    |
+| **@sayitoncedogtraining**              | TikTok           | **2M** (26.3M likes)          | Transformations comportementales, chiens agressifs/réactifs    | Nom mémorable (philosophie), résultats spectaculaires, apparitions TV                           |
+| **@espritdog** (Tony Silvestre)        | Multi-plateforme | **2.7M total**                | Émissions "Panic Dog", fiches de race, exercices décryptés     | Format émission TV, transformations documentées sur 7 jours, leader francophone                 |
+| **@lecoledelameute**                   | TikTok           | Compte viral FR               | Éducation en 30 secondes, avant/après marche en laisse         | Format ultra-court, démonstrations visuelles claires, **811K likes** sur vidéo marche en laisse |
 
 ### Pensions, animaleries et comptes francophones
 
-| Compte | Type | Followers | Contenu signature | Pourquoi ça marche |
-|--------|------|-----------|-------------------|-------------------|
-| **@chezmarth87** (Chez Marth'87) | Pension chiens | **500K+ cumulés** | Interactions entre chiens en semi-liberté, décryptage comportements | Mélange pédagogie + divertissement, comportementaliste Denis Latour explique, **3000€/mois** revenus pub |
-| **@ashibainparis** | Pet influenceur | **~900K** | Shiba Inu découvrant Paris, lifestyle urbain | Univers visuel soigné, mix flâneries + cafés branchés |
-| **@perrito_delatienda** | Pet shop | **3.1M TikTok** | Vie quotidienne d'un chien en animalerie | Premier pet shop à 200K ventes TikTok Shop |
-| **@animalis_fr** | Chaîne animalerie | **Plus grande communauté enseigne FR** | Conseils experts quotidiens, partenariats influenceurs | Collaboration avec Esprit Dog, partenariats locaux (La Grande Odyssée) |
+| Compte                           | Type              | Followers                              | Contenu signature                                                   | Pourquoi ça marche                                                                                       |
+| -------------------------------- | ----------------- | -------------------------------------- | ------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------- |
+| **@chezmarth87** (Chez Marth'87) | Pension chiens    | **500K+ cumulés**                      | Interactions entre chiens en semi-liberté, décryptage comportements | Mélange pédagogie + divertissement, comportementaliste Denis Latour explique, **3000€/mois** revenus pub |
+| **@ashibainparis**               | Pet influenceur   | **~900K**                              | Shiba Inu découvrant Paris, lifestyle urbain                        | Univers visuel soigné, mix flâneries + cafés branchés                                                    |
+| **@perrito_delatienda**          | Pet shop          | **3.1M TikTok**                        | Vie quotidienne d'un chien en animalerie                            | Premier pet shop à 200K ventes TikTok Shop                                                               |
+| **@animalis_fr**                 | Chaîne animalerie | **Plus grande communauté enseigne FR** | Conseils experts quotidiens, partenariats influenceurs              | Collaboration avec Esprit Dog, partenariats locaux (La Grande Odyssée)                                   |
 
 ---
 
@@ -128,53 +128,53 @@ Les hooks doivent captiver dans les **3 premières secondes** - 63% des vidéos 
 
 ### Hooks Curiosité/Suspense
 
-| Hook exact | Vues | Type | Analyse |
-|------------|------|------|---------|
-| **"Wait until the end..."** / "Attendez la fin..." | Millions | Suspense | Crée une boucle de curiosité irrésistible, booste la rétention |
-| **"The owner had no idea..."** / "Le propriétaire n'avait aucune idée..." | 200K-1M+ | Révélation | Suggère une découverte choquante |
-| **"Nobody is talking about this..."** / "Personne ne parle de ça..." | 100K-300K | Exclusivité | FOMO (Fear Of Missing Out) puissant |
+| Hook exact                                                                | Vues      | Type        | Analyse                                                        |
+| ------------------------------------------------------------------------- | --------- | ----------- | -------------------------------------------------------------- |
+| **"Wait until the end..."** / "Attendez la fin..."                        | Millions  | Suspense    | Crée une boucle de curiosité irrésistible, booste la rétention |
+| **"The owner had no idea..."** / "Le propriétaire n'avait aucune idée..." | 200K-1M+  | Révélation  | Suggère une découverte choquante                               |
+| **"Nobody is talking about this..."** / "Personne ne parle de ça..."      | 100K-300K | Exclusivité | FOMO (Fear Of Missing Out) puissant                            |
 
 ### Hooks Transformation
 
-| Hook exact | Vues | Type | Analyse |
-|------------|------|------|---------|
-| **"Watch this dog's transformation..."** / "Regardez la transformation de ce chien..." | 500K-5M+ | Anticipation | Promesse visuelle claire, récompense attendue |
-| **"This groomer did WHAT to this dog?"** / "Ce toiletteur a fait QUOI à ce chien?" | 500K-2M+ | Choc | Provocation instantanée, "WHAT" en majuscules crée urgence |
+| Hook exact                                                                             | Vues     | Type         | Analyse                                                    |
+| -------------------------------------------------------------------------------------- | -------- | ------------ | ---------------------------------------------------------- |
+| **"Watch this dog's transformation..."** / "Regardez la transformation de ce chien..." | 500K-5M+ | Anticipation | Promesse visuelle claire, récompense attendue              |
+| **"This groomer did WHAT to this dog?"** / "Ce toiletteur a fait QUOI à ce chien?"     | 500K-2M+ | Choc         | Provocation instantanée, "WHAT" en majuscules crée urgence |
 
 ### Hooks POV/Immersion
 
-| Hook exact | Vues | Type | Analyse |
-|------------|------|------|---------|
+| Hook exact                                                                        | Vues       | Type      | Analyse                                               |
+| --------------------------------------------------------------------------------- | ---------- | --------- | ----------------------------------------------------- |
 | **"POV: You're a dog at the groomer"** / "POV: Tu es un chien chez le toiletteur" | 100K-1.2M+ | Immersion | Perspective unique et amusante, commentaires garantis |
 
 ### Hooks Problème/Solution
 
-| Hook exact | Vues | Type | Analyse |
-|------------|------|------|---------|
-| **"If you're struggling to [potty train your puppy], watch this"** / "Si vous galèrez à [apprendre la propreté], regardez ça" | 50K-500K | Solution | Cible directement un pain point, le spectateur veut la solution |
-| **"3 things your dog should NEVER eat"** / "3 choses que votre chien ne doit JAMAIS manger" | 500K-2M+ | Avertissement | Peur de faire du mal = engagement maximal, très partagé |
-| **"Before you [buy/do X], watch this"** / "Avant de [acheter/faire X], regarde ça" | 100K-400K | Prévention | Sentiment d'urgence, positionne en expert bienveillant |
+| Hook exact                                                                                                                    | Vues      | Type          | Analyse                                                         |
+| ----------------------------------------------------------------------------------------------------------------------------- | --------- | ------------- | --------------------------------------------------------------- |
+| **"If you're struggling to [potty train your puppy], watch this"** / "Si vous galèrez à [apprendre la propreté], regardez ça" | 50K-500K  | Solution      | Cible directement un pain point, le spectateur veut la solution |
+| **"3 things your dog should NEVER eat"** / "3 choses que votre chien ne doit JAMAIS manger"                                   | 500K-2M+  | Avertissement | Peur de faire du mal = engagement maximal, très partagé         |
+| **"Before you [buy/do X], watch this"** / "Avant de [acheter/faire X], regarde ça"                                            | 100K-400K | Prévention    | Sentiment d'urgence, positionne en expert bienveillant          |
 
 ### Hooks Valeur/Exclusivité
 
-| Hook exact | Vues | Type | Analyse |
-|------------|------|------|---------|
-| **"I can't believe this is only $X"** / "J'arrive pas à croire que ça coûte seulement X€" | 50K-200K | Surprise | Combine valeur perçue et accessibilité |
-| **"I tried every [method] and here are the results"** / "J'ai testé toutes les méthodes, voici les résultats" | 100K-400K | Test | Travail épargné pour le spectateur, fort taux de sauvegarde |
+| Hook exact                                                                                                    | Vues      | Type     | Analyse                                                     |
+| ------------------------------------------------------------------------------------------------------------- | --------- | -------- | ----------------------------------------------------------- |
+| **"I can't believe this is only $X"** / "J'arrive pas à croire que ça coûte seulement X€"                     | 50K-200K  | Surprise | Combine valeur perçue et accessibilité                      |
+| **"I tried every [method] and here are the results"** / "J'ai testé toutes les méthodes, voici les résultats" | 100K-400K | Test     | Travail épargné pour le spectateur, fort taux de sauvegarde |
 
 ### Hooks Interpellation
 
-| Hook exact | Vues | Type | Analyse |
-|------------|------|------|---------|
-| **"Stop scrolling if..."** / "Arrête de scroller si..." | 100K-500K | Direct | Commande qui brise le pattern de scroll |
-| **"This tiny tip can change your pet's life"** / "Ce petit conseil peut changer la vie de votre animal" | 50K-200K | Promesse | Grand résultat avec petit effort, accessible et actionnable |
+| Hook exact                                                                                              | Vues      | Type     | Analyse                                                     |
+| ------------------------------------------------------------------------------------------------------- | --------- | -------- | ----------------------------------------------------------- |
+| **"Stop scrolling if..."** / "Arrête de scroller si..."                                                 | 100K-500K | Direct   | Commande qui brise le pattern de scroll                     |
+| **"This tiny tip can change your pet's life"** / "Ce petit conseil peut changer la vie de votre animal" | 50K-200K  | Promesse | Grand résultat avec petit effort, accessible et actionnable |
 
 ### Hooks Émotion/Humour
 
-| Hook exact | Vues | Type | Analyse |
-|------------|------|------|---------|
-| **"My vet told me my pet is [overweight]..."** / "Mon véto m'a dit que mon animal est..." | 50K-300K | Vulnérabilité | Connexion émotionnelle immédiate, identification forte |
-| **"Things vets can say that human doctors cannot"** / "Ce que les vétérinaires peuvent dire que les médecins ne peuvent pas" | 100K-500K | Humour pro | Perspective unique, humour insider, très partageable |
+| Hook exact                                                                                                                   | Vues      | Type          | Analyse                                                |
+| ---------------------------------------------------------------------------------------------------------------------------- | --------- | ------------- | ------------------------------------------------------ |
+| **"My vet told me my pet is [overweight]..."** / "Mon véto m'a dit que mon animal est..."                                    | 50K-300K  | Vulnérabilité | Connexion émotionnelle immédiate, identification forte |
+| **"Things vets can say that human doctors cannot"** / "Ce que les vétérinaires peuvent dire que les médecins ne peuvent pas" | 100K-500K | Humour pro    | Perspective unique, humour insider, très partageable   |
 
 ---
 
@@ -256,13 +256,13 @@ L'année 2024-2025 confirme la domination des **vidéos courtes** (7-15 secondes
 
 ### Évolutions algorithmiques clés
 
-| Facteur | Impact 2024-2025 |
-|---------|------------------|
-| **Watch time** | Priorité #1 - vidéos regardées jusqu'au bout favorisées |
-| **Hook 3 secondes** | 63% des vidéos performantes captent l'attention immédiatement |
-| **Audio tendance** | Sons populaires = visibilité démultipliée |
-| **Loops** | Vidéos qui bouclent augmentent le temps de visionnage |
-| **Engagement rapide** | Likes/commentaires dans les premières minutes = boost |
+| Facteur               | Impact 2024-2025                                              |
+| --------------------- | ------------------------------------------------------------- |
+| **Watch time**        | Priorité #1 - vidéos regardées jusqu'au bout favorisées       |
+| **Hook 3 secondes**   | 63% des vidéos performantes captent l'attention immédiatement |
+| **Audio tendance**    | Sons populaires = visibilité démultipliée                     |
+| **Loops**             | Vidéos qui bouclent augmentent le temps de visionnage         |
+| **Engagement rapide** | Likes/commentaires dans les premières minutes = boost         |
 
 ### Meilleurs horaires de publication
 

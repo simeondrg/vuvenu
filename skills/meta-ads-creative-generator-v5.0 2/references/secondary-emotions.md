@@ -30,8 +30,8 @@ Les émotions secondaires organisées par fréquence réelle d'usage (research-b
 
 ## TIER 2 : Very High Frequency (Weekly Use)
 
-6. Confidence | 7. Loneliness & Isolation | 8. Excitement & Anticipation  
-9. Gratitude | 10. Pride
+6. Confidence | 7. Loneliness & Isolation | 8. Excitement & Anticipation
+7. Gratitude | 10. Pride
 
 ## TIER 3-6 : High to Context-Specific
 
@@ -45,11 +45,13 @@ Tier 6 : Awe/Wonder, Validation, Urgency, Comfort, Competence
 ## Application en Ads
 
 Pour chaque émotion secondaire considère :
+
 - **Fréquence** : Combien de gens la ressentent ?
 - **Intensité** : À quel point c'est fort ?
 - **Marketing fit** : Ton produit/service peut l'adresser ?
 
 **Exemple VTC Aéroport** :
+
 - Primary emotion : Stress & Overwhelm (Tier 1 #1)
 - Angle : "Ne stresse pas pour ton vol - on s'occupe de tout"
 - Secondary emotion : Relief (Tier 3)

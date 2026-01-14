@@ -5,9 +5,11 @@
 ---
 
 ## PHASE 0 - SETUP ENVIRONNEMENT
-*Objectif : Tout préparer avant de coder*
+
+_Objectif : Tout préparer avant de coder_
 
 ### 0.1 Vérification Prérequis Utilisateur
+
 - [ ] **0.1.1** Confirmer compte GitHub créé
 - [ ] **0.1.2** Confirmer compte Vercel créé (connecté à GitHub)
 - [ ] **0.1.3** Confirmer compte Supabase créé
@@ -19,11 +21,13 @@
 - [ ] **0.1.9** Confirmer Claude Code installé et fonctionnel
 
 ### 0.2 Fichiers de Configuration
+
 - [ ] **0.2.1** Créer CLAUDE.md (config projet)
 - [ ] **0.2.2** Créer .mcp.json (serveurs MCP)
 - [ ] **0.2.3** Créer .env.local.example (template variables)
 
 ### 0.3 Initialisation Projet
+
 - [ ] **0.3.1** Créer projet Next.js 14 avec TypeScript
 - [ ] **0.3.2** Configurer Tailwind CSS
 - [ ] **0.3.3** Installer shadcn/ui
@@ -32,6 +36,7 @@
 - [ ] **0.3.6** Créer .gitignore approprié
 
 ### 0.4 Setup Services Externes
+
 - [ ] **0.4.1** Créer repo GitHub + premier push
 - [ ] **0.4.2** Connecter Vercel au repo
 - [ ] **0.4.3** Créer projet Supabase
@@ -42,9 +47,11 @@
 ---
 
 ## SEMAINE 1 - FOUNDATIONS
-*Objectif : Auth, DB, Onboarding, Dashboard*
+
+_Objectif : Auth, DB, Onboarding, Dashboard_
 
 ### 1.1 Authentification (US-001 à US-004)
+
 - [ ] **1.1.1** Installer @supabase/supabase-js + @supabase/ssr
 - [ ] **1.1.2** Créer lib/supabase/client.ts (browser)
 - [ ] **1.1.3** Créer lib/supabase/server.ts (server)
@@ -58,6 +65,7 @@
 - [ ] **1.1.11** Composant AuthButton (login/logout)
 
 ### 1.2 Base de Données (Schema)
+
 - [ ] **1.2.1** Créer migration 001_initial_schema.sql
 - [ ] **1.2.2** Table profiles
 - [ ] **1.2.3** Table scripts
@@ -69,6 +77,7 @@
 - [ ] **1.2.9** Tester RLS fonctionne
 
 ### 1.3 Onboarding (US-005)
+
 - [ ] **1.3.1** Page /onboarding avec 4 étapes
 - [ ] **1.3.2** Étape 1 : Nom du commerce
 - [ ] **1.3.3** Étape 2 : Type d'activité
@@ -80,6 +89,7 @@
 - [ ] **1.3.9** Tester flux complet onboarding
 
 ### 1.4 Layout Dashboard (US-007, US-008)
+
 - [ ] **1.4.1** Layout /app/(dashboard)/layout.tsx
 - [ ] **1.4.2** Composant Sidebar
 - [ ] **1.4.3** Composant Header
@@ -92,6 +102,7 @@
 - [ ] **1.4.10** Tester dashboard complet
 
 ### 1.5 Tests & Buffer Semaine 1
+
 - [ ] **1.5.1** Test inscription → vérification → connexion
 - [ ] **1.5.2** Test onboarding complet
 - [ ] **1.5.3** Test protection routes (non connecté → redirect)
@@ -101,9 +112,11 @@
 ---
 
 ## SEMAINE 2 - CORE PRODUCT
-*Objectif : Scripts Vidéos + Meta Ads Generator*
+
+_Objectif : Scripts Vidéos + Meta Ads Generator_
 
 ### 2.1 Générateur Scripts - UI (US-009)
+
 - [ ] **2.1.1** Page /scripts/new
 - [ ] **2.1.2** Formulaire avec validation Zod
 - [ ] **2.1.3** Champ description (textarea)
@@ -114,6 +127,7 @@
 - [ ] **2.1.8** Vérification limite avant submit
 
 ### 2.2 Générateur Scripts - API (US-010, US-011)
+
 - [ ] **2.2.1** Créer lib/ai/anthropic.ts
 - [ ] **2.2.2** Créer lib/ai/prompts/script-video.ts
 - [ ] **2.2.3** Route API /api/generate/script
@@ -126,6 +140,7 @@
 - [ ] **2.2.10** Gestion erreurs API
 
 ### 2.3 Générateur Scripts - Persistance (US-012, US-013, US-014)
+
 - [ ] **2.3.1** Bouton sauvegarder → insert DB
 - [ ] **2.3.2** Incrémenter scripts_count_month
 - [ ] **2.3.3** Toast confirmation
@@ -138,6 +153,7 @@
 - [ ] **2.3.10** Tester flux complet scripts
 
 ### 2.4 Meta Ads - UI (US-015)
+
 - [ ] **2.4.1** Page /campaigns/new
 - [ ] **2.4.2** Vérification plan Pro/Business
 - [ ] **2.4.3** Message upgrade si Starter
@@ -147,6 +163,7 @@
 - [ ] **2.4.7** Bouton générer
 
 ### 2.5 Meta Ads - Génération Concepts (US-016)
+
 - [ ] **2.5.1** Créer lib/ai/prompts/meta-ads-campaign.ts
 - [ ] **2.5.2** Adapter prompt depuis skill existante
 - [ ] **2.5.3** Route API /api/generate/campaign
@@ -155,6 +172,7 @@
 - [ ] **2.5.6** Loader avec étapes
 
 ### 2.6 Meta Ads - Génération Images (US-017)
+
 - [ ] **2.6.1** Créer lib/ai/gemini.ts
 - [ ] **2.6.2** Créer lib/ai/prompts/meta-ads-images.ts
 - [ ] **2.6.3** Route API /api/generate/images
@@ -164,6 +182,7 @@
 - [ ] **2.6.7** Gestion erreurs + fallback
 
 ### 2.7 Meta Ads - Affichage & Persistance (US-018, US-019, US-020)
+
 - [ ] **2.7.1** Affichage 3 concepts en cards
 - [ ] **2.7.2** Image + textes par concept
 - [ ] **2.7.3** Boutons copier individuels
@@ -176,6 +195,7 @@
 - [ ] **2.7.10** Tester flux complet Meta Ads
 
 ### 2.8 Tests & Buffer Semaine 2
+
 - [ ] **2.8.1** Test génération script bout en bout
 - [ ] **2.8.2** Test génération campagne bout en bout
 - [ ] **2.8.3** Test limites par plan
@@ -185,9 +205,11 @@
 ---
 
 ## SEMAINE 3 - PAYMENT + MARKETING
-*Objectif : Stripe, Landing, Légal*
+
+_Objectif : Stripe, Landing, Légal_
 
 ### 3.1 Stripe Setup
+
 - [ ] **3.1.1** Installer stripe + @stripe/stripe-js
 - [ ] **3.1.2** Créer lib/stripe/client.ts
 - [ ] **3.1.3** Créer lib/stripe/config.ts (IDs produits)
@@ -195,6 +217,7 @@
 - [ ] **3.1.5** Configurer Customer Portal dans Stripe
 
 ### 3.2 Checkout Flow (US-032)
+
 - [ ] **3.2.1** Page /choose-plan
 - [ ] **3.2.2** Cards 3 plans avec toggle mensuel/annuel
 - [ ] **3.2.3** Route API /api/stripe/checkout
@@ -204,6 +227,7 @@
 - [ ] **3.2.7** Tester checkout complet
 
 ### 3.3 Webhooks Stripe (US-033)
+
 - [ ] **3.3.1** Route API /api/webhooks/stripe
 - [ ] **3.3.2** Vérification signature
 - [ ] **3.3.3** Handler checkout.session.completed
@@ -214,6 +238,7 @@
 - [ ] **3.3.8** Tester avec Stripe CLI
 
 ### 3.4 Customer Portal (US-030)
+
 - [ ] **3.4.1** Route API /api/stripe/portal
 - [ ] **3.4.2** Bouton "Gérer abonnement" dans settings
 - [ ] **3.4.3** Redirection vers portal
@@ -221,6 +246,7 @@
 - [ ] **3.4.5** Tester upgrade/downgrade/cancel
 
 ### 3.5 Limites par Plan (US-034, US-035)
+
 - [ ] **3.5.1** Fonction checkLimit(userId, type)
 - [ ] **3.5.2** Fonction incrementUsage(userId, type)
 - [ ] **3.5.3** Fonction resetMonthlyCounters(userId)
@@ -230,6 +256,7 @@
 - [ ] **3.5.7** Tester blocage à la limite
 
 ### 3.6 Landing Page (US-036 à US-041)
+
 - [ ] **3.6.1** Layout /(marketing)/layout.tsx
 - [ ] **3.6.2** Header marketing (logo + CTA)
 - [ ] **3.6.3** Hero section
@@ -243,6 +270,7 @@
 - [ ] **3.6.11** Tester landing complète
 
 ### 3.7 Pages Légales (US-043 à US-045)
+
 - [ ] **3.7.1** Page /cgv
 - [ ] **3.7.2** Page /confidentialite
 - [ ] **3.7.3** Page /mentions-legales
@@ -250,6 +278,7 @@
 - [ ] **3.7.5** Contenu adapté VuVenu
 
 ### 3.8 Tests & Buffer Semaine 3
+
 - [ ] **3.8.1** Test checkout → activation compte
 - [ ] **3.8.2** Test webhooks (tous événements)
 - [ ] **3.8.3** Test limites bloquent bien
@@ -260,9 +289,11 @@
 ---
 
 ## SEMAINE 4 - POLISH + LAUNCH
-*Objectif : Wizard, Tests, Beta, LAUNCH*
+
+_Objectif : Wizard, Tests, Beta, LAUNCH_
 
 ### 4.1 Wizard Étapes 1-3 (US-021 à US-023)
+
 - [ ] **4.1.1** Page /campaigns/[id]/launch
 - [ ] **4.1.2** Composant WizardContainer
 - [ ] **4.1.3** Composant WizardStep
@@ -274,6 +305,7 @@
 - [ ] **4.1.9** Boutons copier paramètres
 
 ### 4.2 Wizard Étapes 4-7 (US-024 à US-027)
+
 - [ ] **4.2.1** Étape 4 : Configurer audience
 - [ ] **4.2.2** Étape 5 : Ajouter publicités
 - [ ] **4.2.3** Copier textes par concept
@@ -284,6 +316,7 @@
 - [ ] **4.2.8** Sauvegarde progression (US-028)
 
 ### 4.3 Page Paramètres (US-029)
+
 - [ ] **4.3.1** Page /settings
 - [ ] **4.3.2** Section "Mon commerce"
 - [ ] **4.3.3** Section "Mot de passe"
@@ -292,6 +325,7 @@
 - [ ] **4.3.6** Toast confirmations
 
 ### 4.4 Tests End-to-End
+
 - [ ] **4.4.1** Test parcours complet nouveau user
 - [ ] **4.4.2** Test génération script (tous formats)
 - [ ] **4.4.3** Test génération campagne complète
@@ -302,6 +336,7 @@
 - [ ] **4.4.8** Test emails (vérification, reset)
 
 ### 4.5 Fix & Optimisation
+
 - [ ] **4.5.1** Fix tous bugs critiques
 - [ ] **4.5.2** Fix bugs majeurs
 - [ ] **4.5.3** Optimisation images (next/image)
@@ -310,6 +345,7 @@
 - [ ] **4.5.6** Favicon + OG images
 
 ### 4.6 Beta Test
+
 - [ ] **4.6.1** Inviter 3-5 clients existants
 - [ ] **4.6.2** Collecter feedback
 - [ ] **4.6.3** Prioriser retours
@@ -317,6 +353,7 @@
 - [ ] **4.6.5** Valider avec beta testeurs
 
 ### 4.7 Launch Preparation
+
 - [ ] **4.7.1** Configurer domaine production
 - [ ] **4.7.2** Variables env production
 - [ ] **4.7.3** Webhooks Stripe production
@@ -325,6 +362,7 @@
 - [ ] **4.7.6** Backup stratégie
 
 ### 4.8 🚀 LAUNCH
+
 - [ ] **4.8.1** Deploy production final
 - [ ] **4.8.2** Test smoke production
 - [ ] **4.8.3** Annonce aux beta testeurs
@@ -335,14 +373,14 @@
 
 ## 📊 PROGRESS TRACKER
 
-| Phase | Tâches | Complétées | % |
-|-------|--------|------------|---|
-| Phase 0 - Setup | 24 | 0 | 0% |
-| Semaine 1 - Foundations | 45 | 0 | 0% |
-| Semaine 2 - Core Product | 54 | 0 | 0% |
-| Semaine 3 - Payment + Marketing | 42 | 0 | 0% |
-| Semaine 4 - Polish + Launch | 41 | 0 | 0% |
-| **TOTAL** | **206** | **0** | **0%** |
+| Phase                           | Tâches  | Complétées | %      |
+| ------------------------------- | ------- | ---------- | ------ |
+| Phase 0 - Setup                 | 24      | 0          | 0%     |
+| Semaine 1 - Foundations         | 45      | 0          | 0%     |
+| Semaine 2 - Core Product        | 54      | 0          | 0%     |
+| Semaine 3 - Payment + Marketing | 42      | 0          | 0%     |
+| Semaine 4 - Polish + Launch     | 41      | 0          | 0%     |
+| **TOTAL**                       | **206** | **0**      | **0%** |
 
 ---
 
@@ -354,4 +392,4 @@
 
 ---
 
-*Dernière mise à jour : 13 janvier 2026 - 10:45*
+_Dernière mise à jour : 13 janvier 2026 - 10:45_

@@ -9,6 +9,7 @@
 ## 📊 RÉSUMÉ EXÉCUTIF
 
 ### État Actuel du Projet
+
 - **122 fichiers MD** au niveau racine + src/lib/skills (répartition inégale)
 - **2 emplacements de skills** : `/skills` (304K) ET `/src/lib/skills` (architecture dupliquée)
 - **8 documentations majeures** vs 1 PRD (overlaps importants)
@@ -22,6 +23,7 @@
 ### 1. DOUBLONS MAJEURS : Structure `/skills` vs `/src/lib/skills`
 
 #### Situation actuelle :
+
 ```
 /skills/                                    # 304K - Workflows de recherche n8n
 ├── meta-ads-creative-generator-v5.0 2/     # 256K (22 fichiers références)
@@ -40,12 +42,14 @@
 ```
 
 **Problème** :
+
 - `/skills` = Source documentation (PEUT être supprimée)
 - `/src/lib/skills` = Version intégrée VuVenu (À UTILISER)
 - Pas de lien ou de conversion entre les deux
 - Risk : Confusion sur laquelle version utiliser
 
 **Solution Recommandée** :
+
 - ✅ Garder `/src/lib/skills` (structure propre)
 - ✅ Archiver `/skills/references` en `/docs/research-archive`
 - 🗑️ Supprimer `/skills` après extraction des données brutes si nécessaire
@@ -55,6 +59,7 @@
 ### 2. REDONDANCES DOCUMENTAIRES : 8 fichiers MD pour 1 projet
 
 #### Fichiers à racine :
+
 ```
 📄 PRD-VuVenu-MVP.md                (1151 lignes, 49K)
    └─ Source : User stories, scope, tech stack
@@ -88,6 +93,7 @@
 ```
 
 **Overlaps identifiés** :
+
 - PRD + MASTER_CHECKLIST = même données (US, timeline)
 - WORKFLOW-VUVENU = résumé de MASTER_CHECKLIST
 - INIT-COMPLETE + CLAUDE-SETUP-COMPLETE + JOURNAL = même informations (3 fichiers pour 1 concept)
@@ -95,6 +101,7 @@
 - BRANDING-VUVENU-BRIEF ne devrait pas être à racine
 
 **Solution Recommandée** :
+
 - Fusionner INIT-COMPLETE + CLAUDE-SETUP-COMPLETE + JOURNAL → `/docs/EXECUTION-LOG.md`
 - Garder PRD + MASTER_CHECKLIST (complémentaires)
 - Renommer WORKFLOW-VUVENU → `/docs/WORKFLOW-DEPRECATED.md` (remplacé par Ralph Loop)
@@ -107,11 +114,13 @@
 ### 3. INCOHÉRENCES DE VERSION & TERMINOLOGIE
 
 #### Version CLAUDE.md contradictoire :
+
 - **Global CLAUDE.md** (`/Users/simeon/.claude/CLAUDE.md`) = Siméon global preferences
 - **Project CLAUDE.md** (`/Users/simeon/projects/vuvenu/CLAUDE.md`) = Project-specific
 - **Versions Next.js** : INIT-COMPLETE dit "Next.js 16.1.1" vs CLAUDE.md dit "Next.js 14"
 
 **À Synchroniser** :
+
 ```typescript
 // src/app/layout.tsx actuellement parle de "Next.js 16.1.1"
 // CLAUDE.md dit "Next.js 14"
@@ -125,6 +134,7 @@
 ## 🏗️ STRUCTURE À OPTIMISER
 
 ### Actuelle (DÉSORGANISÉE)
+
 ```
 vuvenu/
 ├── 8 fichiers MD à racine     ❌ Pollution
@@ -144,6 +154,7 @@ vuvenu/
 ```
 
 ### Recommandée (ORGANISÉE)
+
 ```
 vuvenu/
 ├── 📁 docs/                           ← NOUVELLE STRUCTURE
@@ -324,6 +335,7 @@ SEMAINE 3-4 (Payment + Polish - INCHANGÉ)
 ```
 
 **CRITICAL** : Ralph peut commencer dès que :
+
 - ✅ Stub files TypeScript créés (0 erreurs)
 - ✅ npm run dev passe
 - ✅ npm run typecheck passe
@@ -335,36 +347,43 @@ SEMAINE 3-4 (Payment + Polish - INCHANGÉ)
 ## 📋 CHECKLIST NETTOYAGE COMPLÈTE
 
 ### PRÉ-NETTOYAGE
+
 - [ ] Créer branche `cleanup/docs-reorganization` (pas sur main)
 - [ ] Backup dossier `/skills` (zip local)
 - [ ] Backup dossier `docs/` si existe (zip local)
 
 ### BLOC 1 : Archive & Suppression
+
 - [ ] 1.1 Archiver /skills
 - [ ] 1.2 Archiver documentations redondantes
 - [ ] 1.3 Archiver rapports industries
 
 ### BLOC 2 : Audit & Cohérence
+
 - [ ] 2.1 Vérifier versions
 - [ ] 2.2 Synchroniser CLAUDE.md
 - [ ] 2.3 Normaliser terminologie
 
 ### BLOC 3 : Index & Points d'Entrée
+
 - [ ] 3.1 Créer README.md principal
 - [ ] 3.2 Créer /docs/PROJECT-SUMMARY.md
 - [ ] 3.3 Créer /docs/QUICK-START.md
 
 ### BLOC 4 : Code Source Minimal
+
 - [ ] 4.1 Auditer structure src/
 - [ ] 4.2 Créer stub files
 - [ ] 4.3 TypeScript check & Lint
 
 ### BLOC 5 : Configurations
+
 - [ ] 5.1 .gitignore cleanup
 - [ ] 5.2 Vérifier .mcp.json
 - [ ] 5.3 .env.local.example review
 
 ### POST-NETTOYAGE
+
 - [ ] Merge branche cleanup → main
 - [ ] Vérifier npm run dev fonctionne
 - [ ] Vérifier npm run typecheck passe
@@ -375,12 +394,14 @@ SEMAINE 3-4 (Payment + Polish - INCHANGÉ)
 ## 🎯 PRIORITÉS AJUSTÉES AVANT RALPH
 
 ### À REPORTER (Non-MVP, Phase 2)
+
 - [ ] `MEGA-PROMPT-GEMINI.md` génération d'images (complexe, sera fait en Ralph)
 - [ ] Assistants personnalisés par industrie (MVP = générique)
 - [ ] Analytics dashboard (Phase 2)
 - [ ] API Meta Ads direct export (Phase 2)
 
 ### À ACCÉLÉRER (MVP critique)
+
 - [ ] Authentification Supabase (Semaine 1, bloquant)
 - [ ] Base de données schema (Semaine 1, bloquant)
 - [ ] Script generator (Semaine 2, core feature)
@@ -388,9 +409,10 @@ SEMAINE 3-4 (Payment + Polish - INCHANGÉ)
 - [ ] Stripe integration (Semaine 3, revenus)
 
 ### Nouvelles Tâches Découvertes
+
 - [ ] Créer lib/supabase/client.ts (stub)
 - [ ] Créer lib/supabase/server.ts (stub)
-- [ ] Créer lib/ai/*.ts stubs
+- [ ] Créer lib/ai/\*.ts stubs
 - [ ] Créer types/database.ts (stub)
 - [ ] Valider API routes structure
 
@@ -399,18 +421,21 @@ SEMAINE 3-4 (Payment + Polish - INCHANGÉ)
 ## 🔗 RÉFÉRENCES
 
 ### Fichiers à GARDER (essentiels)
+
 - ✅ CLAUDE.md (config projet)
 - ✅ PRD-VuVenu-MVP.md (comprendre MVP)
 - ✅ MASTER_CHECKLIST.md (tracker exécution)
 - ✅ package.json (dépendances)
 
 ### Fichiers à ARCHIVER (historique utile)
+
 - 📦 /docs/execution/EXECUTION-LOG.md ← INIT + CLAUDE-SETUP + JOURNAL
 - 📦 /docs/branding/BRIEF.md ← BRANDING-VUVENU-BRIEF.md
 - 📦 /docs/prompts/gemini-interface.md ← MEGA-PROMPT-GEMINI.md
 - 📦 /docs/deprecated/WORKFLOW-VUVENU.md ← Ancien workflow
 
 ### Fichiers à CRÉER (structure)
+
 - 🆕 /docs/PROJECT-SUMMARY.md
 - 🆕 /docs/QUICK-START.md
 - 🆕 /docs/technical/VERSION-AUDIT.md
@@ -418,6 +443,7 @@ SEMAINE 3-4 (Payment + Polish - INCHANGÉ)
 - 🆕 README.md (remplacer)
 
 ### À SUPPRIMER (redondant)
+
 - 🗑️ /skills/ (après archivage)
 - 🗑️ INIT-COMPLETE.md (fusionner)
 - 🗑️ CLAUDE-SETUP-COMPLETE.md (fusionner)
@@ -432,6 +458,7 @@ SEMAINE 3-4 (Payment + Polish - INCHANGÉ)
 ## 📊 IMPACT ESTIMÉ
 
 ### Réduction Complexité
+
 ```
 Avant : 8 fichiers MD + /skills + /research
 Après : 1 README + 1 CLAUDE.md + 1 PRD + 1 CHECKLIST + /docs organisé
@@ -440,6 +467,7 @@ Réduction : 60-70% moins confus ✅
 ```
 
 ### Temps de Nettoyage Total
+
 - BLOC 1 (Archive) : 1-2h
 - BLOC 2 (Audit) : 1h
 - BLOC 3 (Index) : 30min
@@ -448,6 +476,7 @@ Réduction : 60-70% moins confus ✅
 - **Total : 4-5h de travail réel**
 
 ### Gain Avant Ralph
+
 - ✅ Pas de confusion sur structure
 - ✅ npm run dev passe sans erreur
 - ✅ TypeScript clean
@@ -459,6 +488,7 @@ Réduction : 60-70% moins confus ✅
 ## ⚠️ POINTS D'ATTENTION
 
 ### Ne PAS Supprimer
+
 - ❌ PRD-VuVenu-MVP.md (comprendre MVP)
 - ❌ MASTER_CHECKLIST.md (tracker)
 - ❌ /src/lib/skills/ (architecturellement correct)
@@ -466,11 +496,13 @@ Réduction : 60-70% moins confus ✅
 - ❌ CLAUDE.md (config)
 
 ### Vérifier Avant Suppression
+
 - 🔍 `/skills` → Existe-t-il une référence dans un script ?
 - 🔍 `WORKFLOW-VUVENU.md` → Content utilisé ailleurs ?
 - 🔍 `JOURNAL.md` → Historique important à archiver ?
 
 ### Après Nettoyage
+
 - ✅ Git log doit être clean
 - ✅ Aucun fichier `.md` oublié
 - ✅ Structure `/docs` complète
@@ -484,6 +516,6 @@ Exécuter cette checklist puis `npm run dev` doit donner : ✅ **100% Ready for 
 
 ---
 
-*Analyse complétée : 13 janvier 2026*
-*Par : Claude Code Analysis*
-*Durée estimée nettoyage : 4-5h*
+_Analyse complétée : 13 janvier 2026_
+_Par : Claude Code Analysis_
+_Durée estimée nettoyage : 4-5h_

@@ -8,18 +8,18 @@
 
 Le paysage des créateurs café/boissons viraux se structure autour de baristas professionnels, d'experts reconnus et de créateurs de niches spécifiques comme le bubble tea ou le matcha.
 
-| Compte | Plateforme | Followers | Spécialité |
-|--------|-----------|-----------|------------|
-| @morgandrinkscoffee | TikTok + IG | **6.2M TikTok** / 918K IG | Championne US Barista, sketches humoristiques |
-| @jameshoffmann | YouTube | **2.35M YouTube** | Champion du monde 2007, science du café |
-| @baristapichit | Instagram | **2.2M IG** | Latte art rapide, scène café thaïlandaise |
-| @tannercolsoncoffee | TikTok + IG | **1.7M TikTok** / 1.6M IG | Home barista, quick tips |
-| @feedmeimei | Multi-plateforme | **~3.9M total** | Leader bubble tea, recettes DIY boba |
-| @themacrobarista | Instagram | **1.3M IG** | Recettes café faibles calories, fitness |
-| @coffeebae97 | TikTok | ~978K | Cocktails café, how-to accessibles |
-| @latteartcity | TikTok + IG | 363K TikTok / 769K IG | Tutoriels latte art professionnels |
-| @lhanliperez | TikTok | ~793K | Propriétaire bubble tea shop, small business |
-| @baristahamburg | TikTok | ~600K | Latte art créatif et saisonnier |
+| Compte              | Plateforme       | Followers                 | Spécialité                                    |
+| ------------------- | ---------------- | ------------------------- | --------------------------------------------- |
+| @morgandrinkscoffee | TikTok + IG      | **6.2M TikTok** / 918K IG | Championne US Barista, sketches humoristiques |
+| @jameshoffmann      | YouTube          | **2.35M YouTube**         | Champion du monde 2007, science du café       |
+| @baristapichit      | Instagram        | **2.2M IG**               | Latte art rapide, scène café thaïlandaise     |
+| @tannercolsoncoffee | TikTok + IG      | **1.7M TikTok** / 1.6M IG | Home barista, quick tips                      |
+| @feedmeimei         | Multi-plateforme | **~3.9M total**           | Leader bubble tea, recettes DIY boba          |
+| @themacrobarista    | Instagram        | **1.3M IG**               | Recettes café faibles calories, fitness       |
+| @coffeebae97        | TikTok           | ~978K                     | Cocktails café, how-to accessibles            |
+| @latteartcity       | TikTok + IG      | 363K TikTok / 769K IG     | Tutoriels latte art professionnels            |
+| @lhanliperez        | TikTok           | ~793K                     | Propriétaire bubble tea shop, small business  |
+| @baristahamburg     | TikTok           | ~600K                     | Latte art créatif et saisonnier               |
 
 **@morgandrinkscoffee** (Morgan Eckroth) illustre parfaitement la formule gagnante : championne US Barista 2022 et vice-championne mondiale, elle combine crédibilité professionnelle, sketches humoristiques sur la "barista life" et tutoriels accessibles. Son partenariat avec Onyx Coffee Lab amplifie sa visibilité dans l'écosystème specialty coffee.
 
@@ -73,27 +73,27 @@ Les hooks performants se répartissent en cinq catégories psychologiques distin
 
 ### Hooks de curiosité
 
-| Hook exact | Type | Vues | Analyse |
-|------------|------|------|---------|
-| "You've NEVER seen Starbucks drinks like THESE" | Curiosité/Exclusivité | 500K+ | Crée un curiosity gap, joue sur l'ego |
-| "This is the ONLY thing you need to know about [coffee]" | Valeur/Autorité | 200K-1M | Promet information essentielle, réduit la complexité |
-| "I tried every [secret menu drink] so you don't have to" | Valeur/Service | 300K-2M+ | Positionne le créateur en testeur altruiste |
+| Hook exact                                               | Type                  | Vues     | Analyse                                              |
+| -------------------------------------------------------- | --------------------- | -------- | ---------------------------------------------------- |
+| "You've NEVER seen Starbucks drinks like THESE"          | Curiosité/Exclusivité | 500K+    | Crée un curiosity gap, joue sur l'ego                |
+| "This is the ONLY thing you need to know about [coffee]" | Valeur/Autorité       | 200K-1M  | Promet information essentielle, réduit la complexité |
+| "I tried every [secret menu drink] so you don't have to" | Valeur/Service        | 300K-2M+ | Positionne le créateur en testeur altruiste          |
 
 ### Hooks POV et relatabilité
 
-| Hook exact | Type | Vues | Analyse |
-|------------|------|------|---------|
-| "POV: You just opened the cafe 🥱☕️" | POV/Immersion | 100K-500K | Transporte dans l'expérience, format identitaire |
-| "POV: A messy order 💩" | POV/Humour | **463K+ likes** | Relatabilité baristas + curiosité clients |
-| "When your customer has a very specific order 😂" | Relatabilité/Humour | 200K+ | Universel, génère des "ça m'est arrivé!" |
+| Hook exact                                        | Type                | Vues            | Analyse                                          |
+| ------------------------------------------------- | ------------------- | --------------- | ------------------------------------------------ |
+| "POV: You just opened the cafe 🥱☕️"              | POV/Immersion       | 100K-500K       | Transporte dans l'expérience, format identitaire |
+| "POV: A messy order 💩"                           | POV/Humour          | **463K+ likes** | Relatabilité baristas + curiosité clients        |
+| "When your customer has a very specific order 😂" | Relatabilité/Humour | 200K+           | Universel, génère des "ça m'est arrivé!"         |
 
 ### Hooks secret menu et urgence
 
-| Hook exact | Type | Vues | Analyse |
-|------------|------|------|---------|
-| "Go to your local Starbucks and get it NOW!" | Call-to-action urgent | 100K-1M | FOMO immédiat, le "NOW" déclenche l'action |
-| "The $2 Drink is a BUSSIN Secret Menu drink!🔥" | Valeur + Secret | **61K+ likes** | Prix attractif + langage Gen Z + exclusivité |
-| "The BEST secret menu drink 🔥" | Autorité/Best-of | 500K-2M+ | Le superlatif attire les perfectionnistes |
+| Hook exact                                      | Type                  | Vues           | Analyse                                      |
+| ----------------------------------------------- | --------------------- | -------------- | -------------------------------------------- |
+| "Go to your local Starbucks and get it NOW!"    | Call-to-action urgent | 100K-1M        | FOMO immédiat, le "NOW" déclenche l'action   |
+| "The $2 Drink is a BUSSIN Secret Menu drink!🔥" | Valeur + Secret       | **61K+ likes** | Prix attractif + langage Gen Z + exclusivité |
+| "The BEST secret menu drink 🔥"                 | Autorité/Best-of      | 500K-2M+       | Le superlatif attire les perfectionnistes    |
 
 ### Hooks ASMR et satisfaisant
 
@@ -103,7 +103,7 @@ Les hooks performants se répartissent en cinq catégories psychologiques distin
 ### Hooks éducatifs et interactifs
 
 - **"How to make [Black Cardamom Latte] at home!"** — **2M+ vues** (Blue Bottle Coffee) — Valeur actionnable, empowerment du spectateur
-- **"Did you know _______ about coffee?"** — 100K-500K vues — Déclenche curiosité intellectuelle, position d'expert
+- **"Did you know **\_\_\_** about coffee?"** — 100K-500K vues — Déclenche curiosité intellectuelle, position d'expert
 - **"Dance for 5 seconds = FREE coffee!"** — **9M+ vues** (Coffee Milano Cafe) — Participation active = engagement maximal, génère UGC
 
 ---
@@ -222,12 +222,12 @@ L'**UGC authentique** règne : 83% des utilisateurs TikTok ont posté au moins u
 
 ### Engagement par plateforme
 
-| Métrique | TikTok | Instagram |
-|----------|--------|-----------|
-| Engagement moyen global | **4.64%** (2024) | **0.36%** médiane |
-| Food & Beverage | **6-8%** | Top 25% : 1.05% |
-| Micro-influenceurs (<15K) | **17.96%** | N/A |
-| Creators | 11.29% | N/A |
+| Métrique                  | TikTok           | Instagram         |
+| ------------------------- | ---------------- | ----------------- |
+| Engagement moyen global   | **4.64%** (2024) | **0.36%** médiane |
+| Food & Beverage           | **6-8%**         | Top 25% : 1.05%   |
+| Micro-influenceurs (<15K) | **17.96%**       | N/A               |
+| Creators                  | 11.29%           | N/A               |
 
 ### Influence sur les comportements d'achat
 
@@ -240,24 +240,24 @@ L'**UGC authentique** règne : 83% des utilisateurs TikTok ont posté au moins u
 
 ### Durées optimales
 
-| Plateforme | Durée optimale | Best engagement |
-|------------|----------------|-----------------|
-| TikTok (officiel) | 21-34 secondes | >54 sec : 6.7% |
-| TikTok (completion rate) | <15 secondes | — |
-| Instagram Reels | 15-30 secondes | — |
-| Stories | 15 secondes max | — |
+| Plateforme               | Durée optimale  | Best engagement |
+| ------------------------ | --------------- | --------------- |
+| TikTok (officiel)        | 21-34 secondes  | >54 sec : 6.7%  |
+| TikTok (completion rate) | <15 secondes    | —               |
+| Instagram Reels          | 15-30 secondes  | —               |
+| Stories                  | 15 secondes max | —               |
 
 ### Horaires de publication optimaux (Food & Beverage)
 
-| Jour | TikTok | Instagram |
-|------|--------|-----------|
-| Lundi | 17h | 11h-13h |
-| Mardi | 16h | 11h-13h |
-| Mercredi | 16h | 11h-13h |
-| Jeudi | 15h | 11h-13h |
-| **Vendredi** | **12h-17h** (meilleur jour) | 17h-19h |
-| Samedi | 17h-19h | 17h-19h |
-| Dimanche | ⚠️ Pire jour | Variable |
+| Jour         | TikTok                      | Instagram |
+| ------------ | --------------------------- | --------- |
+| Lundi        | 17h                         | 11h-13h   |
+| Mardi        | 16h                         | 11h-13h   |
+| Mercredi     | 16h                         | 11h-13h   |
+| Jeudi        | 15h                         | 11h-13h   |
+| **Vendredi** | **12h-17h** (meilleur jour) | 17h-19h   |
+| Samedi       | 17h-19h                     | 17h-19h   |
+| Dimanche     | ⚠️ Pire jour                | Variable  |
 
 ### Taille du marché
 

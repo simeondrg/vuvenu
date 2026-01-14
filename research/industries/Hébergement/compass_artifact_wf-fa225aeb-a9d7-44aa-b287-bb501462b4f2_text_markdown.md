@@ -106,12 +106,12 @@ Les 3 premières secondes déterminent si l'utilisateur regarde ou scrolle. Ces 
 
 ### Formules de hooks adaptables
 
-| Type | Structure | Exemple |
-|------|-----------|---------|
-| Reveal | "[Élément intrigant]... wait for it..." + reveal visuel | "This $30 hostel... wait for it..." |
-| POV | "POV: [Situation relateable]" + immersion 1ère personne | "POV: You got upgraded for free" |
-| Prix choc | "This [hébergement] costs [prix bas]..." + tour luxe | "This treehouse costs less than your coffee..." |
-| Insider | "Things [rôle] never tell you about [lieu]..." | "Things concierges never tell guests..." |
+| Type      | Structure                                               | Exemple                                         |
+| --------- | ------------------------------------------------------- | ----------------------------------------------- |
+| Reveal    | "[Élément intrigant]... wait for it..." + reveal visuel | "This $30 hostel... wait for it..."             |
+| POV       | "POV: [Situation relateable]" + immersion 1ère personne | "POV: You got upgraded for free"                |
+| Prix choc | "This [hébergement] costs [prix bas]..." + tour luxe    | "This treehouse costs less than your coffee..." |
+| Insider   | "Things [rôle] never tell you about [lieu]..."          | "Things concierges never tell guests..."        |
 
 ---
 
@@ -198,6 +198,7 @@ Les hôtels passent des mega-influenceurs aux micro (10K-50K followers) et nano 
 **Formats prioritaires :** Room Reveal (15-30s), POV séjour (15-45s), Behind the Scenes (15-60s), ASMR Cleaning (30-60s), Drone Reveal (15-30s)
 
 **Hooks à intégrer :**
+
 - "Wait until you see [élément]..."
 - "This [hébergement] costs $[prix bas]..."
 - "POV: [situation voyage relateable]"
@@ -205,6 +206,7 @@ Les hôtels passent des mega-influenceurs aux micro (10K-50K followers) et nano 
 - "Did you know [fait surprenant]?"
 
 **Règles absolues :**
+
 - Hook dans les 3 premières secondes
 - Sous-titres obligatoires (80% regardent sans son)
 - 80% contenu valeur / 20% promotion
@@ -212,6 +214,7 @@ Les hôtels passent des mega-influenceurs aux micro (10K-50K followers) et nano 
 - Fréquence : 3-5 posts/semaine minimum
 
 **Métriques de référence :**
+
 - Engagement rate hôtellerie : 6-10% pour les top performers
 - Conversion TikTok→réservation : 42%
 - Impact captions : +30% engagement, +15% conversion

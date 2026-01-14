@@ -10,24 +10,24 @@ Les commerces locaux qui réussissent sur les réseaux sociaux partagent une car
 
 ### Salles de sport et gyms
 
-| Compte | Plateforme | Followers | Contenu signature | Vidéo virale |
-|--------|-----------|-----------|-------------------|--------------|
-| **@crunchfitness** | TikTok/IG | ~21K | Sketchs humoristiques smartphone, memes gym | "Phone trap on weight stack" - **18M vues** |
-| **@romanempiregym_** | Instagram | Croissance | Tours cinématiques, esthétique Phonk noir/rouge | POV tour avec carte d'accès - **9.1M vues** |
-| **@onyxfitnessgym** | Instagram | Actif | Challenges homme vs femme pour cash, compétitions | Gym race tire challenge - **31M vues** |
-| **@equinox** | TikTok/IG | ~89K | Lifestyle luxe, empty gym fantasy | Empty luxury gym journey - **45M vues** |
-| **@gymboxofficial** | Instagram | UK | Street interviews, contenu psychologie | "Rejection therapy" - **1.2M vues** |
+| Compte                | Plateforme | Followers  | Contenu signature                                 | Vidéo virale                                |
+| --------------------- | ---------- | ---------- | ------------------------------------------------- | ------------------------------------------- |
+| **@crunchfitness**    | TikTok/IG  | ~21K       | Sketchs humoristiques smartphone, memes gym       | "Phone trap on weight stack" - **18M vues** |
+| **@romanempiregym\_** | Instagram  | Croissance | Tours cinématiques, esthétique Phonk noir/rouge   | POV tour avec carte d'accès - **9.1M vues** |
+| **@onyxfitnessgym**   | Instagram  | Actif      | Challenges homme vs femme pour cash, compétitions | Gym race tire challenge - **31M vues**      |
+| **@equinox**          | TikTok/IG  | ~89K       | Lifestyle luxe, empty gym fantasy                 | Empty luxury gym journey - **45M vues**     |
+| **@gymboxofficial**   | Instagram  | UK         | Street interviews, contenu psychologie            | "Rejection therapy" - **1.2M vues**         |
 
 **Pourquoi ça fonctionne** : Crunch Fitness génère des millions de vues avec un smartphone et de l'humour relatable. Roman Empire Gym se différencie par une identité visuelle unique (thème gladiateur). ØNYX crée de la tension avec des stakes réels (argent visible). Equinox vend le rêve plutôt que l'abonnement.
 
 ### Coachs personnels et niches spécialisées
 
-| Compte | Plateforme | Followers | Spécialité | Secret du succès |
-|--------|-----------|-----------|------------|------------------|
-| **@plantbasedboxer** | Instagram | ~217K | Boxing + vegan coaching | Niche ultra-spécifique + sessions gratuites |
-| **@theunderbelly** (Jessamyn Stanley) | TikTok/IG | 34K/578K | Plus-size yoga, body positivity | Advocacy authentique, partenariats Nike/Lululemon |
-| **@ld_boxing** | Instagram | ~5.9K | Boxing privé Nashville | Association célébrités locales (Thomas Rhett) |
-| **@onwardnation** | Instagram | ~403K | Boxing + communauté "tribu" | Identité de groupe, coaching fondateur charismatique |
+| Compte                                | Plateforme | Followers | Spécialité                      | Secret du succès                                     |
+| ------------------------------------- | ---------- | --------- | ------------------------------- | ---------------------------------------------------- |
+| **@plantbasedboxer**                  | Instagram  | ~217K     | Boxing + vegan coaching         | Niche ultra-spécifique + sessions gratuites          |
+| **@theunderbelly** (Jessamyn Stanley) | TikTok/IG  | 34K/578K  | Plus-size yoga, body positivity | Advocacy authentique, partenariats Nike/Lululemon    |
+| **@ld_boxing**                        | Instagram  | ~5.9K     | Boxing privé Nashville          | Association célébrités locales (Thomas Rhett)        |
+| **@onwardnation**                     | Instagram  | ~403K     | Boxing + communauté "tribu"     | Identité de groupe, coaching fondateur charismatique |
 
 ### CrossFit, yoga et danse
 
@@ -71,18 +71,18 @@ L'analyse de millions de vidéos fitness révèle des formats récurrents qui g�
 
 ### Tableau récapitulatif des 10 formats
 
-| Format | Durée | Meilleur pour | Performance type |
-|--------|-------|---------------|------------------|
-| **Transformations** | 15-30s | Toutes niches | 1M+ vues potentielles |
-| **Workout demos** | 15-60s | Home fitness, HIIT, Pilates | Fort taux de saves |
-| **Day in the Life** | 30-90s | Coachs, propriétaires | Watch time élevé |
-| **Gym fails** | 10-30s | Humour grand public | Taux replay maximal |
-| **Motivation clips** | 15-30s | Musculation, CrossFit | Fort partage |
-| **Technique tutorials** | 30-60s | Personal trainers | Saves + autorité |
-| **Témoignages clients** | 30-60s | Studios, programmes | Conversion directe |
-| **POV gym** | 15-45s | Entertainment | Relatabilité maximale |
-| **Challenges fitness** | 15-60s | Communautés | UGC viral |
-| **Comparaisons correct/incorrect** | 15-45s | Éducation, physiothérapeutes | Génère débats |
+| Format                             | Durée  | Meilleur pour                | Performance type      |
+| ---------------------------------- | ------ | ---------------------------- | --------------------- |
+| **Transformations**                | 15-30s | Toutes niches                | 1M+ vues potentielles |
+| **Workout demos**                  | 15-60s | Home fitness, HIIT, Pilates  | Fort taux de saves    |
+| **Day in the Life**                | 30-90s | Coachs, propriétaires        | Watch time élevé      |
+| **Gym fails**                      | 10-30s | Humour grand public          | Taux replay maximal   |
+| **Motivation clips**               | 15-30s | Musculation, CrossFit        | Fort partage          |
+| **Technique tutorials**            | 30-60s | Personal trainers            | Saves + autorité      |
+| **Témoignages clients**            | 30-60s | Studios, programmes          | Conversion directe    |
+| **POV gym**                        | 15-45s | Entertainment                | Relatabilité maximale |
+| **Challenges fitness**             | 15-60s | Communautés                  | UGC viral             |
+| **Comparaisons correct/incorrect** | 15-45s | Éducation, physiothérapeutes | Génère débats         |
 
 ---
 
@@ -92,35 +92,35 @@ L'analyse de millions de vidéos fitness révèle des formats récurrents qui g�
 
 ### Hooks Curiosité
 
-| Hook exact | Vues | Type | Utilisation |
-|-----------|------|------|-------------|
-| "I discovered the secret to [X] that nobody talks about…" | 1M+ régulier | Curiosité + Exclusivité | Coachs révélant techniques inconnues |
-| "Only 1% of people know this about [X]…" | 500K-2M | Curiosité + Rareté | Hacks récupération, tips nutrition |
-| "Everything you knew about [cardio/protein] is 100% WRONG!" | 1M-5M | Curiosité + Contrarian | Mythbusting fitness |
+| Hook exact                                                  | Vues         | Type                    | Utilisation                          |
+| ----------------------------------------------------------- | ------------ | ----------------------- | ------------------------------------ |
+| "I discovered the secret to [X] that nobody talks about…"   | 1M+ régulier | Curiosité + Exclusivité | Coachs révélant techniques inconnues |
+| "Only 1% of people know this about [X]…"                    | 500K-2M      | Curiosité + Rareté      | Hacks récupération, tips nutrition   |
+| "Everything you knew about [cardio/protein] is 100% WRONG!" | 1M-5M        | Curiosité + Contrarian  | Mythbusting fitness                  |
 
 ### Hooks Provocation
 
-| Hook exact | Vues | Effet psychologique |
-|-----------|------|---------------------|
-| "STOP doing [exercise] wrong! Here's how to fix it." | 2M+ | Peur de mal faire + promesse de solution |
-| "If you're doing [X] like this, you're wasting your time…" | 1M-3M | Attaque le temps investi (ressource précieuse) |
-| "Your trainer isn't telling you this…" | 500K-2M | Conspiration perçue dans l'industrie |
+| Hook exact                                                 | Vues    | Effet psychologique                            |
+| ---------------------------------------------------------- | ------- | ---------------------------------------------- |
+| "STOP doing [exercise] wrong! Here's how to fix it."       | 2M+     | Peur de mal faire + promesse de solution       |
+| "If you're doing [X] like this, you're wasting your time…" | 1M-3M   | Attaque le temps investi (ressource précieuse) |
+| "Your trainer isn't telling you this…"                     | 500K-2M | Conspiration perçue dans l'industrie           |
 
 ### Hooks Promesse
 
-| Hook exact | Exemple chiffré | Efficacité |
-|-----------|-----------------|------------|
+| Hook exact                                                | Exemple chiffré           | Efficacité                         |
+| --------------------------------------------------------- | ------------------------- | ---------------------------------- |
 | "I tried [X] every day for 30 days… here are the results" | @legalbaddie - 211K likes | Projection immédiate du spectateur |
-| "Do this [X]-minute workout every day to see results!" | 1M+ régulier | Élimine les objections de temps |
-| "How I lost [X] lbs in [timeframe] – Here's My Secret!" | Millions de vues | Chiffre précis = crédibilité |
+| "Do this [X]-minute workout every day to see results!"    | 1M+ régulier              | Élimine les objections de temps    |
+| "How I lost [X] lbs in [timeframe] – Here's My Secret!"   | Millions de vues          | Chiffre précis = crédibilité       |
 
 ### Hooks POV
 
-| Hook exact | Performance | Contexte idéal |
-|-----------|-------------|----------------|
-| "POV: It's your first day at the gym and you have no idea what to do…" | 500K-2M | Salles accueillant débutants |
-| "POV: You decided to focus on yourself this year" | 380K+ likes (@akirachristina_) | Promotions rentrée/nouvel an |
-| "POV: The gym at 5 AM hits different…" | 300K-1M | Culture early bird, CrossFit |
+| Hook exact                                                             | Performance                     | Contexte idéal               |
+| ---------------------------------------------------------------------- | ------------------------------- | ---------------------------- |
+| "POV: It's your first day at the gym and you have no idea what to do…" | 500K-2M                         | Salles accueillant débutants |
+| "POV: You decided to focus on yourself this year"                      | 380K+ likes (@akirachristina\_) | Promotions rentrée/nouvel an |
+| "POV: The gym at 5 AM hits different…"                                 | 300K-1M                         | Culture early bird, CrossFit |
 
 ### Hooks Question et Contrarian
 
@@ -128,12 +128,12 @@ Les questions ouvrent des boucles cognitives que le cerveau veut fermer. "Why is
 
 ### Hooks Story et Fear
 
-| Hook exact | Type | Pourquoi ça accroche |
-|-----------|------|---------------------|
-| "The biggest mistake I made when trying to lose fat…" | Story + Vulnérabilité | Crée confiance, le spectateur veut éviter l'erreur |
-| "Watch me transform my body in 30 days…" | Story + Challenge | Investissement émotionnel sériel |
-| "If you're not [doing X], you're missing out on huge results…" | FOMO + Urgence | Peur de rater quelque chose |
-| "Before you [go to the gym], watch this!" | Fear + Protection | Crée urgence temporelle |
+| Hook exact                                                     | Type                  | Pourquoi ça accroche                               |
+| -------------------------------------------------------------- | --------------------- | -------------------------------------------------- |
+| "The biggest mistake I made when trying to lose fat…"          | Story + Vulnérabilité | Crée confiance, le spectateur veut éviter l'erreur |
+| "Watch me transform my body in 30 days…"                       | Story + Challenge     | Investissement émotionnel sériel                   |
+| "If you're not [doing X], you're missing out on huge results…" | FOMO + Urgence        | Peur de rater quelque chose                        |
+| "Before you [go to the gym], watch this!"                      | Fear + Protection     | Crée urgence temporelle                            |
 
 ---
 
@@ -179,13 +179,13 @@ L'analyse des comptes fitness qui stagnent révèle des patterns récurrents d'�
 
 ### Tableau des 5 autres erreurs critiques
 
-| Erreur | Impact fatal | Solution |
-|--------|--------------|----------|
-| **Ignorer les tendances** | Sons trending = 2x plus de vues | TikTok Creative Center pour identifier les audios |
-| **Contenu trop long** | Objectif completion 75%+ | 60-90 secondes avec hooks multiples |
-| **Manque d'authenticité** | Contenu cross-posté pénalisé -40% | Montrer coulisses, partager échecs |
-| **Pas de CTA** | Pas de conversion = pas de ROI | "Sauvegarde pour ta prochaine séance" |
-| **Ignorer les analytics** | Opportunités perdues | Répondre aux commentaires dans la première heure |
+| Erreur                    | Impact fatal                      | Solution                                          |
+| ------------------------- | --------------------------------- | ------------------------------------------------- |
+| **Ignorer les tendances** | Sons trending = 2x plus de vues   | TikTok Creative Center pour identifier les audios |
+| **Contenu trop long**     | Objectif completion 75%+          | 60-90 secondes avec hooks multiples               |
+| **Manque d'authenticité** | Contenu cross-posté pénalisé -40% | Montrer coulisses, partager échecs                |
+| **Pas de CTA**            | Pas de conversion = pas de ROI    | "Sauvegarde pour ta prochaine séance"             |
+| **Ignorer les analytics** | Opportunités perdues              | Répondre aux commentaires dans la première heure  |
 
 ---
 
@@ -199,19 +199,22 @@ La **Règle 30-30-30** (30g protéines + 30 min cardio) affiche **+175% de reche
 
 ### Changements algorithmes majeurs
 
-**TikTok 2025** : 
+**TikTok 2025** :
+
 - Passage du viral basé sur les tendances → découverte par recherche (SEO crucial)
 - Seuil d'engagement passé de 3-5 secondes à **15-20 secondes**
 - Contenu cross-posté pénalisé jusqu'à **-40%**
 - Vidéos 60-90 secondes favorisées (plus 15 secondes)
 
 **Instagram 2025** :
+
 - Fin du suivi des hashtags → focus mots-clés et SEO
 - **Partages en DM = signal #1** d'engagement (Adam Mosseri)
 - "Trial Reels" pour tester le contenu auprès des non-followers
 - Durée optimale : 30-90 secondes
 
 **YouTube Shorts 2025** :
+
 - Durée étendue à **3 minutes** (vs 60 secondes)
 - Tous les replays comptent comme nouvelles vues
 - Métrique clé : "Viewed vs. Swiped Away"
@@ -276,28 +279,28 @@ La **Règle 30-30-30** (30g protéines + 30 min cardio) affiche **+175% de reche
 
 ### Impact des réseaux sociaux sur les adhésions
 
-| Métrique | Donnée |
-|----------|--------|
-| Membres découvrant leur gym via Instagram/Facebook | **54%** |
-| Nouvelles adhésions générées via plateformes en ligne | **70%** |
+| Métrique                                               | Donnée   |
+| ------------------------------------------------------ | -------- |
+| Membres découvrant leur gym via Instagram/Facebook     | **54%**  |
+| Nouvelles adhésions générées via plateformes en ligne  | **70%**  |
 | Augmentation adhésions post-pandémie grâce aux réseaux | **+20%** |
-| Utilisateurs Instagram passant à l'action après pub | **75%** |
+| Utilisateurs Instagram passant à l'action après pub    | **75%**  |
 
 ### Engagement par plateforme
 
-| Plateforme | Taux engagement fitness | Comparaison |
-|------------|------------------------|-------------|
-| **TikTok marques fitness** | 3-5% | 1-2% moyenne industries |
-| **TikTok nano-influenceurs** | 17.96% | Le plus élevé toutes catégories |
-| **Instagram marques fitness** | 0.55% | Corrélation inverse taille/engagement |
+| Plateforme                    | Taux engagement fitness | Comparaison                           |
+| ----------------------------- | ----------------------- | ------------------------------------- |
+| **TikTok marques fitness**    | 3-5%                    | 1-2% moyenne industries               |
+| **TikTok nano-influenceurs**  | 17.96%                  | Le plus élevé toutes catégories       |
+| **Instagram marques fitness** | 0.55%                   | Corrélation inverse taille/engagement |
 
 ### Durées optimales validées
 
-| Plateforme | Durée optimale | Sweet spot viralité |
-|------------|----------------|---------------------|
-| **TikTok** | 15-60 secondes | 15-30 secondes |
+| Plateforme          | Durée optimale | Sweet spot viralité             |
+| ------------------- | -------------- | ------------------------------- |
+| **TikTok**          | 15-60 secondes | 15-30 secondes                  |
 | **Instagram Reels** | 15-30 secondes | 7-15 secondes (completion rate) |
-| **YouTube Shorts** | 15-30 secondes | Jusqu'à 3 minutes (2025) |
+| **YouTube Shorts**  | 15-30 secondes | Jusqu'à 3 minutes (2025)        |
 
 ### Meilleurs créneaux de publication fitness
 

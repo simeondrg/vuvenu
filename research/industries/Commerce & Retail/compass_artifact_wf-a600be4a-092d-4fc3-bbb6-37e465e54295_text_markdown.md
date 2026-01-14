@@ -12,15 +12,15 @@ L'authenticité constitue le dénominateur commun de tous les succès viraux ret
 
 Les fleuristes viraux partagent un trait distinctif : ils démocratisent leur art en montrant comment créer de beaux arrangements avec des fleurs accessibles. Le succès d'**@acfloralstudio** (1.2M TikTok) repose sur des arrangements inspirés de la pop culture (Tim Burton, films) combinés à une personnalité attachante. **@floweracademia** (200K+ TikTok) cible spécifiquement "les gars" avec des tutoriels utilisant des fleurs de supermarché.
 
-| Compte | Plateforme | Followers | Contenu signature |
-|--------|------------|-----------|-------------------|
-| @jeffleatham | Instagram | 1.4M | Installations luxe hôtelières, célébrités |
-| @acfloralstudio | TikTok | 1.2M | Arrangements pop culture, tutoriels humoristiques |
-| @floretflower | Instagram | 1.3M | Flower farmer éducatrice, culture graines |
-| @floweracademia | TikTok | 200K+ | Fleurs supermarché, contenu accessible masculin |
-| @tulip_tok | TikTok | 150K+ | Journal quotidien avec chien Tulip |
-| @tulipinadesign | Instagram | 430K | Mariages extraordinaires worldwide |
-| @tj_mcgrathdesign | TikTok | 100K+ | Arrangements aériens, approche durable |
+| Compte            | Plateforme | Followers | Contenu signature                                 |
+| ----------------- | ---------- | --------- | ------------------------------------------------- |
+| @jeffleatham      | Instagram  | 1.4M      | Installations luxe hôtelières, célébrités         |
+| @acfloralstudio   | TikTok     | 1.2M      | Arrangements pop culture, tutoriels humoristiques |
+| @floretflower     | Instagram  | 1.3M      | Flower farmer éducatrice, culture graines         |
+| @floweracademia   | TikTok     | 200K+     | Fleurs supermarché, contenu accessible masculin   |
+| @tulip_tok        | TikTok     | 150K+     | Journal quotidien avec chien Tulip                |
+| @tulipinadesign   | Instagram  | 430K      | Mariages extraordinaires worldwide                |
+| @tj_mcgrathdesign | TikTok     | 100K+     | Arrangements aériens, approche durable            |
 
 La présence d'un animal de compagnie dans les vidéos (comme le chien Tulip de @tulip_tok) booste significativement l'engagement en créant une connexion émotionnelle double.
 
@@ -28,15 +28,15 @@ La présence d'un animal de compagnie dans les vidéos (comme le chien Tulip de 
 
 La niche home décor affiche les comptes les plus massifs du groupe, avec **@_catben_** atteignant **12.9 millions de followers** grâce à ses trouvailles Amazon et conseils styling. Le pattern dominant est l'accessibilité financière : DIY budget-friendly, hacks IKEA, solutions "renter-friendly" pour locataires.
 
-| Compte | Plateforme | Followers | Contenu signature |
-|--------|------------|-----------|-------------------|
-| @_catben_ | TikTok | 12.9M | Amazon finds, styling tips shoppables |
-| @homewithfarah | TikTok/IG | 6.2M / 6M | Lifestyle glam, collection QVC |
-| @emilyrayna | TikTok | 5.7M | DIY budget, répliques pièces luxe à petit prix |
-| @galeyalix | TikTok | 2.8M | Makeovers surprises HBO Max |
-| @the_avantgarde | TikTok | 2.6M | DIY créatifs accessibles |
-| @studiomcgee | Instagram | ~3M | Netflix Dream Home Makeover |
-| @lonefoxhome | TikTok | 1.5M | Vintage, thrifting, style masculin |
+| Compte          | Plateforme | Followers | Contenu signature                              |
+| --------------- | ---------- | --------- | ---------------------------------------------- |
+| @_catben_       | TikTok     | 12.9M     | Amazon finds, styling tips shoppables          |
+| @homewithfarah  | TikTok/IG  | 6.2M / 6M | Lifestyle glam, collection QVC                 |
+| @emilyrayna     | TikTok     | 5.7M      | DIY budget, répliques pièces luxe à petit prix |
+| @galeyalix      | TikTok     | 2.8M      | Makeovers surprises HBO Max                    |
+| @the_avantgarde | TikTok     | 2.6M      | DIY créatifs accessibles                       |
+| @studiomcgee    | Instagram  | ~3M       | Netflix Dream Home Makeover                    |
+| @lonefoxhome    | TikTok     | 1.5M      | Vintage, thrifting, style masculin             |
 
 **@emilyrayna** illustre parfaitement le succès de la démocratisation : sa vidéo répliquant un lustre à 30,000$ d'Emma Chamberlain pour 100$ a généré des millions de vues.
 
@@ -44,13 +44,13 @@ La niche home décor affiche les comptes les plus massifs du groupe, avec **@_ca
 
 Les bijouteries virales combinent processus de création hypnotisant et récits personnels touchants. **@livportio** (2M TikTok, 67.9M likes) a bâti son empire à 16 ans avec 40$ pour aider sa famille aux Philippines — son histoire "storytime" d'une cliente confrontant son copain infidèle est devenue virale.
 
-| Compte | Plateforme | Followers | Contenu signature |
-|--------|------------|-----------|-------------------|
-| @livportio | TikTok | 2M | Bijoux fil personnalisés, storytelling familial |
-| @christinmariestudio | TikTok Shop | Croissance 125x en 2 ans | "FaceTime Friday" lives, bijoux inclusifs |
-| @pablocimadevila | Instagram | 473.5K | Making-of hypnotisant, transformation matières |
-| @honeybykait | TikTok | En croissance | Bijoux demi-fine, processus créatif |
-| @estatediamondjewelry | TikTok | #1 bijoux vintage | Bagues antiques par ère historique |
+| Compte                | Plateforme  | Followers                | Contenu signature                               |
+| --------------------- | ----------- | ------------------------ | ----------------------------------------------- |
+| @livportio            | TikTok      | 2M                       | Bijoux fil personnalisés, storytelling familial |
+| @christinmariestudio  | TikTok Shop | Croissance 125x en 2 ans | "FaceTime Friday" lives, bijoux inclusifs       |
+| @pablocimadevila      | Instagram   | 473.5K                   | Making-of hypnotisant, transformation matières  |
+| @honeybykait          | TikTok      | En croissance            | Bijoux demi-fine, processus créatif             |
+| @estatediamondjewelry | TikTok      | #1 bijoux vintage        | Bagues antiques par ère historique              |
 
 **@christinmariestudio** est passée de 4,000$/mois à 500,000$/mois en 2 ans grâce à ses lives "FaceTime Friday" créant une connexion authentique avec sa communauté.
 
@@ -58,13 +58,13 @@ Les bijouteries virales combinent processus de création hypnotisant et récits 
 
 Les bougies artisanales dominent grâce à deux approches : les sons ASMR d'emballage/fabrication et les designs visuellement surprenants. **@ardentcandle** (826K followers) a explosé avec ses "cereal candles" — des bougies ressemblant à des bols de céréales en feu.
 
-| Compte | Plateforme | Followers | Contenu signature |
-|--------|------------|-----------|-------------------|
-| @ardentcandle | TikTok | 826K | Cereal candles réalistes (Froot Loops, Lucky Charms) |
-| @realmcandles | TikTok | 200K | ASMR packing orders, parfums gourmands |
-| @emme.nyc | TikTok | En croissance | Saveurs asiatiques (Boba, Mochi, White Rabbit) |
-| @emporal.co | TikTok | Revenue 6 chiffres | Behind-the-scenes, parcours entrepreneurial |
-| @starrecandles | TikTok/Etsy | Sold out réguliers | Bougies mythologiques, humour viral |
+| Compte         | Plateforme  | Followers          | Contenu signature                                    |
+| -------------- | ----------- | ------------------ | ---------------------------------------------------- |
+| @ardentcandle  | TikTok      | 826K               | Cereal candles réalistes (Froot Loops, Lucky Charms) |
+| @realmcandles  | TikTok      | 200K               | ASMR packing orders, parfums gourmands               |
+| @emme.nyc      | TikTok      | En croissance      | Saveurs asiatiques (Boba, Mochi, White Rabbit)       |
+| @emporal.co    | TikTok      | Revenue 6 chiffres | Behind-the-scenes, parcours entrepreneurial          |
+| @starrecandles | TikTok/Etsy | Sold out réguliers | Bougies mythologiques, humour viral                  |
 
 **@realmcandles** a vu sa vidéo ASMR d'emballage atteindre 1 million de vues en 24 heures, épuisant son stock. La fondatrice maintient désormais un calendrier strict : 3 posts ASMR/semaine et lives les samedis soirs.
 
@@ -72,13 +72,13 @@ Les bougies artisanales dominent grâce à deux approches : les sons ASMR d'emba
 
 BookTok représente **309 milliards de vues** et génère **59 millions de ventes de livres** en 2024. Les librairies indépendantes qui performent combinent recommandations authentiques et personnalité distinctive.
 
-| Compte | Plateforme | Followers | Contenu signature |
-|--------|------------|-----------|-------------------|
-| @parnassusbooksnashville | TikTok/IG | 40.8K / 245K | Ann Patchett en personne, "New to You" séries |
-| @allshewrotebooks | TikTok/IG | Communauté active | Librairie féministe et queer, storytelling |
-| @2ndflightbooks | TikTok | Part de 290K cumulés | Tours boutique, recommandations locales |
-| @littledistrictbooks | TikTok | 200K vues/vidéo | Librairie LGBTQ+, contenu ciblé par hashtag |
-| @thenovelneighbor | TikTok | Bestsellers réguliers | Recommandations multiples/semaine, shipping rappelé |
+| Compte                   | Plateforme | Followers             | Contenu signature                                   |
+| ------------------------ | ---------- | --------------------- | --------------------------------------------------- |
+| @parnassusbooksnashville | TikTok/IG  | 40.8K / 245K          | Ann Patchett en personne, "New to You" séries       |
+| @allshewrotebooks        | TikTok/IG  | Communauté active     | Librairie féministe et queer, storytelling          |
+| @2ndflightbooks          | TikTok     | Part de 290K cumulés  | Tours boutique, recommandations locales             |
+| @littledistrictbooks     | TikTok     | 200K vues/vidéo       | Librairie LGBTQ+, contenu ciblé par hashtag         |
+| @thenovelneighbor        | TikTok     | Bestsellers réguliers | Recommandations multiples/semaine, shipping rappelé |
 
 **@parnassusbooksnashville**, propriété de l'auteure Ann Patchett, a atteint 346,000 vues sur une vidéo grâce à son authenticité sans filtre.
 
@@ -86,24 +86,24 @@ BookTok représente **309 milliards de vues** et génère **59 millions de vente
 
 La papeterie prospère grâce à la communauté bullet journal (BuJo) et l'esthétique "stationery haul". **@amandarachlee** (2.16M YouTube, 459.6K TikTok) est devenue millionnaire en vendant ses propres journaux après avoir construit sa communauté sur des tutoriels doodle.
 
-| Compte | Plateforme | Followers | Contenu signature |
-|--------|------------|-----------|-------------------|
-| @amandarachlee | YouTube/TikTok | 2.16M / 459.6K | Plan With Me, doodle tutorials, boutique propre |
-| @jetpens_official | TikTok | Référence papeterie | Papeterie japonaise, démonstrations satisfaisantes |
-| @lindsaysjournal | TikTok | 109K+ | Updates hebdo spreads, templates Etsy |
-| @carrie.walker | TikTok | 133K+ | BuJo essentials, spreads saisonniers |
-| @owonotes | Instagram | 37K | Bullet journal anime-inspired |
+| Compte            | Plateforme     | Followers           | Contenu signature                                  |
+| ----------------- | -------------- | ------------------- | -------------------------------------------------- |
+| @amandarachlee    | YouTube/TikTok | 2.16M / 459.6K      | Plan With Me, doodle tutorials, boutique propre    |
+| @jetpens_official | TikTok         | Référence papeterie | Papeterie japonaise, démonstrations satisfaisantes |
+| @lindsaysjournal  | TikTok         | 109K+               | Updates hebdo spreads, templates Etsy              |
+| @carrie.walker    | TikTok         | 133K+               | BuJo essentials, spreads saisonniers               |
+| @owonotes         | Instagram      | 37K                 | Bullet journal anime-inspired                      |
 
 ### Boutiques cadeaux et concept stores : l'art de l'emballage
 
 Le format dominant pour les boutiques cadeaux est l'ASMR packing orders avec le hashtag #packingorders cumulant des milliards de vues. **@peachybbsslime** (4.7M followers) vend son stock "comme des Jordans" en quelques minutes après chaque vidéo virale.
 
-| Compte | Plateforme | Followers | Contenu signature |
-|--------|------------|-----------|-------------------|
-| @peachybbsslime | TikTok | 4.7M | ASMR slime making, mention Kardashian |
-| @enchantedscrunchwears | TikTok | 170K+ | Scrunchies uniques, 0 à 6 chiffres en 1 an |
-| @silkygemcrystalcandy | TikTok | Vues massives | ASMR packing commandes géantes (1,645 articles) |
-| @lightbeamstationery | TikTok | 75K+ likes/vidéo | Stationery boxes kawaii, gifts |
+| Compte                 | Plateforme | Followers        | Contenu signature                               |
+| ---------------------- | ---------- | ---------------- | ----------------------------------------------- |
+| @peachybbsslime        | TikTok     | 4.7M             | ASMR slime making, mention Kardashian           |
+| @enchantedscrunchwears | TikTok     | 170K+            | Scrunchies uniques, 0 à 6 chiffres en 1 an      |
+| @silkygemcrystalcandy  | TikTok     | Vues massives    | ASMR packing commandes géantes (1,645 articles) |
+| @lightbeamstationery   | TikTok     | 75K+ likes/vidéo | Stationery boxes kawaii, gifts                  |
 
 ---
 
@@ -179,65 +179,65 @@ Le format génère un **watch time 2-3x supérieur** à la moyenne et les specta
 
 ### Hooks curiosité
 
-| Hook | Application | Pourquoi ça fonctionne |
-|------|-------------|----------------------|
-| "Wait for it... You won't believe what just arrived" | Déballages, nouveautés | Crée un "curiosity gap" — le cerveau déteste les boucles non fermées |
-| "I promise you've never seen anything like this" | Produits uniques, artisanat | Promet une expérience exclusive |
-| "Did you know this about [product]?" | Contenu éducatif | Positionne comme expert, éveille la curiosité |
+| Hook                                                 | Application                 | Pourquoi ça fonctionne                                               |
+| ---------------------------------------------------- | --------------------------- | -------------------------------------------------------------------- |
+| "Wait for it... You won't believe what just arrived" | Déballages, nouveautés      | Crée un "curiosity gap" — le cerveau déteste les boucles non fermées |
+| "I promise you've never seen anything like this"     | Produits uniques, artisanat | Promet une expérience exclusive                                      |
+| "Did you know this about [product]?"                 | Contenu éducatif            | Positionne comme expert, éveille la curiosité                        |
 
 ### Hooks ASMR et satisfaisants
 
-| Hook | Application | Pourquoi ça fonctionne |
-|------|-------------|----------------------|
-| "Pack an order with me 💖" | Emballage commandes | 1.3M+ likes sur certaines vidéos — sons satisfaisants + voyeurisme |
-| "Sound on for this... 🔊" | Packaging luxueux, textures | Crée une attente sensorielle immersive |
-| "The most satisfying sound you'll hear today" | ASMR retail | Promet une récompense sensorielle immédiate |
+| Hook                                          | Application                 | Pourquoi ça fonctionne                                             |
+| --------------------------------------------- | --------------------------- | ------------------------------------------------------------------ |
+| "Pack an order with me 💖"                    | Emballage commandes         | 1.3M+ likes sur certaines vidéos — sons satisfaisants + voyeurisme |
+| "Sound on for this... 🔊"                     | Packaging luxueux, textures | Crée une attente sensorielle immersive                             |
+| "The most satisfying sound you'll hear today" | ASMR retail                 | Promet une récompense sensorielle immédiate                        |
 
 ### Hooks POV immersifs
 
-| Hook | Application | Pourquoi ça fonctionne |
-|------|-------------|----------------------|
-| "POV: You work in a [type de boutique]" | Coulisses métier | Permet au spectateur de se projeter, aspirationnel |
-| "POV: You just found the perfect gift for your mom who has everything" | Gift guides | Met en situation de résolution de problème |
+| Hook                                                                   | Application      | Pourquoi ça fonctionne                             |
+| ---------------------------------------------------------------------- | ---------------- | -------------------------------------------------- |
+| "POV: You work in a [type de boutique]"                                | Coulisses métier | Permet au spectateur de se projeter, aspirationnel |
+| "POV: You just found the perfect gift for your mom who has everything" | Gift guides      | Met en situation de résolution de problème         |
 
 ### Hooks FOMO et urgence
 
-| Hook | Application | Pourquoi ça fonctionne |
-|------|-------------|----------------------|
-| "Only 5 left in stock... and they're going fast" | Éditions limitées, drops | Principe de rareté — augmente valeur perçue de 40% |
-| "This sold out in 2 hours last time... It's back NOW" | Restocks | Preuve sociale + rareté + urgence combinées |
-| "New drop alert 🚨 This just landed" | Nouveautés exclusives | Capitalise sur l'excitation des nouveautés |
-| "If you're seeing this, it's probably already sold out" | Produits viraux | Urgence inversée qui pousse à l'action |
+| Hook                                                    | Application              | Pourquoi ça fonctionne                             |
+| ------------------------------------------------------- | ------------------------ | -------------------------------------------------- |
+| "Only 5 left in stock... and they're going fast"        | Éditions limitées, drops | Principe de rareté — augmente valeur perçue de 40% |
+| "This sold out in 2 hours last time... It's back NOW"   | Restocks                 | Preuve sociale + rareté + urgence combinées        |
+| "New drop alert 🚨 This just landed"                    | Nouveautés exclusives    | Capitalise sur l'excitation des nouveautés         |
+| "If you're seeing this, it's probably already sold out" | Produits viraux          | Urgence inversée qui pousse à l'action             |
 
 ### Hooks process et création
 
-| Hook | Application | Pourquoi ça fonctionne |
-|------|-------------|----------------------|
+| Hook                                                   | Application                 | Pourquoi ça fonctionne                           |
+| ------------------------------------------------------ | --------------------------- | ------------------------------------------------ |
 | "Watch me make this custom order from start to finish" | Artisanat, personnalisation | Valorise le savoir-faire, connexion émotionnelle |
-| "How I create each piece by hand for you" | Bijoux, céramique | Humanise la marque, justifie la valeur |
+| "How I create each piece by hand for you"              | Bijoux, céramique           | Humanise la marque, justifie la valeur           |
 
 ### Hooks recommandation ciblée
 
-| Hook | Application | Pourquoi ça fonctionne |
-|------|-------------|----------------------|
-| "If you love coffee, you NEED to see this!" | Produits de niche | Interpellation directe du public cible |
-| "Stop scrolling if you love skincare" | Lifestyle, passions | Crée sentiment d'appartenance à une tribu |
+| Hook                                                 | Application               | Pourquoi ça fonctionne                            |
+| ---------------------------------------------------- | ------------------------- | ------------------------------------------------- |
+| "If you love coffee, you NEED to see this!"          | Produits de niche         | Interpellation directe du public cible            |
+| "Stop scrolling if you love skincare"                | Lifestyle, passions       | Crée sentiment d'appartenance à une tribu         |
 | "This $25 product changed my entire morning routine" | Transformation accessible | Promesse de changement avec investissement minime |
 
 ### Hooks saisonniers
 
-| Hook | Application | Pourquoi ça fonctionne |
-|------|-------------|----------------------|
-| "The perfect gift for under $50" | Fêtes, occasions | Résout l'anxiété cadeau avec contrainte budget |
-| "Stop stressing about your office gift exchange" | Secret Santa | Adresse un stress spécifique et relatable |
-| "This is THE gift of the 2025 holiday season" | Tendances | Positionnement insider, FOMO saisonnier |
+| Hook                                             | Application      | Pourquoi ça fonctionne                         |
+| ------------------------------------------------ | ---------------- | ---------------------------------------------- |
+| "The perfect gift for under $50"                 | Fêtes, occasions | Résout l'anxiété cadeau avec contrainte budget |
+| "Stop stressing about your office gift exchange" | Secret Santa     | Adresse un stress spécifique et relatable      |
+| "This is THE gift of the 2025 holiday season"    | Tendances        | Positionnement insider, FOMO saisonnier        |
 
 ### Hooks storytelling
 
-| Hook | Application | Pourquoi ça fonctionne |
-|------|-------------|----------------------|
-| "A customer asked me to make something I've never done before..." | Services personnalisés | Humanise l'interaction, suspense narratif |
-| "The story behind this piece will make you see it differently" | Vintage, artisanat | Ajoute dimension émotionnelle et valeur narrative |
+| Hook                                                              | Application            | Pourquoi ça fonctionne                            |
+| ----------------------------------------------------------------- | ---------------------- | ------------------------------------------------- |
+| "A customer asked me to make something I've never done before..." | Services personnalisés | Humanise l'interaction, suspense narratif         |
+| "The story behind this piece will make you see it differently"    | Vintage, artisanat     | Ajoute dimension émotionnelle et valeur narrative |
 
 ---
 
@@ -322,6 +322,7 @@ Le marché US atteint **50 milliards en 2023** avec projection à **68 milliards
 Les contenus les plus performants sont les compositions en direct et time-lapse, les livraisons avec réactions clients émotionnelles, et les conseils d'entretien pratiques. Les occasions spéciales (mariages, fêtes) génèrent du contenu saisonnier à forte viralité. Le format "POV: processing flowers is your meditation" (646K+ likes sur @annatheflorist) illustre l'attrait du contenu méditatif.
 
 **Spécificités** :
+
 - Compositions pop culture et thématiques (Tim Burton, saisons)
 - Behind-the-scenes préparation mariages
 - Tutoriels avec fleurs de supermarché pour accessibilité
@@ -332,6 +333,7 @@ Les contenus les plus performants sont les compositions en direct et time-lapse,
 Le focus budget-friendly et "renter-friendly" est essentiel car l'audience de locataires est massive. Les transformations before/after génèrent les meilleurs partages. L'intégration de liens d'affiliation Amazon/LTK est la norme pour monétisation.
 
 **Spécificités** :
+
 - Room reveals et transformations dramatiques
 - IKEA hacks et DIY accessibles
 - Hauls déco avec prix affichés
@@ -343,6 +345,7 @@ Le focus budget-friendly et "renter-friendly" est essentiel car l'audience de lo
 Le processus de création hypnotisant est le contenu signature, combiné au storytelling entrepreneurial personnel. Les lives interactifs ("FaceTime Friday") créent une connexion communautaire forte. Les drops d'éditions limitées génèrent FOMO et sell-outs rapides.
 
 **Spécificités** :
+
 - Making-of transformation matières premières
 - Try-on et styling par occasion
 - Collections capsules avec compte à rebours
@@ -354,6 +357,7 @@ Le processus de création hypnotisant est le contenu signature, combiné au stor
 L'intégration à BookTok est critique (309 milliards de vues). Les recommandations authentiques du libraire surpassent les reviews génériques. Les événements auteurs et dédicaces créent du contenu unique et local.
 
 **Spécificités** :
+
 - Recommandations "backlist" de titres moins connus
 - "Rapid Recs" (genre aléatoire, recommandation instantanée)
 - Ambiance lecture "cozy vibes"
@@ -365,6 +369,7 @@ L'intégration à BookTok est critique (309 milliards de vues). Les recommandati
 La communauté bullet journal est le cœur de l'audience. Les tutoriels spreads mensuels et doodles génèrent un fort engagement. Les hauls papeterie japonaise et coréenne "kawaii" performent excellemment.
 
 **Spécificités** :
+
 - Plan With Me spreads saisonniers
 - Stationery hauls avec démonstrations produits
 - Back to school content (pic saisonnier majeur)
@@ -376,6 +381,7 @@ La communauté bullet journal est le cœur de l'audience. Les tutoriels spreads 
 L'ASMR packaging est le format dominant absolu. Les gift guides par occasion/budget résolvent l'anxiété cadeau. Les "mystery boxes" et scoops génèrent curiosité et engagement.
 
 **Spécificités** :
+
 - Emballage cadeau satisfaisant en temps réel
 - Gift guides segmentés (budget, persona, occasion)
 - Unboxing et présentation multi-angles
@@ -387,6 +393,7 @@ L'ASMR packaging est le format dominant absolu. Les gift guides par occasion/bud
 Les designs visuels "stop the scroll" (bougies cereal, food-like) captent immédiatement l'attention. L'ASMR fabrication (coulée, démoulage) et les scent descriptions poétiques engagent les sens.
 
 **Spécificités** :
+
 - Process fabrication complet (cire, mèche, parfum)
 - "Unmolding" videos satisfaisantes
 - Collections saisonnières avec storytelling
@@ -399,41 +406,41 @@ Les designs visuels "stop the scroll" (bougies cereal, food-like) captent imméd
 
 ### Découverte de marques via réseaux sociaux
 
-| Métrique | Donnée |
-|----------|--------|
-| Utilisateurs TikTok pour inspiration shopping | 58% |
-| Découverte nouveaux produits non vus ailleurs | 71% |
-| Utilisateurs Instagram recherchant prochain achat | 61% |
-| Gen Z préférant TikTok/Instagram à Google | 49% |
+| Métrique                                          | Donnée |
+| ------------------------------------------------- | ------ |
+| Utilisateurs TikTok pour inspiration shopping     | 58%    |
+| Découverte nouveaux produits non vus ailleurs     | 71%    |
+| Utilisateurs Instagram recherchant prochain achat | 61%    |
+| Gen Z préférant TikTok/Instagram à Google         | 49%    |
 
 ### Conversion social media vers achat
 
-| Métrique | Donnée |
-|----------|--------|
-| Achat après vue produit TikTok | 55% |
-| Achat après TikTok Live | 50% |
-| Achat Instagram après vue produit | 54% |
-| Achats mensuels TikTok Shop | 49.7% des utilisateurs |
+| Métrique                          | Donnée                 |
+| --------------------------------- | ---------------------- |
+| Achat après vue produit TikTok    | 55%                    |
+| Achat après TikTok Live           | 50%                    |
+| Achat Instagram après vue produit | 54%                    |
+| Achats mensuels TikTok Shop       | 49.7% des utilisateurs |
 
 ### Taux d'engagement par plateforme (retail)
 
-| Plateforme | Taux moyen |
-|------------|-----------|
-| TikTok (nano-influenceurs) | 18% |
-| TikTok (marques retail) | 2.5-5% |
-| YouTube Shorts | 5.91% |
-| Instagram (marques retail) | 0.5-1.16% |
-| Facebook | 0.09% |
+| Plateforme                 | Taux moyen |
+| -------------------------- | ---------- |
+| TikTok (nano-influenceurs) | 18%        |
+| TikTok (marques retail)    | 2.5-5%     |
+| YouTube Shorts             | 5.91%      |
+| Instagram (marques retail) | 0.5-1.16%  |
+| Facebook                   | 0.09%      |
 
 ### Impact économique TikTok Shop pour PME
 
-| Métrique | Donnée |
-|----------|--------|
-| PME vendant sur TikTok Shop US | 171,000 |
-| Croissance ventes PME year-over-year | +70% |
-| Revenus générés pour PME | 14.7 milliards $ |
-| PME disant TikTok critique pour leur existence | 40% |
-| Dépense moyenne par acheteur TikTok Shop | 708$/an |
+| Métrique                                       | Donnée           |
+| ---------------------------------------------- | ---------------- |
+| PME vendant sur TikTok Shop US                 | 171,000          |
+| Croissance ventes PME year-over-year           | +70%             |
+| Revenus générés pour PME                       | 14.7 milliards $ |
+| PME disant TikTok critique pour leur existence | 40%              |
+| Dépense moyenne par acheteur TikTok Shop       | 708$/an          |
 
 ---
 
@@ -458,16 +465,19 @@ La fréquence minimale viable est de 4-5 posts par semaine, avec une durée opti
 ## Recommandations de production
 
 **Spécifications techniques** :
+
 - Format vertical 9:16 obligatoire (40% de lift d'impressions)
 - Résolution minimum 720p (83.2% des top performers)
 - Full screen sans bordures (98.63% des virales)
 
 **Équipement minimal** :
+
 - Ring light ou lumière naturelle
 - Micro-cravate pour qualité audio
 - Trépied smartphone pour stabilité
 
 **Calendrier éditorial type** :
+
 - Lundi : Behind-the-scenes ouverture
 - Mardi : Nouveautés/New arrivals
 - Mercredi : Tutoriel/Process création

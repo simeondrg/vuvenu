@@ -188,7 +188,7 @@ echo "✅ PROJECT-SUMMARY.md créé"
 
 ### 3.2 Créer QUICK-START.md
 
-```bash
+````bash
 cat > /Users/simeon/projects/vuvenu/docs/QUICK-START.md << 'EOF'
 # 🚀 QUICK START - Lancer Ralph Loop
 
@@ -212,9 +212,10 @@ npm run dev
 # > Crée le système d'authentification Supabase
 # > Configure les tables (profiles, scripts, campaigns)
 # > etc.
-```
+````
 
 ### Option 2 : Ralph Loop (Autonome)
+
 ```bash
 # Depuis Claude Code CLI
 /ralph-vuvenu semaine-1 --max-iterations 50
@@ -228,6 +229,7 @@ npm run dev
 ```
 
 ## Commandes Importantes
+
 ```bash
 npm run dev         # Serveur local
 npm run build       # Build production
@@ -236,20 +238,24 @@ npm run lint        # Vérify ESLint
 ```
 
 ## Documentation
+
 - `PRD-VuVenu-MVP.md` : Comprendre la scope
 - `MASTER_CHECKLIST.md` : Tracker les tâches
 - `/docs/execution/EXECUTION-LOG.md` : Historique exécution
 - `CLAUDE.md` : Conventions projet
 
 ## Support
+
 Questions ? Voir :
+
 - CLAUDE.md → Conventions
 - PRD-VuVenu-MVP.md → Details User Stories
 - MASTER_CHECKLIST.md → Tâche spécifique
-EOF
+  EOF
 
 echo "✅ QUICK-START.md créé"
-```
+
+````
 
 ### 3.3 Créer VERSION-AUDIT.md
 
@@ -289,7 +295,7 @@ cat > /Users/simeon/projects/vuvenu/docs/technical/VERSION-AUDIT.md << 'EOF'
 EOF
 
 echo "✅ VERSION-AUDIT.md créé"
-```
+````
 
 ---
 
@@ -463,7 +469,7 @@ echo "✅ Build vérifié"
 
 ## ÉTAPE 7 : CRÉER NOUVEAU README.md
 
-```bash
+````bash
 cat > /Users/simeon/projects/vuvenu/README.md << 'EOF'
 # 🎯 VuVenu MVP
 
@@ -485,7 +491,7 @@ npm install
 npm run dev
 
 # Voir http://localhost:3000
-```
+````
 
 ---
 
@@ -513,12 +519,12 @@ npm run dev
 
 ## 📊 Timeline
 
-| Phase | Durée | Objectif |
-|-------|-------|----------|
-| **Semaine 1** | 5j | Auth + DB + Onboarding |
-| **Semaine 2** | 5j | Core (Scripts + Ads) |
-| **Semaine 3** | 5j | Payments + Landing |
-| **Semaine 4** | 5j | Polish + Launch |
+| Phase         | Durée | Objectif               |
+| ------------- | ----- | ---------------------- |
+| **Semaine 1** | 5j    | Auth + DB + Onboarding |
+| **Semaine 2** | 5j    | Core (Scripts + Ads)   |
+| **Semaine 3** | 5j    | Payments + Landing     |
+| **Semaine 4** | 5j    | Polish + Launch        |
 
 ---
 
@@ -528,11 +534,12 @@ Atteindre PMF (Product-Market Fit) avec commerces locaux réunionnais via une pl
 
 ---
 
-*Projet VuVenu MVP V1 - Lanché 13 janvier 2026*
+_Projet VuVenu MVP V1 - Lanché 13 janvier 2026_
 EOF
 
 echo "✅ README.md créé"
-```
+
+````
 
 ---
 
@@ -565,7 +572,7 @@ Ralph Loop Ready ✅"
 git log -1 --stat
 
 echo "✅ Git commit complété"
-```
+````
 
 ---
 
@@ -720,6 +727,6 @@ npm run dev
 
 ---
 
-*Plan d'action créé : 13 janvier 2026*
-*Durée estimée : 4-5 heures*
-*Résultat : 100% Ready for Ralph*
+_Plan d'action créé : 13 janvier 2026_
+_Durée estimée : 4-5 heures_
+_Résultat : 100% Ready for Ralph_

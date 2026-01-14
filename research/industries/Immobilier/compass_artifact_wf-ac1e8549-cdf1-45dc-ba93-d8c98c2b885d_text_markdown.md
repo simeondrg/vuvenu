@@ -10,12 +10,12 @@ L'analyse des comptes les plus performants révèle deux axes de succès : **l'a
 
 ### Créateurs francophones incontournables
 
-| Compte | Plateforme | Followers | Contenu signature | Pourquoi ça marche |
-|--------|------------|-----------|-------------------|-------------------|
-| **Romain Perez** (@romainperezimmobilier) | TikTok | 185K | Visites luxe Dubaï, maisons de stars | "Luxe porn" aspirationnel, prix choquants |
-| **Actu Immo** (@actu.immo) | TikTok | 95K | Décryptage actualité, vulgarisation PTZ/crédit | Répond aux vraies questions, expertise accessible |
-| **Lena Amestoy** (@lena_immobilier) | TikTok | 23K | Coulisses métier, humour, anecdotes | Authenticité et relatabilité |
-| **Geoffrey Delvaux** (@geoffrey.delvaux) | TikTok | 14K | Conseils investissement (Belgique) | Pédagogie pour investisseurs débutants |
+| Compte                                    | Plateforme | Followers | Contenu signature                              | Pourquoi ça marche                                |
+| ----------------------------------------- | ---------- | --------- | ---------------------------------------------- | ------------------------------------------------- |
+| **Romain Perez** (@romainperezimmobilier) | TikTok     | 185K      | Visites luxe Dubaï, maisons de stars           | "Luxe porn" aspirationnel, prix choquants         |
+| **Actu Immo** (@actu.immo)                | TikTok     | 95K       | Décryptage actualité, vulgarisation PTZ/crédit | Répond aux vraies questions, expertise accessible |
+| **Lena Amestoy** (@lena_immobilier)       | TikTok     | 23K       | Coulisses métier, humour, anecdotes            | Authenticité et relatabilité                      |
+| **Geoffrey Delvaux** (@geoffrey.delvaux)  | TikTok     | 14K       | Conseils investissement (Belgique)             | Pédagogie pour investisseurs débutants            |
 
 ### Références internationales à adapter
 
@@ -39,7 +39,7 @@ L'analyse des comptes les plus performants révèle deux axes de succès : **l'a
 
 ### 2. Transformations avant/après
 
-Le format roi pour le home staging. Montrer l'état initial délabré, transition dramatique (spin, flash), puis reveal pièce par pièce. **Christine Higgs** (@_forthehome) a obtenu **700K vues en 24 heures** avec ce format.
+Le format roi pour le home staging. Montrer l'état initial délabré, transition dramatique (spin, flash), puis reveal pièce par pièce. **Christine Higgs** (@\_forthehome) a obtenu **700K vues en 24 heures** avec ce format.
 
 **Impact psychologique :** Le reveal crée un effet dopamine satisfaisant. Contenu hautement sauvegardé et partagé sur Pinterest.
 
@@ -93,7 +93,7 @@ Tours cinématiques de biens haut de gamme. Mouvements fluides au gimbal, drone 
 
 ### Hooks transformation
 
-**"I knew it had potential 🥰"** — Promesse de transformation satisfaisante. @_forthehome : **700K vues en 24h**.
+**"I knew it had potential 🥰"** — Promesse de transformation satisfaisante. @\_forthehome : **700K vues en 24h**.
 
 **"Cette rénovation a ajouté 50K€ à la valeur du bien"** — Chiffre concret = crédibilité. Cible acheteurs ET vendeurs.
 
@@ -212,21 +212,25 @@ Le marché des visites virtuelles passe de **11 milliards $ (2024) à 74 milliar
 ### Templates de hooks par niche
 
 **Pour agents immobiliers :**
+
 - "Devine ce que [prix] t'offre à [ville] ?"
 - "Cette maison a failli ne pas se vendre. Voici pourquoi..."
 - "POV: Tu visites ton premier appartement"
 
 **Pour home stagers :**
+
 - "I knew it had potential 🥰"
 - "Ce petit changement a fait vendre en 48h"
 - "Avant/Après : 3K€ de staging, 30K€ de plus-value"
 
 **Pour décorateurs/architectes d'intérieur :**
+
 - "Wait until you see the hidden room..."
 - "POV: Tu rentres dans ta maison après rénovation"
 - "Cette pièce va vous surprendre..."
 
 **Pour courtiers immobiliers :**
+
 - "Ce que les banques ne vous disent jamais..."
 - "Mauvais crédit ≠ impossible d'acheter"
 - "Les 3 erreurs qui font refuser ton prêt"
@@ -235,7 +239,7 @@ Le marché des visites virtuelles passe de **11 milliards $ (2024) à 74 milliar
 
 ## Conclusion : les clés de la viralité immobilière
 
-Le contenu immobilier viral repose sur trois piliers : **authenticité assumée** (montrer les coulisses et les échecs), **valeur ajoutée** (éduquer plutôt que vendre), et **régularité** (3-5 posts/semaine minimum). 
+Le contenu immobilier viral repose sur trois piliers : **authenticité assumée** (montrer les coulisses et les échecs), **valeur ajoutée** (éduquer plutôt que vendre), et **régularité** (3-5 posts/semaine minimum).
 
 Les formats gagnants restent les **speed tours** (15-30 sec), les **avant/après** pour le staging, et les **anecdotes métier** pour créer une communauté. Le format "Combien payez-vous de loyer" représente l'opportunité inexploitée majeure en France.
 

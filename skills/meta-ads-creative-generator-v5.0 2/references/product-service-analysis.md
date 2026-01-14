@@ -11,6 +11,7 @@ Cette méthodologie en 7 étapes permet d'analyser en profondeur n'importe quel 
 ### PRODUITS (Objets Physiques)
 
 **Caractéristiques** :
+
 - Features tangibles (matériaux, dimensions, technologie)
 - Bénéfices immédiats et visibles
 - Démonstration via photos/vidéos produit
@@ -22,6 +23,7 @@ Cette méthodologie en 7 étapes permet d'analyser en profondeur n'importe quel 
 ### SERVICES (Actions, Expériences)
 
 **Caractéristiques** :
+
 - Features = processus, méthodes, durée, livrables
 - Bénéfices souvent intangibles et différés
 - Démonstration via témoignages, before/after
@@ -37,18 +39,21 @@ Cette méthodologie en 7 étapes permet d'analyser en profondeur n'importe quel 
 ### ÉTAPE 1 : BASICS
 
 #### Pour PRODUITS
+
 ```
 Product Name: [Nom]
 Price Point: [Prix] [Promo si applicable]
 ```
 
 **Exemple** :
+
 ```
 Product Name: Dog Harness
 Price Point: $52.00 $42.00
 ```
 
 #### Pour SERVICES
+
 ```
 Service Name: [Nom]
 Price Point: [Prix/durée] (ex: /heure, /session, /mois)
@@ -57,6 +62,7 @@ Format: [Format de livraison]
 ```
 
 **Exemple** :
+
 ```
 Service Name: Webinaire Syndrome de l'Imposteur
 Price Point: Gratuit (lead magnet pour coaching $200/session)
@@ -71,13 +77,16 @@ Format: Live Zoom + Replay 7 jours
 **Question centrale** : HOW does your product/service work?
 
 **Livrer 2 versions** :
+
 1. Version complète (niveau adulte)
 2. Version 6th-grade (simplicité maximale)
 
 #### Pour PRODUITS
+
 Focus sur le **processus physique/mécanique**.
 
 **Exemple (Dog Harness)** :
+
 ```
 Full Version:
 The harness wraps around the dog's chest with an ITW military-grade buckle that secures in 2-3 seconds, distributing pull pressure across the chest rather than the neck, with adjustable straps for perfect fit and a front D-ring to redirect pulling behavior.
@@ -87,9 +96,11 @@ The harness wraps around your dog's chest and back. This spreads out the pull wh
 ```
 
 #### Pour SERVICES
+
 Focus sur le **déroulement + transformation**.
 
 **Exemple (Webinaire Coaching)** :
+
 ```
 Full Version:
 The webinar guides participants through a 60-minute structured experience where they first identify their imposter syndrome patterns via interactive exercises, then learn the PNL reframing technique to transform limiting beliefs, and finally receive a personalized action plan to implement immediately.
@@ -105,9 +116,11 @@ In this online class, you'll figure out why you feel like a fraud even when you'
 Liste exhaustive des caractéristiques.
 
 #### Pour PRODUITS
+
 Caractéristiques **physiques/techniques**.
 
 **Exemple (Dog Harness)** :
+
 1. ITW Unbreakable Secure Buckle
 2. Adjustable straps
 3. Heavy-duty D-ring
@@ -116,9 +129,11 @@ Caractéristiques **physiques/techniques**.
 6. Lightweight design
 
 #### Pour SERVICES
+
 Éléments du **processus/livraison**.
 
 **Exemple (Webinaire Coaching)** :
+
 1. Live interactive session with Q&A
 2. PNL reframing exercises
 3. Personalized action plan
@@ -133,9 +148,11 @@ Caractéristiques **physiques/techniques**.
 **Question** : For each feature, what does it DO for the customer?
 
 #### Pour PRODUITS
+
 Focus sur **résultats physiques/pratiques**.
 
 **Exemple** :
+
 ```
 ITW Buckle → Benefit: Dog won't escape
 ITW Buckle → Benefit: Made in USA (quality)
@@ -146,9 +163,11 @@ Customizable → Benefit: Dog always properly identified
 ```
 
 #### Pour SERVICES
+
 Focus sur **résultats émotionnels/transformation**.
 
 **Exemple** :
+
 ```
 Live interactive → Benefit: Feel heard and understood
 PNL exercises → Benefit: Immediate mindset shift
@@ -167,6 +186,7 @@ Email series → Benefit: Sustained support beyond session
 **Framework** : Connecter aux **4 Besoins Humains** + **Émotions**
 
 Les 4 Besoins :
+
 - Sécurité/Certitude
 - Variété/Nouveauté
 - Importance/Status
@@ -175,6 +195,7 @@ Les 4 Besoins :
 #### Pour PRODUITS
 
 **Exemple** :
+
 ```
 Benefit: Dog won't escape
 → Desire: They want their dog to be SAFE (Sécurité)
@@ -189,6 +210,7 @@ Benefit: Less pulling on walks
 #### Pour SERVICES
 
 **Exemple** :
+
 ```
 Benefit: Feel heard and understood
 → Desire: They want to BELONG (Connection)
@@ -210,14 +232,17 @@ Benefit: Know exactly what to do
 **Question** : What makes your product/service UNIQUE?
 
 **IMPORTANT** : Connecter chaque USP à un Strategic Response :
+
 - USP technologique → NEW MECHANISM
 - USP éducationnel → NEW INFORMATION
 - USP communautaire → NEW IDENTITY
 
 #### Pour PRODUITS
+
 Focus sur **technologie, matériaux, design propriétaire**.
 
 **Exemple (Dog Harness)** :
+
 ```
 1. ITW Military-Grade Buckle Technology
    → Strategic Response: NEW MECHANISM
@@ -233,9 +258,11 @@ Focus sur **technologie, matériaux, design propriétaire**.
 ```
 
 #### Pour SERVICES
+
 Focus sur **méthodologie, approche, expertise unique**.
 
 **Exemple (Webinaire Coaching)** :
+
 ```
 1. PNL Reframing Technique (proprietary)
    → Strategic Response: NEW INFORMATION
@@ -264,41 +291,48 @@ Focus sur **méthodologie, approche, expertise unique**.
 
 **QUESTION 1 : What does your product/service do that you DON'T advertise?**
 
-*Produit (Dog Harness)* :
+_Produit (Dog Harness)_ :
+
 - ITW Military-Grade Buckle (critical safety feature but buried in specs)
 - Material prevents matting of dog's fur
 
-*Service (Webinaire)* :
+_Service (Webinaire)_ :
+
 - Creates accountability through community
 - Provides vocabulary to explain feelings to others
 - Acts as filter for high-quality coaching clients
 
 **QUESTION 2 : What ingredients/components/methods do you include that competitors don't?**
 
-*Produit* :
+_Produit_ :
+
 - Specific buckle brand (ITW - not generic plastic)
 - Name tag customization (competitors charge extra)
 
-*Service* :
+_Service_ :
+
 - Specific PNL technique (not generic "mindset coaching")
 - 7-day replay (competitors only give 24h or charge extra)
 - Follow-up email series (competitors stop at webinar)
 
 **QUESTION 3 : If your product/service worked TOO well, what would customers "complain" about?**
 
-*Produit* :
+_Produit_ :
+
 - "Dog walks are so boring now, he never pulls anymore"
 - "I can't have a quick walk - every dog owner wants to know where I got it"
 - "My dog is so comfortable he doesn't want to take it off"
 
-*Service* :
+_Service_ :
+
 - "I'm too confident now, people at work think I'm arrogant"
 - "I have too many opportunities, I don't know which to choose"
 - "I spoke up so much in meetings they made me lead the project"
 
 **QUESTION 4 : If someone was explaining this to their friend, what would they ACTUALLY say?**
 
-*Produit* :
+_Produit_ :
+
 ```
 "Oh, that harness? Yeah, it's actually pretty good.
 
@@ -315,7 +349,8 @@ It's held up pretty well too. I think I've had it for like eight months? No issu
 Why, is Buddy giving you trouble on walks? Yeah, you might want to try something like this."
 ```
 
-*Service* :
+_Service_ :
+
 ```
 "I did this webinar thing last week about imposter syndrome. At first I was like 'another self-help thing,' but it was actually really practical.
 
@@ -360,7 +395,7 @@ If you're interested, I think they do it monthly. Let me know, I can send you th
 1. Feature 1
 2. Feature 2
 3. Feature 3
-[...]
+   [...]
 
 ---
 
@@ -397,14 +432,17 @@ Benefit 2 → Desire: [Name] (Besoin: [X] | Émotion: [Y] → [Z])
 ### STEP 7: HIDDEN MECHANISMS
 
 **1. What don't you advertise?**
+
 - [Hidden mechanism 1]
 - [Hidden mechanism 2]
 
 **2. What do competitors not have?**
+
 - [Unique component 1]
 - [Unique component 2]
 
 **3. If it worked TOO well?**
+
 - "[Customer 'complaint' 1]"
 - "[Customer 'complaint' 2]"
 
@@ -426,18 +464,21 @@ Benefit 2 → Desire: [Name] (Besoin: [X] | Émotion: [Y] → [Z])
 ## Conseils d'Application
 
 ### Pour les PRODUITS
+
 - ✅ Focus sur tangible, mesurable, visible
 - ✅ Photos/vidéos du produit en action
 - ✅ Spécifications techniques comme USPs
 - ✅ Before/after de l'environnement (ex: pièce sombre → lumineuse)
 
 ### Pour les SERVICES
+
 - ✅ Focus sur transformation, expérience, résultats
 - ✅ Témoignages clients comme preuve principale
 - ✅ Méthodologie/approche comme USPs
 - ✅ Before/after émotionnel/situationnel
 
 ### Erreurs à Éviter
+
 - ❌ Traiter un service comme un produit (focus features vs transformation)
 - ❌ Traiter un produit comme un service (trop vague sur specs)
 - ❌ Sauter l'étape Hidden Mechanisms (c'est là qu'est l'or)

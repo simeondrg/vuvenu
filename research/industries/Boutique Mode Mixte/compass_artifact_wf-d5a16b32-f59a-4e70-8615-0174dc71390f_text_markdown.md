@@ -8,28 +8,28 @@
 
 ### Boutiques indépendantes qui ont percé
 
-| Compte | Plateforme | Followers | Contenu signature | Pourquoi ça marche |
-|--------|------------|-----------|-------------------|-------------------|
-| **@freckledpoppyboutique** | TikTok Shop | 500K+ | Try-on hauls, Lives quotidiens | 12,6M$ sur TikTok Shop en 2024 grâce aux Lives créant une proximité |
-| **@rogue** (Emma Rodelius) | TikTok | 170K+ | Tours boutique, street interviews | Identité visuelle forte Y2K + fusion expérience physique/digitale |
-| **@willowboutique** | TikTok Shop UK | - | Shoppable LIVEs | 100K$+ par session live, ROAS de 8x |
-| **@sugarislandclothing** | TikTok Shop UK | - | Try-on inclusifs toutes morphologies | CTR 3,57%, positionnement inclusif fort |
-| **@funny.pretty.nice** | TikTok NYC | 100K+ | Closet sales avec influenceurs | En route vers 1M$ première année |
-| **@tolchardluxury** | TikTok Shop UK | - | Lives sneakers authenticité | +335% ventes, 80% des ventes via Lives |
-| **@fivevintage** | TikTok France | 170K+ | Tout à 5€, offres virales | Concept clair + communauté engagée |
-| **@109withh** (Sans neuf) | TikTok France | - | Guides friperies par ligne métro | 33K+ likes/vidéo, format unique géolocalisé |
+| Compte                     | Plateforme     | Followers | Contenu signature                    | Pourquoi ça marche                                                  |
+| -------------------------- | -------------- | --------- | ------------------------------------ | ------------------------------------------------------------------- |
+| **@freckledpoppyboutique** | TikTok Shop    | 500K+     | Try-on hauls, Lives quotidiens       | 12,6M$ sur TikTok Shop en 2024 grâce aux Lives créant une proximité |
+| **@rogue** (Emma Rodelius) | TikTok         | 170K+     | Tours boutique, street interviews    | Identité visuelle forte Y2K + fusion expérience physique/digitale   |
+| **@willowboutique**        | TikTok Shop UK | -         | Shoppable LIVEs                      | 100K$+ par session live, ROAS de 8x                                 |
+| **@sugarislandclothing**   | TikTok Shop UK | -         | Try-on inclusifs toutes morphologies | CTR 3,57%, positionnement inclusif fort                             |
+| **@funny.pretty.nice**     | TikTok NYC     | 100K+     | Closet sales avec influenceurs       | En route vers 1M$ première année                                    |
+| **@tolchardluxury**        | TikTok Shop UK | -         | Lives sneakers authenticité          | +335% ventes, 80% des ventes via Lives                              |
+| **@fivevintage**           | TikTok France  | 170K+     | Tout à 5€, offres virales            | Concept clair + communauté engagée                                  |
+| **@109withh** (Sans neuf)  | TikTok France  | -         | Guides friperies par ligne métro     | 33K+ likes/vidéo, format unique géolocalisé                         |
 
 ### Grandes marques référence en contenu
 
-| Compte | Plateforme | Followers | Contenu signature | Métriques clés |
-|--------|------------|-----------|-------------------|----------------|
-| **@sezane** | Instagram | 2,66M | UGC, behind-the-scenes, giving back | #1 mode France, EMV 87M€ |
-| **@prettylittlething** | TikTok Shop | 18,6M Insta | Shoppable LIVEs, créateurs | 9,7M impressions campagne lancement |
-| **@asos** | TikTok Shop | 13,6M Insta | GRWM, unboxings, 60 créateurs | 57% transactions = nouveaux clients |
-| **@abercrombie** | TikTok | 141K | Humor authentique, styling tips | Identité reconnaissable, ton honnête |
-| **@snagtights** | TikTok | - | Before/after, toutes morphologies | Inclusivité = engagement x3 |
-| **@ego** | TikTok Shop | - | Micro/nano-influenceurs | +156x commandes via affiliés |
-| **@jacquemus** | Instagram | - | Humour surréaliste, CGI créatif | 2x engagement rate concurrents |
+| Compte                 | Plateforme  | Followers   | Contenu signature                   | Métriques clés                       |
+| ---------------------- | ----------- | ----------- | ----------------------------------- | ------------------------------------ |
+| **@sezane**            | Instagram   | 2,66M       | UGC, behind-the-scenes, giving back | #1 mode France, EMV 87M€             |
+| **@prettylittlething** | TikTok Shop | 18,6M Insta | Shoppable LIVEs, créateurs          | 9,7M impressions campagne lancement  |
+| **@asos**              | TikTok Shop | 13,6M Insta | GRWM, unboxings, 60 créateurs       | 57% transactions = nouveaux clients  |
+| **@abercrombie**       | TikTok      | 141K        | Humor authentique, styling tips     | Identité reconnaissable, ton honnête |
+| **@snagtights**        | TikTok      | -           | Before/after, toutes morphologies   | Inclusivité = engagement x3          |
+| **@ego**               | TikTok Shop | -           | Micro/nano-influenceurs             | +156x commandes via affiliés         |
+| **@jacquemus**         | Instagram   | -           | Humour surréaliste, CGI créatif     | 2x engagement rate concurrents       |
 
 ---
 
@@ -42,6 +42,7 @@ Le try-on haul reste le format roi de la mode sur TikTok. La structure présente
 **Pourquoi ça marche :** Chaque changement crée de l'anticipation, et les viewers visualisent concrètement le tombé des vêtements sur un vrai corps. Le compte @whitefoxboutique atteint régulièrement **500K-2M vues** avec ce format.
 
 **Tips production :**
+
 - Trépied fixe, marquer l'emplacement des pieds au sol
 - Synchroniser les changements avec les beats
 - Garder le même cadrage entre transitions
@@ -69,6 +70,7 @@ Le format **#PackingOrders cumule 70,8M+ posts**. Les vidéos montrent la prépa
 **Pourquoi ça marche :** Transparence + ASMR satisfaisant + humanisation de la marque. **1 client sur 10** chez Mermaid Straw demande à voir sa commande packée en vidéo.
 
 **Tips production :**
+
 - Sons ASMR du froissement, tape, étiquettes
 - Mentionner le prénom du client
 - Montrer les petites attentions (notes personnalisées)
@@ -115,58 +117,58 @@ Format en forte croissance : les Lives génèrent jusqu'à **500K$+ par stream**
 
 ### Hooks POV (immersion)
 
-| Hook | Vues | Psychologie |
-|------|------|-------------|
+| Hook                                                        | Vues                   | Psychologie                                                     |
+| ----------------------------------------------------------- | ---------------------- | --------------------------------------------------------------- |
 | "POV: Tu viens d'arriver en Italie, tu découvres Venise..." | 9,5M (Banana Republic) | Bypasse la pensée critique, place directement dans l'expérience |
-| "POV: Notre nouvelle collection vient de sortir ✨" | 2M (Halfdays) | Combine immersion + urgence nouveauté |
-| "POV: Une inconnue a reconnu ta robe non sortie..." | 3,1M (Odd Muse) | Social proof puissante par validation externe |
+| "POV: Notre nouvelle collection vient de sortir ✨"         | 2M (Halfdays)          | Combine immersion + urgence nouveauté                           |
+| "POV: Une inconnue a reconnu ta robe non sortie..."         | 3,1M (Odd Muse)        | Social proof puissante par validation externe                   |
 
 ### Hooks curiosité (gap d'information)
 
-| Hook | Application | Psychologie |
-|------|-------------|-------------|
-| "Personne n'en parle dans le monde de la mode" | Révéler une astuce méconnue | Le cerveau déteste les questions sans réponse |
-| "L'histoire derrière [produit]..." | 5,4M (Ralph Lauren) | Le storytelling crée un investissement narratif |
-| "Attends, attends... Non, non, celui-là..." | 5,4M (Odd Muse) | L'indécision est ultra-relatable |
+| Hook                                           | Application                 | Psychologie                                     |
+| ---------------------------------------------- | --------------------------- | ----------------------------------------------- |
+| "Personne n'en parle dans le monde de la mode" | Révéler une astuce méconnue | Le cerveau déteste les questions sans réponse   |
+| "L'histoire derrière [produit]..."             | 5,4M (Ralph Lauren)         | Le storytelling crée un investissement narratif |
+| "Attends, attends... Non, non, celui-là..."    | 5,4M (Odd Muse)             | L'indécision est ultra-relatable                |
 
 ### Hooks call-out (interpellation)
 
-| Hook | Application | Psychologie |
-|------|-------------|-------------|
-| "Si tu galères à trouver ton style personnel, regarde ça" | Styling tips | Cible un pain point précis + promet solution |
-| "Arrête de scroller si tu veux [résultat]" | N'importe quel contenu | Ordre direct qui interrompt l'automatisme |
-| "Cette vidéo est uniquement pour [cible]" | Audience spécifique | Exclusivité + sentiment VIP |
+| Hook                                                      | Application            | Psychologie                                  |
+| --------------------------------------------------------- | ---------------------- | -------------------------------------------- |
+| "Si tu galères à trouver ton style personnel, regarde ça" | Styling tips           | Cible un pain point précis + promet solution |
+| "Arrête de scroller si tu veux [résultat]"                | N'importe quel contenu | Ordre direct qui interrompt l'automatisme    |
+| "Cette vidéo est uniquement pour [cible]"                 | Audience spécifique    | Exclusivité + sentiment VIP                  |
 
 ### Hooks valeur (promesse bénéfice)
 
-| Hook | Vues | Psychologie |
-|------|------|-------------|
-| "3 façons de porter [vêtement]" | Format viral récurrent | Chiffres = promesse tangible, fort taux de save |
-| "Changement de tenue express devant le Louvre" | 10M (Odd Muse) | Hack pratique + lieu iconique = aspiration |
-| "Ça marche pour le bureau ET pour l'apéro juste après" | 4,6M (Odd Muse) | Résout un problème universel (polyvalence) |
+| Hook                                                   | Vues                   | Psychologie                                     |
+| ------------------------------------------------------ | ---------------------- | ----------------------------------------------- |
+| "3 façons de porter [vêtement]"                        | Format viral récurrent | Chiffres = promesse tangible, fort taux de save |
+| "Changement de tenue express devant le Louvre"         | 10M (Odd Muse)         | Hack pratique + lieu iconique = aspiration      |
+| "Ça marche pour le bureau ET pour l'apéro juste après" | 4,6M (Odd Muse)        | Résout un problème universel (polyvalence)      |
 
 ### Hooks urgence/FOMO
 
-| Hook | Vues | Psychologie |
-|------|------|-------------|
-| "PARIS EN CE MOMENT" (produit repéré partout) | 10,1M (PUMA) | Micro-tendance émergente + ancrage géographique |
-| "Notre [produit] viral est de retour ! 🤩" | 1,1M (UNIQLO) | Social proof "viral" + urgence "de retour" |
-| "Dispo à partir du [date], ne rate pas ça !" | 1,7M (UNIQLO) | Date précise + FOMO explicite |
+| Hook                                          | Vues          | Psychologie                                     |
+| --------------------------------------------- | ------------- | ----------------------------------------------- |
+| "PARIS EN CE MOMENT" (produit repéré partout) | 10,1M (PUMA)  | Micro-tendance émergente + ancrage géographique |
+| "Notre [produit] viral est de retour ! 🤩"    | 1,1M (UNIQLO) | Social proof "viral" + urgence "de retour"      |
+| "Dispo à partir du [date], ne rate pas ça !"  | 1,7M (UNIQLO) | Date précise + FOMO explicite                   |
 
 ### Hooks contraste
 
-| Hook | Vues | Psychologie |
-|------|------|-------------|
-| "Invitation : Tenue décontractée" + révélation glamour | 10M (Babyboo) | Violation d'attente humoristique |
-| "Qui le porte le mieux ?" puis twist positif | 1,1M (UNIQLO) | Setup compétitif + résolution feel-good |
-| "Tout ce que tu savais sur [sujet] est 100% FAUX !" | Millions | Pattern interrupt massif |
+| Hook                                                   | Vues          | Psychologie                             |
+| ------------------------------------------------------ | ------------- | --------------------------------------- |
+| "Invitation : Tenue décontractée" + révélation glamour | 10M (Babyboo) | Violation d'attente humoristique        |
+| "Qui le porte le mieux ?" puis twist positif           | 1,1M (UNIQLO) | Setup compétitif + résolution feel-good |
+| "Tout ce que tu savais sur [sujet] est 100% FAUX !"    | Millions      | Pattern interrupt massif                |
 
 ### Hooks social proof
 
-| Hook | Application | Psychologie |
-|------|-------------|-------------|
-| "TikTok m'a fait acheter ça" | #tiktokmademebuyit = milliards vues | Validation communautaire |
-| "Tout le monde à Paris cette semaine 🥶" | 9,6M (Axel Arigato) | Identification géographique + exagération relatable |
+| Hook                                     | Application                         | Psychologie                                         |
+| ---------------------------------------- | ----------------------------------- | --------------------------------------------------- |
+| "TikTok m'a fait acheter ça"             | #tiktokmademebuyit = milliards vues | Validation communautaire                            |
+| "Tout le monde à Paris cette semaine 🥶" | 9,6M (Axel Arigato)                 | Identification géographique + exagération relatable |
 
 ---
 
@@ -241,6 +243,7 @@ Format en forte croissance : les Lives génèrent jusqu'à **500K$+ par stream**
 **TikTok Shop révolutionne le commerce mode.** Le GMV a atteint **33,2 milliards $** en 2024 (x3 vs 2023), avec projection à **66 milliards $** en 2025. La mode (womenswear) représente **12,56% des ventes** TikTok Shop. Les Lives shopping génèrent les meilleures conversions : **76% des viewers livestream effectuent un achat**.
 
 **Esthétiques dominantes 2025 :**
+
 - Revival Y2K : low-rise jeans, glitter, butterfly motifs (#Y2KDIY = 500M+ vues)
 - 90s Cute Core : slip dresses, ribbed knits, tiny sunglasses
 - Cardigancore : cardigan versatile, Gen Z approved
@@ -249,6 +252,7 @@ Format en forte croissance : les Lives génèrent jusqu'à **500K$+ par stream**
 **Couleurs tendance :** Emerald, Mocha Mousse, Buttery Yellow, Tomato Red, Soft Ballet Pink.
 
 **Formats en croissance :**
+
 - Live Shopping (+737% GMV pour PUMA)
 - Thrift flips et DIY transformation
 - Street style urbain
@@ -282,6 +286,7 @@ Format en forte croissance : les Lives génèrent jusqu'à **500K$+ par stream**
 **Visuels :** Miroir plein pied, intérieur lumineux épuré, ring light flatteuse, cohérence chromatique du feed.
 
 **Hooks spécifiques :**
+
 - "POV: Tu trouves LA pièce parfaite pour ton événement"
 - "Outfit pour quand tu veux être jolie sans trop te prendre la tête"
 - "Ce que je porterais pour un premier date vs ce qu'il voit vraiment"
@@ -297,6 +302,7 @@ Format en forte croissance : les Lives génèrent jusqu'à **500K$+ par stream**
 **Visuels :** Plan américain, fond urbain ou intérieur minimaliste, palette sophistiquée (marine, noir, camel).
 
 **Hooks spécifiques :**
+
 - "3 erreurs que 90% des hommes font avec leur costume"
 - "Comment je suis passé de 'random' à 'il est bien habillé lui'"
 - "Ce que les femmes remarquent vraiment dans ta tenue"
@@ -312,6 +318,7 @@ Format en forte croissance : les Lives génèrent jusqu'à **500K$+ par stream**
 **Visuels :** Raw et authentique, environnement urbain, zooms punch, néons nocturnes, looks oversized.
 
 **Hooks spécifiques :**
+
 - "POV: Tu trouves le grail à la frip pour 5€"
 - "This fit cost me 50€ vs 500€ - guess which"
 - "Outfit check dans le métro parisien - les réactions"
@@ -327,6 +334,7 @@ Format en forte croissance : les Lives génèrent jusqu'à **500K$+ par stream**
 **Visuels :** Macro shots détails, rotation 360°, display shelves, packaging en évidence, éclairage contrôlé.
 
 **Hooks spécifiques :**
+
 - "Cette paire à 50€ aujourd'hui vaut 500€ dans 5 ans"
 - "J'ai trouvé des [modèle rare] en frip - réaction du vendeur"
 - "La vraie raison pour laquelle cette collab est si chère"
@@ -342,6 +350,7 @@ Format en forte croissance : les Lives génèrent jusqu'à **500K$+ par stream**
 **Visuels :** Authentique et légèrement chaotique, dans la boutique même, filtres vintage/grain, ambiance 90s/Y2K.
 
 **Hooks spécifiques :**
+
 - "Cette friperie vend du luxe à 5€ - je vous montre tout"
 - "POV: Tu trouves le grail que quelqu'un a posé 2 minutes avant"
 - "Tout ce que j'ai trouvé pour moins de 30€ cette semaine"
@@ -357,6 +366,7 @@ Format en forte croissance : les Lives génèrent jusqu'à **500K$+ par stream**
 **Visuels :** Très proche, détails coutures et textures, surface neutre luxe (marbre, bois), éclairage studio.
 
 **Hooks spécifiques :**
+
 - "J'ai découpé ce sac à 1200€ pour voir si ça vaut le prix"
 - "Le secret que les marques luxe ne veulent pas que vous sachiez"
 - "Cette marque à 150€ utilise le même cuir que [marque luxe]"
@@ -372,6 +382,7 @@ Format en forte croissance : les Lives génèrent jusqu'à **500K$+ par stream**
 **Visuels :** Flattering mais authentique, chambre cosy/boudoir, lumière douce romantique, diversité des corps.
 
 **Hooks spécifiques :**
+
 - "POV: Tu te sens comme une déesse dans ta lingerie préférée"
 - "Lingerie confort ET sexy? Je vous prouve que c'est possible"
 - "Ce que je porte vraiment vs ce que mon copain pense"
@@ -384,51 +395,51 @@ Format en forte croissance : les Lives génèrent jusqu'à **500K$+ par stream**
 
 ### Conversion social → achat
 
-| Métrique | Valeur | Source |
-|----------|--------|--------|
-| GMV TikTok Shop 2024 | **33,2 Mds $** (+199% vs 2023) | Resourcera |
-| Part TikTok Shop dans social shopping | **68,1%** | Earnest Analytics |
-| Viewers livestream qui achètent | **76%** | TikTok Newsroom |
-| Conversion lift avec UGC | **+161%** | Bazaarvoice |
-| Acheteurs TikTok Shop mensuels | **49,7%** achètent 1x/mois | FitSmallBusiness |
+| Métrique                              | Valeur                         | Source            |
+| ------------------------------------- | ------------------------------ | ----------------- |
+| GMV TikTok Shop 2024                  | **33,2 Mds $** (+199% vs 2023) | Resourcera        |
+| Part TikTok Shop dans social shopping | **68,1%**                      | Earnest Analytics |
+| Viewers livestream qui achètent       | **76%**                        | TikTok Newsroom   |
+| Conversion lift avec UGC              | **+161%**                      | Bazaarvoice       |
+| Acheteurs TikTok Shop mensuels        | **49,7%** achètent 1x/mois     | FitSmallBusiness  |
 
 ### Comportements Gen Z
 
-| Métrique | Valeur | Source |
-|----------|--------|--------|
-| Gen Z qui découvrent+achètent via social | **60%** | Capgemini |
-| Social media = source inspiration achats | **97%** | GRIN |
-| Gen Z convaincus par influenceurs | **74%** | ISPO |
-| Gen Z prêts à payer plus pour durable | **64%** | Deloitte 2024 |
-| Priorisent authenticité marque | **34%** | Gen Z Shopping Report |
+| Métrique                                 | Valeur  | Source                |
+| ---------------------------------------- | ------- | --------------------- |
+| Gen Z qui découvrent+achètent via social | **60%** | Capgemini             |
+| Social media = source inspiration achats | **97%** | GRIN                  |
+| Gen Z convaincus par influenceurs        | **74%** | ISPO                  |
+| Gen Z prêts à payer plus pour durable    | **64%** | Deloitte 2024         |
+| Priorisent authenticité marque           | **34%** | Gen Z Shopping Report |
 
 ### Performance vidéo vs statique
 
-| Format | Taux d'engagement |
-|--------|-------------------|
-| **Instagram Reels** | 6,92% (2024) |
-| **Carousel** | 1,7% |
-| **Photo** | 1,17% |
-| **Vidéo traditionnelle** | 0,42% |
+| Format                   | Taux d'engagement |
+| ------------------------ | ----------------- |
+| **Instagram Reels**      | 6,92% (2024)      |
+| **Carousel**             | 1,7%              |
+| **Photo**                | 1,17%             |
+| **Vidéo traditionnelle** | 0,42%             |
 
 **Les Reels génèrent +22% d'interactions** vs vidéos standard, et **79% des viewers hebdo Reels** ont acheté après avoir vu un produit.
 
 ### Impact UGC sur confiance
 
-| Métrique | Valeur |
-|----------|--------|
-| Consommateurs qui font plus confiance à l'UGC qu'à la pub | **92%** |
-| UGC plus puissant que contenu influenceur | **8,7x** |
-| Gen Z faisant confiance aux marques utilisant vrais clients | **84%** |
-| Impact 10 reviews produit sur conversion | **+45%** |
+| Métrique                                                    | Valeur   |
+| ----------------------------------------------------------- | -------- |
+| Consommateurs qui font plus confiance à l'UGC qu'à la pub   | **92%**  |
+| UGC plus puissant que contenu influenceur                   | **8,7x** |
+| Gen Z faisant confiance aux marques utilisant vrais clients | **84%**  |
+| Impact 10 reviews produit sur conversion                    | **+45%** |
 
 ### Micro-influenceurs : le meilleur ROI
 
-| Catégorie | Engagement Instagram | Engagement TikTok |
-|-----------|---------------------|-------------------|
-| **Nano (1-10K)** | 1,73% | **10,3%** |
-| **Micro (10-50K)** | 1,81% | ~8% |
-| **Macro (100K+)** | 0,61% | 7,1% |
+| Catégorie          | Engagement Instagram | Engagement TikTok |
+| ------------------ | -------------------- | ----------------- |
+| **Nano (1-10K)**   | 1,73%                | **10,3%**         |
+| **Micro (10-50K)** | 1,81%                | ~8%               |
+| **Macro (100K+)**  | 0,61%                | 7,1%              |
 
 **64% des marketers** ont travaillé avec micro-influenceurs et **47%** rapportent leur meilleur succès avec eux.
 

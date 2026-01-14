@@ -12,23 +12,23 @@
 
 **VuVenu** est un SaaS de marketing digital simplifié pour les commerces de proximité.
 
-| Élément | Description |
-|---------|-------------|
-| **Nom** | VuVenu (jeu de mots : "Vu" = visible + "Venu" = venir au commerce) |
-| **Tagline** | "Sois vu, fais venir" |
+| Élément     | Description                                                                     |
+| ----------- | ------------------------------------------------------------------------------- |
+| **Nom**     | VuVenu (jeu de mots : "Vu" = visible + "Venu" = venir au commerce)              |
+| **Tagline** | "Sois vu, fais venir"                                                           |
 | **Mission** | Permettre aux petits commerces de créer du contenu marketing pro sans expertise |
-| **Cible** | Restaurants, salons de coiffure, boutiques, artisans, prestataires de services |
-| **Marché** | La Réunion d'abord, puis France entière |
+| **Cible**   | Restaurants, salons de coiffure, boutiques, artisans, prestataires de services  |
+| **Marché**  | La Réunion d'abord, puis France entière                                         |
 
 ### 1.2 Personnalité de marque
 
-| Trait | Description |
-|-------|-------------|
-| **Audacieux** | On ose, on se démarque, on n'est pas un énième outil corporate |
-| **Accessible** | Simple à comprendre, pas de jargon technique |
-| **Moderne** | Esthétique actuelle, digitale, Gen Z friendly |
-| **Local** | Ancré dans le tissu local, proche des commerçants |
-| **Efficace** | Résultats concrets, pas de promesses vagues |
+| Trait          | Description                                                    |
+| -------------- | -------------------------------------------------------------- |
+| **Audacieux**  | On ose, on se démarque, on n'est pas un énième outil corporate |
+| **Accessible** | Simple à comprendre, pas de jargon technique                   |
+| **Moderne**    | Esthétique actuelle, digitale, Gen Z friendly                  |
+| **Local**      | Ancré dans le tissu local, proche des commerçants              |
+| **Efficace**   | Résultats concrets, pas de promesses vagues                    |
 
 ### 1.3 Ton de voix
 
@@ -47,6 +47,7 @@
 **Style Vogue Business x Archrival "Gen Z Broke the Marketing Funnel"**
 
 Ce style se caractérise par :
+
 - Éléments **pixelisés/8-bit** (carrés, formes géométriques)
 - Mélange de **photos découpées** et **illustrations**
 - Couleurs **vives et audacieuses**
@@ -55,24 +56,24 @@ Ce style se caractérise par :
 
 ### 2.2 Palette de couleurs
 
-| Nom | Hex | Usage |
-|-----|-----|-------|
+| Nom                 | Hex       | Usage                             |
+| ------------------- | --------- | --------------------------------- |
 | **Lime Électrique** | `#BFFF00` | Accent principal, CTA, highlights |
-| **Bleu Pixel** | `#60A5FA` | Éléments graphiques, backgrounds |
-| **Violet Doux** | `#C4B5FD` | Sections secondaires, cards |
-| **Rose Pâle** | `#FECDD3` | Backgrounds doux, hover states |
-| **Crème** | `#FFFBEB` | Background principal |
-| **Noir Profond** | `#0F172A` | Texte principal |
-| **Blanc** | `#FFFFFF` | Texte sur fonds sombres |
+| **Bleu Pixel**      | `#60A5FA` | Éléments graphiques, backgrounds  |
+| **Violet Doux**     | `#C4B5FD` | Sections secondaires, cards       |
+| **Rose Pâle**       | `#FECDD3` | Backgrounds doux, hover states    |
+| **Crème**           | `#FFFBEB` | Background principal              |
+| **Noir Profond**    | `#0F172A` | Texte principal                   |
+| **Blanc**           | `#FFFFFF` | Texte sur fonds sombres           |
 
 ### 2.3 Typographie
 
-| Usage | Font | Style |
-|-------|------|-------|
-| **Titres principaux** | Inter ou Satoshi | Bold, uppercase pour impact |
-| **Sous-titres** | Inter | Semi-bold |
-| **Corps de texte** | Inter | Regular |
-| **Accents/Highlights** | Script élégant (ex: Playfair Display Italic) | Pour "magic", "meaning" |
+| Usage                  | Font                                         | Style                       |
+| ---------------------- | -------------------------------------------- | --------------------------- |
+| **Titres principaux**  | Inter ou Satoshi                             | Bold, uppercase pour impact |
+| **Sous-titres**        | Inter                                        | Semi-bold                   |
+| **Corps de texte**     | Inter                                        | Regular                     |
+| **Accents/Highlights** | Script élégant (ex: Playfair Display Italic) | Pour "magic", "meaning"     |
 
 ### 2.4 Éléments graphiques signature
 
@@ -101,6 +102,7 @@ Ce style se caractérise par :
 ### 3.1 Concept du logo
 
 Le logo VuVenu doit :
+
 - Être **reconnaissable** même en petit (favicon)
 - Intégrer l'idée de **visibilité** (œil, regard, lumière)
 - Avoir une touche **pixel/digital**
@@ -109,29 +111,32 @@ Le logo VuVenu doit :
 ### 3.2 Directions créatives pour le logo
 
 **Option A : "L'œil pixel"**
+
 - Forme d'œil stylisée
 - Pupille = carré pixelisé (rappel digital)
 - Couleur : Lime sur fond sombre ou inverse
 
 **Option B : "V connecté"**
+
 - Les deux V de VuVenu connectés
 - Forme qui évoque un "check" (validation, succès)
 - Éléments pixelisés autour
 
 **Option C : "Spotlight"**
+
 - Forme de spot lumineux / projecteur
 - L'idée d'être "sous les projecteurs" = visible
 - Style néon/digital
 
 ### 3.3 Déclinaisons nécessaires
 
-| Format | Usage |
-|--------|-------|
-| Logo complet | Header, pied de page, documents |
-| Logo compact | Mobile, petits espaces |
-| Favicon | Onglet navigateur (32x32, 16x16) |
-| Logo monochrome blanc | Sur fonds colorés |
-| Logo monochrome noir | Sur fonds clairs |
+| Format                | Usage                            |
+| --------------------- | -------------------------------- |
+| Logo complet          | Header, pied de page, documents  |
+| Logo compact          | Mobile, petits espaces           |
+| Favicon               | Onglet navigateur (32x32, 16x16) |
+| Logo monochrome blanc | Sur fonds colorés                |
+| Logo monochrome noir  | Sur fonds clairs                 |
 
 ---
 
@@ -142,8 +147,8 @@ Le logo VuVenu doit :
 ```css
 /* Primaire */
 .btn-primary {
-  background: #BFFF00;
-  color: #0F172A;
+  background: #bfff00;
+  color: #0f172a;
   border-radius: 8px;
   font-weight: 600;
   /* Hover: légèrement plus lumineux + scale 1.02 */
@@ -152,8 +157,8 @@ Le logo VuVenu doit :
 /* Secondaire */
 .btn-secondary {
   background: transparent;
-  border: 2px solid #0F172A;
-  color: #0F172A;
+  border: 2px solid #0f172a;
+  color: #0f172a;
   /* Hover: background #0F172A, texte blanc */
 }
 ```
@@ -162,7 +167,7 @@ Le logo VuVenu doit :
 
 ```css
 .card {
-  background: #FFFFFF;
+  background: #ffffff;
   border-radius: 16px;
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
   /* Hover: légère élévation + bordure lime subtile */
@@ -173,9 +178,9 @@ Le logo VuVenu doit :
 
 ```css
 .input {
-  border: 2px solid #E2E8F0;
+  border: 2px solid #e2e8f0;
   border-radius: 8px;
-  background: #FFFFFF;
+  background: #ffffff;
   /* Focus: border #BFFF00 */
 }
 ```
@@ -185,13 +190,13 @@ Le logo VuVenu doit :
 ```css
 /* Sidebar dashboard */
 .sidebar {
-  background: #0F172A;
+  background: #0f172a;
 }
 .sidebar-link-active {
-  color: #BFFF00;
+  color: #bfff00;
 }
 .sidebar-link {
-  color: #94A3B8;
+  color: #94a3b8;
 }
 ```
 
@@ -204,7 +209,7 @@ Le logo VuVenu doit :
 ```
 Create a modern logo for "VuVenu", a SaaS marketing platform for local businesses.
 
-Style: 
+Style:
 - Inspired by Vogue Business x Archrival visual identity
 - Mix of pixel/8-bit elements with clean modern design
 - Bold, youthful, digital but human
@@ -308,13 +313,13 @@ Each icon should:
 
 ### 6.1 Site web (Landing + App)
 
-| Page | Style dominant |
-|------|----------------|
+| Page         | Style dominant                                 |
+| ------------ | ---------------------------------------------- |
 | Landing hero | Audacieux, photos découpées, pixels décoratifs |
-| Features | Cards propres, icônes illustrées |
-| Pricing | Clair, highlights sur plan recommandé |
-| Dashboard | Clean, sidebar sombre, contenu clair |
-| Formulaires | Simple, focus sur le contenu |
+| Features     | Cards propres, icônes illustrées               |
+| Pricing      | Clair, highlights sur plan recommandé          |
+| Dashboard    | Clean, sidebar sombre, contenu clair           |
+| Formulaires  | Simple, focus sur le contenu                   |
 
 ### 6.2 Emails transactionnels
 
@@ -384,19 +389,19 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'vuvenu': {
-          'lime': '#BFFF00',
-          'blue': '#60A5FA',
-          'violet': '#C4B5FD',
-          'rose': '#FECDD3',
-          'cream': '#FFFBEB',
-          'dark': '#0F172A',
-        }
+        vuvenu: {
+          lime: '#BFFF00',
+          blue: '#60A5FA',
+          violet: '#C4B5FD',
+          rose: '#FECDD3',
+          cream: '#FFFBEB',
+          dark: '#0F172A',
+        },
       },
       fontFamily: {
-        'sans': ['Inter', 'system-ui', 'sans-serif'],
-        'display': ['Satoshi', 'Inter', 'sans-serif'],
-        'accent': ['Playfair Display', 'serif'],
+        sans: ['Inter', 'system-ui', 'sans-serif'],
+        display: ['Satoshi', 'Inter', 'sans-serif'],
+        accent: ['Playfair Display', 'serif'],
       },
     },
   },
@@ -420,5 +425,5 @@ module.exports = {
 
 ---
 
-*Brief créé le 13 janvier 2026*
-*Direction artistique : Style Vogue Business x Archrival*
+_Brief créé le 13 janvier 2026_
+_Direction artistique : Style Vogue Business x Archrival_

@@ -19,12 +19,21 @@ export const INDUSTRY_GROUPS: IndustryGroup[] = [
     name: 'Restauration Table',
     folder: 'Restauration table',
     niches: [
-      'restaurant traditionnel', 'restaurant gastronomique', 'brasserie',
-      'bistrot', 'cuisine du monde', 'crêperie', 'fruits de mer', 'restaurant français',
-      'cuisine italienne', 'cuisine asiatique', 'cuisine indienne', 'restaurant japonais'
+      'restaurant traditionnel',
+      'restaurant gastronomique',
+      'brasserie',
+      'bistrot',
+      'cuisine du monde',
+      'crêperie',
+      'fruits de mer',
+      'restaurant français',
+      'cuisine italienne',
+      'cuisine asiatique',
+      'cuisine indienne',
+      'restaurant japonais',
     ],
     viralAccounts: ['@gordonramsay', '@chefclub', '@tasty'],
-    topFormats: ['Behind the scenes cuisine', 'Food preparation', 'Chef reaction']
+    topFormats: ['Behind the scenes cuisine', 'Food preparation', 'Chef reaction'],
   },
 
   {
@@ -32,11 +41,22 @@ export const INDUSTRY_GROUPS: IndustryGroup[] = [
     name: 'Fast Food & Street Food',
     folder: 'Fast Food et Street Food',
     niches: [
-      'burger', 'kebab', 'pizza', 'tacos', 'food truck', 'snack',
-      'fish & chips', 'bagel', 'poke bowl', 'sandwich', 'frites',
-      'hot dog', 'burrito', 'wrap'
+      'burger',
+      'kebab',
+      'pizza',
+      'tacos',
+      'food truck',
+      'snack',
+      'fish & chips',
+      'bagel',
+      'poke bowl',
+      'sandwich',
+      'frites',
+      'hot dog',
+      'burrito',
+      'wrap',
     ],
-    topFormats: ['Food assembly', 'Speed cooking', 'Size comparison']
+    topFormats: ['Food assembly', 'Speed cooking', 'Size comparison'],
   },
 
   {
@@ -44,11 +64,20 @@ export const INDUSTRY_GROUPS: IndustryGroup[] = [
     name: 'Boulangerie & Sucré',
     folder: 'Boulangerie & Sucré',
     niches: [
-      'boulangerie', 'pâtisserie', 'chocolatier', 'glacier', 'donuts',
-      'cupcakes', 'confiserie', 'macarons', 'viennoiserie', 'gâteaux',
-      'pain artisanal', 'croissant'
+      'boulangerie',
+      'pâtisserie',
+      'chocolatier',
+      'glacier',
+      'donuts',
+      'cupcakes',
+      'confiserie',
+      'macarons',
+      'viennoiserie',
+      'gâteaux',
+      'pain artisanal',
+      'croissant',
     ],
-    topFormats: ['Pastry making', 'Decoration process', 'Before/After baking']
+    topFormats: ['Pastry making', 'Decoration process', 'Before/After baking'],
   },
 
   {
@@ -56,10 +85,16 @@ export const INDUSTRY_GROUPS: IndustryGroup[] = [
     name: 'Café & Boissons',
     folder: 'Café & Boissons',
     niches: [
-      'coffee shop', 'salon de thé', 'bar à jus', 'bubble tea',
-      'smoothie bar', 'café', 'barista', 'torréfaction'
+      'coffee shop',
+      'salon de thé',
+      'bar à jus',
+      'bubble tea',
+      'smoothie bar',
+      'café',
+      'barista',
+      'torréfaction',
     ],
-    topFormats: ['Latte art', 'Brewing process', 'Drink preparation']
+    topFormats: ['Latte art', 'Brewing process', 'Drink preparation'],
   },
 
   {
@@ -67,10 +102,17 @@ export const INDUSTRY_GROUPS: IndustryGroup[] = [
     name: 'Bars & Nightlife',
     folder: 'Bars & Nightlife',
     niches: [
-      'bar cocktails', 'bar à vin', 'pub', 'rooftop', 'nightclub',
-      'speakeasy', 'brasserie artisanale', 'cave à vin', 'bar lounge'
+      'bar cocktails',
+      'bar à vin',
+      'pub',
+      'rooftop',
+      'nightclub',
+      'speakeasy',
+      'brasserie artisanale',
+      'cave à vin',
+      'bar lounge',
     ],
-    topFormats: ['Cocktail making', 'Ambiance showcase', 'Behind the bar']
+    topFormats: ['Cocktail making', 'Ambiance showcase', 'Behind the bar'],
   },
 
   // BEAUTÉ & BIEN-ÊTRE (3 groupes)
@@ -79,12 +121,21 @@ export const INDUSTRY_GROUPS: IndustryGroup[] = [
     name: 'Coiffure & Barbier',
     folder: 'Coiffure & Barbier',
     niches: [
-      'salon coiffure', 'barbier', 'coloriste', 'extensions', 'locks',
-      'afro', 'lissage', 'coupe homme', 'coupe femme', 'balayage',
-      'permanente', 'défrisage'
+      'salon coiffure',
+      'barbier',
+      'coloriste',
+      'extensions',
+      'locks',
+      'afro',
+      'lissage',
+      'coupe homme',
+      'coupe femme',
+      'balayage',
+      'permanente',
+      'défrisage',
     ],
     viralAccounts: ['@salonchampsbarbier', '@coloristbae'],
-    topFormats: ['Hair transformation', 'Cutting process', 'Color reveal']
+    topFormats: ['Hair transformation', 'Cutting process', 'Color reveal'],
   },
 
   {
@@ -92,11 +143,20 @@ export const INDUSTRY_GROUPS: IndustryGroup[] = [
     name: 'Esthétique & Soins',
     folder: 'Esthétique & Soins',
     niches: [
-      'institut beauté', 'onglerie', 'cils', 'sourcils', 'microblading',
-      'épilation', 'soin visage', 'manucure', 'pédicure', 'massage facial',
-      'nettoyage de peau', 'extension cils'
+      'institut beauté',
+      'onglerie',
+      'cils',
+      'sourcils',
+      'microblading',
+      'épilation',
+      'soin visage',
+      'manucure',
+      'pédicure',
+      'massage facial',
+      'nettoyage de peau',
+      'extension cils',
     ],
-    topFormats: ['Before/After treatment', 'Precision work', 'Relaxation moment']
+    topFormats: ['Before/After treatment', 'Precision work', 'Relaxation moment'],
   },
 
   {
@@ -104,11 +164,19 @@ export const INDUSTRY_GROUPS: IndustryGroup[] = [
     name: 'Bien-être & Relaxation',
     folder: 'Bien-être & Relaxation',
     niches: [
-      'spa', 'massage', 'hammam', 'soins corps', 'thalasso',
-      'réflexologie', 'aromathérapie', 'sauna', 'balnéothérapie',
-      'massage thaï', 'shiatsu'
+      'spa',
+      'massage',
+      'hammam',
+      'soins corps',
+      'thalasso',
+      'réflexologie',
+      'aromathérapie',
+      'sauna',
+      'balnéothérapie',
+      'massage thaï',
+      'shiatsu',
     ],
-    topFormats: ['Relaxation ambiance', 'Treatment showcase', 'Zen moments']
+    topFormats: ['Relaxation ambiance', 'Treatment showcase', 'Zen moments'],
   },
 
   // SPORT (1 groupe)
@@ -117,11 +185,21 @@ export const INDUSTRY_GROUPS: IndustryGroup[] = [
     name: 'Fitness & Coaching',
     folder: 'Fitness & Coaching',
     niches: [
-      'salle de sport', 'coach sportif', 'crossfit', 'yoga', 'pilates',
-      'boxe', 'arts martiaux', 'danse', 'musculation', 'cardio',
-      'fitness', 'personal trainer', 'cours collectifs'
+      'salle de sport',
+      'coach sportif',
+      'crossfit',
+      'yoga',
+      'pilates',
+      'boxe',
+      'arts martiaux',
+      'danse',
+      'musculation',
+      'cardio',
+      'fitness',
+      'personal trainer',
+      'cours collectifs',
     ],
-    topFormats: ['Workout demonstration', 'Transformation', 'Exercise tutorial']
+    topFormats: ['Workout demonstration', 'Transformation', 'Exercise tutorial'],
   },
 
   // MODE & RETAIL (3 groupes)
@@ -130,10 +208,17 @@ export const INDUSTRY_GROUPS: IndustryGroup[] = [
     name: 'Boutique Mode Femme',
     folder: 'Boutique Mode Femme',
     niches: [
-      'prêt-à-porter femme', 'chaussures femme', 'accessoires', 'lingerie',
-      'maroquinerie', 'bijoux', 'sacs', 'robes', 'mode féminine'
+      'prêt-à-porter femme',
+      'chaussures femme',
+      'accessoires',
+      'lingerie',
+      'maroquinerie',
+      'bijoux',
+      'sacs',
+      'robes',
+      'mode féminine',
     ],
-    topFormats: ['Outfit styling', 'Product showcase', 'Try-on sessions']
+    topFormats: ['Outfit styling', 'Product showcase', 'Try-on sessions'],
   },
 
   {
@@ -141,10 +226,17 @@ export const INDUSTRY_GROUPS: IndustryGroup[] = [
     name: 'Boutique Mode Mixte/Homme',
     folder: 'Boutique Mode Mixte',
     niches: [
-      'streetwear', 'boutique homme', 'sneakers', 'vintage', 'friperie',
-      'costumes', 'mode masculine', 'casquettes', 'urban wear'
+      'streetwear',
+      'boutique homme',
+      'sneakers',
+      'vintage',
+      'friperie',
+      'costumes',
+      'mode masculine',
+      'casquettes',
+      'urban wear',
     ],
-    topFormats: ['Style transformation', 'Product drops', 'Outfit combinations']
+    topFormats: ['Style transformation', 'Product drops', 'Outfit combinations'],
   },
 
   {
@@ -152,10 +244,18 @@ export const INDUSTRY_GROUPS: IndustryGroup[] = [
     name: 'Commerce & Retail',
     folder: 'Commerce & Retail',
     niches: [
-      'fleuriste', 'déco maison', 'bijouterie', 'librairie', 'papeterie',
-      'cadeaux', 'bougies', 'artisanat', 'antiquités', 'horlogerie'
+      'fleuriste',
+      'déco maison',
+      'bijouterie',
+      'librairie',
+      'papeterie',
+      'cadeaux',
+      'bougies',
+      'artisanat',
+      'antiquités',
+      'horlogerie',
     ],
-    topFormats: ['Product arrangement', 'Behind the scenes', 'Seasonal displays']
+    topFormats: ['Product arrangement', 'Behind the scenes', 'Seasonal displays'],
   },
 
   // SERVICES VISUELS (2 groupes)
@@ -164,10 +264,15 @@ export const INDUSTRY_GROUPS: IndustryGroup[] = [
     name: 'Artisans Corps',
     folder: 'Artisans corps',
     niches: [
-      'tatoueur', 'piercing', 'dermographe', 'maquillage permanent',
-      'tattoo artist', 'body art', 'modification corporelle'
+      'tatoueur',
+      'piercing',
+      'dermographe',
+      'maquillage permanent',
+      'tattoo artist',
+      'body art',
+      'modification corporelle',
     ],
-    topFormats: ['Process timelapse', 'Healing progress', 'Design showcase']
+    topFormats: ['Process timelapse', 'Healing progress', 'Design showcase'],
   },
 
   {
@@ -175,10 +280,18 @@ export const INDUSTRY_GROUPS: IndustryGroup[] = [
     name: 'Automobile',
     folder: 'Automobile',
     niches: [
-      'detailing', 'garage', 'carwash', 'concession auto', 'concession moto',
-      'pneus', 'vitres teintées', 'mécanique', 'carrosserie', 'tuning'
+      'detailing',
+      'garage',
+      'carwash',
+      'concession auto',
+      'concession moto',
+      'pneus',
+      'vitres teintées',
+      'mécanique',
+      'carrosserie',
+      'tuning',
     ],
-    topFormats: ['Before/After cleaning', 'Repair process', 'Car transformation']
+    topFormats: ['Before/After cleaning', 'Repair process', 'Car transformation'],
   },
 
   // IMMOBILIER & HÉBERGEMENT (2 groupes)
@@ -187,10 +300,16 @@ export const INDUSTRY_GROUPS: IndustryGroup[] = [
     name: 'Immobilier',
     folder: 'Immobilier',
     niches: [
-      'agence immo', 'promoteur', 'architecte intérieur', 'home staging',
-      'décorateur', 'courtier', 'agent immobilier', 'syndic'
+      'agence immo',
+      'promoteur',
+      'architecte intérieur',
+      'home staging',
+      'décorateur',
+      'courtier',
+      'agent immobilier',
+      'syndic',
     ],
-    topFormats: ['Property tours', 'Before/After staging', 'Neighborhood highlights']
+    topFormats: ['Property tours', 'Before/After staging', 'Neighborhood highlights'],
   },
 
   {
@@ -198,10 +317,17 @@ export const INDUSTRY_GROUPS: IndustryGroup[] = [
     name: 'Hébergement',
     folder: 'Hébergement',
     niches: [
-      'hôtel', 'airbnb', 'gîte', 'chambre d\'hôtes', 'camping',
-      'glamping', 'lodge', 'resort', 'maison d\'hôtes'
+      'hôtel',
+      'airbnb',
+      'gîte',
+      "chambre d'hôtes",
+      'camping',
+      'glamping',
+      'lodge',
+      'resort',
+      "maison d'hôtes",
     ],
-    topFormats: ['Room reveals', 'Guest experiences', 'Location highlights']
+    topFormats: ['Room reveals', 'Guest experiences', 'Location highlights'],
   },
 
   // LOISIRS & ÉVÉNEMENTS (2 groupes)
@@ -210,10 +336,18 @@ export const INDUSTRY_GROUPS: IndustryGroup[] = [
     name: 'Activités & Loisirs',
     folder: 'Activités & Loisirs',
     niches: [
-      'escape game', 'bowling', 'karting', 'laser game', 'parc attractions',
-      'zoo', 'aquarium', 'mini-golf', 'paintball', 'accrobranche'
+      'escape game',
+      'bowling',
+      'karting',
+      'laser game',
+      'parc attractions',
+      'zoo',
+      'aquarium',
+      'mini-golf',
+      'paintball',
+      'accrobranche',
     ],
-    topFormats: ['Action moments', 'Group fun', 'Facility showcase']
+    topFormats: ['Action moments', 'Group fun', 'Facility showcase'],
   },
 
   {
@@ -221,10 +355,15 @@ export const INDUSTRY_GROUPS: IndustryGroup[] = [
     name: 'Événementiel',
     folder: 'Événementiel',
     niches: [
-      'photographe mariage', 'wedding planner', 'dj', 'traiteur',
-      'décorateur événement', 'animation', 'organisation événements'
+      'photographe mariage',
+      'wedding planner',
+      'dj',
+      'traiteur',
+      'décorateur événement',
+      'animation',
+      'organisation événements',
     ],
-    topFormats: ['Event highlights', 'Setup process', 'Celebration moments']
+    topFormats: ['Event highlights', 'Setup process', 'Celebration moments'],
   },
 
   // SANTÉ & EXPERTISE (2 groupes)
@@ -233,11 +372,20 @@ export const INDUSTRY_GROUPS: IndustryGroup[] = [
     name: 'Santé & Paramédical',
     folder: 'Santé & Paramédical',
     niches: [
-      'dentiste', 'kiné', 'ostéo', 'ophtalmo', 'dermato', 'psy',
-      'nutritionniste', 'podologue', 'sage-femme', 'médecin',
-      'pharmacie', 'cabinet médical'
+      'dentiste',
+      'kiné',
+      'ostéo',
+      'ophtalmo',
+      'dermato',
+      'psy',
+      'nutritionniste',
+      'podologue',
+      'sage-femme',
+      'médecin',
+      'pharmacie',
+      'cabinet médical',
     ],
-    topFormats: ['Educational content', 'Facility tours', 'Patient testimonials']
+    topFormats: ['Educational content', 'Facility tours', 'Patient testimonials'],
   },
 
   {
@@ -245,10 +393,18 @@ export const INDUSTRY_GROUPS: IndustryGroup[] = [
     name: 'Services Pro & Conseil',
     folder: 'Services pro & Conseil',
     niches: [
-      'avocat', 'comptable', 'notaire', 'consultant', 'coach business',
-      'formation', 'rh', 'assurance', 'expertise comptable', 'conseil'
+      'avocat',
+      'comptable',
+      'notaire',
+      'consultant',
+      'coach business',
+      'formation',
+      'rh',
+      'assurance',
+      'expertise comptable',
+      'conseil',
     ],
-    topFormats: ['Expert tips', 'Behind the desk', 'Client success stories']
+    topFormats: ['Expert tips', 'Behind the desk', 'Client success stories'],
   },
 
   // ARTISANAT & BTP (1 groupe)
@@ -257,11 +413,20 @@ export const INDUSTRY_GROUPS: IndustryGroup[] = [
     name: 'Artisans BTP',
     folder: 'Artisans BTP',
     niches: [
-      'plombier', 'électricien', 'peintre', 'menuisier', 'carreleur',
-      'maçon', 'couvreur', 'pisciniste', 'paysagiste', 'chauffagiste',
-      'serrurier', 'vitrier'
+      'plombier',
+      'électricien',
+      'peintre',
+      'menuisier',
+      'carreleur',
+      'maçon',
+      'couvreur',
+      'pisciniste',
+      'paysagiste',
+      'chauffagiste',
+      'serrurier',
+      'vitrier',
     ],
-    topFormats: ['Work process', 'Before/After projects', 'Problem solving']
+    topFormats: ['Work process', 'Before/After projects', 'Problem solving'],
   },
 
   // FAMILLE & ANIMAUX (2 groupes)
@@ -270,10 +435,16 @@ export const INDUSTRY_GROUPS: IndustryGroup[] = [
     name: 'Enfance & Famille',
     folder: 'Enfance & Famille',
     niches: [
-      'crèche', 'photographe bébé', 'boutique enfant', 'jouets',
-      'activités kids', 'anniversaires', 'ludothèque', 'garde d\'enfants'
+      'crèche',
+      'photographe bébé',
+      'boutique enfant',
+      'jouets',
+      'activités kids',
+      'anniversaires',
+      'ludothèque',
+      "garde d'enfants",
     ],
-    topFormats: ['Kid reactions', 'Family moments', 'Play activities']
+    topFormats: ['Kid reactions', 'Family moments', 'Play activities'],
   },
 
   {
@@ -281,12 +452,27 @@ export const INDUSTRY_GROUPS: IndustryGroup[] = [
     name: 'Animaux',
     folder: 'Animaux',
     niches: [
-      'toilettage', 'vétérinaire', 'pension', 'éleveur', 'animalerie',
-      'éducateur canin', 'pet sitting', 'dressage', 'garde animaux'
+      'toilettage',
+      'vétérinaire',
+      'pension',
+      'éleveur',
+      'animalerie',
+      'éducateur canin',
+      'pet sitting',
+      'dressage',
+      'garde animaux',
     ],
-    viralAccounts: ['@girlwithedogs (7.1M)', '@dogsbylogan (6.5M)', '@gabrielfeitosagrooming (2.9M)'],
-    topFormats: ['Transformation (500K-5M vues)', 'ASMR Grooming (500K-7M vues)', 'POV Animal (100K-1.2M vues)']
-  }
+    viralAccounts: [
+      '@girlwithedogs (7.1M)',
+      '@dogsbylogan (6.5M)',
+      '@gabrielfeitosagrooming (2.9M)',
+    ],
+    topFormats: [
+      'Transformation (500K-5M vues)',
+      'ASMR Grooming (500K-7M vues)',
+      'POV Animal (100K-1.2M vues)',
+    ],
+  },
 ]
 
 /**
@@ -295,19 +481,22 @@ export const INDUSTRY_GROUPS: IndustryGroup[] = [
 export function findIndustryGroup(niche: string): IndustryGroup | null {
   const lowerNiche = niche.toLowerCase()
 
-  return INDUSTRY_GROUPS.find(group =>
-    group.niches.some(groupNiche =>
-      groupNiche.toLowerCase().includes(lowerNiche) ||
-      lowerNiche.includes(groupNiche.toLowerCase())
-    )
-  ) || null
+  return (
+    INDUSTRY_GROUPS.find((group) =>
+      group.niches.some(
+        (groupNiche) =>
+          groupNiche.toLowerCase().includes(lowerNiche) ||
+          lowerNiche.includes(groupNiche.toLowerCase())
+      )
+    ) || null
+  )
 }
 
 /**
  * Fonction pour obtenir toutes les niches d'un groupe spécifique
  */
 export function getNichesByGroup(groupId: string): string[] {
-  const group = INDUSTRY_GROUPS.find(g => g.id === groupId)
+  const group = INDUSTRY_GROUPS.find((g) => g.id === groupId)
   return group ? group.niches : []
 }
 
@@ -318,13 +507,15 @@ export function suggestIndustryGroups(businessName: string): IndustryGroup[] {
   const lowerBusinessName = businessName.toLowerCase()
   const suggestions: { group: IndustryGroup; score: number }[] = []
 
-  INDUSTRY_GROUPS.forEach(group => {
+  INDUSTRY_GROUPS.forEach((group) => {
     let score = 0
 
     // Cherche dans les niches du groupe
-    group.niches.forEach(niche => {
-      if (lowerBusinessName.includes(niche.toLowerCase()) ||
-          niche.toLowerCase().includes(lowerBusinessName.split(' ')[0])) {
+    group.niches.forEach((niche) => {
+      if (
+        lowerBusinessName.includes(niche.toLowerCase()) ||
+        niche.toLowerCase().includes(lowerBusinessName.split(' ')[0])
+      ) {
         score += 1
       }
     })
@@ -341,7 +532,7 @@ export function suggestIndustryGroups(businessName: string): IndustryGroup[] {
 
   return suggestions
     .sort((a, b) => b.score - a.score)
-    .map(s => s.group)
+    .map((s) => s.group)
     .slice(0, 3) // Top 3 suggestions
 }
 
@@ -351,64 +542,70 @@ export function suggestIndustryGroups(businessName: string): IndustryGroup[] {
 export const INDUSTRY_CATEGORIES = [
   {
     name: 'Food & Drink',
-    groups: ['restauration-table', 'fast-food-street', 'boulangerie-sucre', 'cafe-boissons', 'bars-nightlife'],
+    groups: [
+      'restauration-table',
+      'fast-food-street',
+      'boulangerie-sucre',
+      'cafe-boissons',
+      'bars-nightlife',
+    ],
     icon: '🍽️',
-    color: '#FF6B6B'
+    color: '#FF6B6B',
   },
   {
     name: 'Beauté & Bien-être',
     groups: ['coiffure-barbier', 'esthetique-soins', 'bien-etre-relaxation'],
     icon: '💄',
-    color: '#FF8CC8'
+    color: '#FF8CC8',
   },
   {
     name: 'Sport & Fitness',
     groups: ['fitness-coaching'],
     icon: '💪',
-    color: '#FF9F43'
+    color: '#FF9F43',
   },
   {
     name: 'Mode & Retail',
     groups: ['boutique-mode-femme', 'boutique-mode-mixte', 'commerce-retail'],
     icon: '👗',
-    color: '#A55EEA'
+    color: '#A55EEA',
   },
   {
     name: 'Services Visuels',
     groups: ['artisans-corps', 'automobile'],
     icon: '🎨',
-    color: '#26D0CE'
+    color: '#26D0CE',
   },
   {
     name: 'Immobilier & Hébergement',
     groups: ['immobilier', 'hebergement'],
     icon: '🏠',
-    color: '#3742FA'
+    color: '#3742FA',
   },
   {
     name: 'Loisirs & Événements',
     groups: ['activites-loisirs', 'evenementiel'],
     icon: '🎉',
-    color: '#2ED573'
+    color: '#2ED573',
   },
   {
     name: 'Santé & Expertise',
     groups: ['sante-paramedical', 'services-pro-conseil'],
     icon: '🏥',
-    color: '#1E90FF'
+    color: '#1E90FF',
   },
   {
     name: 'Artisanat & BTP',
     groups: ['artisans-btp'],
     icon: '🔨',
-    color: '#FFA502'
+    color: '#FFA502',
   },
   {
     name: 'Famille & Animaux',
     groups: ['enfance-famille', 'animaux'],
     icon: '🐾',
-    color: '#FF6348'
-  }
+    color: '#FF6348',
+  },
 ]
 
 export default INDUSTRY_GROUPS

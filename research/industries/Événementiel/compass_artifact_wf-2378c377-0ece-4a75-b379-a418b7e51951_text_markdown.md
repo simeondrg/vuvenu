@@ -10,18 +10,18 @@ Les comptes les plus performants dans l'événementiel partagent des caractéris
 
 ### Tableau des comptes viraux par sous-niche
 
-| Compte | Plateforme | Followers | Sous-niche | Contenu signature | Pourquoi ça marche |
-|--------|------------|-----------|------------|-------------------|-------------------|
-| **@cassidylynnephoto** | TikTok | 288.7K | Photographe mariage | Mix éducatif + memes photographe, podcast "Oh Shoot!", BTS shootings | Relatabilité + valeur éducative. Alternance conseils sérieux/humour qui humanise le métier |
-| **@gowneyedgirl** | TikTok/IG | 1.2M / 256K | Styliste bridal | Analyses critiques robes, thématiques pop culture ("Zodiac Signs as Wedding Dresses") | Niche expertise + body positivity + opinions tranchées qui génèrent débat |
-| **@gothamkoul** | TikTok | Viral (14M+ vues) | Photographe mariage | Skits comiques sur situations de mariage ("Uncle Bob will also be taking photos") | Humour universel + format skit court + tension/release parfait |
-| **@gritandgraceeventsco** | TikTok | 1.2M | Wedding planner | Transformations venues avant/après, trend predictions, checklists | Satisfaction visuelle extrême + valeur pratique + clean aesthetic |
-| **@georginaroseevents** | TikTok | 113.5K | Wedding planner | "The People's Wedding Planner" - timelines, mood boards, BTS logistique | Accessible, conseils pratiques sans prétention, perspective UK |
-| **@djnickspinelli** | TikTok | 1.2M | DJ mariage | Transitions musicales inattendues avec réactions invités | Suspense narratif + nostalgie + validation sociale authentique |
-| **@chefgenevieve** | TikTok | 2.2M | Traiteur | "Catering 750 people in 2 days", day-in-the-life, recettes créatives | Chiffres impressionnants créant "wow factor" + crédibilité technique visible |
-| **@broccoliraab** | TikTok | 750K+ | Chef privé événements | "POV: you're a private chef for a billionaire in the Hamptons" | Voyeurisme de luxe + parcours inspirant + série numérotée addictive |
-| **@acfloralstudio** | TikTok | 1.2M | Fleuriste mariage | Créations inspirées pop culture (Tim Burton, séries TV), "that wave" signature | Créativité décalée + personnalité attachante + signature visuelle mémorable |
-| **@royalluxuryevents** | Instagram/TikTok | 64K | Décorateur luxe | "Royal Cake Drop" spectaculaire, productions luxe complètes | Spectacle pur + réactions mariés en temps réel + luxe aspirationnel |
+| Compte                    | Plateforme       | Followers         | Sous-niche            | Contenu signature                                                                     | Pourquoi ça marche                                                                         |
+| ------------------------- | ---------------- | ----------------- | --------------------- | ------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------ |
+| **@cassidylynnephoto**    | TikTok           | 288.7K            | Photographe mariage   | Mix éducatif + memes photographe, podcast "Oh Shoot!", BTS shootings                  | Relatabilité + valeur éducative. Alternance conseils sérieux/humour qui humanise le métier |
+| **@gowneyedgirl**         | TikTok/IG        | 1.2M / 256K       | Styliste bridal       | Analyses critiques robes, thématiques pop culture ("Zodiac Signs as Wedding Dresses") | Niche expertise + body positivity + opinions tranchées qui génèrent débat                  |
+| **@gothamkoul**           | TikTok           | Viral (14M+ vues) | Photographe mariage   | Skits comiques sur situations de mariage ("Uncle Bob will also be taking photos")     | Humour universel + format skit court + tension/release parfait                             |
+| **@gritandgraceeventsco** | TikTok           | 1.2M              | Wedding planner       | Transformations venues avant/après, trend predictions, checklists                     | Satisfaction visuelle extrême + valeur pratique + clean aesthetic                          |
+| **@georginaroseevents**   | TikTok           | 113.5K            | Wedding planner       | "The People's Wedding Planner" - timelines, mood boards, BTS logistique               | Accessible, conseils pratiques sans prétention, perspective UK                             |
+| **@djnickspinelli**       | TikTok           | 1.2M              | DJ mariage            | Transitions musicales inattendues avec réactions invités                              | Suspense narratif + nostalgie + validation sociale authentique                             |
+| **@chefgenevieve**        | TikTok           | 2.2M              | Traiteur              | "Catering 750 people in 2 days", day-in-the-life, recettes créatives                  | Chiffres impressionnants créant "wow factor" + crédibilité technique visible               |
+| **@broccoliraab**         | TikTok           | 750K+             | Chef privé événements | "POV: you're a private chef for a billionaire in the Hamptons"                        | Voyeurisme de luxe + parcours inspirant + série numérotée addictive                        |
+| **@acfloralstudio**       | TikTok           | 1.2M              | Fleuriste mariage     | Créations inspirées pop culture (Tim Burton, séries TV), "that wave" signature        | Créativité décalée + personnalité attachante + signature visuelle mémorable                |
+| **@royalluxuryevents**    | Instagram/TikTok | 64K               | Décorateur luxe       | "Royal Cake Drop" spectaculaire, productions luxe complètes                           | Spectacle pur + réactions mariés en temps réel + luxe aspirationnel                        |
 
 ### Insights clés des comptes performants
 
@@ -36,7 +36,7 @@ Les créateurs qui explosent sur TikTok et Instagram ont compris que **le divert
 Le contraste visuel extrême entre l'état "avant" (pyjama, salle vide) et le résultat final active une **gratification dopaminergique instantanée**. Structure optimale : clip avant (2-3 sec) → cut synchronisé sur le beat → révélation finale (3-5 sec).
 
 - **Durée optimale** : 7-15 secondes
-- **Compte référence** : @annieclark_ (1.1M vues), @lesdomakeup1 (421K likes)
+- **Compte référence** : @annieclark\_ (1.1M vues), @lesdomakeup1 (421K likes)
 - **Vues moyennes** : 500K à 2M+
 - **Psychologie** : L'anticipation de la révélation + la satisfaction du résultat créent une boucle addictive
 
@@ -102,23 +102,23 @@ Le format le plus viral : une danse chorégraphiée surprenant les invités. L'�
 
 ### Tableau des hooks par type
 
-| Hook exact | Type | Performance | Psychologie |
-|------------|------|-------------|-------------|
-| "POV: You're about to see the moment the groom sees his bride" | POV texte | Élevée | Curiosity gap + immersion — le spectateur VEUT vivre ce moment |
-| "Wait for it... 🥹" | Teaser texte | Très élevée | Anticipation dopaminergique — l'attente décuple la satisfaction |
-| "This bride had no idea what was coming..." | Statement choc | Virale | Open loop — le cerveau DOIT résoudre l'incertitude |
-| "Watch until the end... you won't regret it" | Promesse | Élevée | Engagement contractuel — promesse de valeur |
-| "When the groom sees his bride for the first time 🥺" | Descriptif émotionnel | Élevée | Empathie anticipée — imagination de l'émotion avant de la voir |
-| "Stop scrolling if you want to see the most emotional first look ever" | Call-out direct | 100K+ | Commande directe + urgence + exclusivité |
-| "You won't believe this transformation..." | Curiosité | #1 selon SendShort | Curiosity gap classique — le cerveau doit vérifier |
-| "There's one rule for first looks, and it's this..." | Autorité | 100K+ | Positionne en expert + promet information exclusive |
-| "This is how we made our wedding go viral..." | Story hook | 1M+ potentiel | Meta-hook — attire ceux qui veulent ce résultat |
-| "Nobody talks about THIS moment at weddings..." | Secret révélé | 500K+ | FOMO + exclusivité |
-| [Bride en pyjama → CUT → Full glam dress] | Transformation visuelle | Très élevée | Contrast shock stoppe le scroll instantanément |
-| [Groom de dos, se retourne, larmes] | Reveal émotionnel | Virale | Empathie immédiate via émotions authentiques |
-| [Espace vide → Accéléré → Décor terminé] | Timelapse reveal | Élevée | Satisfaction du "closure" |
-| "3 things I wish I knew before my wedding" + talking head | Liste + face | Élevée | Valeur promise + structure claire |
-| "Ce moment où tout a failli tourner au désastre..." | Tension narrative | Élevée (FR) | Curiosité + storytelling |
+| Hook exact                                                             | Type                    | Performance        | Psychologie                                                     |
+| ---------------------------------------------------------------------- | ----------------------- | ------------------ | --------------------------------------------------------------- |
+| "POV: You're about to see the moment the groom sees his bride"         | POV texte               | Élevée             | Curiosity gap + immersion — le spectateur VEUT vivre ce moment  |
+| "Wait for it... 🥹"                                                    | Teaser texte            | Très élevée        | Anticipation dopaminergique — l'attente décuple la satisfaction |
+| "This bride had no idea what was coming..."                            | Statement choc          | Virale             | Open loop — le cerveau DOIT résoudre l'incertitude              |
+| "Watch until the end... you won't regret it"                           | Promesse                | Élevée             | Engagement contractuel — promesse de valeur                     |
+| "When the groom sees his bride for the first time 🥺"                  | Descriptif émotionnel   | Élevée             | Empathie anticipée — imagination de l'émotion avant de la voir  |
+| "Stop scrolling if you want to see the most emotional first look ever" | Call-out direct         | 100K+              | Commande directe + urgence + exclusivité                        |
+| "You won't believe this transformation..."                             | Curiosité               | #1 selon SendShort | Curiosity gap classique — le cerveau doit vérifier              |
+| "There's one rule for first looks, and it's this..."                   | Autorité                | 100K+              | Positionne en expert + promet information exclusive             |
+| "This is how we made our wedding go viral..."                          | Story hook              | 1M+ potentiel      | Meta-hook — attire ceux qui veulent ce résultat                 |
+| "Nobody talks about THIS moment at weddings..."                        | Secret révélé           | 500K+              | FOMO + exclusivité                                              |
+| [Bride en pyjama → CUT → Full glam dress]                              | Transformation visuelle | Très élevée        | Contrast shock stoppe le scroll instantanément                  |
+| [Groom de dos, se retourne, larmes]                                    | Reveal émotionnel       | Virale             | Empathie immédiate via émotions authentiques                    |
+| [Espace vide → Accéléré → Décor terminé]                               | Timelapse reveal        | Élevée             | Satisfaction du "closure"                                       |
+| "3 things I wish I knew before my wedding" + talking head              | Liste + face            | Élevée             | Valeur promise + structure claire                               |
+| "Ce moment où tout a failli tourner au désastre..."                    | Tension narrative       | Élevée (FR)        | Curiosité + storytelling                                        |
 
 ### Formules de hooks adaptables
 
@@ -210,63 +210,63 @@ Les couples veulent des contenus qui racontent une histoire, pas une documentati
 
 ### Photographe mariage
 
-| Aspect | Spécificités |
-|--------|-------------|
-| **Éléments visuels clés** | Before/after retouche, BTS posing, gear shots, réactions mariés découvrant photos |
-| **Ton approprié** | Mix éducatif (tips techniques) + humour (situations universelles du métier) |
-| **Hooks efficaces** | "POV: when the groom sees the photos for the first time", "3 poses qui marchent à tous les coups", skits "Uncle Bob" |
-| **Comptes référence** | @cassidylynnephoto, @gothamkoul, @keshalambert |
-| **Format star** | First look reactions, memes photographe, tutoriels posing rapides |
+| Aspect                    | Spécificités                                                                                                         |
+| ------------------------- | -------------------------------------------------------------------------------------------------------------------- |
+| **Éléments visuels clés** | Before/after retouche, BTS posing, gear shots, réactions mariés découvrant photos                                    |
+| **Ton approprié**         | Mix éducatif (tips techniques) + humour (situations universelles du métier)                                          |
+| **Hooks efficaces**       | "POV: when the groom sees the photos for the first time", "3 poses qui marchent à tous les coups", skits "Uncle Bob" |
+| **Comptes référence**     | @cassidylynnephoto, @gothamkoul, @keshalambert                                                                       |
+| **Format star**           | First look reactions, memes photographe, tutoriels posing rapides                                                    |
 
 ### Wedding planner
 
-| Aspect | Spécificités |
-|--------|-------------|
-| **Éléments visuels clés** | Transformations venues (vide → décoré), timelines visuelles, checklists, reveals jour J |
-| **Ton approprié** | Organisé, rassurant, expertise pratique, clean aesthetic |
-| **Hooks efficaces** | "This venue transformation will blow your mind", "5 things nobody tells you about wedding planning", trend predictions |
-| **Comptes référence** | @gritandgraceeventsco (1.2M), @georginaroseevents, @theandrewroby |
-| **Format star** | Timelapse setup, before/after venues, day-in-the-life jour J |
+| Aspect                    | Spécificités                                                                                                           |
+| ------------------------- | ---------------------------------------------------------------------------------------------------------------------- |
+| **Éléments visuels clés** | Transformations venues (vide → décoré), timelines visuelles, checklists, reveals jour J                                |
+| **Ton approprié**         | Organisé, rassurant, expertise pratique, clean aesthetic                                                               |
+| **Hooks efficaces**       | "This venue transformation will blow your mind", "5 things nobody tells you about wedding planning", trend predictions |
+| **Comptes référence**     | @gritandgraceeventsco (1.2M), @georginaroseevents, @theandrewroby                                                      |
+| **Format star**           | Timelapse setup, before/after venues, day-in-the-life jour J                                                           |
 
 ### DJ événementiel/mariage
 
-| Aspect | Spécificités |
-|--------|-------------|
-| **Éléments visuels clés** | POV depuis le booth, réactions piste de danse, transitions musicales surprises |
-| **Ton approprié** | Énergique, fun, nostalgie musicale, suspense |
-| **Hooks efficaces** | "Wait for it 👀", "You'll never guess what I play next", "When the whole wedding goes crazy" |
-| **Comptes référence** | @djnickspinelli (1.2M), @dj__mandy, @weddingduo |
-| **Format star** | Transitions inattendues avec réactions invités (15-30 sec), mashups surprises |
+| Aspect                    | Spécificités                                                                                 |
+| ------------------------- | -------------------------------------------------------------------------------------------- |
+| **Éléments visuels clés** | POV depuis le booth, réactions piste de danse, transitions musicales surprises               |
+| **Ton approprié**         | Énergique, fun, nostalgie musicale, suspense                                                 |
+| **Hooks efficaces**       | "Wait for it 👀", "You'll never guess what I play next", "When the whole wedding goes crazy" |
+| **Comptes référence**     | @djnickspinelli (1.2M), @dj\_\_mandy, @weddingduo                                            |
+| **Format star**           | Transitions inattendues avec réactions invités (15-30 sec), mashups surprises                |
 
 ### Traiteur événementiel
 
-| Aspect | Spécificités |
-|--------|-------------|
-| **Éléments visuels clés** | ASMR culinaire (découpe, dressage), volume impressionnant (chiffres), préparation en coulisses |
-| **Ton approprié** | Expertise visible, chiffres impressionnants, storytelling "day in the life" |
-| **Hooks efficaces** | "Catering 750 people in 2 days", "POV: you're a private chef for...", "This is what it takes to feed a wedding" |
-| **Comptes référence** | @chefgenevieve (2.2M), @broccoliraab (750K), @chef_joely (1.2M) |
-| **Format star** | Séries numérotées "Episode 1, 2, 3...", timelapses préparation, ASMR cuisine |
+| Aspect                    | Spécificités                                                                                                    |
+| ------------------------- | --------------------------------------------------------------------------------------------------------------- |
+| **Éléments visuels clés** | ASMR culinaire (découpe, dressage), volume impressionnant (chiffres), préparation en coulisses                  |
+| **Ton approprié**         | Expertise visible, chiffres impressionnants, storytelling "day in the life"                                     |
+| **Hooks efficaces**       | "Catering 750 people in 2 days", "POV: you're a private chef for...", "This is what it takes to feed a wedding" |
+| **Comptes référence**     | @chefgenevieve (2.2M), @broccoliraab (750K), @chef_joely (1.2M)                                                 |
+| **Format star**           | Séries numérotées "Episode 1, 2, 3...", timelapses préparation, ASMR cuisine                                    |
 
 ### Décorateur événement
 
-| Aspect | Spécificités |
-|--------|-------------|
-| **Éléments visuels clés** | Transformations before/after spectaculaires, timelapses installation, reveals avec réactions mariés |
-| **Ton approprié** | Aspirationnel, satisfaction visuelle, effet "waouh" |
-| **Hooks efficaces** | "This empty ballroom in 6 hours...", "Watch this transformation", "The moment the bride saw the room" |
-| **Comptes référence** | @gritandgraceeventsco, @royalluxuryevents (cake drop), @armandoelizondoeventos |
-| **Format star** | Timelapse setup (8-15 sec), reveals spectaculaires avec musique tendance, installations monumentales |
+| Aspect                    | Spécificités                                                                                          |
+| ------------------------- | ----------------------------------------------------------------------------------------------------- |
+| **Éléments visuels clés** | Transformations before/after spectaculaires, timelapses installation, reveals avec réactions mariés   |
+| **Ton approprié**         | Aspirationnel, satisfaction visuelle, effet "waouh"                                                   |
+| **Hooks efficaces**       | "This empty ballroom in 6 hours...", "Watch this transformation", "The moment the bride saw the room" |
+| **Comptes référence**     | @gritandgraceeventsco, @royalluxuryevents (cake drop), @armandoelizondoeventos                        |
+| **Format star**           | Timelapse setup (8-15 sec), reveals spectaculaires avec musique tendance, installations monumentales  |
 
 ### Fleuriste mariage
 
-| Aspect | Spécificités |
-|--------|-------------|
-| **Éléments visuels clés** | Processus de création bouquet, arrangements géants, couleurs vibrantes, détails macro |
-| **Ton approprié** | Créatif, artisanal, satisfaisant visuellement, personnalité visible |
-| **Hooks efficaces** | "This bouquet took 4 hours to make", "POV: you're a wedding florist at 5am", thématiques pop culture |
-| **Comptes référence** | @acfloralstudio (1.2M), @alextelsondesigns, @bowsandarrowsflowers |
-| **Format star** | Tutoriels rapides, créations thématiques pop culture, day-in-the-life avec personnalité |
+| Aspect                    | Spécificités                                                                                         |
+| ------------------------- | ---------------------------------------------------------------------------------------------------- |
+| **Éléments visuels clés** | Processus de création bouquet, arrangements géants, couleurs vibrantes, détails macro                |
+| **Ton approprié**         | Créatif, artisanal, satisfaisant visuellement, personnalité visible                                  |
+| **Hooks efficaces**       | "This bouquet took 4 hours to make", "POV: you're a wedding florist at 5am", thématiques pop culture |
+| **Comptes référence**     | @acfloralstudio (1.2M), @alextelsondesigns, @bowsandarrowsflowers                                    |
+| **Format star**           | Tutoriels rapides, créations thématiques pop culture, day-in-the-life avec personnalité              |
 
 ---
 
@@ -274,39 +274,39 @@ Les couples veulent des contenus qui racontent une histoire, pas une documentati
 
 ### Impact sur le choix des prestataires
 
-| Statistique | Source (2024) |
-|-------------|---------------|
+| Statistique                                                                 | Source (2024)          |
+| --------------------------------------------------------------------------- | ---------------------- |
 | **75%** des couples ont fait au moins un choix basé sur les réseaux sociaux | Zola First Look Report |
-| **92%** des Gen-Z considèrent les réseaux essentiels pour planifier | Zola First Look Report |
-| **94%** des couples commencent leur recherche de prestataires en ligne | Wedding Venue Owners |
-| **78%** des achats mariage sont influencés par les réseaux sociaux | Wedding Venue Owners |
+| **92%** des Gen-Z considèrent les réseaux essentiels pour planifier         | Zola First Look Report |
+| **94%** des couples commencent leur recherche de prestataires en ligne      | Wedding Venue Owners   |
+| **78%** des achats mariage sont influencés par les réseaux sociaux          | Wedding Venue Owners   |
 
 ### Plateformes et comportement
 
-| Statistique | Source (2024) |
-|-------------|---------------|
-| **Pinterest** : 75% des couples l'utilisent (#1 inspiration) | Zola |
-| **TikTok** : engagement **7x supérieur** à Instagram | Socialinsider |
-| **#weddingtiktok** : 41 milliards de vues | Plan With Laur |
-| **7 heures/semaine** passées à planifier en ligne | The Knot |
-| **France** : 51% Pinterest, 43% Instagram, 32% TikTok | Faireparterie |
+| Statistique                                                  | Source (2024)  |
+| ------------------------------------------------------------ | -------------- |
+| **Pinterest** : 75% des couples l'utilisent (#1 inspiration) | Zola           |
+| **TikTok** : engagement **7x supérieur** à Instagram         | Socialinsider  |
+| **#weddingtiktok** : 41 milliards de vues                    | Plan With Laur |
+| **7 heures/semaine** passées à planifier en ligne            | The Knot       |
+| **France** : 51% Pinterest, 43% Instagram, 32% TikTok        | Faireparterie  |
 
 ### ROI et conversion
 
-| Statistique | Source |
-|-------------|--------|
-| **33x ROI** obtenu avec $400 de pub Facebook/Instagram ciblée | Hawthorn Creative |
-| **Reels** performent **3x mieux** que contenu statique pour marques wedding | Dash Social |
-| **80%** des couples considèrent les avis "très importants" | WeddingWire |
-| Coût par lead wedding : **$3.71** à **$150** selon stratégie | Snowmad Digital / LOVU Travel |
+| Statistique                                                                 | Source                        |
+| --------------------------------------------------------------------------- | ----------------------------- |
+| **33x ROI** obtenu avec $400 de pub Facebook/Instagram ciblée               | Hawthorn Creative             |
+| **Reels** performent **3x mieux** que contenu statique pour marques wedding | Dash Social                   |
+| **80%** des couples considèrent les avis "très importants"                  | WeddingWire                   |
+| Coût par lead wedding : **$3.71** à **$150** selon stratégie                | Snowmad Digital / LOVU Travel |
 
 ### Engagement benchmarks
 
 | Plateforme | Engagement moyen |
-|------------|------------------|
-| TikTok | 5.96% - 17.5% |
-| Instagram | 0.83% - 1.94% |
-| Facebook | 0.13% |
+| ---------- | ---------------- |
+| TikTok     | 5.96% - 17.5%    |
+| Instagram  | 0.83% - 1.94%    |
+| Facebook   | 0.13%            |
 
 ---
 

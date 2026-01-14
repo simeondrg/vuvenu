@@ -3,11 +3,22 @@ import { headers } from 'next/headers'
 import { createServerClient } from '@supabase/ssr'
 import Stripe from 'stripe'
 
-const stripe = new Stripe(process.env.STRIPE_SECRET_KEY!, {
-  apiVersion: '2025-12-15.clover',
-})
+// Initialisation différée de Stripe pour éviter les erreurs de build
+function getStripeClient() {
+  if (!process.env.STRIPE_SECRET_KEY) {
+    throw new Error('STRIPE_SECRET_KEY is not configured')
+  }
+  return new Stripe(process.env.STRIPE_SECRET_KEY, {
+    apiVersion: '2025-12-15.clover',
+  })
+}
 
-const endpointSecret = process.env.STRIPE_WEBHOOK_SECRET!
+function getWebhookSecret() {
+  if (!process.env.STRIPE_WEBHOOK_SECRET) {
+    throw new Error('STRIPE_WEBHOOK_SECRET is not configured')
+  }
+  return process.env.STRIPE_WEBHOOK_SECRET
+}
 
 export async function POST(request: NextRequest) {
   try {
@@ -26,6 +37,8 @@ export async function POST(request: NextRequest) {
     let event: Stripe.Event
 
     try {
+      const stripe = getStripeClient()
+      const endpointSecret = getWebhookSecret()
       event = stripe.webhooks.constructEvent(body, sig, endpointSecret)
     } catch (err: any) {
       console.error('Erreur validation webhook Stripe:', err.message)
@@ -245,6 +258,7 @@ async function handleCheckoutCompleted(session: Stripe.Checkout.Session, supabas
     }
 
     // Récupérer les détails de l'abonnement
+    const stripe = getStripeClient()
     const subscription = await stripe.subscriptions.retrieve(subscriptionId)
     const priceId = subscription.items.data[0]?.price.id
     const tier = getPlanTierFromPriceId(priceId)

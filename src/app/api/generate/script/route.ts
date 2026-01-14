@@ -2,26 +2,40 @@ import { NextRequest, NextResponse } from 'next/server'
 import { createServerClient } from '@supabase/ssr'
 import { cookies } from 'next/headers'
 import Anthropic from '@anthropic-ai/sdk'
-import { z } from 'zod'
+import { withRateLimit, RATE_LIMIT_CONFIGS } from '@/lib/rate-limit'
+import {
+  withSecurity,
+  GenerationInputSchema,
+  createCorsHeaders,
+  logApiUsage,
+  SECURITY_LIMITS
+} from '@/lib/api-security'
+import { withResilience } from '@/lib/circuit-breaker'
+import { createUserFriendlyError, logError, ErrorCode } from '@/lib/error-handler'
 
-// Schema de validation pour les données d'entrée
-const GenerateScriptSchema = z.object({
-  industry: z.string().min(1, 'Industrie requise'),
-  topic: z.string().optional(),
-  hook: z.string().optional(),
-  format: z.enum(['reels', 'tiktok', 'youtube-shorts', 'story']),
-  tone: z.enum(['amical', 'professionnel', 'fun', 'inspirant']),
-  customInstructions: z.string().optional(),
-})
+// Initialisation différée d'Anthropic avec timeout
+function getAnthropicClient() {
+  if (!process.env.ANTHROPIC_API_KEY) {
+    throw new Error('ANTHROPIC_API_KEY is not configured')
+  }
+  return new Anthropic({
+    apiKey: process.env.ANTHROPIC_API_KEY,
+    timeout: SECURITY_LIMITS.CLAUDE_TIMEOUT_MS
+  })
+}
 
-// Initialiser Anthropic Claude
-const anthropic = new Anthropic({
-  apiKey: process.env.ANTHROPIC_API_KEY!,
-})
+// Handler OPTIONS pour CORS preflight
+export async function OPTIONS(request: NextRequest) {
+  const corsHeaders = createCorsHeaders(request)
+  return new Response(null, { status: 200, headers: corsHeaders })
+}
 
 export async function POST(request: NextRequest) {
+  const startTime = Date.now()
+  const corsHeaders = createCorsHeaders(request)
+
   try {
-    // Vérifier l'authentification
+    // 1. AUTHENTIFICATION
     const cookieStore = await cookies()
     const supabase = createServerClient(
       process.env.NEXT_PUBLIC_SUPABASE_URL!,
@@ -39,122 +53,185 @@ export async function POST(request: NextRequest) {
     if (authError || !user) {
       return NextResponse.json(
         { error: 'Non authentifié' },
-        { status: 401 }
+        { status: 401, headers: corsHeaders }
       )
     }
 
-    // Récupérer le profil utilisateur
-    const { data: profile, error: profileError } = await supabase
-      .from('profiles')
-      .select('*')
-      .eq('id', user.id)
-      .single()
+    // 2. RATE LIMITING
+    const rateLimitResult = await withRateLimit(
+      request,
+      RATE_LIMIT_CONFIGS.generate,
+      user.id
+    )
 
-    if (profileError || !profile) {
-      return NextResponse.json(
-        { error: 'Profil utilisateur introuvable' },
-        { status: 404 }
-      )
-    }
-
-    // Vérifier les limites d'utilisation
-    const canGenerate = checkUserLimits(profile)
-    if (!canGenerate.allowed) {
-      return NextResponse.json(
-        { error: canGenerate.reason },
-        { status: 403 }
-      )
-    }
-
-    // Valider les données d'entrée
-    const body = await request.json()
-    const validatedData = GenerateScriptSchema.parse(body)
-
-    // Construire le prompt pour Claude
-    const prompt = buildScriptPrompt(validatedData, profile)
-
-    // Générer le script avec Claude
-    const message = await anthropic.messages.create({
-      model: 'claude-3-5-sonnet-20241022',
-      max_tokens: 1500,
-      temperature: 0.7,
-      messages: [{
-        role: 'user',
-        content: prompt
-      }]
-    })
-
-    // Extraire le contenu du script
-    const scriptContent = extractScriptContent(message.content)
-
-    if (!scriptContent) {
-      throw new Error('Impossible d\'extraire le script généré')
-    }
-
-    // Calculer les tokens utilisés (approximation)
-    const tokensUsed = Math.ceil(scriptContent.length / 4)
-
-    // Sauvegarder le script en base
-    const { data: savedScript, error: saveError } = await supabase
-      .from('scripts')
-      .insert({
-        user_id: user.id,
-        title: generateScriptTitle(validatedData),
-        input_data: validatedData,
-        content: scriptContent,
-        format: validatedData.format,
-        tone: validatedData.tone,
-        tokens_used: tokensUsed,
+    if (rateLimitResult.error) {
+      // Ajouter CORS headers aux réponses d'erreur rate limit
+      const errorResponse = rateLimitResult.error
+      corsHeaders && Object.entries(corsHeaders).forEach(([key, value]) => {
+        errorResponse.headers.set(key, value)
       })
-      .select()
-      .single()
-
-    if (saveError) {
-      console.error('Erreur sauvegarde script:', saveError)
-      throw new Error('Erreur lors de la sauvegarde')
+      return errorResponse
     }
 
-    // Mettre à jour le compteur d'utilisation
-    await supabase
-      .from('profiles')
-      .update({
-        scripts_count_month: (profile.scripts_count_month || 0) + 1,
-        updated_at: new Date().toISOString()
-      })
-      .eq('id', user.id)
+    // 3. VALIDATION & SANITIZATION
+    const securityResult = await withSecurity(
+      request,
+      GenerationInputSchema,
+      async (validatedData) => {
+        // Cette fonction sera exécutée seulement si la validation passe
 
-    return NextResponse.json({
-      success: true,
-      script: {
-        id: savedScript.id,
-        content: scriptContent,
-        tokensUsed,
-        format: validatedData.format,
-        tone: validatedData.tone
+        // 4. PROFIL UTILISATEUR & LIMITES
+        const { data: profile, error: profileError } = await supabase
+          .from('profiles')
+          .select('*')
+          .eq('id', user.id)
+          .single()
+
+        if (profileError || !profile) {
+          throw new Error('Profil utilisateur introuvable')
+        }
+
+        const canGenerate = checkUserLimits(profile)
+        if (!canGenerate.allowed) {
+          throw new Error(canGenerate.reason)
+        }
+
+        // 5. GÉNÉRATION AVEC CLAUDE
+        const prompt = buildScriptPrompt(validatedData, profile)
+        const anthropic = getAnthropicClient()
+
+        const generationStart = Date.now()
+        const message = await withResilience(
+          () => anthropic.messages.create({
+            model: 'claude-3-5-sonnet-20241022',
+            max_tokens: 1500,
+            temperature: 0.7,
+            messages: [{
+              role: 'user',
+              content: prompt
+            }]
+          }),
+          'claude'
+        )
+        const generationTime = Date.now() - generationStart
+
+        const scriptContent = extractScriptContent(message.content)
+        if (!scriptContent) {
+          throw new Error('Impossible d\'extraire le script généré')
+        }
+
+        // 6. CALCULS MÉTRIQUES
+        const inputTokens = Math.ceil(prompt.length / 4) // Approximation
+        const outputTokens = Math.ceil(scriptContent.length / 4)
+        const totalTokens = inputTokens + outputTokens
+        const estimatedCost = (inputTokens * 0.000003) + (outputTokens * 0.000015) // Prix approximatif Claude
+
+        // 7. SAUVEGARDE
+        const { data: savedScript, error: saveError } = await supabase
+          .from('scripts')
+          .insert({
+            user_id: user.id,
+            title: generateScriptTitle(validatedData),
+            input_data: validatedData,
+            content: scriptContent,
+            format: validatedData.format,
+            tone: validatedData.tone,
+            tokens_used: totalTokens,
+          })
+          .select()
+          .single()
+
+        if (saveError) {
+          console.error('Erreur sauvegarde script:', saveError)
+          throw new Error('Erreur lors de la sauvegarde')
+        }
+
+        // 8. MISE À JOUR COMPTEUR
+        await supabase
+          .from('profiles')
+          .update({
+            scripts_count_month: (profile.scripts_count_month || 0) + 1,
+            updated_at: new Date().toISOString()
+          })
+          .eq('id', user.id)
+
+        // 9. LOGGING
+        logApiUsage({
+          userId: user.id,
+          endpoint: '/api/generate/script',
+          inputTokens,
+          outputTokens,
+          totalTokens,
+          cost: estimatedCost,
+          duration: Date.now() - startTime,
+          success: true,
+          timestamp: Date.now()
+        })
+
+        return {
+          success: true,
+          script: {
+            id: savedScript.id,
+            content: scriptContent,
+            tokensUsed: totalTokens,
+            format: validatedData.format,
+            tone: validatedData.tone,
+            generationTime,
+            estimatedCost
+          }
+        }
       }
-    })
+    )
+
+    if (securityResult.error) {
+      // Ajouter CORS headers aux erreurs de validation
+      const errorResponse = securityResult.error
+      corsHeaders && Object.entries(corsHeaders).forEach(([key, value]) => {
+        errorResponse.headers.set(key, value)
+      })
+      return errorResponse
+    }
+
+    // Succès avec headers CORS et rate limiting
+    const headers = {
+      ...corsHeaders,
+      // Headers de rate limiting pour le succès seront ajoutés automatiquement
+    }
+
+    return NextResponse.json(securityResult.result, { headers })
 
   } catch (error) {
     console.error('Erreur génération script:', error)
 
-    if (error instanceof z.ZodError) {
-      return NextResponse.json(
-        { error: 'Données invalides', details: error.issues },
-        { status: 400 }
-      )
-    }
+    // Logger l'échec
+    logApiUsage({
+      endpoint: '/api/generate/script',
+      duration: Date.now() - startTime,
+      success: false,
+      error: error instanceof Error ? error.message : 'Erreur inconnue',
+      timestamp: Date.now()
+    })
 
-    if (error instanceof Anthropic.APIError) {
-      console.error('Erreur API Claude:', error)
-      return NextResponse.json(
-        { error: 'Erreur de génération IA. Réessayez dans un moment.' },
-        { status: 502 }
-      )
-    }
+    // Créer une erreur user-friendly
+    const userFriendlyError = createUserFriendlyError(error, 'Génération de script')
+    logError(userFriendlyError, undefined, 'API /generate/script')
+
+    // Déterminer le status code approprié
+    let statusCode = 500
+    if (userFriendlyError.code.startsWith('ERR-CLAUDE')) statusCode = 502
+    else if (userFriendlyError.code.startsWith('ERR-AUTH')) statusCode = 401
+    else if (userFriendlyError.code.startsWith('ERR-LIMIT')) statusCode = 429
+    else if (userFriendlyError.code.startsWith('ERR-VALID')) statusCode = 400
 
     return NextResponse.json(
-      { error: 'Erreur interne du serveur' },
-      { status: 500 }
+      {
+        error: userFriendlyError.message,
+        code: userFriendlyError.code,
+        title: userFriendlyError.title,
+        action: userFriendlyError.action,
+        helpUrl: userFriendlyError.helpUrl
+      },
+      { status: statusCode, headers: corsHeaders }
     )
   }
 }
@@ -190,12 +267,12 @@ function checkUserLimits(profile: any): { allowed: boolean; reason?: string } {
 }
 
 // Construire le prompt optimisé pour Claude
-function buildScriptPrompt(data: z.infer<typeof GenerateScriptSchema>, profile: any): string {
+function buildScriptPrompt(data: any, profile: any): string {
   const formats = {
     'reels': { name: 'Instagram Reels', duration: '15-30 secondes', platform: 'Instagram' },
     'tiktok': { name: 'TikTok', duration: '15-60 secondes', platform: 'TikTok' },
-    'youtube-shorts': { name: 'YouTube Shorts', duration: '30-60 secondes', platform: 'YouTube' },
-    'story': { name: 'Stories Instagram', duration: '15 secondes', platform: 'Instagram' }
+    'youtube': { name: 'YouTube Shorts', duration: '30-60 secondes', platform: 'YouTube' },
+    'stories': { name: 'Stories Instagram', duration: '15 secondes', platform: 'Instagram' }
   }
 
   const tones = {
@@ -205,23 +282,23 @@ function buildScriptPrompt(data: z.infer<typeof GenerateScriptSchema>, profile: 
     'inspirant': 'motivant, positif et encourageant'
   }
 
-  const format = formats[data.format]
-  const tone = tones[data.tone]
+  const format = formats[data.format as keyof typeof formats] || formats.reels
+  const tone = tones[data.tone as keyof typeof tones] || tones.amical
 
   return `Tu es un expert en marketing digital spécialisé dans la création de contenu viral pour les commerces locaux.
 
 CONTEXTE BUSINESS:
-- Nom du commerce: ${profile.business_name}
+- Nom du commerce: ${profile.business_name || 'Commerce local'}
 - Secteur d'activité: ${data.industry}
-- Audience cible: ${profile.target_audience || 'Clientèle locale'}
+- Audience cible: ${data.audience || profile.target_audience || 'Clientèle locale'}
 - Objectifs: ${profile.main_goal || 'Attirer plus de clients'}
 
 BRIEF CRÉATION VIDÉO:
 - Plateforme: ${format.name} (${format.platform})
 - Durée cible: ${format.duration}
-- Sujet/Hook principal: ${data.hook || data.topic || 'Mettre en valeur le commerce'}
+- Sujet principal: ${data.topic || 'Mettre en valeur le commerce'}
 - Ton souhaité: ${tone}
-- Instructions spéciales: ${data.customInstructions || 'Aucune instruction particulière'}
+- Instructions spéciales: ${data.customPrompt || 'Aucune instruction particulière'}
 
 MISSION:
 Génère un script vidéo viral et professionnel qui respecte ces critères OBLIGATOIRES:
@@ -246,7 +323,7 @@ Génère un script vidéo viral et professionnel qui respecte ces critères OBLI
    - Inclure des [INDICATIONS DE TOURNAGE] claires
    - Suggestions de plans caméra et rythme de montage
 
-IMPORTANT: Génère UNIQUEMENT le script final, prêt à être tourné par ${profile.business_name}. Sois créatif mais professionnel.`
+IMPORTANT: Génère UNIQUEMENT le script final, prêt à être tourné par ${profile.business_name || 'ce commerce'}. Sois créatif mais professionnel.`
 }
 
 // Extraire le contenu du script de la réponse Claude
@@ -264,9 +341,9 @@ function extractScriptContent(content: any): string | null {
 }
 
 // Générer un titre pour le script
-function generateScriptTitle(data: z.infer<typeof GenerateScriptSchema>): string {
+function generateScriptTitle(data: any): string {
   const format = data.format.charAt(0).toUpperCase() + data.format.slice(1)
-  const subject = data.hook || data.topic || 'Script personnalisé'
+  const subject = data.topic || 'Script personnalisé'
 
   return `${format}: ${subject.slice(0, 50)}${subject.length > 50 ? '...' : ''}`
 }

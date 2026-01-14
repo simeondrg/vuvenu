@@ -7,11 +7,13 @@ Chaque template a été testé et validé sur des campagnes réelles. Utilise-le
 ## 1. AVATAR CALLOUT
 
 ### Quand l'utiliser
+
 - Marchés sophistiqués (niveau 4-5)
 - Sub-avatar très spécifique et relatable
 - Besoin de couper à travers le bruit
 
 ### Structure
+
 ```
 HEADLINE: [Avatar hyper-spécifique]
 Exemple : "Moms of 15 year olds" | "Entrepreneurs qui lancent leur 2ème boîte"
@@ -27,11 +29,13 @@ PRIMARY TEXT:
 ```
 
 ### Pourquoi ça marche
+
 ✅ Pattern interrupt immédiat ("Hey, c'est moi!")  
 ✅ Sentiment d'être compris  
 ✅ Réduit le scepticisme (c'est fait pour MOI)
 
 ### Exemples d'avatars callout
+
 - "Mamans de jumeaux"
 - "Développeurs qui détestent le CSS"
 - "Couples mariés depuis 10+ ans"
@@ -42,11 +46,13 @@ PRIMARY TEXT:
 ## 2. SOLUTION EXAGGERATION
 
 ### Quand l'utiliser
+
 - Résultat mesurable et impressionnant
 - Bénéfice quantifiable
 - Besoin de scroll-stopper fort
 
 ### Structure
+
 ```
 HEADLINE: [Chiffres impressionnants + Bénéfice précis]
 Exemple : "14+ Hours. No Swelling." | "12 Pounds Lost At 52"
@@ -61,11 +67,13 @@ PRIMARY TEXT:
 ```
 
 ### Règles critiques
+
 ✅ Utilise des nombres impairs/précis ("12 pounds" > "10 pounds")  
 ✅ Combine timeline + outcome ("14+ hours" + "no swelling")  
 ✅ Doit être crédible (pas "100 kilos en 1 semaine")
 
 ### Variations du pattern
+
 - "[Nombre] [Unité de temps]. [Résultat négatif évité]"
 - "[Pourcentage] [Amélioration]. [Timeline]"
 - "[Résultat] in [Temps court + précis]"
@@ -75,16 +83,18 @@ PRIMARY TEXT:
 ## 3. "STEALING" CREDIBILITY
 
 ### Quand l'utiliser
+
 - Nouveau produit sans track record
 - Marché où la confiance est critique
 - Mécanisme familier qu'on peut associer
 
 ### Structure
+
 ```
 HEADLINE: "[Produit/Méthode crédible]'s New [Catégorie]"
 Exemple : "Ozempic's New Bestie" | "Le [Produit connu] du [Catégorie]"
 
-VISUAL: 
+VISUAL:
 - Comparaison visuelle (ton produit + référence)
 - Ou: Focus sur ton produit avec label premium
 
@@ -97,11 +107,13 @@ PRIMARY TEXT:
 ```
 
 ### Exemples de "credibility theft"
+
 - "Le Airbnb de [ton industrie]"
 - "Ce que [Expert connu] utilise pour [résultat]"
 - "La méthode [Institution crédible] recommande"
 
 ### ⚠️ Attention
+
 Ne fais pas de fausses associations. Le parallèle doit être légitime.
 
 ---
@@ -109,11 +121,13 @@ Ne fais pas de fausses associations. Le parallèle doit être légitime.
 ## 4. THIS IS NOT [THE PRODUCT]
 
 ### Quand l'utiliser
+
 - Produit mal compris ou confondu avec autre chose
 - Positionnement unique à communiquer
 - Marché où les attentes sont biaisées
 
 ### Structure
+
 ```
 HEADLINE: "This is [Ce que c'est]. Not [Ce que ce n'est pas]."
 Exemple : "This is a meal. Not a protein shake." | "Ceci est du pain. Ceci est un petit-déj."
@@ -128,11 +142,13 @@ PRIMARY TEXT:
 ```
 
 ### Variantes du pattern
+
 - "Ceci n'est pas [X]. C'est [Y]."
 - "On dirait [X]. C'est en fait [Y]."
 - "Stop de traiter ça comme [X]. C'est [Y]."
 
 ### Pourquoi ça marche
+
 ✅ Pattern interrupt (attaque une croyance)  
 ✅ Éducation déguisée en intrigue  
 ✅ Positionne dans une nouvelle catégorie
@@ -142,11 +158,13 @@ PRIMARY TEXT:
 ## 5. SPECIFIC PAIN POINT
 
 ### Quand l'utiliser
+
 - Pain point ultra-relatable et visualisable
 - Marché conscient du problème
 - Language market fit fort
 
 ### Structure
+
 ```
 HEADLINE: [Pain point dans le langage exact de l'avatar]
 Exemple : "Lose The Muffin Top For Good" | "Arrête de claquer sur tes proches"
@@ -163,6 +181,7 @@ PRIMARY TEXT:
 ```
 
 ### Exemples de pain points spécifiques
+
 ❌ Générique : "Mauvais sommeil"  
 ✅ Spécifique : "Tu te réveilles 3x par nuit et tu n'arrives plus à te rendormir"
 
@@ -170,6 +189,7 @@ PRIMARY TEXT:
 ✅ Spécifique : "Tu répètes ton pitch 20 fois dans ta tête avant de parler en réunion"
 
 ### Règles d'or
+
 - Utilise le LANGAGE de l'avatar (mots qu'ils utilisent réellement)
 - Sois visuel (l'avatar doit voir la scène)
 - Reste sur UN pain point (pas une liste)
@@ -179,11 +199,13 @@ PRIMARY TEXT:
 ## 6. ACCIDENTAL IDEAL OUTCOME
 
 ### Quand l'utiliser
+
 - Témoignage client fort avec twist
 - Transformation inattendue
 - Marché sceptique (need proof)
 
 ### Structure
+
 ```
 HEADLINE: "I Accidentally [Résultat inattendu]"
 Exemple : "I Accidentally Lost 12 Pounds At 52" | "J'ai accidentellement doublé mes revenus"
@@ -199,16 +221,19 @@ PRIMARY TEXT:
 ```
 
 ### Variantes du mot "Accidental"
+
 - "Sans le vouloir, j'ai..."
 - "Je ne m'attendais pas à..."
 - "Ça a changé [X] alors que je cherchais [Y]"
 
 ### Pourquoi ça marche
+
 ✅ Réduit la résistance (pas vendu comme solution miracle)  
 ✅ Storytelling > Pitching  
 ✅ Crédibilité par l'authenticité
 
 ### Éléments qui amplifient
+
 - Nombres précis et impairs ("12 pounds", "52 years old", "56.4%")
 - Langage visuel ("blocking fat cells", "dissolving old fat")
 - Timeline spécifique ("en 3 semaines", "après 8 jours")
@@ -218,11 +243,13 @@ PRIMARY TEXT:
 ## 7. RELATABLE HOOK
 
 ### Quand l'utiliser
+
 - Pain émotionnel fort (pas juste pratique)
 - Besoin d'empathie avant vente
 - Avatar fatigué des solutions "techniques"
 
 ### Structure
+
 ```
 HEADLINE: [Situation émotionnelle relatable]
 Exemple : "12-Hour Shift Shoes" | "Quand ton ado refuse de te parler"
@@ -239,11 +266,13 @@ PRIMARY TEXT:
 ```
 
 ### Exemples de hooks relatables
+
 - "Cette sensation de jambes lourdes après 12h debout"
 - "Quand tu fixes le plafond à 3h du matin"
 - "Le moment où tu réalises que tu as crié sur quelqu'un que tu aimes"
 
 ### Ton de voix critique
+
 ✅ Empathique, pas condescendant  
 ✅ "On te comprend" > "On a la solution"  
 ✅ Storytelling > Feature listing
@@ -253,11 +282,13 @@ PRIMARY TEXT:
 ## 8. INDIRECT AVATAR
 
 ### Quand l'utiliser
+
 - Produit acheté pour quelqu'un d'autre
 - Cadeau, parent qui achète pour enfant, manager pour équipe
 - Pain point du "buyer" ≠ pain point de l' "user"
 
 ### Structure
+
 ```
 HEADLINE: [Situation du buyer concernant l'user]
 Exemple : "Teen Always Grumpy?" | "Ton équipe est démotivée ?"
@@ -273,11 +304,13 @@ PRIMARY TEXT:
 ```
 
 ### Exemples de paires Buyer/User
+
 - Parent (buyer) → Ado (user) : "Teen always grumpy? Vitamin deficiencies might be why."
 - Manager (buyer) → Équipe (user) : "Ton équipe traîne les pieds ? Ils ont besoin de clarté, pas de pression."
 - Conjoint (buyer) → Partenaire (user) : "Il/Elle ronfle ? C'est peut-être plus sérieux que tu penses."
 
 ### Erreur à éviter
+
 ❌ Parler à l'user dans la créative  
 ✅ Parler au buyer sur les bénéfices pour l'user
 
@@ -286,11 +319,13 @@ PRIMARY TEXT:
 ## 9. THE FREE AD
 
 ### Quand l'utiliser
+
 - Offre promotionnelle forte
 - Gift with purchase
 - Besoin de réduire la friction à l'achat
 
 ### Structure
+
 ```
 HEADLINE: "Get [X] Free [Condition]"
 Exemple : "Get 4 Free Gifts" | "Offert : [Produit] pour tout achat"
@@ -306,11 +341,13 @@ PRIMARY TEXT:
 ```
 
 ### Règles pour "Free" qui converti
+
 ✅ Free doit avoir une valeur perçue élevée  
 ✅ Le free amplifie le désir du produit principal (pas l'éclipse)  
 ✅ Deadline claire sinon perte d'urgence
 
 ### Variantes
+
 - "Acheté = Offert"
 - "Free [Accessoire] offert avec [Produit principal]"
 - "Ton [X] offert (valeur Y€)"
@@ -320,11 +357,13 @@ PRIMARY TEXT:
 ## 10. CLASSY OFFER
 
 ### Quand l'utiliser
+
 - Marque premium ou luxe
 - Audience sophistiquée qui déteste les "sales ads"
 - Besoin de communiquer offre sans être salesy
 
 ### Structure
+
 ```
 HEADLINE: [Question élégante ou choix subtil]
 Exemple : "Left or right?" | "Lequel vous ressemble ?"
@@ -340,11 +379,13 @@ PRIMARY TEXT:
 ```
 
 ### Ton de voix
+
 ✅ Confiant, pas urgent  
 ✅ Exclusif, pas exclusionary  
 ✅ Raffiné, pas prétentieux
 
 ### Quand NE PAS utiliser
+
 ❌ Si ton avatar cherche le "meilleur deal"  
 ❌ Si l'urgence/rareté est ton selling point principal  
 ❌ Si ta marque n'est pas positionnée premium
@@ -354,11 +395,13 @@ PRIMARY TEXT:
 ## 11. SIMPLIFIED US VS THEM
 
 ### Quand l'utiliser
+
 - Différenciation claire vs compétition
 - Marché niveau 2-3 (alternatives existent)
 - Message doit être digeste instantanément
 
 ### Structure
+
 ```
 HEADLINE: "This is [Catégorie commune]. This is [Ton produit]."
 Exemple : "This is bread. This is breakfast."
@@ -373,11 +416,13 @@ PRIMARY TEXT:
 ```
 
 ### Règles de comparaison
+
 ✅ Compare à quelque chose que TOUT LE MONDE connaît  
 ✅ Visuel doit être self-explanatory  
 ✅ Pas de dénigrement, juste factuel
 
 ### Variations
+
 - "Leur [X]. Notre [X]."
 - "Avant [produit]. Après [produit]."
 - "[Compétiteur] vous donne [X]. Nous, [Y]."
@@ -387,16 +432,18 @@ PRIMARY TEXT:
 ## 12. PUBITY STYLE
 
 ### Quand l'utiliser
+
 - Audiences jeunes (18-35 ans)
 - Feed Instagram/Facebook natif
 - Besoin de camouflage publicitaire
 
 ### Structure
+
 ```
 HEADLINE: [Question intrigue ou statement provoc]
 Exemple : "Why risk your career with every game?" | "Pourquoi [situation absurde] ?"
 
-VISUAL: 
+VISUAL:
 - Photo petite en haut à droite (style article)
 - Texte bold sur fond uni ou image contextuelle
 - Ratio 4:5 ou 1:1
@@ -409,11 +456,13 @@ PRIMARY TEXT:
 ```
 
 ### Pourquoi ça marche
+
 ✅ Se fond dans le feed organique  
 ✅ Réduit l'ad blindness  
 ✅ Approche "content first, sell second"
 
 ### Caractéristiques visuelles
+
 - Typographie bold et contrastée
 - Composition asymétrique
 - Photo secondaire (pas focus principal)
@@ -424,11 +473,13 @@ PRIMARY TEXT:
 ## 13. THE MINIMAL US VS THEM
 
 ### Quand l'utiliser
+
 - Simplicity est ton USP
 - Compétiteur connu qui a des problèmes évidents
 - Ton produit résout exactement ces problèmes
 
 ### Structure
+
 ```
 HEADLINE: "[Compétiteur] vs [Ton produit]"
 
@@ -445,12 +496,15 @@ PRIMARY TEXT:
 ```
 
 ### Règles critiques
+
 ✅ Le compétiteur doit être top seller / connu  
 ✅ Les problèmes listés doivent être vrais et documentés  
 ✅ "None of that" doit être 100% vrai
 
 ### Exemple structure visuelle
+
 **THEM (avec call-outs)**
+
 - Cheap, flimsy material
 - Ugly design
 - Bacteria breeding ground
@@ -502,4 +556,4 @@ START
 
 ---
 
-*Ces templates sont issus d'analyses de milliers de créatives gagnantes. Ils fonctionnent, mais ne remplacent pas la compréhension profonde de ton avatar et de ton marché.*
+_Ces templates sont issus d'analyses de milliers de créatives gagnantes. Ils fonctionnent, mais ne remplacent pas la compréhension profonde de ton avatar et de ton marché._

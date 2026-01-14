@@ -6,18 +6,18 @@ Le contenu street food domine TikTok avec **394 millions de publications** sous 
 
 ## Comptes viraux de référence
 
-| Compte | Plateforme | Followers | Contenu signature | Pourquoi ça marche |
-|--------|------------|-----------|-------------------|-------------------|
-| **@emilymariko** | TikTok/IG | 12,3M | Meal prep ASMR silencieux, salmon rice bowl iconique | Esthétique minimaliste, sons apaisants, pas de voix = universel. Vidéo salmon rice : 45M+ vues |
-| **@keith_lee125** | TikTok | 17M | Reviews honnêtes food trucks et petits restos | Authenticité brute, réactions first bite, booste les ventes des restos couverts. Review 303 In The Cut : 33M vues |
-| **@thegoldenbalance** | TikTok | 6M | Montages food colorés, recettes Middle Eastern | Ingrédients vibrants, sauce drips, cheese pulls cinématographiques |
-| **@mississippikween** | TikTok | 2,5M | Smash burgers sur griddle, cuisine familiale | Technique du smash satisfaisante, sons de cuisson ASMR, réactions des enfants |
-| **@mezemike** | TikTok | 500K+ | Döner fait maison, recettes "fakeaway" | Méthode accessible (sans rotisserie), vidéo döner : 1M+ likes, 38k shares |
-| **@street_food39** | TikTok | 1,2M | Street food international, POV vendeur | Diversité culinaire, rythme rapide, transcende les barrières de langue |
-| **@ramenkingivan** | TikTok | 10M | Ramen ASMR, comfort food | Sons signature, communauté #ramfam, niche ultra-ciblée |
-| **@bestpizzachef** (Luigi Primo) | TikTok | 49K | Pizza théâtrale, personnage mémorable | Catchphrase "I make a best pizza", personnalité > technique |
-| **@karissaeats** | TikTok | 4,5M | "Everything I ate today", cheese pulls | Format multi-plats, FOMO constant, cheese pull content driving restaurant visits |
-| **@yourbarefootneighbor** | TikTok | 4M | Recettes budget <90 sec, comfort food | Accessibilité maximale, "10-dollar Tuesday", contenu relatable |
+| Compte                           | Plateforme | Followers | Contenu signature                                    | Pourquoi ça marche                                                                                                |
+| -------------------------------- | ---------- | --------- | ---------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------- |
+| **@emilymariko**                 | TikTok/IG  | 12,3M     | Meal prep ASMR silencieux, salmon rice bowl iconique | Esthétique minimaliste, sons apaisants, pas de voix = universel. Vidéo salmon rice : 45M+ vues                    |
+| **@keith_lee125**                | TikTok     | 17M       | Reviews honnêtes food trucks et petits restos        | Authenticité brute, réactions first bite, booste les ventes des restos couverts. Review 303 In The Cut : 33M vues |
+| **@thegoldenbalance**            | TikTok     | 6M        | Montages food colorés, recettes Middle Eastern       | Ingrédients vibrants, sauce drips, cheese pulls cinématographiques                                                |
+| **@mississippikween**            | TikTok     | 2,5M      | Smash burgers sur griddle, cuisine familiale         | Technique du smash satisfaisante, sons de cuisson ASMR, réactions des enfants                                     |
+| **@mezemike**                    | TikTok     | 500K+     | Döner fait maison, recettes "fakeaway"               | Méthode accessible (sans rotisserie), vidéo döner : 1M+ likes, 38k shares                                         |
+| **@street_food39**               | TikTok     | 1,2M      | Street food international, POV vendeur               | Diversité culinaire, rythme rapide, transcende les barrières de langue                                            |
+| **@ramenkingivan**               | TikTok     | 10M       | Ramen ASMR, comfort food                             | Sons signature, communauté #ramfam, niche ultra-ciblée                                                            |
+| **@bestpizzachef** (Luigi Primo) | TikTok     | 49K       | Pizza théâtrale, personnage mémorable                | Catchphrase "I make a best pizza", personnalité > technique                                                       |
+| **@karissaeats**                 | TikTok     | 4,5M      | "Everything I ate today", cheese pulls               | Format multi-plats, FOMO constant, cheese pull content driving restaurant visits                                  |
+| **@yourbarefootneighbor**        | TikTok     | 4M        | Recettes budget <90 sec, comfort food                | Accessibilité maximale, "10-dollar Tuesday", contenu relatable                                                    |
 
 **Apprentissage clé** : Les comptes viraux misent sur l'**authenticité** et les **triggers sensoriels** (sons, textures, générosité). L'équipement haut de gamme n'est pas nécessaire – un smartphone suffit avec une bonne lumière et un focus sur le processus de préparation.
 
@@ -155,23 +155,23 @@ Les vidéos de process unique génèrent **500K - 50M+ vues**.
 
 ## 15 hooks testés et adaptations
 
-| Hook exact | Vues | Mécanisme psychologique |
-|------------|------|------------------------|
-| **"Watch this cheese pull..."** | 2,3M - 8M+ | Promesse visuelle, anticipation, stimulation sensorielle |
-| **"The secret to our smash burger that no one tells you..."** | 3-5x rétention | Curiosité gap – asymétrie d'information à résoudre |
-| **"Only 50 made per day... and they're almost gone"** | +40% engagement | Rareté + FOMO, augmente la valeur perçue |
-| **"Regular burger vs. our burger"** | 10M+ (Burger King) | Effet de contraste, supériorité compétitive évidente |
-| **"You CAN'T finish this in one sitting"** | 5-15M | Challenge psychology, ego involvement, engagement vicariat |
-| **"This is why our burgers are better than [concurrent]..."** | 3-5x shares | Psychologie tribale, instigation de débat |
-| **"Have you ever tried [plat] like THIS?"** | +63% CTR | Engagement direct, auto-réflexion, investissement psychologique |
-| **"The most satisfying thing you'll see today..."** | 5-10M | Anticipation sensorielle, priming dopamine |
-| **"Stop scrolling if you love [food]"** | +40% watch time | Pattern interrupt, auto-identification, appartenance |
-| **"I can't believe what I just discovered..."** | +50% completion | Découverte partagée, voyeurisme, exclusivité |
-| **"Here's how we make it from scratch..."** | 3x engagement | Transparence, appréciation du craft, authenticité |
-| **"This is why we have a 2-hour wait..."** | +70% confiance | Comportement de horde, validation sociale |
-| **"My grandmother's recipe that I finally perfected..."** | +65% watch time | Engagement narratif, connexion émotionnelle |
-| **"From THIS... to THIS in [X minutes]"** | 42M (Logan Moffitt) | Satisfaction transformation, drive de complétion |
-| **"POV: You're about to try the best [food] of your life"** | 2-3x engagement | Perspective-taking, imagination, anticipation |
+| Hook exact                                                    | Vues                | Mécanisme psychologique                                         |
+| ------------------------------------------------------------- | ------------------- | --------------------------------------------------------------- |
+| **"Watch this cheese pull..."**                               | 2,3M - 8M+          | Promesse visuelle, anticipation, stimulation sensorielle        |
+| **"The secret to our smash burger that no one tells you..."** | 3-5x rétention      | Curiosité gap – asymétrie d'information à résoudre              |
+| **"Only 50 made per day... and they're almost gone"**         | +40% engagement     | Rareté + FOMO, augmente la valeur perçue                        |
+| **"Regular burger vs. our burger"**                           | 10M+ (Burger King)  | Effet de contraste, supériorité compétitive évidente            |
+| **"You CAN'T finish this in one sitting"**                    | 5-15M               | Challenge psychology, ego involvement, engagement vicariat      |
+| **"This is why our burgers are better than [concurrent]..."** | 3-5x shares         | Psychologie tribale, instigation de débat                       |
+| **"Have you ever tried [plat] like THIS?"**                   | +63% CTR            | Engagement direct, auto-réflexion, investissement psychologique |
+| **"The most satisfying thing you'll see today..."**           | 5-10M               | Anticipation sensorielle, priming dopamine                      |
+| **"Stop scrolling if you love [food]"**                       | +40% watch time     | Pattern interrupt, auto-identification, appartenance            |
+| **"I can't believe what I just discovered..."**               | +50% completion     | Découverte partagée, voyeurisme, exclusivité                    |
+| **"Here's how we make it from scratch..."**                   | 3x engagement       | Transparence, appréciation du craft, authenticité               |
+| **"This is why we have a 2-hour wait..."**                    | +70% confiance      | Comportement de horde, validation sociale                       |
+| **"My grandmother's recipe that I finally perfected..."**     | +65% watch time     | Engagement narratif, connexion émotionnelle                     |
+| **"From THIS... to THIS in [X minutes]"**                     | 42M (Logan Moffitt) | Satisfaction transformation, drive de complétion                |
+| **"POV: You're about to try the best [food] of your life"**   | 2-3x engagement     | Perspective-taking, imagination, anticipation                   |
 
 ### Adaptations par sous-niche
 
@@ -433,18 +433,18 @@ Plans macro ultra-rapprochés des détails food – fromage fondant, sauce drips
 
 ## Statistiques clés à retenir
 
-| Métrique | Valeur | Implication |
-|----------|--------|-------------|
-| Influence réseaux sociaux sur choix resto | **74%** | Présence sociale = condition de survie |
-| Posts #StreetFood TikTok | **394M+** | Marché saturé mais opportunité massive |
-| Croissance smash burger YoY | **47%** | Trend long-terme, pas éphémère |
-| Impact cheese pull sur ventes Chili's | **10% → 15% CA** | ROI direct et mesurable du viral |
-| Engagement micro-influenceurs vs macro | **+60%** | Privilégier partenariats locaux |
-| Confiance consommateurs UGC | **86%** | Contenu client > contenu marque |
-| CTR hooks question | **+63%** | Commencer par une question |
-| Watch time hooks "Stop scrolling" | **+40%** | Pattern interrupt efficace |
-| Performance posts promo vs entertainment | **-40%** | 80/20 divertissement/promo |
-| Durée optimale vidéos | **15-60 sec** | Sweet spot 45 secondes |
+| Métrique                                  | Valeur           | Implication                            |
+| ----------------------------------------- | ---------------- | -------------------------------------- |
+| Influence réseaux sociaux sur choix resto | **74%**          | Présence sociale = condition de survie |
+| Posts #StreetFood TikTok                  | **394M+**        | Marché saturé mais opportunité massive |
+| Croissance smash burger YoY               | **47%**          | Trend long-terme, pas éphémère         |
+| Impact cheese pull sur ventes Chili's     | **10% → 15% CA** | ROI direct et mesurable du viral       |
+| Engagement micro-influenceurs vs macro    | **+60%**         | Privilégier partenariats locaux        |
+| Confiance consommateurs UGC               | **86%**          | Contenu client > contenu marque        |
+| CTR hooks question                        | **+63%**         | Commencer par une question             |
+| Watch time hooks "Stop scrolling"         | **+40%**         | Pattern interrupt efficace             |
+| Performance posts promo vs entertainment  | **-40%**         | 80/20 divertissement/promo             |
+| Durée optimale vidéos                     | **15-60 sec**    | Sweet spot 45 secondes                 |
 
 ---
 

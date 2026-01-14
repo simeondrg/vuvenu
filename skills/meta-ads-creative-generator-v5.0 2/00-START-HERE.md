@@ -119,12 +119,14 @@ meta-ads-creative-generator-v5.0/
 ### 1. Intégration Formats Origins (MAJEUR)
 
 **Fichier ad-formats.md (27 KB)** :
+
 - 6 formats vidéo détaillés avec caractéristiques complètes
 - 8 formats image détaillés avec caractéristiques complètes
 - Descriptions "Quand utiliser" pour chaque format
 - Exemples visuels et références
 
 **Formats** :
+
 - **Vidéo** : Voiceover, Subtitles, Slideshow, UGC, Professional, Animation
 - **Image** : Static Graphic, Product Photo, Infographic, Collage, Quote, Native, Meme, UGC
 
@@ -133,6 +135,7 @@ meta-ads-creative-generator-v5.0/
 ### 2. Format Selection Strategy
 
 **Decision Tree en 5 étapes** :
+
 1. Identifier Entonnoir (TOF/MOF/BOF)
 2. Identifier Type Business (6 catégories)
 3. Identifier Winning Template
@@ -146,6 +149,7 @@ meta-ads-creative-generator-v5.0/
 ### 3. Descriptions Visuelles Détaillées
 
 Chaque variation génère maintenant :
+
 - **Composition** : Layout, hiérarchie visuelle
 - **Éléments visuels** : Produit, texte, détails
 - **Couleurs** : Palette, dominantes, accents
@@ -159,6 +163,7 @@ Chaque variation génère maintenant :
 ### 4. Mapping Complet
 
 **3 tableaux dans ad-formats.md** :
+
 - **Par Type Business** : Formats prioritaires DTC, Lead Gen, RBS, DTS, Event, Subscription
 - **Par Winning Template** : 13 templates × Format Image × Format Vidéo optimal
 - **Par Entonnoir** : TOF (Vidéo) vs MOF/BOF (Image)
@@ -168,6 +173,7 @@ Chaque variation génère maintenant :
 ### 5. Exemple Complet v5.0
 
 **EXAMPLE-RESTAURANT-v5.0.md (40 KB)** :
+
 - Cas réel : Restaurant créole La Réunion
 - 3 concepts × 3 variations = 9 ads complètes
 - Formats Origins précis avec justifications
@@ -181,16 +187,19 @@ Chaque variation génère maintenant :
 ## 📊 Statistiques Package
 
 **Fichiers** : 12 fichiers totaux
+
 - 4 fichiers principaux (documentation)
 - 8 fichiers références
 
 **Taille totale** : ~180 KB
+
 - SKILL.md : 33 KB
 - EXAMPLE-RESTAURANT-v5.0.md : 40 KB
 - ad-formats.md : 27 KB
 - Autres références : ~80 KB
 
 **Lignes documentation** : ~5,600 lignes totales
+
 - SKILL.md : ~1,064 lignes
 - ad-formats.md : ~745 lignes
 - EXAMPLE : ~1,500 lignes
@@ -228,18 +237,22 @@ Voir `EXAMPLE-RESTAURANT-v5.0.md` pour voir la skill en action sur un cas réel.
 ## ✨ Points Forts v5.0
 
 ### Précision Formats
+
 - **AVANT v4.0** : "Format : Image Static" (vague)
 - **APRÈS v5.0** : "Format : Image - UGC image" + "Justification : TOF DTS nécessite authenticité..." (précis)
 
 ### Descriptions Visuelles
+
 - **AVANT v4.0** : "Photo client satisfait"
 - **APRÈS v5.0** : Description 200+ mots avec composition, couleurs, ambiance, style
 
 ### Decision-Making
+
 - **AVANT v4.0** : Choix format intuitif
 - **APRÈS v5.0** : Decision tree 3 critères systématique
 
 ### Documentation
+
 - **AVANT v4.0** : Formats implicites
 - **APRÈS v5.0** : 27 KB documentation formats Origins
 
@@ -248,11 +261,13 @@ Voir `EXAMPLE-RESTAURANT-v5.0.md` pour voir la skill en action sur un cas réel.
 ## 🔗 Compatibilité
 
 **Rétrocompatible v4.0** : ✅
+
 - Tous concepts v4.0 fonctionnent encore
 - Nouveautés v5.0 = ajouts non-breaking
 - Migration automatique
 
 **Intégrations** :
+
 - ✅ meta-ads-static-images-creator (workflow prompts Higgsfield)
 - ✅ bbp-script-writer (synergies locales)
 
@@ -261,21 +276,25 @@ Voir `EXAMPLE-RESTAURANT-v5.0.md` pour voir la skill en action sur un cas réel.
 ## 📈 Frameworks Intégrés (18+)
 
 **Stratégie** :
+
 - Market Sophistication (5 niveaux)
 - 4 Besoins Humains
 - Emotional Spending
 - Tradeoffs
 
 **Classification** :
+
 - 6 Types Business
 - TOF/MOF/BOF Entonnoir
 
 **Creative** :
+
 - 6 Hook Patterns
 - 13 Winning Templates
 - **14 Formats Origins** (NOUVEAU)
 
 **Campagne** :
+
 - Budget-Based Structure
 - Min/Max Spend
 - Horizontal Scaling

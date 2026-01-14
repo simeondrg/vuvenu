@@ -10,18 +10,18 @@ Le **pattern dominant** qui traverse toutes les sous-niches est clair : **Mixolo
 
 Ces comptes représentent l'excellence du contenu bar/nightlife et offrent des modèles réplicables pour les commerces locaux.
 
-| Compte | Plateforme | Followers | Type | Style signature | Pourquoi ça marche |
-|--------|------------|-----------|------|-----------------|-------------------|
-| **@realtipsybartender** | TikTok | **9,2M** | Bartender individuel | Cocktails colorés et extravagants (bonbons, licorne, fluo) | Format répétitif captivant, personnalité énergique, visuels "wow" instantanés |
-| **@theparadise.bartender** | TikTok | **2,4M** | Bartender (Hawaï) | Tutoriels positifs avec signature "Shake, shake, shake shake" | Routine identifiable sur 400+ vidéos, script mémorable, ambiance tropicale |
-| **@deathandcompany** | Instagram | **342K** | Cocktail bar emblématique (NYC) | Photos somptueuses, ambiance speakeasy sombre et élégante | Leader craft cocktails, contenu éducatif + esthétique dark luxury |
-| **@handshake_bar** | Instagram | **188K** | Speakeasy (Mexico) | Esthétique Prohibition, marbre noir + laiton, cocktails 48h | **#1 World's 50 Best Bars 2024**, mystère + excellence |
-| **@join_jules** | Instagram/TikTok | **662,8K** | Créatrice ASMR | Vidéos apaisantes, sons satisfaisants, esthétique vintage | ASMR + mixologie = niche virale, cocktails thématiques |
-| **@cointricktwitch** | TikTok | **1,5M** | Bartender flair | Tricks spectaculaires, jonglage de bar | "Wow factor" instantané, format parfait pour l'algorithme |
-| **@evieisntreal** | TikTok | **~500K** | Home bartender NYC | Style vintage, "floating hand", esthétique cinématographique | Negroni romarin = 10M+ vues, relaxant à regarder |
-| **@theblondbrewer** | TikTok | **5,4M** | Brewery (humour) | Contenu humoristique du couple propriétaire | Personnalité > produit, 155M likes, authenticité des fondateurs |
-| **@employeesonlyny** | Instagram | **95K** | Speakeasy (NYC) | Art Deco, entrée par diseuse de bonne aventure | Pionnier speakeasy moderne (2004), tradition du chicken soup gratuit |
-| **@beeraficionado** | TikTok | **57,9K** | Expert craft beer | Analyses business, contenu éducatif approfondi | Niche B2B/B2C, "Best Beer Newsletter 2025" |
+| Compte                     | Plateforme       | Followers  | Type                            | Style signature                                               | Pourquoi ça marche                                                            |
+| -------------------------- | ---------------- | ---------- | ------------------------------- | ------------------------------------------------------------- | ----------------------------------------------------------------------------- |
+| **@realtipsybartender**    | TikTok           | **9,2M**   | Bartender individuel            | Cocktails colorés et extravagants (bonbons, licorne, fluo)    | Format répétitif captivant, personnalité énergique, visuels "wow" instantanés |
+| **@theparadise.bartender** | TikTok           | **2,4M**   | Bartender (Hawaï)               | Tutoriels positifs avec signature "Shake, shake, shake shake" | Routine identifiable sur 400+ vidéos, script mémorable, ambiance tropicale    |
+| **@deathandcompany**       | Instagram        | **342K**   | Cocktail bar emblématique (NYC) | Photos somptueuses, ambiance speakeasy sombre et élégante     | Leader craft cocktails, contenu éducatif + esthétique dark luxury             |
+| **@handshake_bar**         | Instagram        | **188K**   | Speakeasy (Mexico)              | Esthétique Prohibition, marbre noir + laiton, cocktails 48h   | **#1 World's 50 Best Bars 2024**, mystère + excellence                        |
+| **@join_jules**            | Instagram/TikTok | **662,8K** | Créatrice ASMR                  | Vidéos apaisantes, sons satisfaisants, esthétique vintage     | ASMR + mixologie = niche virale, cocktails thématiques                        |
+| **@cointricktwitch**       | TikTok           | **1,5M**   | Bartender flair                 | Tricks spectaculaires, jonglage de bar                        | "Wow factor" instantané, format parfait pour l'algorithme                     |
+| **@evieisntreal**          | TikTok           | **~500K**  | Home bartender NYC              | Style vintage, "floating hand", esthétique cinématographique  | Negroni romarin = 10M+ vues, relaxant à regarder                              |
+| **@theblondbrewer**        | TikTok           | **5,4M**   | Brewery (humour)                | Contenu humoristique du couple propriétaire                   | Personnalité > produit, 155M likes, authenticité des fondateurs               |
+| **@employeesonlyny**       | Instagram        | **95K**    | Speakeasy (NYC)                 | Art Deco, entrée par diseuse de bonne aventure                | Pionnier speakeasy moderne (2004), tradition du chicken soup gratuit          |
+| **@beeraficionado**        | TikTok           | **57,9K**  | Expert craft beer               | Analyses business, contenu éducatif approfondi                | Niche B2B/B2C, "Best Beer Newsletter 2025"                                    |
 
 ### Facteurs clés de succès identifiés
 
@@ -142,43 +142,43 @@ Ces comptes représentent l'excellence du contenu bar/nightlife et offrent des m
 
 ### Hooks de curiosité
 
-| Hook | Type | Performance | Pourquoi ça accroche |
-|------|------|-------------|---------------------|
-| "Tu ne devineras jamais ce qui se passe quand tu mélanges X et Y..." | Curiosité/Mystère | Élevée | Crée une boucle ouverte dans le cerveau qui exige résolution |
-| "Ce cocktail change de couleur devant tes yeux" | Teaser visuel | Très élevée | Promet une transformation magique, impossible de ne pas regarder |
-| "Le secret que les bartenders ne te disent jamais" | Révélation | Élevée | Sentiment d'exclusivité + appel au sentiment d'être initié |
-| "Personne ne me croit quand je dis que c'est fait maison" | Preuve sociale inversée | Élevée | Challenge le scepticisme, incite à vérifier |
+| Hook                                                                 | Type                    | Performance | Pourquoi ça accroche                                             |
+| -------------------------------------------------------------------- | ----------------------- | ----------- | ---------------------------------------------------------------- |
+| "Tu ne devineras jamais ce qui se passe quand tu mélanges X et Y..." | Curiosité/Mystère       | Élevée      | Crée une boucle ouverte dans le cerveau qui exige résolution     |
+| "Ce cocktail change de couleur devant tes yeux"                      | Teaser visuel           | Très élevée | Promet une transformation magique, impossible de ne pas regarder |
+| "Le secret que les bartenders ne te disent jamais"                   | Révélation              | Élevée      | Sentiment d'exclusivité + appel au sentiment d'être initié       |
+| "Personne ne me croit quand je dis que c'est fait maison"            | Preuve sociale inversée | Élevée      | Challenge le scepticisme, incite à vérifier                      |
 
 ### Hooks d'appel / Call-out
 
-| Hook | Type | Performance | Pourquoi ça accroche |
-|------|------|-------------|---------------------|
-| "Stop scrolling si tu aimes les cocktails" | Call-out direct | Moyenne-élevée | Filtre l'audience, crée sentiment de personnalisation |
-| "POV: Tu es bartender et le client te commande ÇA" | POV/Relatabilité | Très élevée | Identification immédiate pour les pros + curiosité des autres |
-| "Bartenders, vous me comprenez 🙄" | Communauté | Élevée | Sentiment d'appartenance, encourage les commentaires |
+| Hook                                               | Type             | Performance    | Pourquoi ça accroche                                          |
+| -------------------------------------------------- | ---------------- | -------------- | ------------------------------------------------------------- |
+| "Stop scrolling si tu aimes les cocktails"         | Call-out direct  | Moyenne-élevée | Filtre l'audience, crée sentiment de personnalisation         |
+| "POV: Tu es bartender et le client te commande ÇA" | POV/Relatabilité | Très élevée    | Identification immédiate pour les pros + curiosité des autres |
+| "Bartenders, vous me comprenez 🙄"                 | Communauté       | Élevée         | Sentiment d'appartenance, encourage les commentaires          |
 
 ### Hooks de challenge / Provocation
 
-| Hook | Type | Performance | Pourquoi ça accroche |
-|------|------|-------------|---------------------|
-| "Ce cocktail semble illégal à connaître" | Provocation | Très élevée | Mots "illégal", "secret", "dangereux" créent tension psychologique |
-| "Mon ex bartender disait que c'était 'trop basique' – alors je l'ai rendu viral" | Story hook | Élevée | Charge émotionnelle + arc narratif satisfaisant |
-| "99% des gens font cette erreur avec le Mojito" | Statistique | Très élevée | Peur de faire partie des 99%, désir d'être exceptionnel |
-| "Tout ce que tu savais sur le Negroni est FAUX" | Contrarian | Élevée | Remet en question les croyances, oblige à rester |
+| Hook                                                                             | Type        | Performance | Pourquoi ça accroche                                               |
+| -------------------------------------------------------------------------------- | ----------- | ----------- | ------------------------------------------------------------------ |
+| "Ce cocktail semble illégal à connaître"                                         | Provocation | Très élevée | Mots "illégal", "secret", "dangereux" créent tension psychologique |
+| "Mon ex bartender disait que c'était 'trop basique' – alors je l'ai rendu viral" | Story hook  | Élevée      | Charge émotionnelle + arc narratif satisfaisant                    |
+| "99% des gens font cette erreur avec le Mojito"                                  | Statistique | Très élevée | Peur de faire partie des 99%, désir d'être exceptionnel            |
+| "Tout ce que tu savais sur le Negroni est FAUX"                                  | Contrarian  | Élevée      | Remet en question les croyances, oblige à rester                   |
 
 ### Hooks visuels (non verbaux)
 
-| Hook visuel | Catégorie | Pourquoi ça accroche |
-|-------------|-----------|---------------------|
-| Slow-motion du versement coloré (premier frame = liquide en mouvement) | Visuel pur | Mouvement capte l'attention primitive du cerveau |
-| Shake énergique dès la 1ère seconde | Action visuelle | L'énergie physique crée engagement immédiat |
-| Produit glissé dans le cadre (cocktail apparaît soudainement) | Surprise | L'inattendu interrompt le pattern de scroll |
+| Hook visuel                                                            | Catégorie       | Pourquoi ça accroche                             |
+| ---------------------------------------------------------------------- | --------------- | ------------------------------------------------ |
+| Slow-motion du versement coloré (premier frame = liquide en mouvement) | Visuel pur      | Mouvement capte l'attention primitive du cerveau |
+| Shake énergique dès la 1ère seconde                                    | Action visuelle | L'énergie physique crée engagement immédiat      |
+| Produit glissé dans le cadre (cocktail apparaît soudainement)          | Surprise        | L'inattendu interrompt le pattern de scroll      |
 
 ### Hook émotionnel
 
-| Hook | Type | Pourquoi ça accroche |
-|------|------|---------------------|
-| "Le cocktail que je fais quand j'ai passé une journée de m***e" | Relatabilité émotionnelle | Connexion humaine immédiate, validation émotionnelle |
+| Hook                                                               | Type                      | Pourquoi ça accroche                                 |
+| ------------------------------------------------------------------ | ------------------------- | ---------------------------------------------------- |
+| "Le cocktail que je fais quand j'ai passé une journée de m\*\*\*e" | Relatabilité émotionnelle | Connexion humaine immédiate, validation émotionnelle |
 
 **Règle d'or** : 63% des vidéos à fort CTR accrochent en moins de 3 secondes. Combiner hook visuel + texte écran + audio/verbal pour un impact maximal.
 
@@ -293,6 +293,7 @@ TikTok favorise désormais l'authenticité sur la production léchée, les micro
 **Ton et style** : Artistique et créatif, sophistiqué mais accessible, playful et expérimental, éducatif.
 
 **Hooks adaptés** :
+
 - "Ce cocktail a fait exploser notre TikTok..."
 - "POV: Tu es bartender et un client demande [cocktail tendance]"
 - "Le cocktail que tu dois absolument commander ici à [ville]"
@@ -308,6 +309,7 @@ TikTok favorise désormais l'authenticité sur la production léchée, les micro
 **Ton et style** : Éducatif mais accessible ("Making wine unpretentious"), authentique et humain, humoristique (déconstruire les codes élitistes), passionné sans jargon intimidant.
 
 **Hooks adaptés** :
+
 - "Ce que les sommeliers ne vous disent jamais..."
 - "Le vin à moins de X€ qui impressionne tout le monde"
 - "Comment commander du vin au resto sans avoir l'air perdu"
@@ -326,6 +328,7 @@ TikTok favorise désormais l'authenticité sur la production léchée, les micro
 **Ton et style** : Chaleureux et authentique (comme une conversation avec un vieil ami), humoristique et auto-dérision (humour irlandais), communautaire (sentiment de "craic"), nostalgique.
 
 **Hooks adaptés** :
+
 - "Pourquoi les Irlandais versent-ils la Guinness comme ça..."
 - "POV: Tu entres dans un vrai pub irlandais pour la première fois"
 - "Ce moment quand tout le pub se met à chanter..."
@@ -344,6 +347,7 @@ TikTok favorise désormais l'authenticité sur la production léchée, les micro
 **Ton et style** : Aspirationnel et lifestyle, romantique/date night, exclusif mais accessible, "Living your best life".
 
 **Hooks adaptés** :
+
 - "Best rooftop in [ville]"
 - "POV: You finally found THE spot"
 - "Wait for the view reveal..."
@@ -363,6 +367,7 @@ TikTok favorise désormais l'authenticité sur la production léchée, les micro
 **Ton et style** : Haute énergie, FOMO intense ("Tu rates quelque chose de fou"), exclusif et hype, tendance et actuel (sons populaires du moment).
 
 **Hooks adaptés** :
+
 - "This is what you're missing"
 - "POV: You finally got in"
 - "When the DJ drops [titre viral]"
@@ -371,6 +376,7 @@ TikTok favorise désormais l'authenticité sur la production léchée, les micro
 **Considérations légales (droit à l'image)** : Les nightclubs sont des espaces semi-publics. Pour usage commercial, le consentement est recommandé.
 
 **Comment filmer sans montrer les visages** :
+
 - Filmer de dos (dancefloor vu de derrière la foule)
 - Plans larges avec foule floue, focus sur lumières
 - Filmer pieds/mains uniquement
@@ -387,6 +393,7 @@ TikTok favorise désormais l'authenticité sur la production léchée, les micro
 **Ton et style** : Mystérieux et exclusif (cultiver le "secret"), cinématographique (chaque vidéo comme une scène de film), FOMO (expérience unique), storytelling narratif (histoire, contexte Prohibition).
 
 **Hooks adaptés** :
+
 - "Ce bar secret que personne ne connaît à [ville]..."
 - "POV: Tu trouves ENFIN l'entrée du speakeasy"
 - "Le mot de passe change chaque semaine..."
@@ -405,6 +412,7 @@ TikTok favorise désormais l'authenticité sur la production léchée, les micro
 **Ton et style** : Authentique et passionné (montrer les vraies personnes derrière la bière), éducatif mais fun ("Beer nerd" accessible), communautaire (rassemblement local), décontracté (iPhone suffit), humoristique/relatable.
 
 **Hooks adaptés** :
+
 - "How we brew [nom de la bière]"
 - "Behind the scenes at the brewery"
 - "New beer just dropped"
@@ -421,21 +429,21 @@ TikTok favorise désormais l'authenticité sur la production léchée, les micro
 
 ### Découverte et conversion
 
-| Statistique | Source |
-|-------------|--------|
-| **53% des Millennials** visitent un bar/restaurant après l'avoir vu sur TikTok | MGH Survey |
-| **77% de la Gen Z** utilisent TikTok pour découvrir de nouveaux produits | Cropink 2025 |
-| **72% des utilisateurs** visitent un établissement parce que les boissons semblent appétissantes en vidéo | MGH Survey |
-| **90% des clients** vérifient les pages social media avant de se rendre dans un établissement | Toast POS |
+| Statistique                                                                                                   | Source              |
+| ------------------------------------------------------------------------------------------------------------- | ------------------- |
+| **53% des Millennials** visitent un bar/restaurant après l'avoir vu sur TikTok                                | MGH Survey          |
+| **77% de la Gen Z** utilisent TikTok pour découvrir de nouveaux produits                                      | Cropink 2025        |
+| **72% des utilisateurs** visitent un établissement parce que les boissons semblent appétissantes en vidéo     | MGH Survey          |
+| **90% des clients** vérifient les pages social media avant de se rendre dans un établissement                 | Toast POS           |
 | **30% des utilisateurs TikTok** ont voyagé plus loin que d'habitude pour un établissement découvert sur l'app | Restaurant Business |
 
 ### Engagement par plateforme
 
-| Plateforme | Taux d'engagement Food & Beverage |
-|------------|----------------------------------|
-| **TikTok** | 6,92% - 7,69% (meilleur de toutes les industries) |
-| **Instagram** | 0,96% - 1,54% (médiane tous secteurs : 0,36%) |
-| **Instagram Reels** | Reach rate 30,81% (2x les autres formats) |
+| Plateforme          | Taux d'engagement Food & Beverage                 |
+| ------------------- | ------------------------------------------------- |
+| **TikTok**          | 6,92% - 7,69% (meilleur de toutes les industries) |
+| **Instagram**       | 0,96% - 1,54% (médiane tous secteurs : 0,36%)     |
+| **Instagram Reels** | Reach rate 30,81% (2x les autres formats)         |
 
 ### ROI et démographie
 
@@ -449,10 +457,10 @@ La Gen Z représente **25% du public social media US** et **89%** sont sur Insta
 
 ### Fréquence optimale
 
-| Plateforme | Minimum | Idéal |
-|------------|---------|-------|
-| TikTok | 1/jour | 1-4/jour |
-| Instagram | 3-4/semaine | 1/jour + Stories quotidiennes |
+| Plateforme | Minimum     | Idéal                         |
+| ---------- | ----------- | ----------------------------- |
+| TikTok     | 1/jour      | 1-4/jour                      |
+| Instagram  | 3-4/semaine | 1/jour + Stories quotidiennes |
 
 ### Meilleurs moments pour publier (bars)
 

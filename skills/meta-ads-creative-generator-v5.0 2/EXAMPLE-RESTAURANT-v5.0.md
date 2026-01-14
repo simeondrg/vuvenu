@@ -3,6 +3,7 @@
 ## Contexte
 
 **Demande utilisateur** :
+
 ```
 Crée une campagne Meta Ads pour mon restaurant créole "Ti Kaz Lontan" à Saint-Denis, La Réunion.
 
@@ -22,6 +23,7 @@ Infos :
 ### 1. Classification Business Type
 
 **Arbre de décision** :
+
 - Q1 : Client paye en ligne ? → NON
 - Q2 : Doit demander devis ? → NON
 - Q3 : Doit réserver créneau ? → NON (restaurant walk-in possible)
@@ -39,6 +41,7 @@ Infos :
 **→ Structure : 1 CBO avec Min/Max Spend**
 
 **Calculs Min/Max** :
+
 - CPA cible : 12€
 - WINNERS Ad Set :
   - Min Spend : 12€ × 4 = 48€/jour
@@ -64,12 +67,14 @@ C. Lancer sans Min Spend (risque majeur : winners peuvent être sous-financés)
 ### 3. Product/Service Analysis (7 étapes)
 
 **BASICS** :
+
 - Service Name : Restaurant Ti Kaz Lontan
 - Type : Service (expérience restauration)
 - Price Point : 18€/repas moyen
 - Location : Saint-Denis, La Réunion
 
 **IN ACTION** :
+
 ```
 Full Version:
 Le client découvre le restaurant via l'ad Meta, clique sur "Y aller" pour obtenir l'itinéraire, se rend physiquement au restaurant, commande un plat créole authentique préparé avec recettes traditionnelles réunionnaises, savoure le "vrai goût lontan" dans ambiance familiale, et repart satisfait avec envie de revenir.
@@ -79,6 +84,7 @@ Tu vois l'annonce du restaurant créole sur Facebook. Tu cliques pour savoir où
 ```
 
 **FEATURES** :
+
 1. Recettes créoles authentiques (transmission familiale)
 2. Ingrédients locaux réunionnais
 3. Ambiance "lontan" (décor traditionnel)
@@ -87,6 +93,7 @@ Tu vois l'annonce du restaurant créole sur Facebook. Tu cliques pour savoir où
 6. Service chaleureux créole
 
 **BENEFITS** :
+
 - Recettes authentiques → Goûte le "vrai" créole
 - Ingrédients locaux → Soutient producteurs réunionnais
 - Ambiance lontan → Nostalgie, connexion racines
@@ -95,16 +102,19 @@ Tu vois l'annonce du restaurant créole sur Facebook. Tu cliques pour savoir où
 - Service chaleureux → Se sentir accueilli, comme en famille
 
 **DESIRES** :
+
 - Goûter vrai créole → **VARIÉTÉ** (échapper fade touristique) + **IMPORTANCE** (fierté patrimoine)
 - Soutenir local → **CONNECTION** (appartenance communauté) + **SÉCURITÉ** (confiance qualité)
 - Nostalgie lontan → **CONNECTION** (lien passé/famille) + **COMFORT** (réconfort émotionnel)
 - Qualité maison → **SÉCURITÉ** (certitude bon) + **IMPORTANCE** (valoriser authentique)
 
 **ÉMOTIONS** :
+
 - Paire primaire : **COLÈRE** (frustration restos fades) → **DÉSIR** (envie vrai goût)
 - Secondaires : Nostalgie (Tier 4), Belonging (Tier 4), Pride (Tier 2)
 
 **USPs** :
+
 1. Recettes transmises génération → **NEW INFORMATION** (savoir ancestral)
 2. "Goût lontan" positioning → **NEW IDENTITY** (tribu authentiques vs touristes)
 3. Ingrédients 100% locaux → **NEW MECHANISM** (process sourcing)
@@ -118,6 +128,7 @@ Tu vois l'annonce du restaurant créole sur Facebook. Tu cliques pour savoir où
 **→ Niveau 4-5 : Hyper-saturation**
 
 **Stratégie** :
+
 - Avatar ultra-spécifique : Réunionnais qui cherchent authentique (vs touristes)
 - NEW IDENTITY : Tribu "Défenseurs du vrai créole"
 - NEW INFORMATION : Éducation sur "comment reconnaître vrai vs fake créole"
@@ -127,16 +138,19 @@ Tu vois l'annonce du restaurant créole sur Facebook. Tu cliques pour savoir où
 ### 5. Sub-Avatars
 
 **Avatar 1 : Nostalgiques Diaspora**
+
 - Réunionnais revenus/visiteurs métropole
 - Pain : "Le créole métropole, c'est pas pareil"
 - Desire : Retrouver goûts enfance
 
 **Avatar 2 : Jeunes Réunionnais Fiers**
+
 - 25-35 ans, veulent montrer patrimoine à amis métro
 - Pain : "Marre d'emmener mes potes dans restos touristiques nuls"
 - Desire : Partager fierté culture authentique
 
 **Avatar 3 : Familles Dimanche**
+
 - Parents 35-55 ans, sortie dominicale familiale
 - Pain : "Les enfants aiment pas le créole industriel"
 - Desire : Transmettre tradition aux enfants
@@ -147,6 +161,7 @@ Tu vois l'annonce du restaurant créole sur Facebook. Tu cliques pour savoir où
 
 **Type Business** : 📍 DTS (Drive-To-Store)
 **Formats prioritaires DTS** (selon ad-formats.md) :
+
 - ✅ UGC image
 - ✅ Native-style image
 - ✅ Meme-style image
@@ -154,6 +169,7 @@ Tu vois l'annonce du restaurant créole sur Facebook. Tu cliques pour savoir où
 **Budget limité** : 25€/jour → Focus 3 concepts (1 par avatar)
 
 **Répartition entonnoir** :
+
 - TOF : 2 concepts (nouvelles audiences)
 - MOF : 1 concept (retargeting visiteurs page)
 - BOF : 0 (budget insuffisant pour retargeting avancé)
@@ -182,10 +198,11 @@ Cibler émotion nostalgie puissante : "Tu te souviens du carry que ta mémé fai
 
 #### VARIATION 1
 
-**Hook/Headline** : 
+**Hook/Headline** :
 "Le carry qui sent comme chez Mémé 🏠"
 
 **Primary Text** :
+
 ```
 Tu te souviens de ce moment magique quand tu rentrais chez ta grand-mère et que l'odeur du carry envahissait toute la case ?
 
@@ -203,6 +220,7 @@ Pas de poudre toute faite. Pas de recette "adaptée" pour les Zoreils. Juste le 
 ```
 
 **Description Visuelle Détaillée** :
+
 ```
 COMPOSITION :
 - Photo smartphone (verticale 4:5) prise par vrai client
@@ -248,6 +266,7 @@ STYLE :
 "Ferme les yeux. Tu sens ?"
 
 **Primary Text** :
+
 ```
 Cette odeur de rougail saucisses qui monte le samedi matin.
 
@@ -270,6 +289,7 @@ Tu es loin depuis longtemps ? Viens te retrouver.
 ```
 
 **Description Visuelle Détaillée** :
+
 ```
 COMPOSITION :
 - Photo portrait (4:5) de Tatie Rosine en cuisine
@@ -315,6 +335,7 @@ STYLE :
 "Mon fils de 6 ans : 'Maman, c'est carry de Mamie ?' 😭"
 
 **Primary Text** :
+
 ```
 On est entrés chez Ti Kaz Lontan dimanche dernier.
 
@@ -337,6 +358,7 @@ Si toi aussi tu veux que tes enfants connaissent le vrai goût lontan, emmène-l
 ```
 
 **Description Visuelle Détaillée** :
+
 ```
 COMPOSITION :
 - Photo famille réunionnaise à table (horizontale 1.91:1)
@@ -379,16 +401,19 @@ STYLE :
 #### NOTES STRATÉGIQUES
 
 **Pourquoi ce concept fonctionne** :
+
 - Desire Connection (retrouver goûts enfance) = Tier 4 émotion puissante Réunionnais diaspora
 - Market Sophistication niveau 4 : Avatar ultra-spécifique ("Tu te souviens...") coupe à travers bruit
 - UGC format = authenticité maximale pour DTS (montrer vrai lieu, vrais clients)
 
 **Métriques de succès attendues** :
+
 - Link CTR cible : 3-4% (nostalgie = scroll-stop fort)
 - CPA attendu : 10-12€
 - ROAS projeté : 1.5x (18€ repas moyen)
 
 **Tests A/B suggérés** :
+
 - Variation 1 (Mémé) vs Variation 3 (Témoignage enfant) : Quelle émotion performe ?
 - Texte overlay vs Pas de texte : UGC pur performe-t-il mieux ?
 
@@ -418,6 +443,7 @@ Insight : Les jeunes Réunionnais sont GÊNÉS d'emmener leurs amis métropolita
 "Ton pote de Paris : 'Wesh c'est ça le créole ?' 💀"
 
 **Primary Text** :
+
 ```
 Tu l'as emmené dans ce resto "authentique" rue de Paris avec les nappes à fleurs.
 
@@ -442,6 +468,7 @@ Parce que Tatie Rosine cuisine pour nous, pas pour Instagram.
 ```
 
 **Description Visuelle Détaillée** :
+
 ```
 COMPOSITION :
 - Meme 2 panels côte à côte (ratio 1:1 carré)
@@ -494,6 +521,7 @@ STYLE :
 "Si ton carry il ressemble à une soupe Campbell's, t'es au mauvais endroit"
 
 **Primary Text** :
+
 ```
 Les signes que t'es dans un piège à touristes :
 
@@ -520,6 +548,7 @@ Ti Kaz Lontan = deuxième catégorie.
 ```
 
 **Description Visuelle Détaillée** :
+
 ```
 COMPOSITION :
 - Meme liste verticale (ratio 4:5)
@@ -573,6 +602,7 @@ STYLE :
 "Emmène tes potes métro ICI. Pas dans un Bouillon Cube Land."
 
 **Primary Text** :
+
 ```
 Ton meilleur ami débarque de Paris ce weekend.
 
@@ -595,6 +625,7 @@ Choisis bien.
 ```
 
 **Description Visuelle Détaillée** :
+
 ```
 COMPOSITION :
 - Meme "Choice" style (ratio 1:1)
@@ -650,16 +681,19 @@ STYLE :
 #### NOTES STRATÉGIQUES
 
 **Pourquoi ce concept fonctionne** :
+
 - Desire Importance (fierté patrimoine) + Status (être bon guide local) = Tier 2 Pride
 - Market Sophistication niveau 4-5 : NEW IDENTITY "Défenseurs du vrai" vs "Touristes"
 - Meme format = scroll-stop jeune public 25-35 ans, humour relatability
 
 **Métriques de succès attendues** :
+
 - Link CTR cible : 4-5% (humour + call-out = attention forte)
 - CPA attendu : 11-13€
 - ROAS projeté : 1.4x
 
 **Tests A/B suggérés** :
+
 - Ton agressif (Variation 1-2) vs Ton inclusif (Variation 3) : Quel ton converti plus ?
 - Meme liste vs Meme comparison : Quel format engage plus jeune public ?
 
@@ -689,6 +723,7 @@ Insight : Les parents réunionnais veulent transmettre la culture à leurs enfan
 "Nos dimanches, c'est ici maintenant 🏠"
 
 **Primary Text** :
+
 ```
 Avant, sortir manger créole le dimanche, c'était compliqué.
 
@@ -711,6 +746,7 @@ Si vous cherchez un endroit où toute la famille mange bien ET heureux, venez.
 ```
 
 **Description Visuelle Détaillée** :
+
 ```
 COMPOSITION :
 - Photo famille réunionnaise souriante (ratio 4:5 vertical)
@@ -759,6 +795,7 @@ STYLE :
 "Ma fille de 8 ans a redemandé du rougail. JE RÉPÈTE : du ROUGAIL. 😭"
 
 **Primary Text** :
+
 ```
 Pour ceux qui ont des enfants, vous savez que c'est un MIRACLE quand ils mangent créole.
 
@@ -783,6 +820,7 @@ Si vos enfants boudent le créole partout ailleurs, essayez ici.
 ```
 
 **Description Visuelle Détaillée** :
+
 ```
 COMPOSITION :
 - Photo enfant réunionnaise (ratio 1:1 carré)
@@ -828,6 +866,7 @@ STYLE :
 "Trois générations autour d'un carry. Comme avant. 💛"
 
 **Primary Text** :
+
 ```
 Grand-père. Père. Fils.
 
@@ -852,6 +891,7 @@ Si vous voulez offrir ça à votre famille, venez ce dimanche.
 ```
 
 **Description Visuelle Détaillée** :
+
 ```
 COMPOSITION :
 - Photo trois générations (ratio horizontal 1.91:1)
@@ -897,16 +937,19 @@ STYLE :
 #### NOTES STRATÉGIQUES
 
 **Pourquoi ce concept fonctionne** :
+
 - Desire Connection (transmission) + Comfort (moment famille) = Tier 1 + Tier 4 émotions fortes familles
 - Market Sophistication niveau 4 : NEW IDENTITY "Familles qui transmettent culture"
 - Native-style format = crédibilité maximale MOF (ressemble posts amis, pas pub)
 
 **Métriques de succès attendues** :
+
 - Link CTR cible : 2.5-3.5% (MOF = audience plus qualifiée, CTR naturellement plus bas)
 - CPA attendu : 10-11€ (MOF converti mieux, CPA plus bas)
 - ROAS projeté : 1.6x
 
 **Tests A/B suggérés** :
+
 - Enfant seul (Variation 2) vs Famille complète (Variation 1-3) : Quel angle famille plus fort ?
 - Témoignage émotionnel (Variation 2-3) vs Descriptif simple (Variation 1) : Quel storytelling converti ?
 
@@ -944,12 +987,14 @@ STYLE :
 ## Desires & Émotions Activés
 
 **4 Besoins Humains Ciblés** :
+
 - **CONNECTION** : Retrouver goûts enfance, transmission culture enfants, appartenance communauté
 - **IMPORTANCE** : Fierté patrimoine, valoriser authentique vs touristique
 - **COMFORT** : Réconfort émotionnel nostalgie, moment famille chaleureux
 - **VARIÉTÉ** : Échapper créole fade touristique
 
 **Émotions d'Achat** :
+
 - Paire primaire : **COLÈRE** (frustration restos fades) → **DÉSIR** (envie vrai goût)
 - Secondaires : Nostalgie (Tier 4), Pride (Tier 2), Belonging (Tier 4), Satisfaction (Tier 1)
 
@@ -965,6 +1010,7 @@ STYLE :
 ## Formats Sélectionnés (v5.0)
 
 **IMAGE (3 formats)** :
+
 - UGC image : 3 variations (Concept 1 - Authentique TOF DTS)
 - Meme-style image : 3 variations (Concept 2 - Humour jeune public)
 - Native-style image : 3 variations (Concept 3 - Conversion MOF)
@@ -972,6 +1018,7 @@ STYLE :
 **VIDÉO** : 0 (budget limité, priorité images pour DTS)
 
 **Justifications** :
+
 - **UGC image** : TOF DTS nécessite authenticité locale max, montre vrais clients satisfaits
 - **Meme-style** : Jeune public 25-35 scroll rapide, humour relatability, call-out direct
 - **Native-style** : MOF conversion, mimique posts organiques familles, crée FOMO
@@ -981,17 +1028,20 @@ STYLE :
 ## Recommandations Lancement
 
 **Jours 1-7 : Observation**
+
 - Laisser tourner sans modifications
 - Collecter minimum 30-40 conversions (25€×7j = 175€, CPA 12€ = ~14 conversions attendues mais attendre plus données)
 - Surveiller Link CTR : Target >2.5% (DTS local)
 - Noter quels sub-avatars performent
 
 **Jours 8-14 : Première Optimisation**
+
 - Désactiver losers clairs (CPA >18€ + 10+ conversions)
 - Identifier winner concept (CPA <12€ + Link CTR >3%)
 - Augmenter budget +5€/jour si ROAS stable
 
 **Jours 15+ : Refresh Créatif**
+
 - Lancer 2 nouvelles variations du concept winner
 - Tester nouvel angle (ex: Concept "Menu du Jour Surprise")
 - Considérer augmenter budget à 35-40€/jour (Min Spend respectés)
@@ -1001,16 +1051,19 @@ STYLE :
 ## KPIs à Monitorer
 
 **Santé Campagne** :
+
 - ROAS global : >1.5x (minimum rentabilité à 18€ repas moyen)
 - CPA moyen : ≤12€
 - Volume conversions : 15-20/semaine (objectif réaliste budget 25€/jour)
 
 **Performance Créatives** :
+
 - Link CTR moyen : >2.5% (DTS local = forte relatability)
 - % ads actives profitable : >40% (au moins 4/9 ads sous CPA cible)
 - Refresh créatif : 2 nouvelles ads/2 semaines
 
 **Signaux d'Alerte** :
+
 - 🚨 Link CTR <1.5% → Hooks trop faibles, refresh urgent
 - 🚨 CPA >18€ sur 30+ conversions → Revoir offre/landing page
 - 🚨 0 conversions après 5 jours → Problème tracking OU audience trop froide
@@ -1024,6 +1077,7 @@ STYLE :
 ### CAMPAGNE : Ti Kaz Lontan - CBO Testing & Scaling
 
 **Campaign Settings** :
+
 - Campaign Objective : Traffic (clicks to "Y aller" Google Maps)
 - Budget Optimization : Campaign Budget Optimization (CBO)
 - Daily Budget : 25€
@@ -1034,6 +1088,7 @@ STYLE :
 #### AD SET 1 : WINNERS
 
 **Targeting** :
+
 - Location : La Réunion (Saint-Denis + 20km radius)
 - Age : 25-65
 - Gender : All
@@ -1041,12 +1096,14 @@ STYLE :
 - Advantage+ Audience : ON
 
 **Budget Controls** :
+
 - Min Daily Budget : 15€ (ajusté, idéalement 48€)
 - Max Daily Budget : 20€ (ajusté, idéalement 96€)
 
 ⚠️ **Note** : Min/Max ajustés car budget total limité. Idéalement, augmenter budget total à 70€/jour pour respecter ratios 4x/8x CPA.
 
 **Ads in this Ad Set** :
+
 - [Initialement vide - populer après 7 jours avec winners graduées]
 
 ---
@@ -1054,6 +1111,7 @@ STYLE :
 #### AD SET 2 : TESTING
 
 **Targeting** :
+
 - Location : La Réunion (Saint-Denis + 20km radius)
 - Age : 25-65
 - Gender : All
@@ -1061,10 +1119,12 @@ STYLE :
 - Advantage+ Audience : ON
 
 **Budget Controls** :
+
 - Min Daily Budget : 10€ (ajusté, idéalement 18€)
 - Max Daily Budget : 15€ (ajusté, idéalement 48€)
 
 **Ads in this Ad Set** :
+
 - Concept 1 "Marmite de Mémé" - Variation 1
 - Concept 1 "Marmite de Mémé" - Variation 2
 - Concept 1 "Marmite de Mémé" - Variation 3
@@ -1080,12 +1140,14 @@ STYLE :
 ### Critères de Graduation
 
 **Pour graduer de TESTING → WINNERS** :
+
 - ✅ CPA ≤ 12€ (idéalement 10-11€)
 - ✅ Minimum 8-10 conversions accumulées (budget limité)
 - ✅ Link CTR > 2.5%
 - ✅ Performance stable sur 5-7 jours
 
 **Process** :
+
 1. Après 7 jours, identifier ad(s) qui remplissent critères
 2. Dupliquer vers WINNERS Ad Set
 3. Garder ad active dans TESTING (données continues)
@@ -1138,6 +1200,7 @@ STYLE :
 ### Roadmap Ti Kaz Lontan - 8 Semaines
 
 **SEMAINE 1-2 : Lancement & Données**
+
 - ✅ Activer 9 ads en TESTING
 - ✅ Collecter minimum 20-30 conversions
 - ✅ Surveiller Link CTR (target >2.5%)
@@ -1147,6 +1210,7 @@ STYLE :
 ---
 
 **SEMAINE 3-4 : Première Optimisation**
+
 - ✅ Identifier 2-3 winners (CPA <12€, Link CTR >3%)
 - ✅ Graduer vers WINNERS Ad Set
 - ✅ Désactiver 2-3 losers clairs (CPA >18€ + 10+ conversions)
@@ -1156,6 +1220,7 @@ STYLE :
 ---
 
 **SEMAINE 5-6 : Refresh Créatif**
+
 - ✅ Lancer nouveau concept (ex: "Menu du Jour Surprise Tatie Rosine")
 - ✅ Tester nouvel angle émotionnel (ex: Fierté locale vs Nostalgie)
 - ✅ Refresh visuel concepts fatigue (si impression >10k)
@@ -1164,6 +1229,7 @@ STYLE :
 ---
 
 **SEMAINE 7-8 : Scaling & Diversification**
+
 - ✅ Budget 40€/jour (Si ROAS >1.5x maintenu)
 - ✅ Tester formats vidéo UGC (si budget permet)
 - ✅ Lancer campagne MOF retargeting dédiée (visiteurs page)
@@ -1173,12 +1239,12 @@ STYLE :
 
 ### KPIs Cibles par Phase
 
-| Phase | Budget/jour | CPA Target | Conversions/semaine | ROAS |
-|-------|-------------|------------|---------------------|------|
-| Semaines 1-2 | 25€ | ≤12€ | 12-15 | >1.5x |
-| Semaines 3-4 | 30€ | ≤11€ | 18-20 | >1.6x |
-| Semaines 5-6 | 35€ | ≤10€ | 22-25 | >1.7x |
-| Semaines 7-8+ | 40€+ | ≤10€ | 25-30+ | >1.8x |
+| Phase         | Budget/jour | CPA Target | Conversions/semaine | ROAS  |
+| ------------- | ----------- | ---------- | ------------------- | ----- |
+| Semaines 1-2  | 25€         | ≤12€       | 12-15               | >1.5x |
+| Semaines 3-4  | 30€         | ≤11€       | 18-20               | >1.6x |
+| Semaines 5-6  | 35€         | ≤10€       | 22-25               | >1.7x |
+| Semaines 7-8+ | 40€+        | ≤10€       | 25-30+              | >1.8x |
 
 ---
 
@@ -1187,6 +1253,7 @@ STYLE :
 **Scénario 1 : CPA >18€ après 2 semaines**
 → Diagnostic : Audiences trop froides OU offre pas assez attractive
 → Actions :
+
 1. Revoir ciblage (réduire radius à 10km hyperlocal)
 2. Tester offre spéciale ("10% dimanche")
 3. Renforcer social proof (ajouter avis Google)
@@ -1194,6 +1261,7 @@ STYLE :
 **Scénario 2 : Link CTR <1.5% tous concepts**
 → Diagnostic : Hooks pas assez scroll-stop OU audiences pas match
 → Actions :
+
 1. Refresh hooks plus agressifs ("ARRÊTE de manger de la merde")
 2. Tester nouveaux formats (memes plus provocateurs)
 3. Vérifier audiences pas trop larges (age, intérêts)
@@ -1201,6 +1269,7 @@ STYLE :
 **Scénario 3 : 0 conversion après 7 jours**
 → Diagnostic : Tracking broken OU audiences complètement off
 → Actions :
+
 1. Vérifier pixel Meta installé correctement
 2. Tester campagne sur audiences similaires restaurants
 3. Revoir offer/landing page (peut-être prix trop élevé ?)
@@ -1211,12 +1280,14 @@ STYLE :
 ## Conclusion
 
 **Points Forts Stratégie** :
+
 - Sub-avatars ultra-précis (3 segments émotionnels distincts)
 - Market Sophistication niveau 4-5 bien adressé (NEW IDENTITY tribu)
 - Formats Origins adaptés DTS (UGC, Meme, Native = authenticité)
 - Angles émotionnels forts (Nostalgie, Pride, Transmission)
 
 **Limitations Budget 25€/jour** :
+
 - Min/Max Spend non-optimaux (ajustés par nécessité)
 - Pas de campagne BOF retargeting (budget insuffisant)
 - Refresh créatif plus lent (moins de tests simultanés)
@@ -1224,6 +1295,7 @@ STYLE :
 
 **Recommandation Optimale** :
 Augmenter budget à 70€/jour pour :
+
 - Min/Max Spend respectés (4x/8x CPA)
 - Testing plus agressif (15+ ads simultanées)
 - Campagne BOF retargeting dédiée
@@ -1236,11 +1308,13 @@ Augmenter budget à 70€/jour pour :
 **Prêt à lancer ! 🚀**
 
 **Prochaines étapes** :
+
 1. Créer images (via meta-ads-static-images-creator + Higgsfield)
 2. Configurer campagne Meta Ads Manager (copier config ci-dessus)
 3. Activer 9 ads en TESTING Ad Set
 4. Monitorer colonnes custom "Entonnoir Diagnostic"
 5. Patience 7 jours avant optimisations
+
 ```
 
 ---
@@ -1254,3 +1328,4 @@ Ce document démontre l'application complète de la méthodologie v5.0 sur un ca
 - Descriptions visuelles détaillées pour génération
 - Configuration campagne copy-paste ready
 - Roadmap 8 semaines actionable
+```

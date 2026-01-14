@@ -21,7 +21,9 @@ VuVenu a **3 problèmes** qui ralentiront Ralph Loop :
 ## ✅ 3 CHOIX
 
 ### Option 1: Lire rapide (5 min)
+
 Fichier : **NETTOYAGE-PRIORITE.md**
+
 ```
 ✅ À supprimer (liste)
 ✅ À garder (liste)
@@ -31,7 +33,9 @@ Fichier : **NETTOYAGE-PRIORITE.md**
 ```
 
 ### Option 2 : Lire complet (15 min)
+
 Fichier : **RAPPORT-FINAL-ANALYSE.md**
+
 ```
 🎯 Objectif + problèmes
 ✅ Solutions fournies
@@ -41,7 +45,9 @@ Fichier : **RAPPORT-FINAL-ANALYSE.md**
 ```
 
 ### Option 3 : Exécuter (4-5h)
+
 Fichier : **CLEANUP-ACTION-PLAN.md**
+
 ```
 Étapes 0-11 avec bash commands
 ✅ Chaque étape testée
@@ -53,14 +59,14 @@ Fichier : **CLEANUP-ACTION-PLAN.md**
 
 ## 🚀 JE VEUX... FAIRE QUOI ?
 
-| Je veux | Clique sur |
-|---------|-----------|
-| **Décider YES/NO en 5 min** | `NETTOYAGE-PRIORITE.md` |
-| **Comprendre en 15 min** | `RAPPORT-FINAL-ANALYSE.md` |
-| **Avoir tous les détails** | `CLEANUP-ANALYSIS.md` |
-| **Exécuter le nettoyage** | `CLEANUP-ACTION-PLAN.md` |
-| **Configurer Ralph après** | `RECOMMANDATIONS-RALPH.md` |
-| **Navigation complète** | `INDEX-ANALYSE-NETTOYAGE.md` |
+| Je veux                     | Clique sur                   |
+| --------------------------- | ---------------------------- |
+| **Décider YES/NO en 5 min** | `NETTOYAGE-PRIORITE.md`      |
+| **Comprendre en 15 min**    | `RAPPORT-FINAL-ANALYSE.md`   |
+| **Avoir tous les détails**  | `CLEANUP-ANALYSIS.md`        |
+| **Exécuter le nettoyage**   | `CLEANUP-ACTION-PLAN.md`     |
+| **Configurer Ralph après**  | `RECOMMANDATIONS-RALPH.md`   |
+| **Navigation complète**     | `INDEX-ANALYSE-NETTOYAGE.md` |
 
 ---
 
@@ -102,4 +108,4 @@ Puis décider exécution.
 
 ---
 
-*Créé : 13 janvier 2026 | Statut : ✅ Ready for you to read*
+_Créé : 13 janvier 2026 | Statut : ✅ Ready for you to read_

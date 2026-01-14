@@ -1,6 +1,7 @@
 # BLAYO - Contexte Technique Complet pour Claude Code
 
 > **3 éléments demandés :**
+>
 > 1. Prompt système Claude V2 complet
 > 2. Exemples de briefs générés
 > 3. Mapping niche → groupe
@@ -11,6 +12,7 @@
 
 ```markdown
 # BLAYO - Prompt Système Claude V2
+
 # Avec Variantes Cliquables
 
 ## CONTEXTE SYSTÈME
@@ -41,6 +43,7 @@ Brief original : {original_brief} (optionnel - contexte du brief initial si vari
 ## LOGIQUE DE GÉNÉRATION
 
 ### Si `variant_type` est vide → Générer un brief complet + 3 variantes structurées
+
 ### Si `variant_type` est renseigné → Générer uniquement le brief de cette variante
 
 ---
@@ -48,7 +51,7 @@ Brief original : {original_brief} (optionnel - contexte du brief initial si vari
 ## OUTPUT FORMAT : BRIEF PRINCIPAL
 
 ═══════════════════════════════════════════════════════════════
-                    BRIEF VIDÉO — {niche}
+BRIEF VIDÉO — {niche}
 ═══════════════════════════════════════════════════════════════
 
 📋 MÉTADONNÉES
@@ -62,18 +65,18 @@ Brief original : {original_brief} (optionnel - contexte du brief initial si vari
 🎣 HOOK (0-3 secondes)
 
 ┌─────────────────────────────────────────────────────────────┐
-│ TEXTE À L'ÉCRAN                                             │
-│ "{Texte court et percutant}"                                │
+│ TEXTE À L'ÉCRAN │
+│ "{Texte court et percutant}" │
 └─────────────────────────────────────────────────────────────┘
 
 ┌─────────────────────────────────────────────────────────────┐
-│ ACCROCHE VERBALE (si voice-over activé)                     │
-│ "{Phrase d'accroche naturelle}"                             │
+│ ACCROCHE VERBALE (si voice-over activé) │
+│ "{Phrase d'accroche naturelle}" │
 └─────────────────────────────────────────────────────────────┘
 
 ┌─────────────────────────────────────────────────────────────┐
-│ ACTION VISUELLE                                              │
-│ {Description précise}                                        │
+│ ACTION VISUELLE │
+│ {Description précise} │
 └─────────────────────────────────────────────────────────────┘
 
 💡 Pourquoi ce hook marche : {Explication}
@@ -88,9 +91,10 @@ Brief original : {original_brief} (optionnel - contexte du brief initial si vari
 
 🎬 SHOT LIST
 
-| # | Timing | Type de plan | Description | Texte écran |
-|---|--------|--------------|-------------|-------------|
-| 1 | 0-3s   | ... | ... | ... |
+| #   | Timing | Type de plan | Description | Texte écran |
+| --- | ------ | ------------ | ----------- | ----------- |
+| 1   | 0-3s   | ...          | ...         | ...         |
+
 [etc.]
 
 ═══════════════════════════════════════════════════════════════
@@ -126,37 +130,39 @@ Brief original : {original_brief} (optionnel - contexte du brief initial si vari
 **IMPORTANT** : À la fin de chaque brief principal, ajouter un bloc JSON parsable pour le frontend :
 
 <!-- VARIANTS_JSON_START -->
+
 {
-  "variants": [
-    {
-      "id": "short",
-      "label": "Version courte (15s)",
-      "emoji": "⚡",
-      "description": "Le même concept condensé en 15 secondes pour maximum d'impact",
-      "adaptation": "{Description spécifique de comment ce brief serait adapté en version courte}",
-      "difficulty_change": "Plus facile",
-      "duration": "15 secondes"
-    },
-    {
-      "id": "series",
-      "label": "Version série",
-      "emoji": "📺",
-      "description": "Transforme ce brief en premier épisode d'une série récurrente",
-      "adaptation": "{Description spécifique de la série proposée}",
-      "difficulty_change": "Identique",
-      "duration": "Variable"
-    },
-    {
-      "id": "pov",
-      "label": "Version POV",
-      "emoji": "👁️",
-      "description": "Même concept mais filmé du point de vue du client/spectateur",
-      "adaptation": "{Description spécifique du POV proposé}",
-      "difficulty_change": "Identique",
-      "duration": "{durée}"
-    }
-  ]
+"variants": [
+{
+"id": "short",
+"label": "Version courte (15s)",
+"emoji": "⚡",
+"description": "Le même concept condensé en 15 secondes pour maximum d'impact",
+"adaptation": "{Description spécifique de comment ce brief serait adapté en version courte}",
+"difficulty_change": "Plus facile",
+"duration": "15 secondes"
+},
+{
+"id": "series",
+"label": "Version série",
+"emoji": "📺",
+"description": "Transforme ce brief en premier épisode d'une série récurrente",
+"adaptation": "{Description spécifique de la série proposée}",
+"difficulty_change": "Identique",
+"duration": "Variable"
+},
+{
+"id": "pov",
+"label": "Version POV",
+"emoji": "👁️",
+"description": "Même concept mais filmé du point de vue du client/spectateur",
+"adaptation": "{Description spécifique du POV proposé}",
+"difficulty_change": "Identique",
+"duration": "{durée}"
 }
+]
+}
+
 <!-- VARIANTS_JSON_END -->
 
 ---
@@ -164,29 +170,32 @@ Brief original : {original_brief} (optionnel - contexte du brief initial si vari
 ## RÈGLES POUR LES VARIANTES
 
 ### 1. VARIANTES TOUJOURS PERTINENTES
+
 - Chaque variante doit être **réellement différente** et apporter une valeur distincte
 - Ne pas proposer une variante si elle ne fait pas sens pour ce focus
 
 ### 2. TYPES DE VARIANTES POSSIBLES
 
-| ID | Label | Quand la proposer |
-|----|-------|-------------------|
-| `short` | Version courte (15s) | Toujours (sauf si brief déjà <20s) |
-| `series` | Version série | Si le concept peut se décliner |
-| `pov` | Version POV | Si pas déjà en POV et que ça fait sens |
-| `trend` | Version trend | Si une tendance actuelle s'applique |
-| `collab` | Version collab | Si un client/partenaire peut participer |
-| `behind` | Version coulisses | Si le process est intéressant à montrer |
-| `reaction` | Version réaction | Si une réaction client ajouterait de la valeur |
-| `challenge` | Version challenge | Si le concept peut devenir un défi |
-| `storytime` | Version storytelling | Si une histoire peut enrichir le concept |
-| `asmr` | Version ASMR | Si des sons satisfaisants sont présents |
+| ID          | Label                | Quand la proposer                              |
+| ----------- | -------------------- | ---------------------------------------------- |
+| `short`     | Version courte (15s) | Toujours (sauf si brief déjà <20s)             |
+| `series`    | Version série        | Si le concept peut se décliner                 |
+| `pov`       | Version POV          | Si pas déjà en POV et que ça fait sens         |
+| `trend`     | Version trend        | Si une tendance actuelle s'applique            |
+| `collab`    | Version collab       | Si un client/partenaire peut participer        |
+| `behind`    | Version coulisses    | Si le process est intéressant à montrer        |
+| `reaction`  | Version réaction     | Si une réaction client ajouterait de la valeur |
+| `challenge` | Version challenge    | Si le concept peut devenir un défi             |
+| `storytime` | Version storytelling | Si une histoire peut enrichir le concept       |
+| `asmr`      | Version ASMR         | Si des sons satisfaisants sont présents        |
 
 ### 3. ADAPTATION AUX CAPACITÉS
+
 - Si `face_cam = false` → Ne pas proposer de variante nécessitant face-cam
 - Si `voice_over = false` → Adapter les variantes en conséquence
 
 ### 4. MAXIMUM 3 VARIANTES
+
 - Toujours proposer exactement 3 variantes
 - Choisir les 3 plus pertinentes pour ce brief spécifique
 
@@ -195,30 +204,36 @@ Brief original : {original_brief} (optionnel - contexte du brief initial si vari
 ## RÈGLES DE GÉNÉRATION
 
 ### 1. PERSONNALISATION OBLIGATOIRE
+
 - TOUJOURS adapter les hooks génériques du rapport au focus spécifique
 - Ne JAMAIS copier-coller un hook tel quel
 
 ### 2. DATA-DRIVEN
+
 - Utiliser les winning_formats du rapport
 - Éviter les fatal_errors listées
 - S'inspirer des tested_hooks (mais adapter)
 
 ### 3. ACTIONNABLE
+
 - Chaque instruction doit être filmable avec un smartphone
 - Pas de matériel pro requis
 - Le commerçant doit pouvoir filmer dans l'heure
 
 ### 4. DURÉE RÉALISTE
+
 - Respecter la durée optimale du rapport (généralement 15-45s)
 - Un commerçant doit pouvoir filmer en moins de 30 minutes
 
 ### 5. TON ET STYLE
+
 - Professionnel mais accessible
 - Tutoiement (on s'adresse à un commerçant local)
 - Enthousiaste sans être cringe
 - Pas de bullshit marketing, du concret
 
 ### 6. ERREURS À ÉVITER
+
 - ❌ Hooks génériques ("Bienvenue dans notre boutique...")
 - ❌ Contenu promotionnel pur (prix, promos)
 - ❌ Plans trop longs ou complexes
@@ -253,6 +268,7 @@ Génère le brief maintenant.
 ## Exemple 1 : Boulangerie - Croissants
 
 **Input :**
+
 - Niche : Boulangerie
 - Focus : Nouvelle fournée de croissants
 - Face-cam : Oui
@@ -291,8 +307,8 @@ Génère le brief maintenant.
 │ s'échappe, lumière dorée des croissants visibles            │
 └─────────────────────────────────────────────────────────────┘
 
-💡 Pourquoi ce hook marche : La combinaison heure matinale + question directe 
-crée une curiosité immédiate. L'image du four qui s'ouvre déclenche 
+💡 Pourquoi ce hook marche : La combinaison heure matinale + question directe
+crée une curiosité immédiate. L'image du four qui s'ouvre déclenche
 l'anticipation de la révélation.
 
 ═══════════════════════════════════════════════════════════════
@@ -431,6 +447,7 @@ Ce brief exploite :
 ## Exemple 2 : Tatoueur - Cover-up
 
 **Input :**
+
 - Niche : Tatoueur
 - Focus : Cover-up d'un ancien tatouage raté
 - Face-cam : Non
@@ -464,7 +481,7 @@ Ce brief exploite :
 │ qui se précise lentement pour révéler le "avant"            │
 └─────────────────────────────────────────────────────────────┘
 
-💡 Pourquoi ce hook marche : Le chiffre "8 ans" crée l'empathie immédiate. 
+💡 Pourquoi ce hook marche : Le chiffre "8 ans" crée l'empathie immédiate.
 Le spectateur veut voir la libération de cette cliente après tant de temps.
 
 ═══════════════════════════════════════════════════════════════
@@ -595,6 +612,7 @@ Option 3 — ASMR machine : Son réel de la machine pendant le timelapse
 ## Comment ça fonctionne
 
 Quand un utilisateur sélectionne une niche (ex: "Pizzeria"), le système doit :
+
 1. Identifier le groupe correspondant (ex: "Fast food & Street food")
 2. Charger le rapport de ce groupe depuis Supabase
 3. Injecter le rapport dans le prompt Claude
@@ -606,403 +624,403 @@ const NICHE_TO_GROUP_MAPPING = {
   // ═══════════════════════════════════════════════════════════
   // GROUPE 1 : Restauration table
   // ═══════════════════════════════════════════════════════════
-  "restaurant": "Restauration table",
-  "restaurant traditionnel": "Restauration table",
-  "restaurant gastronomique": "Restauration table",
-  "gastronomique": "Restauration table",
-  "brasserie": "Restauration table",
-  "bistrot": "Restauration table",
-  "cuisine du monde": "Restauration table",
-  "restaurant asiatique": "Restauration table",
-  "restaurant italien": "Restauration table",
-  "restaurant japonais": "Restauration table",
-  "sushi": "Restauration table",
-  "crêperie": "Restauration table",
-  "fruits de mer": "Restauration table",
-  "restaurant fruits de mer": "Restauration table",
+  restaurant: 'Restauration table',
+  'restaurant traditionnel': 'Restauration table',
+  'restaurant gastronomique': 'Restauration table',
+  gastronomique: 'Restauration table',
+  brasserie: 'Restauration table',
+  bistrot: 'Restauration table',
+  'cuisine du monde': 'Restauration table',
+  'restaurant asiatique': 'Restauration table',
+  'restaurant italien': 'Restauration table',
+  'restaurant japonais': 'Restauration table',
+  sushi: 'Restauration table',
+  crêperie: 'Restauration table',
+  'fruits de mer': 'Restauration table',
+  'restaurant fruits de mer': 'Restauration table',
 
   // ═══════════════════════════════════════════════════════════
   // GROUPE 2 : Fast food & Street food
   // ═══════════════════════════════════════════════════════════
-  "burger": "Fast food & Street food",
-  "burgers": "Fast food & Street food",
-  "kebab": "Fast food & Street food",
-  "pizza": "Fast food & Street food",
-  "pizzeria": "Fast food & Street food",
-  "tacos": "Fast food & Street food",
-  "food truck": "Fast food & Street food",
-  "snack": "Fast food & Street food",
-  "fish & chips": "Fast food & Street food",
-  "fish and chips": "Fast food & Street food",
-  "bagel": "Fast food & Street food",
-  "poke bowl": "Fast food & Street food",
-  "poké": "Fast food & Street food",
-  "fast food": "Fast food & Street food",
-  "street food": "Fast food & Street food",
-  "sandwich": "Fast food & Street food",
-  "sandwicherie": "Fast food & Street food",
+  burger: 'Fast food & Street food',
+  burgers: 'Fast food & Street food',
+  kebab: 'Fast food & Street food',
+  pizza: 'Fast food & Street food',
+  pizzeria: 'Fast food & Street food',
+  tacos: 'Fast food & Street food',
+  'food truck': 'Fast food & Street food',
+  snack: 'Fast food & Street food',
+  'fish & chips': 'Fast food & Street food',
+  'fish and chips': 'Fast food & Street food',
+  bagel: 'Fast food & Street food',
+  'poke bowl': 'Fast food & Street food',
+  poké: 'Fast food & Street food',
+  'fast food': 'Fast food & Street food',
+  'street food': 'Fast food & Street food',
+  sandwich: 'Fast food & Street food',
+  sandwicherie: 'Fast food & Street food',
 
   // ═══════════════════════════════════════════════════════════
   // GROUPE 3 : Boulangerie & Sucré
   // ═══════════════════════════════════════════════════════════
-  "boulangerie": "Boulangerie & Sucré",
-  "pâtisserie": "Boulangerie & Sucré",
-  "patisserie": "Boulangerie & Sucré",
-  "chocolatier": "Boulangerie & Sucré",
-  "chocolaterie": "Boulangerie & Sucré",
-  "glacier": "Boulangerie & Sucré",
-  "glaces": "Boulangerie & Sucré",
-  "donuts": "Boulangerie & Sucré",
-  "cupcakes": "Boulangerie & Sucré",
-  "confiserie": "Boulangerie & Sucré",
-  "confiseur": "Boulangerie & Sucré",
-  "boulanger": "Boulangerie & Sucré",
-  "pâtissier": "Boulangerie & Sucré",
+  boulangerie: 'Boulangerie & Sucré',
+  pâtisserie: 'Boulangerie & Sucré',
+  patisserie: 'Boulangerie & Sucré',
+  chocolatier: 'Boulangerie & Sucré',
+  chocolaterie: 'Boulangerie & Sucré',
+  glacier: 'Boulangerie & Sucré',
+  glaces: 'Boulangerie & Sucré',
+  donuts: 'Boulangerie & Sucré',
+  cupcakes: 'Boulangerie & Sucré',
+  confiserie: 'Boulangerie & Sucré',
+  confiseur: 'Boulangerie & Sucré',
+  boulanger: 'Boulangerie & Sucré',
+  pâtissier: 'Boulangerie & Sucré',
 
   // ═══════════════════════════════════════════════════════════
   // GROUPE 4 : Café & Boissons
   // ═══════════════════════════════════════════════════════════
-  "coffee shop": "Café & Boissons",
-  "café": "Café & Boissons",
-  "cafe": "Café & Boissons",
-  "salon de thé": "Café & Boissons",
-  "bar à jus": "Café & Boissons",
-  "bubble tea": "Café & Boissons",
-  "smoothie bar": "Café & Boissons",
-  "smoothie": "Café & Boissons",
-  "jus": "Café & Boissons",
-  "torréfacteur": "Café & Boissons",
+  'coffee shop': 'Café & Boissons',
+  café: 'Café & Boissons',
+  cafe: 'Café & Boissons',
+  'salon de thé': 'Café & Boissons',
+  'bar à jus': 'Café & Boissons',
+  'bubble tea': 'Café & Boissons',
+  'smoothie bar': 'Café & Boissons',
+  smoothie: 'Café & Boissons',
+  jus: 'Café & Boissons',
+  torréfacteur: 'Café & Boissons',
 
   // ═══════════════════════════════════════════════════════════
   // GROUPE 5 : Bars & Nightlife
   // ═══════════════════════════════════════════════════════════
-  "bar": "Bars & Nightlife",
-  "bar cocktails": "Bars & Nightlife",
-  "cocktails": "Bars & Nightlife",
-  "bar à vin": "Bars & Nightlife",
-  "cave à vin": "Bars & Nightlife",
-  "pub": "Bars & Nightlife",
-  "rooftop": "Bars & Nightlife",
-  "nightclub": "Bars & Nightlife",
-  "boîte de nuit": "Bars & Nightlife",
-  "discothèque": "Bars & Nightlife",
-  "speakeasy": "Bars & Nightlife",
-  "brasserie artisanale": "Bars & Nightlife",
-  "micro-brasserie": "Bars & Nightlife",
+  bar: 'Bars & Nightlife',
+  'bar cocktails': 'Bars & Nightlife',
+  cocktails: 'Bars & Nightlife',
+  'bar à vin': 'Bars & Nightlife',
+  'cave à vin': 'Bars & Nightlife',
+  pub: 'Bars & Nightlife',
+  rooftop: 'Bars & Nightlife',
+  nightclub: 'Bars & Nightlife',
+  'boîte de nuit': 'Bars & Nightlife',
+  discothèque: 'Bars & Nightlife',
+  speakeasy: 'Bars & Nightlife',
+  'brasserie artisanale': 'Bars & Nightlife',
+  'micro-brasserie': 'Bars & Nightlife',
 
   // ═══════════════════════════════════════════════════════════
   // GROUPE 6 : Coiffure & Barbier
   // ═══════════════════════════════════════════════════════════
-  "coiffeur": "Coiffure & Barbier",
-  "coiffure": "Coiffure & Barbier",
-  "salon de coiffure": "Coiffure & Barbier",
-  "barbier": "Coiffure & Barbier",
-  "barber": "Coiffure & Barbier",
-  "barber shop": "Coiffure & Barbier",
-  "coloriste": "Coiffure & Barbier",
-  "coloration": "Coiffure & Barbier",
-  "extensions": "Coiffure & Barbier",
-  "extensions cheveux": "Coiffure & Barbier",
-  "locks": "Coiffure & Barbier",
-  "dreadlocks": "Coiffure & Barbier",
-  "coiffeur afro": "Coiffure & Barbier",
-  "afro": "Coiffure & Barbier",
-  "lissage": "Coiffure & Barbier",
-  "lissage brésilien": "Coiffure & Barbier",
+  coiffeur: 'Coiffure & Barbier',
+  coiffure: 'Coiffure & Barbier',
+  'salon de coiffure': 'Coiffure & Barbier',
+  barbier: 'Coiffure & Barbier',
+  barber: 'Coiffure & Barbier',
+  'barber shop': 'Coiffure & Barbier',
+  coloriste: 'Coiffure & Barbier',
+  coloration: 'Coiffure & Barbier',
+  extensions: 'Coiffure & Barbier',
+  'extensions cheveux': 'Coiffure & Barbier',
+  locks: 'Coiffure & Barbier',
+  dreadlocks: 'Coiffure & Barbier',
+  'coiffeur afro': 'Coiffure & Barbier',
+  afro: 'Coiffure & Barbier',
+  lissage: 'Coiffure & Barbier',
+  'lissage brésilien': 'Coiffure & Barbier',
 
   // ═══════════════════════════════════════════════════════════
   // GROUPE 7 : Esthétique & Soins
   // ═══════════════════════════════════════════════════════════
-  "institut de beauté": "Esthétique & Soins",
-  "institut beauté": "Esthétique & Soins",
-  "esthéticienne": "Esthétique & Soins",
-  "onglerie": "Esthétique & Soins",
-  "nail art": "Esthétique & Soins",
-  "manucure": "Esthétique & Soins",
-  "prothésiste ongulaire": "Esthétique & Soins",
-  "cils": "Esthétique & Soins",
-  "extension cils": "Esthétique & Soins",
-  "sourcils": "Esthétique & Soins",
-  "microblading": "Esthétique & Soins",
-  "épilation": "Esthétique & Soins",
-  "soin visage": "Esthétique & Soins",
-  "soins visage": "Esthétique & Soins",
-  "facial": "Esthétique & Soins",
+  'institut de beauté': 'Esthétique & Soins',
+  'institut beauté': 'Esthétique & Soins',
+  esthéticienne: 'Esthétique & Soins',
+  onglerie: 'Esthétique & Soins',
+  'nail art': 'Esthétique & Soins',
+  manucure: 'Esthétique & Soins',
+  'prothésiste ongulaire': 'Esthétique & Soins',
+  cils: 'Esthétique & Soins',
+  'extension cils': 'Esthétique & Soins',
+  sourcils: 'Esthétique & Soins',
+  microblading: 'Esthétique & Soins',
+  épilation: 'Esthétique & Soins',
+  'soin visage': 'Esthétique & Soins',
+  'soins visage': 'Esthétique & Soins',
+  facial: 'Esthétique & Soins',
 
   // ═══════════════════════════════════════════════════════════
   // GROUPE 8 : Bien-être & Relaxation
   // ═══════════════════════════════════════════════════════════
-  "spa": "Bien-être & Relaxation",
-  "massage": "Bien-être & Relaxation",
-  "masseur": "Bien-être & Relaxation",
-  "masseuse": "Bien-être & Relaxation",
-  "hammam": "Bien-être & Relaxation",
-  "sauna": "Bien-être & Relaxation",
-  "soins corps": "Bien-être & Relaxation",
-  "thalasso": "Bien-être & Relaxation",
-  "thalassothérapie": "Bien-être & Relaxation",
-  "réflexologie": "Bien-être & Relaxation",
-  "aromathérapie": "Bien-être & Relaxation",
-  "bien-être": "Bien-être & Relaxation",
-  "wellness": "Bien-être & Relaxation",
+  spa: 'Bien-être & Relaxation',
+  massage: 'Bien-être & Relaxation',
+  masseur: 'Bien-être & Relaxation',
+  masseuse: 'Bien-être & Relaxation',
+  hammam: 'Bien-être & Relaxation',
+  sauna: 'Bien-être & Relaxation',
+  'soins corps': 'Bien-être & Relaxation',
+  thalasso: 'Bien-être & Relaxation',
+  thalassothérapie: 'Bien-être & Relaxation',
+  réflexologie: 'Bien-être & Relaxation',
+  aromathérapie: 'Bien-être & Relaxation',
+  'bien-être': 'Bien-être & Relaxation',
+  wellness: 'Bien-être & Relaxation',
 
   // ═══════════════════════════════════════════════════════════
   // GROUPE 9 : Fitness & Coaching
   // ═══════════════════════════════════════════════════════════
-  "salle de sport": "Fitness & Coaching",
-  "fitness": "Fitness & Coaching",
-  "gym": "Fitness & Coaching",
-  "musculation": "Fitness & Coaching",
-  "coach sportif": "Fitness & Coaching",
-  "personal trainer": "Fitness & Coaching",
-  "crossfit": "Fitness & Coaching",
-  "yoga": "Fitness & Coaching",
-  "pilates": "Fitness & Coaching",
-  "boxe": "Fitness & Coaching",
-  "boxing": "Fitness & Coaching",
-  "arts martiaux": "Fitness & Coaching",
-  "mma": "Fitness & Coaching",
-  "judo": "Fitness & Coaching",
-  "karaté": "Fitness & Coaching",
-  "danse": "Fitness & Coaching",
-  "école de danse": "Fitness & Coaching",
+  'salle de sport': 'Fitness & Coaching',
+  fitness: 'Fitness & Coaching',
+  gym: 'Fitness & Coaching',
+  musculation: 'Fitness & Coaching',
+  'coach sportif': 'Fitness & Coaching',
+  'personal trainer': 'Fitness & Coaching',
+  crossfit: 'Fitness & Coaching',
+  yoga: 'Fitness & Coaching',
+  pilates: 'Fitness & Coaching',
+  boxe: 'Fitness & Coaching',
+  boxing: 'Fitness & Coaching',
+  'arts martiaux': 'Fitness & Coaching',
+  mma: 'Fitness & Coaching',
+  judo: 'Fitness & Coaching',
+  karaté: 'Fitness & Coaching',
+  danse: 'Fitness & Coaching',
+  'école de danse': 'Fitness & Coaching',
 
   // ═══════════════════════════════════════════════════════════
   // GROUPE 10 : Boutique Mode Femme
   // ═══════════════════════════════════════════════════════════
-  "prêt-à-porter femme": "Boutique Mode Femme",
-  "mode femme": "Boutique Mode Femme",
-  "boutique femme": "Boutique Mode Femme",
-  "chaussures femme": "Boutique Mode Femme",
-  "accessoires mode": "Boutique Mode Femme",
-  "accessoires femme": "Boutique Mode Femme",
-  "lingerie": "Boutique Mode Femme",
-  "maroquinerie": "Boutique Mode Femme",
-  "sacs à main": "Boutique Mode Femme",
+  'prêt-à-porter femme': 'Boutique Mode Femme',
+  'mode femme': 'Boutique Mode Femme',
+  'boutique femme': 'Boutique Mode Femme',
+  'chaussures femme': 'Boutique Mode Femme',
+  'accessoires mode': 'Boutique Mode Femme',
+  'accessoires femme': 'Boutique Mode Femme',
+  lingerie: 'Boutique Mode Femme',
+  maroquinerie: 'Boutique Mode Femme',
+  'sacs à main': 'Boutique Mode Femme',
 
   // ═══════════════════════════════════════════════════════════
   // GROUPE 11 : Boutique Mode Mixte/Homme
   // ═══════════════════════════════════════════════════════════
-  "streetwear": "Boutique Mode Mixte/Homme",
-  "boutique homme": "Boutique Mode Mixte/Homme",
-  "mode homme": "Boutique Mode Mixte/Homme",
-  "sneakers": "Boutique Mode Mixte/Homme",
-  "basket": "Boutique Mode Mixte/Homme",
-  "vintage": "Boutique Mode Mixte/Homme",
-  "friperie": "Boutique Mode Mixte/Homme",
-  "seconde main": "Boutique Mode Mixte/Homme",
-  "costumes": "Boutique Mode Mixte/Homme",
-  "tailleur": "Boutique Mode Mixte/Homme",
+  streetwear: 'Boutique Mode Mixte/Homme',
+  'boutique homme': 'Boutique Mode Mixte/Homme',
+  'mode homme': 'Boutique Mode Mixte/Homme',
+  sneakers: 'Boutique Mode Mixte/Homme',
+  basket: 'Boutique Mode Mixte/Homme',
+  vintage: 'Boutique Mode Mixte/Homme',
+  friperie: 'Boutique Mode Mixte/Homme',
+  'seconde main': 'Boutique Mode Mixte/Homme',
+  costumes: 'Boutique Mode Mixte/Homme',
+  tailleur: 'Boutique Mode Mixte/Homme',
 
   // ═══════════════════════════════════════════════════════════
   // GROUPE 12 : Commerce & Retail divers
   // ═══════════════════════════════════════════════════════════
-  "fleuriste": "Commerce & Retail divers",
-  "fleurs": "Commerce & Retail divers",
-  "déco maison": "Commerce & Retail divers",
-  "décoration": "Commerce & Retail divers",
-  "bijouterie": "Commerce & Retail divers",
-  "bijoux": "Commerce & Retail divers",
-  "joaillerie": "Commerce & Retail divers",
-  "librairie": "Commerce & Retail divers",
-  "papeterie": "Commerce & Retail divers",
-  "cadeaux": "Commerce & Retail divers",
-  "boutique cadeaux": "Commerce & Retail divers",
-  "bougies": "Commerce & Retail divers",
-  "bougies artisanales": "Commerce & Retail divers",
+  fleuriste: 'Commerce & Retail divers',
+  fleurs: 'Commerce & Retail divers',
+  'déco maison': 'Commerce & Retail divers',
+  décoration: 'Commerce & Retail divers',
+  bijouterie: 'Commerce & Retail divers',
+  bijoux: 'Commerce & Retail divers',
+  joaillerie: 'Commerce & Retail divers',
+  librairie: 'Commerce & Retail divers',
+  papeterie: 'Commerce & Retail divers',
+  cadeaux: 'Commerce & Retail divers',
+  'boutique cadeaux': 'Commerce & Retail divers',
+  bougies: 'Commerce & Retail divers',
+  'bougies artisanales': 'Commerce & Retail divers',
 
   // ═══════════════════════════════════════════════════════════
   // GROUPE 13 : Artisans corps
   // ═══════════════════════════════════════════════════════════
-  "tatoueur": "Artisans corps",
-  "tattoo": "Artisans corps",
-  "tatouage": "Artisans corps",
-  "piercing": "Artisans corps",
-  "pierceur": "Artisans corps",
-  "dermographe": "Artisans corps",
-  "maquillage permanent": "Artisans corps",
-  "dermopigmentation": "Artisans corps",
+  tatoueur: 'Artisans corps',
+  tattoo: 'Artisans corps',
+  tatouage: 'Artisans corps',
+  piercing: 'Artisans corps',
+  pierceur: 'Artisans corps',
+  dermographe: 'Artisans corps',
+  'maquillage permanent': 'Artisans corps',
+  dermopigmentation: 'Artisans corps',
 
   // ═══════════════════════════════════════════════════════════
   // GROUPE 14 : Automobile
   // ═══════════════════════════════════════════════════════════
-  "detailing": "Automobile",
-  "detailing auto": "Automobile",
-  "garage": "Automobile",
-  "garage automobile": "Automobile",
-  "carwash": "Automobile",
-  "lavage auto": "Automobile",
-  "station lavage": "Automobile",
-  "concession auto": "Automobile",
-  "concessionnaire": "Automobile",
-  "concession moto": "Automobile",
-  "moto": "Automobile",
-  "pneus": "Automobile",
-  "pneumatique": "Automobile",
-  "vitres teintées": "Automobile",
-  "covering": "Automobile",
-  "wrap": "Automobile",
+  detailing: 'Automobile',
+  'detailing auto': 'Automobile',
+  garage: 'Automobile',
+  'garage automobile': 'Automobile',
+  carwash: 'Automobile',
+  'lavage auto': 'Automobile',
+  'station lavage': 'Automobile',
+  'concession auto': 'Automobile',
+  concessionnaire: 'Automobile',
+  'concession moto': 'Automobile',
+  moto: 'Automobile',
+  pneus: 'Automobile',
+  pneumatique: 'Automobile',
+  'vitres teintées': 'Automobile',
+  covering: 'Automobile',
+  wrap: 'Automobile',
 
   // ═══════════════════════════════════════════════════════════
   // GROUPE 15 : Immobilier
   // ═══════════════════════════════════════════════════════════
-  "agence immobilière": "Immobilier",
-  "agence immo": "Immobilier",
-  "immobilier": "Immobilier",
-  "promoteur": "Immobilier",
-  "promoteur immobilier": "Immobilier",
-  "architecte intérieur": "Immobilier",
-  "architecte d'intérieur": "Immobilier",
-  "home staging": "Immobilier",
-  "décorateur": "Immobilier",
-  "décorateur intérieur": "Immobilier",
-  "courtier": "Immobilier",
-  "courtier immobilier": "Immobilier",
+  'agence immobilière': 'Immobilier',
+  'agence immo': 'Immobilier',
+  immobilier: 'Immobilier',
+  promoteur: 'Immobilier',
+  'promoteur immobilier': 'Immobilier',
+  'architecte intérieur': 'Immobilier',
+  "architecte d'intérieur": 'Immobilier',
+  'home staging': 'Immobilier',
+  décorateur: 'Immobilier',
+  'décorateur intérieur': 'Immobilier',
+  courtier: 'Immobilier',
+  'courtier immobilier': 'Immobilier',
 
   // ═══════════════════════════════════════════════════════════
   // GROUPE 16 : Hébergement
   // ═══════════════════════════════════════════════════════════
-  "hôtel": "Hébergement",
-  "hotel": "Hébergement",
-  "airbnb": "Hébergement",
-  "location saisonnière": "Hébergement",
-  "gîte": "Hébergement",
-  "chambre d'hôtes": "Hébergement",
-  "camping": "Hébergement",
-  "glamping": "Hébergement",
-  "lodge": "Hébergement",
-  "resort": "Hébergement",
-  "auberge": "Hébergement",
+  hôtel: 'Hébergement',
+  hotel: 'Hébergement',
+  airbnb: 'Hébergement',
+  'location saisonnière': 'Hébergement',
+  gîte: 'Hébergement',
+  "chambre d'hôtes": 'Hébergement',
+  camping: 'Hébergement',
+  glamping: 'Hébergement',
+  lodge: 'Hébergement',
+  resort: 'Hébergement',
+  auberge: 'Hébergement',
 
   // ═══════════════════════════════════════════════════════════
   // GROUPE 17 : Activités & Loisirs
   // ═══════════════════════════════════════════════════════════
-  "escape game": "Activités & Loisirs",
-  "escape room": "Activités & Loisirs",
-  "bowling": "Activités & Loisirs",
-  "karting": "Activités & Loisirs",
-  "laser game": "Activités & Loisirs",
-  "laser tag": "Activités & Loisirs",
-  "parc attractions": "Activités & Loisirs",
-  "parc d'attractions": "Activités & Loisirs",
-  "zoo": "Activités & Loisirs",
-  "aquarium": "Activités & Loisirs",
-  "mini-golf": "Activités & Loisirs",
-  "minigolf": "Activités & Loisirs",
-  "trampoline park": "Activités & Loisirs",
-  "paintball": "Activités & Loisirs",
+  'escape game': 'Activités & Loisirs',
+  'escape room': 'Activités & Loisirs',
+  bowling: 'Activités & Loisirs',
+  karting: 'Activités & Loisirs',
+  'laser game': 'Activités & Loisirs',
+  'laser tag': 'Activités & Loisirs',
+  'parc attractions': 'Activités & Loisirs',
+  "parc d'attractions": 'Activités & Loisirs',
+  zoo: 'Activités & Loisirs',
+  aquarium: 'Activités & Loisirs',
+  'mini-golf': 'Activités & Loisirs',
+  minigolf: 'Activités & Loisirs',
+  'trampoline park': 'Activités & Loisirs',
+  paintball: 'Activités & Loisirs',
 
   // ═══════════════════════════════════════════════════════════
   // GROUPE 18 : Événementiel
   // ═══════════════════════════════════════════════════════════
-  "photographe mariage": "Événementiel",
-  "photographe": "Événementiel",
-  "wedding planner": "Événementiel",
-  "organisateur mariage": "Événementiel",
-  "dj": "Événementiel",
-  "disc jockey": "Événementiel",
-  "traiteur": "Événementiel",
-  "traiteur événementiel": "Événementiel",
-  "décorateur événement": "Événementiel",
-  "décoration événement": "Événementiel",
-  "fleuriste mariage": "Événementiel",
-  "vidéaste": "Événementiel",
-  "vidéaste mariage": "Événementiel",
+  'photographe mariage': 'Événementiel',
+  photographe: 'Événementiel',
+  'wedding planner': 'Événementiel',
+  'organisateur mariage': 'Événementiel',
+  dj: 'Événementiel',
+  'disc jockey': 'Événementiel',
+  traiteur: 'Événementiel',
+  'traiteur événementiel': 'Événementiel',
+  'décorateur événement': 'Événementiel',
+  'décoration événement': 'Événementiel',
+  'fleuriste mariage': 'Événementiel',
+  vidéaste: 'Événementiel',
+  'vidéaste mariage': 'Événementiel',
 
   // ═══════════════════════════════════════════════════════════
   // GROUPE 19 : Santé & Paramédical
   // ═══════════════════════════════════════════════════════════
-  "dentiste": "Santé & Paramédical",
-  "cabinet dentaire": "Santé & Paramédical",
-  "kiné": "Santé & Paramédical",
-  "kinésithérapeute": "Santé & Paramédical",
-  "ostéo": "Santé & Paramédical",
-  "ostéopathe": "Santé & Paramédical",
-  "ophtalmo": "Santé & Paramédical",
-  "ophtalmologue": "Santé & Paramédical",
-  "opticien": "Santé & Paramédical",
-  "dermato": "Santé & Paramédical",
-  "dermatologue": "Santé & Paramédical",
-  "psy": "Santé & Paramédical",
-  "psychologue": "Santé & Paramédical",
-  "nutritionniste": "Santé & Paramédical",
-  "diététicien": "Santé & Paramédical",
-  "podologue": "Santé & Paramédical",
-  "sage-femme": "Santé & Paramédical",
+  dentiste: 'Santé & Paramédical',
+  'cabinet dentaire': 'Santé & Paramédical',
+  kiné: 'Santé & Paramédical',
+  kinésithérapeute: 'Santé & Paramédical',
+  ostéo: 'Santé & Paramédical',
+  ostéopathe: 'Santé & Paramédical',
+  ophtalmo: 'Santé & Paramédical',
+  ophtalmologue: 'Santé & Paramédical',
+  opticien: 'Santé & Paramédical',
+  dermato: 'Santé & Paramédical',
+  dermatologue: 'Santé & Paramédical',
+  psy: 'Santé & Paramédical',
+  psychologue: 'Santé & Paramédical',
+  nutritionniste: 'Santé & Paramédical',
+  diététicien: 'Santé & Paramédical',
+  podologue: 'Santé & Paramédical',
+  'sage-femme': 'Santé & Paramédical',
 
   // ═══════════════════════════════════════════════════════════
   // GROUPE 20 : Services pro & Conseil
   // ═══════════════════════════════════════════════════════════
-  "avocat": "Services pro & Conseil",
-  "cabinet avocat": "Services pro & Conseil",
-  "comptable": "Services pro & Conseil",
-  "expert-comptable": "Services pro & Conseil",
-  "notaire": "Services pro & Conseil",
-  "consultant": "Services pro & Conseil",
-  "coach business": "Services pro & Conseil",
-  "coach professionnel": "Services pro & Conseil",
-  "formation": "Services pro & Conseil",
-  "organisme formation": "Services pro & Conseil",
-  "rh": "Services pro & Conseil",
-  "ressources humaines": "Services pro & Conseil",
-  "assurance": "Services pro & Conseil",
-  "assureur": "Services pro & Conseil",
+  avocat: 'Services pro & Conseil',
+  'cabinet avocat': 'Services pro & Conseil',
+  comptable: 'Services pro & Conseil',
+  'expert-comptable': 'Services pro & Conseil',
+  notaire: 'Services pro & Conseil',
+  consultant: 'Services pro & Conseil',
+  'coach business': 'Services pro & Conseil',
+  'coach professionnel': 'Services pro & Conseil',
+  formation: 'Services pro & Conseil',
+  'organisme formation': 'Services pro & Conseil',
+  rh: 'Services pro & Conseil',
+  'ressources humaines': 'Services pro & Conseil',
+  assurance: 'Services pro & Conseil',
+  assureur: 'Services pro & Conseil',
 
   // ═══════════════════════════════════════════════════════════
   // GROUPE 21 : Artisans BTP
   // ═══════════════════════════════════════════════════════════
-  "plombier": "Artisans BTP",
-  "plomberie": "Artisans BTP",
-  "électricien": "Artisans BTP",
-  "peintre": "Artisans BTP",
-  "peintre en bâtiment": "Artisans BTP",
-  "menuisier": "Artisans BTP",
-  "carreleur": "Artisans BTP",
-  "maçon": "Artisans BTP",
-  "maçonnerie": "Artisans BTP",
-  "couvreur": "Artisans BTP",
-  "toiture": "Artisans BTP",
-  "pisciniste": "Artisans BTP",
-  "piscine": "Artisans BTP",
-  "paysagiste": "Artisans BTP",
-  "jardinier": "Artisans BTP",
-  "jardinerie": "Artisans BTP",
-  "serrurier": "Artisans BTP",
-  "chauffagiste": "Artisans BTP",
+  plombier: 'Artisans BTP',
+  plomberie: 'Artisans BTP',
+  électricien: 'Artisans BTP',
+  peintre: 'Artisans BTP',
+  'peintre en bâtiment': 'Artisans BTP',
+  menuisier: 'Artisans BTP',
+  carreleur: 'Artisans BTP',
+  maçon: 'Artisans BTP',
+  maçonnerie: 'Artisans BTP',
+  couvreur: 'Artisans BTP',
+  toiture: 'Artisans BTP',
+  pisciniste: 'Artisans BTP',
+  piscine: 'Artisans BTP',
+  paysagiste: 'Artisans BTP',
+  jardinier: 'Artisans BTP',
+  jardinerie: 'Artisans BTP',
+  serrurier: 'Artisans BTP',
+  chauffagiste: 'Artisans BTP',
 
   // ═══════════════════════════════════════════════════════════
   // GROUPE 22 : Enfance & Famille
   // ═══════════════════════════════════════════════════════════
-  "crèche": "Enfance & Famille",
-  "garderie": "Enfance & Famille",
-  "photographe bébé": "Enfance & Famille",
-  "photographe nouveau-né": "Enfance & Famille",
-  "boutique enfant": "Enfance & Famille",
-  "vêtements enfant": "Enfance & Famille",
-  "jouets": "Enfance & Famille",
-  "magasin jouets": "Enfance & Famille",
-  "activités kids": "Enfance & Famille",
-  "anniversaires": "Enfance & Famille",
-  "animation enfant": "Enfance & Famille",
-  "ludothèque": "Enfance & Famille",
+  crèche: 'Enfance & Famille',
+  garderie: 'Enfance & Famille',
+  'photographe bébé': 'Enfance & Famille',
+  'photographe nouveau-né': 'Enfance & Famille',
+  'boutique enfant': 'Enfance & Famille',
+  'vêtements enfant': 'Enfance & Famille',
+  jouets: 'Enfance & Famille',
+  'magasin jouets': 'Enfance & Famille',
+  'activités kids': 'Enfance & Famille',
+  anniversaires: 'Enfance & Famille',
+  'animation enfant': 'Enfance & Famille',
+  ludothèque: 'Enfance & Famille',
 
   // ═══════════════════════════════════════════════════════════
   // GROUPE 23 : Animaux (fusionné dans groupe 22 dans la DB)
   // ═══════════════════════════════════════════════════════════
-  "toilettage": "Animaux",
-  "toiletteur": "Animaux",
-  "vétérinaire": "Animaux",
-  "clinique vétérinaire": "Animaux",
-  "pension animaux": "Animaux",
-  "pension canine": "Animaux",
-  "éleveur": "Animaux",
-  "élevage": "Animaux",
-  "animalerie": "Animaux",
-  "éducateur canin": "Animaux",
-  "dresseur": "Animaux",
-  "pet sitting": "Animaux",
-  "garde animaux": "Animaux"
-};
+  toilettage: 'Animaux',
+  toiletteur: 'Animaux',
+  vétérinaire: 'Animaux',
+  'clinique vétérinaire': 'Animaux',
+  'pension animaux': 'Animaux',
+  'pension canine': 'Animaux',
+  éleveur: 'Animaux',
+  élevage: 'Animaux',
+  animalerie: 'Animaux',
+  'éducateur canin': 'Animaux',
+  dresseur: 'Animaux',
+  'pet sitting': 'Animaux',
+  'garde animaux': 'Animaux',
+}
 ```
 
 ## Fonction de mapping (JavaScript/TypeScript)
@@ -1012,7 +1030,7 @@ const NICHE_TO_GROUP_MAPPING = {
 
 const NICHE_TO_GROUP_MAPPING: Record<string, string> = {
   // ... (le mapping ci-dessus)
-};
+}
 
 /**
  * Trouve le groupe correspondant à une niche
@@ -1021,21 +1039,21 @@ const NICHE_TO_GROUP_MAPPING: Record<string, string> = {
  */
 export function getGroupFromNiche(niche: string): string | null {
   // Normaliser la niche (minuscules, trim)
-  const normalizedNiche = niche.toLowerCase().trim();
-  
+  const normalizedNiche = niche.toLowerCase().trim()
+
   // Recherche exacte
   if (NICHE_TO_GROUP_MAPPING[normalizedNiche]) {
-    return NICHE_TO_GROUP_MAPPING[normalizedNiche];
+    return NICHE_TO_GROUP_MAPPING[normalizedNiche]
   }
-  
+
   // Recherche partielle (si la niche contient un mot-clé)
   for (const [key, group] of Object.entries(NICHE_TO_GROUP_MAPPING)) {
     if (normalizedNiche.includes(key) || key.includes(normalizedNiche)) {
-      return group;
+      return group
     }
   }
-  
-  return null;
+
+  return null
 }
 
 /**
@@ -1048,34 +1066,34 @@ export async function getIndustryReport(groupName: string) {
     .from('industry_reports')
     .select('*')
     .eq('group_name', groupName)
-    .single();
-  
+    .single()
+
   if (error) {
-    console.error('Error fetching industry report:', error);
-    return null;
+    console.error('Error fetching industry report:', error)
+    return null
   }
-  
-  return data;
+
+  return data
 }
 
 // Usage dans le workflow
-const niche = "pizzeria";
-const groupName = getGroupFromNiche(niche); // "Fast food & Street food"
-const report = await getIndustryReport(groupName);
+const niche = 'pizzeria'
+const groupName = getGroupFromNiche(niche) // "Fast food & Street food"
+const report = await getIndustryReport(groupName)
 ```
 
 ## Query SQL alternative (dans n8n)
 
 ```sql
 -- Trouver le rapport par niche (utilise l'opérateur @> pour les arrays)
-SELECT * 
-FROM industry_reports 
+SELECT *
+FROM industry_reports
 WHERE niches_covered @> ARRAY['pizza']::text[]
 LIMIT 1;
 
 -- OU recherche par nom de groupe
-SELECT * 
-FROM industry_reports 
+SELECT *
+FROM industry_reports
 WHERE group_name = 'Fast food & Street food'
 LIMIT 1;
 ```
@@ -1161,8 +1179,13 @@ Exemple de ce qui est stocké dans `industry_reports` pour le groupe "Boulangeri
   "id": "uuid-xxx",
   "group_name": "Boulangerie & Sucré",
   "niches_covered": [
-    "boulangerie", "pâtisserie", "chocolatier", 
-    "glacier", "donuts", "cupcakes", "confiserie"
+    "boulangerie",
+    "pâtisserie",
+    "chocolatier",
+    "glacier",
+    "donuts",
+    "cupcakes",
+    "confiserie"
   ],
   "viral_accounts": [
     {
@@ -1273,4 +1296,4 @@ Exemple de ce qui est stocké dans `industry_reports` pour le groupe "Boulangeri
 
 ---
 
-*Document de contexte pour Claude Code — Projet BLAYO / VueVenue*
+_Document de contexte pour Claude Code — Projet BLAYO / VueVenue_

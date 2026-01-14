@@ -12,6 +12,7 @@ Génère des concepts publicitaires Meta Ads performants en appliquant la métho
 ## Quand utiliser cette skill
 
 Utilise cette skill quand l'utilisateur demande de :
+
 - Créer une campagne Meta Ads
 - Générer des créatives publicitaires
 - Développer des angles créatifs
@@ -30,6 +31,7 @@ Utilise cette skill quand l'utilisateur demande de :
 **Avant de générer quoi que ce soit**, collecte ces informations :
 
 **OBLIGATOIRE** :
+
 - Nom du produit/service
 - Type (Produit physique OU Service)
 - **Type de Business** (utiliser arbre de décision Catégories Meta - voir ci-dessous)
@@ -38,6 +40,7 @@ Utilise cette skill quand l'utilisateur demande de :
 - CPA cible (ou estimation si inconnu)
 
 **FORTEMENT RECOMMANDÉ** :
+
 - URL produit/service
 - Prix
 - Avatar principal (qui achète ?)
@@ -45,6 +48,7 @@ Utilise cette skill quand l'utilisateur demande de :
 - USPs / Différenciateurs
 
 **OPTIONNEL** :
+
 - Timing (mois de lancement)
 - Concurrence connue
 - Assets disponibles (photos, vidéos, témoignages)
@@ -82,6 +86,7 @@ Applique cet arbre de décision pour identifier le Type de Business en 5 seconde
 → Oui → 🔄 **Subscription**
 
 **Conversions Finales par Type** :
+
 - 🛍 **DTC** : Achat en ligne
 - 📞 **Lead Gen** : Demande de devis / message / appel
 - 📅 **RBS** : Réservation (date + heure)
@@ -100,8 +105,9 @@ Avant de générer concepts, effectue cette analyse (en silence, ne montre pas �
 Lis `/mnt/skills/user/meta-ads-creative-generator/references/product-service-analysis.md`
 
 Applique la méthodologie :
+
 - Step 1 : Basics
-- Step 2 : In Action  
+- Step 2 : In Action
 - Step 3 : Features
 - Step 4 : Benefits
 - Step 5 : Desires (connecte aux 4 besoins humains + émotions)
@@ -113,6 +119,7 @@ Applique la méthodologie :
 #### 2. Market Sophistication (5 niveaux)
 
 Détermine le niveau :
+
 - **Niveau 1** : Produit nouveau, aucun concurrent → Simple benefit statement
 - **Niveau 2** : Concurrence existe → Amplification promesses, "mieux que"
 - **Niveau 3** : Saturation → **NEW MECHANISM** (comment ça marche différemment)
@@ -125,6 +132,7 @@ Lis `/mnt/skills/user/meta-ads-creative-generator/references/secondary-emotions.
 Lis `/mnt/skills/user/meta-ads-creative-generator/references/desire-calendar.md`
 
 Identifie :
+
 - Quel(s) des 4 Besoins Humains ? (Sécurité, Variété, Importance, Connection)
 - Quelles 2 émotions d'achat activer ? (Peur+Espoir OU Colère+Désir)
 - Quelle émotion secondaire (Tier 1-6) ? (ex: Stress & Overwhelm #1)
@@ -133,6 +141,7 @@ Identifie :
 #### 4. Sub-Avatars (2-4 segments)
 
 Segmente selon :
+
 - Pain points spécifiques différents
 - Situations de vie différentes
 - Niveaux de conscience variables (Unaware → Most Aware)
@@ -145,45 +154,49 @@ Segmente selon :
 **Étape 1** : Identifier Type Business (6 catégories) → Détermine la conversion finale
 
 **Étape 2** : Déterminer Objectifs par Entonnoir
+
 - **TOF (Top of Funnel - Froid)** : Première rencontre avec marque, ciblage par intérêts
 - **MOF (Middle of Funnel - Tiède)** : Retargeting visiteurs page / spectateurs vidéo
 - **BOF (Bottom of Funnel - Chaud)** : Retargeting ajouteurs panier / initiateurs paiement
 
 **Étape 3** : Sélectionner Format par Entonnoir
 
-| Entonnoir | Format Recommandé | Rôle |
-|-----------|------------------|------|
-| **TOF** | 🎥 **VIDÉO** | **Interrompre** le flux et éduquer (UGC, Tête Parlante, Voix-off) |
-| **MOF** | 🖼️ **IMAGE** | **Délivrer la Preuve** et l'Autorité rapidement (Static, Collage, UGC Image) |
-| **BOF** | 🖼️ **IMAGE** | **Déclencher l'achat** avec offre claire et preuve sociale massive |
+| Entonnoir | Format Recommandé | Rôle                                                                         |
+| --------- | ----------------- | ---------------------------------------------------------------------------- |
+| **TOF**   | 🎥 **VIDÉO**      | **Interrompre** le flux et éduquer (UGC, Tête Parlante, Voix-off)            |
+| **MOF**   | 🖼️ **IMAGE**      | **Délivrer la Preuve** et l'Autorité rapidement (Static, Collage, UGC Image) |
+| **BOF**   | 🖼️ **IMAGE**      | **Déclencher l'achat** avec offre claire et preuve sociale massive           |
 
 **Étape 4** : Combiner Format + Angle de Vente
 
 **Angles de Vente par Entonnoir** :
 
-| Angle | Description | Entonnoir |
-|-------|-------------|-----------|
-| **Avatar Callout** | Interpeller directement l'audience cible | TOF |
-| **Specific Pain Point** | Ouvrir sur la douleur la plus précise | TOF |
-| **Solution Exaggeration** | Présenter bénéfices de manière audacieuse | TOF |
-| **Stealing Credibility** | Utiliser preuve sociale comme accroche | MOF / BOF |
-| **This is Not The Product** | Élever produit d'une commodité à un système | MOF |
-| **Classy Offer / The Free Ad** | Mettre l'offre au centre de l'annonce | BOF |
-| **US vs THEM** | Positionner comme alternative supérieure | MOF / BOF |
+| Angle                          | Description                                 | Entonnoir |
+| ------------------------------ | ------------------------------------------- | --------- |
+| **Avatar Callout**             | Interpeller directement l'audience cible    | TOF       |
+| **Specific Pain Point**        | Ouvrir sur la douleur la plus précise       | TOF       |
+| **Solution Exaggeration**      | Présenter bénéfices de manière audacieuse   | TOF       |
+| **Stealing Credibility**       | Utiliser preuve sociale comme accroche      | MOF / BOF |
+| **This is Not The Product**    | Élever produit d'une commodité à un système | MOF       |
+| **Classy Offer / The Free Ad** | Mettre l'offre au centre de l'annonce       | BOF       |
+| **US vs THEM**                 | Positionner comme alternative supérieure    | MOF / BOF |
 
 **Types d'Ads par Entonnoir** :
 
 **TOF - Publicités d'Interruption et d'Éducation (Vidéo)** :
+
 - **La Connexion Authentique** : Relatable Hook ou Avatar Callout → Authentic UGC / Talking Head
 - **Le Problème Révélé** : Specific Pain Point ou US vs THEM → Voix-off avec B-roll
 - **L'Impact Immédiat** : Solution Exaggeration → Slideshow Video w/ Text
 
 **MOF - Publicités de Validation et de Confiance (Image)** :
+
 - **L'Ad de Crédibilité** : Stealing Credibility → UGC Image ou Static Graphic (Citation avis)
 - **L'Ad de Repositionnement** : This is Not The Product → Static Graphic/Design
 - **L'Ad Comparatif** : Simplified US VS THEM → Collage Style (Avant/Après)
 
 **BOF - Publicités d'Urgence et de Conversion (Image)** :
+
 - **L'Ad de l'Offre** : Classy Offer ou The Free Ad → Static Graphic/Design (Prix clair, Code promo)
 - **La Preuve Finale** : Stealing Credibility → UGC Image (Produit reçu / service terminé)
 - **L'Urgence Minimaliste** : Minimal US VS THEM → Meme-style image
@@ -213,25 +226,31 @@ Lis `/mnt/skills/user/meta-ads-creative-generator/references/ad-formats.md`
 **Format Decision Tree** :
 
 **STEP 1** : Identifier Entonnoir (TOF/MOF/BOF)
+
 - TOF → Vidéo préféré (scroll-stop + éducation)
 - MOF → Image préféré (preuves rapides)
 - BOF → Image préféré (offre claire conversion)
 
 **STEP 2** : Identifier Type Business (6 catégories)
+
 - Voir section "Par Type Business" dans ad-formats.md pour formats prioritaires
 
 **STEP 3** : Identifier Winning Template utilisé
+
 - Voir tableau "Mapping Template → Format" dans ad-formats.md
 
 **STEP 4** : Croiser les 3 critères
+
 - Exemple : TOF + DTC + Avatar Callout → Product Photography + Headline (IMAGE) OU Authentic UGC (VIDÉO)
 
 **STEP 5** : Justifier en 1 ligne
+
 - Pourquoi ce format pour ce concept précis ?
 
 **Formats disponibles** :
 
 **VIDÉO (6 formats)** :
+
 1. Voiceover with b-roll
 2. Subtitles with b-roll
 3. Slideshow Video w Text
@@ -240,6 +259,7 @@ Lis `/mnt/skills/user/meta-ads-creative-generator/references/ad-formats.md`
 6. Animation
 
 **IMAGE (8 formats)** :
+
 1. Static graphic/design
 2. Product photography + Headline
 3. Infographic designs
@@ -263,12 +283,14 @@ Lis `/mnt/skills/user/meta-ads-creative-generator/references/ad-formats.md`
 → **1 CAMPAGNE CBO avec Min/Max Spend Limits**
 
 **Logique** :
+
 - Volume données limité → besoin concentration
 - Algorithme apprend mieux avec données centralisées
 - Min/Max Spend protège winners de sous-financement
 - Simplicité gestion (1 campagne)
 
 **Structure** :
+
 ```
 CAMPAGNE : [Nom Produit] - CBO Testing & Scaling
 ├─ Ad Set 1 : WINNERS (Budget Prioritaire)
@@ -280,6 +302,7 @@ CAMPAGNE : [Nom Produit] - CBO Testing & Scaling
 ```
 
 **Calculs Min/Max Spend** :
+
 ```
 CPA Cible = X€
 
@@ -301,12 +324,14 @@ Si > Budget Total → Ajuster ou alerter client
 → **2 CAMPAGNES SÉPARÉES (Testing + Scaling)**
 
 **Logique** :
+
 - Volume données suffisant pour isolation
 - Scaling agressif sans impact sur testing
 - Contrôle granulaire attribution budget
 - Horizontal Scaling possible (augmenter allocation Testing progressivement)
 
 **Structure** :
+
 ```
 CAMPAGNE 1 : [Nom Produit] - TESTING
 ├─ Allocation : 10% budget total (Jours 1-7)
@@ -322,6 +347,7 @@ CAMPAGNE 2 : [Nom Produit] - SCALING (Winners)
 ```
 
 **Critères de Graduation (Testing → Scaling)** :
+
 ```
 Conditions pour graduer une ad vers SCALING :
 1. CPA ≤ CPA Cible (idéalement 80-90% du CPA cible)
@@ -336,6 +362,7 @@ Process :
 ```
 
 **Horizontal Scaling Path (Optionnel)** :
+
 ```
 Si TESTING génère consistemment 2-3 winners/semaine :
 → Possibilité d'augmenter allocation TESTING progressivement
@@ -346,7 +373,7 @@ Exemple progression :
 - Semaines 11-16 : 30% Testing / 70% Scaling (si momentum continue)
 - Plafond recommandé : 50% Testing / 50% Scaling (ne jamais dépasser)
 
-IMPORTANT : Horizontal Scaling n'est PAS obligatoire. 
+IMPORTANT : Horizontal Scaling n'est PAS obligatoire.
 Augmente allocation Testing uniquement si :
 - ROAS global ne baisse pas
 - Testing prouve qu'il génère winners consistemment
@@ -360,6 +387,7 @@ Augmente allocation Testing uniquement si :
 **Philosophie 2024-2025** : Meta identifie automatiquement TOF/MOF/BOF via signaux comportementaux.
 
 **Configuration recommandée** :
+
 ```
 TOUS les Ad Sets :
 - Location : [Pays/Région cible]
@@ -404,6 +432,7 @@ LOGIQUE DIAGNOSTIC :
 ```
 
 **Configuration dans Ads Manager** :
+
 ```
 Customize Columns → Create Custom Column Set
 Nom : "Entonnoir Diagnostic Bourbon"
@@ -443,13 +472,16 @@ Pour chaque concept, génère :
 
 **Primary Text** :
 ```
+
 [Texte Primary Text complet, 3-5 paragraphes courts]
 
 [Structure :
+
 - Para 1 : Hook développé / Paint le pain
 - Para 2-3 : Mécanisme / Solution
 - Para 4 : Social proof / Bénéfices
 - Para 5 : CTA]
+
 ```
 
 **Description Visuelle Détaillée** :
@@ -523,10 +555,12 @@ Une fois tous les concepts générés, fournis :
 ## Desires & Émotions Activés
 
 **4 Besoins Humains Ciblés** :
+
 - [Besoin 1] : [Comment]
 - [Besoin 2] : [Comment]
 
 **Émotions d'Achat** :
+
 - Paire primaire : [Émotion 1] → [Émotion 2]
 - Émotions secondaires : [Liste Tier 1-3]
 
@@ -543,10 +577,12 @@ Une fois tous les concepts générés, fournis :
 ## Formats Sélectionnés (v5.0)
 
 **VIDÉO** :
+
 - [Format 1] : [X] concepts
 - [Format 2] : [X] concepts
 
 **IMAGE** :
+
 - [Format 1] : [X] concepts
 - [Format 2] : [X] concepts
 
@@ -555,14 +591,17 @@ Une fois tous les concepts générés, fournis :
 ## Recommandations Lancement
 
 **Jours 1-7** :
+
 - [Instruction phase lancement]
 - [Métriques à surveiller]
 
 **Jours 8-14** :
+
 - [Instruction phase optimisation]
 - [Critères graduation winners]
 
 **Jours 15+** :
+
 - [Instruction phase scaling]
 - [Nouvelles créatives recommandées]
 ```
@@ -577,6 +616,7 @@ Une fois tous les concepts générés, fournis :
 ### CAMPAGNE : [Nom Produit] - CBO Testing & Scaling
 
 **Campaign Settings** :
+
 - Campaign Objective : [Conversions / Leads / etc.]
 - Budget Optimization : Campaign Budget Optimization (CBO)
 - Daily Budget : [Montant Total]€
@@ -587,6 +627,7 @@ Une fois tous les concepts générés, fournis :
 #### AD SET 1 : WINNERS
 
 **Targeting** :
+
 - Location : [Pays/Région]
 - Age : 18-65+
 - Gender : All
@@ -594,10 +635,12 @@ Une fois tous les concepts générés, fournis :
 - Advantage+ Audience : ON
 
 **Budget Controls** :
+
 - Min Daily Budget : [4x CPA]€
 - Max Daily Budget : [8x CPA]€
 
 **Ads in this Ad Set** :
+
 - [Liste ads winners graduées]
 
 ---
@@ -605,6 +648,7 @@ Une fois tous les concepts générés, fournis :
 #### AD SET 2 : TESTING
 
 **Targeting** :
+
 - Location : [Pays/Région]
 - Age : 18-65+
 - Gender : All
@@ -612,10 +656,12 @@ Une fois tous les concepts générés, fournis :
 - Advantage+ Audience : ON
 
 **Budget Controls** :
+
 - Min Daily Budget : [1.5x CPA]€
 - Max Daily Budget : [4x CPA]€
 
 **Ads in this Ad Set** :
+
 - Concept 1 - Variation 1
 - Concept 1 - Variation 2
 - Concept 1 - Variation 3
@@ -630,6 +676,7 @@ Une fois tous les concepts générés, fournis :
 ### CAMPAGNE 1 : [Nom Produit] - TESTING
 
 **Campaign Settings** :
+
 - Campaign Objective : [Conversions / Leads / etc.]
 - Daily Budget : [10% Budget Total]€
 - Bid Strategy : Lowest Cost
@@ -639,6 +686,7 @@ Une fois tous les concepts générés, fournis :
 #### AD SET : New Concepts Testing
 
 **Targeting** :
+
 - Location : [Pays/Région]
 - Age : 18-65+
 - Gender : All
@@ -646,6 +694,7 @@ Une fois tous les concepts générés, fournis :
 - Advantage+ Audience : ON
 
 **Ads in this Ad Set** :
+
 - Concept 1 - Variation 1
 - Concept 1 - Variation 2
 - [... toutes nouvelles ads]
@@ -655,6 +704,7 @@ Une fois tous les concepts générés, fournis :
 ### CAMPAGNE 2 : [Nom Produit] - SCALING (Winners)
 
 **Campaign Settings** :
+
 - Campaign Objective : [Conversions / Leads / etc.]
 - Daily Budget : [90% Budget Total]€
 - Bid Strategy : Lowest Cost
@@ -664,6 +714,7 @@ Une fois tous les concepts générés, fournis :
 #### AD SET : Proven Winners
 
 **Targeting** :
+
 - Location : [Pays/Région]
 - Age : 18-65+
 - Gender : All
@@ -671,6 +722,7 @@ Une fois tous les concepts générés, fournis :
 - Advantage+ Audience : ON
 
 **Ads in this Ad Set** :
+
 - [Winners graduées depuis Testing]
 - [Initialement vide - populer après 7-14 jours]
 
@@ -679,12 +731,14 @@ Une fois tous les concepts générés, fournis :
 ### Critères de Graduation
 
 **Pour graduer de TESTING → SCALING** :
+
 - ✅ CPA ≤ [CPA Cible]€ (idéalement 80-90%)
 - ✅ Minimum 20-30 conversions accumulées
 - ✅ Link CTR > 2%
 - ✅ Performance stable sur 7 jours
 
 **Process** :
+
 1. Identifier ad qui remplit critères dans TESTING
 2. Dupliquer ad vers SCALING Ad Set
 3. Garder ad active dans TESTING (pour données continues)
@@ -743,6 +797,7 @@ Une fois tous les concepts générés, fournis :
 ### Roadmap Optimisation Continue
 
 **SEMAINE 1-2 : Observation & Données**
+
 - ✅ Laisser tourner sans modifications majeures
 - ✅ Collecter minimum 100-200 conversions
 - ✅ Identifier premiers signaux winners (CPA < cible)
@@ -752,6 +807,7 @@ Une fois tous les concepts générés, fournis :
 ---
 
 **SEMAINE 3-4 : Première Optimisation**
+
 - ✅ Graduer winners vers SCALING (si budget >$1k)
 - ✅ Désactiver losers clairs (CPA > 2x cible + 30+ conversions)
 - ✅ Lancer 2-3 nouveaux concepts basés sur insights winners
@@ -760,6 +816,7 @@ Une fois tous les concepts générés, fournis :
 ---
 
 **SEMAINE 5-8 : Scaling & Innovation**
+
 - ✅ Augmenter budget global si ROAS stable (10-20% par semaine max)
 - ✅ Lancer 1-3 nouveaux concepts/semaine (refresh créatif)
 - ✅ Tester nouveaux formats (si patterns clairs émergent)
@@ -768,6 +825,7 @@ Une fois tous les concepts générés, fournis :
 ---
 
 **MOIS 3+ : Maintenance & Refresh**
+
 - ✅ Refresh créatifs tous les 30-45 jours (éviter ad fatigue)
 - ✅ Tester seasonal angles (selon Desire Calendar)
 - ✅ A/B test offres (promos, bundles, garanties)
@@ -778,16 +836,19 @@ Une fois tous les concepts générés, fournis :
 ### KPIs à Monitorer (Hebdomadaire)
 
 **Santé Campagne** :
+
 - ROAS global : [Target]
 - CPA moyen : ≤ [Cible]€
 - Volume conversions : [Objectif/semaine]
 
 **Performance Créatives** :
+
 - Link CTR moyen : > 2%
 - % ads actives profitable (CPA ≤ cible) : > 40%
 - Taux renouvellement créatifs : 2-4 nouvelles ads/semaine
 
 **Signaux d'Alerte** :
+
 - 🚨 ROAS baisse > 20% sur 7 jours → Pause losers agressivement
 - 🚨 CPA augmente > 30% → Refresh créatifs urgence
 - 🚨 Aucun winner en 14 jours → Revoir stratégie produit/offre
@@ -843,6 +904,7 @@ Une fois tous les concepts générés, fournis :
 Cette skill applique automatiquement :
 
 **Stratégie Fondamentale** :
+
 - Market Sophistication (5 stages Eugene Schwartz)
 - 3 Strategic Responses (New Mechanism, New Information, New Identity)
 - 4 Besoins Humains Universels (Sécurité, Variété, Importance, Connection)
@@ -850,37 +912,44 @@ Cette skill applique automatiquement :
 - Tradeoffs (Sacrifice vs Gain)
 
 **Classification Business** :
+
 - 6 Catégories Meta Bourbon Média (DTC, Lead Gen, RBS, DTS, Event, Subscription)
 - Arbre de décision pour identification rapide
 - Conversions finales spécifiques par catégorie
 
 **Stratégie d'Entonnoir** :
+
 - TOF/MOF/BOF (Top/Middle/Bottom of Funnel)
 - Formats adaptés par entonnoir (Vidéo TOF / Image MOF-BOF)
 - Angles de vente spécifiques par stade de maturité client
 - Types d'Ads par entonnoir (Le Problème Révélé, L'Ad de Crédibilité, L'Ad de l'Offre)
 
 **Product/Service Analysis** :
+
 - Méthodologie 7 étapes (Features → Benefits → Desires → Hidden Mechanisms)
 - Distinction Produits vs Services
 
 **Desires & Emotions** :
+
 - 4 Émotions d'Achat (Peur, Désir, Espoir, Colère)
 - Émotions Secondaires Tier 1-6 (data-driven)
 - Desire Calendar (timing saisonnier)
 
 **Creative Structure** :
+
 - Définitions précises (3:2:2, Concept, Angle, Variations, Format)
 - 6 Hook Patterns éprouvés
 - 13 Winning Templates
 
 **Formats Origins v5.0 (NOUVEAU)** :
+
 - 6 Formats Vidéo détaillés (Voiceover, Subtitles, Slideshow, UGC, Professional, Animation)
 - 8 Formats Image détaillés (Static Graphic, Product Photo, Infographic, Collage, Quote, Native, Meme, UGC)
 - Decision Tree par Type Business + Entonnoir + Template
 - Descriptions visuelles pour génération prompts Higgsfield
 
 **Structure de Campagne v4.0** :
+
 - **Budget-Based Decision Tree** (<$1k vs >$1k/jour)
 - **1 CBO avec Min/Max Spend** (<$1k) : Concentration données + Protection winners
 - **2 Campagnes avec Horizontal Scaling** (>$1k) : Isolation Testing/Scaling + Scalabilité progressive
@@ -889,6 +958,7 @@ Cette skill applique automatiquement :
 - Critères de graduation winners
 
 **Research** (optionnel si besoin différenciation) :
+
 - New Information Prompt
 - New Mechanism Prompt
 - Desire Research Prompt
@@ -898,6 +968,7 @@ Cette skill applique automatiquement :
 ## Exemples de Déclenchement
 
 **Exemple 1 - Budget <$1k (1 CBO)** :
+
 ```
 USER: Crée une campagne Meta pour restaurant créole Saint-Denis.
 Budget 25€/jour, CPA 12€.
@@ -912,6 +983,7 @@ SKILL: [Identifie Budget 25€/jour < $1k → 1 CBO avec Min/Max Spend]
 ```
 
 **Exemple 2 - Budget >$1k (2 Campagnes)** :
+
 ```
 USER: Génère des ads pour VTC aéroport La Réunion.
 Budget 35€/jour (1050€/mois), CPA 25€.
@@ -925,6 +997,7 @@ SKILL: [Identifie Budget 35€/jour > $1k/mois → 2 Campagnes séparées]
 ```
 
 **Exemple 3 - Formats v5.0** :
+
 ```
 USER: Concepts pour produit collagène DTC, budget 50€/jour, CPA 30€.
 
@@ -941,6 +1014,7 @@ SKILL: [Identifie : DTC + Budget 50€ < $1k → 1 CBO]
 ```
 
 **Exemple 4 - Diagnostic Métrique** :
+
 ```
 USER: Mon Link CTR est 3.5% mais ATC Rate seulement 8%. Que faire ?
 
@@ -958,6 +1032,7 @@ SKILL: [Analyse métriques entonnoir]
 ## Notes pour Optimisation
 
 **Priorités de lecture** :
+
 1. `product-service-analysis.md` - TOUJOURS (analyse produit/service)
 2. `winning-templates.md` - TOUJOURS (structure concepts)
 3. `hook-patterns.md` - TOUJOURS (créer hooks)
@@ -967,17 +1042,20 @@ SKILL: [Analyse métriques entonnoir]
 7. `research-prompts.md` - Si besoin différenciation avancée
 
 **Adaptation langage** :
+
 - Ton naturel, pas corporate
 - Phrases courtes, impactantes
 - Langage de l'avatar (pas jargon marketer)
 - Tu/Vous selon contexte marché
 
 **Qualité > Quantité** :
+
 - Mieux 3 concepts excellents que 10 médiocres
 - Chaque concept doit avoir un angle distinct
 - Variations doivent être substantiellement différentes
 
 **Formats Origins Philosophy v5.0** :
+
 - 14 formats fixes (6 vidéo + 8 image) - ne jamais inventer
 - Toujours spécifier format exact (pas "Image Static" générique)
 - Justifier format en 1 ligne (pourquoi ce format pour ce concept)
@@ -985,12 +1063,14 @@ SKILL: [Analyse métriques entonnoir]
 - Croiser 3 critères : Type Business + Entonnoir + Template
 
 **Open Targeting Philosophy** :
+
 - Meta identifie automatiquement TOF/MOF/BOF
 - Ne pas fragmenter audiences en multiples Ad Sets
 - Laisser l'algorithme optimiser la distribution
 - Exception : Retargeting spécifique si nécessaire (abandon panier)
 
 **Budget-Based Structure Philosophy** :
+
 - **<$1k/jour** : Concentration > Séparation (1 CBO meilleur)
 - **>$1k/jour** : Isolation > Concentration (2 Campagnes meilleur)
 - Min/Max Spend = Garde-fous essentiels pour CBO
@@ -998,6 +1078,7 @@ SKILL: [Analyse métriques entonnoir]
 - Prouver efficacité Testing avant scaler allocation
 
 **Métriques Custom Philosophy** :
+
 - Organisation en entonnoir = diagnostic rapide
 - Amount Spent au milieu = contrôle validation
 - Identifier où funnel break = optimiser là
@@ -1007,11 +1088,13 @@ SKILL: [Analyse métriques entonnoir]
 ## Intégration avec Autres Skills
 
 **meta-ads-static-images-creator** :
+
 - Utilise Descriptions Visuelles Détaillées générées par cette skill
 - Formats Origins = base prompts Higgsfield
 - Workflow : Creative Concept → Description Visuelle → Prompt Higgsfield → Image générée
 
 **bbp-script-writer** :
+
 - Peut adapter concepts TOF Vidéo UGC pour BBP
 - Langage réunionnais + micro-découverte local = synergies
 
@@ -1021,7 +1104,8 @@ SKILL: [Analyse métriques entonnoir]
 **Créé pour Bourbon Média**  
 **Intègre 20+ documents sources et 18+ frameworks**
 
-**Nouveautés v5.0** : 
+**Nouveautés v5.0** :
+
 - ✨ **Intégration complète formats Origins** : 6 formats vidéo + 8 formats image détaillés
 - ✨ **Format Selection Strategy** : Decision tree par Type Business + Entonnoir + Winning Template
 - ✨ **Descriptions Visuelles Détaillées** : Pour génération prompts Higgsfield via meta-ads-static-images-creator
@@ -1029,7 +1113,8 @@ SKILL: [Analyse métriques entonnoir]
 - ✨ **Fichier référence ad-formats.md** : Extraction complète document Origins
 - ✨ **Mapping complet** : 14 formats × 6 Types Business × 3 Entonnoirs × 13 Templates
 
-**Héritées v4.0** : 
+**Héritées v4.0** :
+
 - Structure campagne adaptée au budget (<$1k = 1 CBO, >$1k = 2 Campagnes)
 - Min/Max Spend Limits pour CBO
 - Horizontal Scaling progressif (10% → 50%)

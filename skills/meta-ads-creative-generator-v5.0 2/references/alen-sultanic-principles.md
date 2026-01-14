@@ -5,13 +5,16 @@
 Tous les achats émotionnels répondent à au moins un de ces 4 besoins fondamentaux. Identifie lesquels ton offre satisfait.
 
 ### 1. Sécurité / Certitude
+
 **Ce que l'avatar cherche :**
+
 - Réduire l'incertitude et l'anxiété
 - Avoir le contrôle sur sa situation
 - Éviter la douleur, le risque, la perte
 - Garantir un résultat prévisible
 
 **Angles créatifs :**
+
 - Garanties (remboursement, résultats)
 - Preuves sociales massives (X clients satisfaits)
 - Processus éprouvé ("depuis X années")
@@ -19,6 +22,7 @@ Tous les achats émotionnels répondent à au moins un de ces 4 besoins fondamen
 - Authority (certifications, experts)
 
 **Exemples de messages :**
+
 - "Garantie 30 jours remboursé"
 - "97% de clients satisfaits"
 - "Méthode validée par 10,000+ utilisateurs"
@@ -26,13 +30,16 @@ Tous les achats émotionnels répondent à au moins un de ces 4 besoins fondamen
 ---
 
 ### 2. Variété / Nouveauté
+
 **Ce que l'avatar cherche :**
+
 - Échapper à l'ennui et la routine
 - Découvrir quelque chose de nouveau
 - Se sentir stimulé, excité
 - Éviter la monotonie
 
 **Angles créatifs :**
+
 - Nouveauté ("nouveau", "jamais vu")
 - Innovation ("première fois", "breakthrough")
 - Différenciation ("pas comme les autres")
@@ -40,6 +47,7 @@ Tous les achats émotionnels répondent à au moins un de ces 4 besoins fondamen
 - Changement radical ("transforme complètement")
 
 **Exemples de messages :**
+
 - "La méthode que personne ne te dit"
 - "Enfin quelque chose de différent"
 - "Révolutionne ta façon de [X]"
@@ -47,7 +55,9 @@ Tous les achats émotionnels répondent à au moins un de ces 4 besoins fondamen
 ---
 
 ### 3. Importance / Signification
+
 **Ce que l'avatar cherche :**
+
 - Se sentir spécial, unique, valorisé
 - Élever son statut social
 - Accomplir quelque chose d'important
@@ -55,6 +65,7 @@ Tous les achats émotionnels répondent à au moins un de ces 4 besoins fondamen
 - Avoir un impact
 
 **Angles créatifs :**
+
 - Exclusivité ("réservé à", "seulement pour")
 - Élite ("rejoins les [X] qui")
 - Accomplissement ("deviens le [X] que tu mérites d'être")
@@ -62,6 +73,7 @@ Tous les achats émotionnels répondent à au moins un de ces 4 besoins fondamen
 - Recognition ("sois reconnu pour")
 
 **Exemples de messages :**
+
 - "Rejoins l'élite des [X]"
 - "Prouve que tu es capable de [Y]"
 - "Deviens la personne que tout le monde admire"
@@ -69,7 +81,9 @@ Tous les achats émotionnels répondent à au moins un de ces 4 besoins fondamen
 ---
 
 ### 4. Amour / Connection
+
 **Ce que l'avatar cherche :**
+
 - Appartenir à un groupe, une communauté
 - Se sentir compris, accepté
 - Créer ou renforcer des liens
@@ -77,6 +91,7 @@ Tous les achats émotionnels répondent à au moins un de ces 4 besoins fondamen
 - Partager des expériences
 
 **Angles créatifs :**
+
 - Communauté ("rejoins [X] personnes comme toi")
 - Appartenance ("tu n'es pas seul(e)")
 - Compréhension ("on te comprend")
@@ -84,6 +99,7 @@ Tous les achats émotionnels répondent à au moins un de ces 4 besoins fondamen
 - Famille ("pour ceux qui t'aiment")
 
 **Exemples de messages :**
+
 - "Rejoins une communauté de 10,000 [X]"
 - "Enfin des gens qui te comprennent"
 - "Pour les [X] qui veulent [Y]"
@@ -99,11 +115,13 @@ Tous les achats émotionnels répondent à au moins un de ces 4 besoins fondamen
 **Question centrale :** Qui veut DEVENIR l'avatar en achetant ce produit ?
 
 **Exemples :**
+
 - Produit fitness → Identité : "La personne disciplinée et confiante"
 - Produit productivité → Identité : "Le leader efficace et accompli"
 - Produit luxe → Identité : "La personne qui a réussi et mérite le meilleur"
 
 **Dans les créatives :**
+
 - Peins un tableau de l'identité future
 - Utilise le langage de cette identité ("les gens comme toi qui...")
 - Montre des témoignages de personnes incarnant cette identité
@@ -143,9 +161,11 @@ Tous les achats émotionnels répondent à au moins un de ces 4 besoins fondamen
 Identifie à quel niveau se situe ton marché pour adapter ton message.
 
 ### Niveau 1 : Le Produit Est La Nouveauté
+
 **État du marché :** Aucun produit similaire n'existe, l'avatar ne sait même pas que cette solution existe.
 
 **Stratégie créative :**
+
 - Focus sur LE bénéfice principal
 - Éduquer sur le problème ET la solution
 - Message ultra-simple et direct
@@ -157,9 +177,11 @@ Identifie à quel niveau se situe ton marché pour adapter ton message.
 ---
 
 ### Niveau 2 : Des Alternatives Existent
+
 **État du marché :** L'avatar connaît la catégorie de produit, mais les options sont limitées.
 
 **Stratégie créative :**
+
 - Focus sur comment tu fais MIEUX
 - Amélioration quantifiable (plus rapide, moins cher, plus efficace)
 - Comparaison directe ou indirecte
@@ -171,9 +193,11 @@ Identifie à quel niveau se situe ton marché pour adapter ton message.
 ---
 
 ### Niveau 3 : Saturation Du Mécanisme
+
 **État du marché :** Beaucoup de produits similaires, l'avatar est sceptique des promesses standards.
 
 **Stratégie créative :**
+
 - Introduire un NOUVEAU mécanisme (même si c'est du rebranding)
 - Nouvelle catégorie ("pas un [X], mais un [Y]")
 - Hot mechanism ("secret ingredient", "méthode brevetée")
@@ -185,9 +209,11 @@ Identifie à quel niveau se situe ton marché pour adapter ton message.
 ---
 
 ### Niveau 4 : Hyper-Saturation
+
 **État du marché :** Des centaines de produits similaires, l'avatar est complètement blasé.
 
 **Stratégie créative :**
+
 - Avatar call-out ULTRA-SPÉCIFIQUE
 - Sub-avatar hyper-niché
 - Parler directement à UNE situation précise
@@ -199,9 +225,11 @@ Identifie à quel niveau se situe ton marché pour adapter ton message.
 ---
 
 ### Niveau 5 : Marchés Matures Sophistiqués
+
 **État du marché :** L'avatar a tout essayé, ultra-éduqué, cherche l'excellence.
 
 **Stratégie créative :**
+
 - Focus sur l'EXPÉRIENCE, pas le produit
 - Tribu et appartenance
 - Identité et lifestyle
@@ -223,6 +251,7 @@ Identifie à quel niveau se situe ton marché pour adapter ton message.
 Ne fais pas comme si ça ne coûtait rien. Acknowledge ouvertement.
 
 Exemples :
+
 - "Oui, ça coûte [X]€"
 - "Oui, ça demande 30min par jour"
 - "Oui, tu devras sortir de ta zone de confort"
@@ -231,6 +260,7 @@ Exemples :
 Compare le sacrifice à quelque chose de familier pour le minimiser.
 
 Exemples :
+
 - "Moins cher qu'un café par jour"
 - "Le temps que tu passes à scroller Instagram"
 - "Ce que tu dépenses déjà en [alternative inefficace]"
@@ -239,6 +269,7 @@ Exemples :
 Rends le gain tangible, mesurable, émotionnel.
 
 Exemples :
+
 - "En échange, tu récupères 2h de sommeil par nuit"
 - "Ça te fait économiser 500€/mois sur [X]"
 - "Tu retrouves la confiance que tu avais avant [événement]"
@@ -246,10 +277,11 @@ Exemples :
 ### Application dans les Créatives
 
 **Primary Text Structure :**
+
 ```
 [HOOK - Paint le pain point]
 
-Tu sais que [solution] va te coûter [X]. 
+Tu sais que [solution] va te coûter [X].
 (reconnaissance du sacrifice)
 
 Mais penses-y : c'est [reframe du sacrifice].
@@ -279,4 +311,4 @@ Si tu ne peux pas répondre à ces questions, tu n'as pas assez d'informations p
 
 ---
 
-*Référence : Checklist Stratégie Marketing Complète - Alen Sultanic*
+_Référence : Checklist Stratégie Marketing Complète - Alen Sultanic_

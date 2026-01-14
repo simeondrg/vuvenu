@@ -10,9 +10,11 @@ model: sonnet
 # VuVenu Script Generator v2.0
 
 ## Mission
+
 Génère des scripts vidéos viraux pour commerces locaux basés sur de vraies données de performance, pas des prompts génériques.
 
 ## Quand utiliser cette skill
+
 - L'utilisateur demande de générer un script vidéo
 - Mention de "script", "vidéo TikTok", "Reels", "contenu viral"
 - Demande de "créer du contenu" pour un commerce local
@@ -23,6 +25,7 @@ Génère des scripts vidéos viraux pour commerces locaux basés sur de vraies d
 ## ÉTAPE 1 : Collecte d'informations
 
 ### Données OBLIGATOIRES
+
 1. **Nom du commerce**
 2. **Industrie** (sélection parmi 22 groupes - voir mapping ci-dessous)
 3. **Sujet/Focus** (produit, service, promo à mettre en avant)
@@ -30,6 +33,7 @@ Génère des scripts vidéos viraux pour commerces locaux basés sur de vraies d
 5. **Voice-over possible ?** (oui/non)
 
 ### Données OPTIONNELLES (améliore la qualité)
+
 - Cible client principal
 - Prix/gamme de prix
 - Localisation (pour contexte local)
@@ -43,6 +47,7 @@ Génère des scripts vidéos viraux pour commerces locaux basés sur de vraies d
 ### 22 Groupes d'Industries Disponibles
 
 **FOOD & DRINK (5 groupes)**
+
 - `restauration-table` → Rapport "Restauration table"
 - `fast-food-street` → Rapport "Fast Food et Street Food"
 - `boulangerie-sucre` → Rapport "Boulangerie & Sucré"
@@ -50,38 +55,47 @@ Génère des scripts vidéos viraux pour commerces locaux basés sur de vraies d
 - `bars-nightlife` → Rapport "Bars & Nightlife"
 
 **BEAUTÉ & BIEN-ÊTRE (3 groupes)**
+
 - `coiffure-barbier` → Rapport "Coiffure & Barbier"
 - `esthetique-soins` → Rapport "Esthétique & Soins"
 - `bien-etre-relaxation` → Rapport "Bien-être & Relaxation"
 
 **SPORT (1 groupe)**
+
 - `fitness-coaching` → Rapport "Fitness & Coaching"
 
 **MODE & RETAIL (3 groupes)**
+
 - `boutique-mode-femme` → Rapport "Boutique Mode Femme"
 - `boutique-mode-mixte` → Rapport "Boutique Mode Mixte"
 - `commerce-retail` → Rapport "Commerce & Retail"
 
 **SERVICES VISUELS (2 groupes)**
+
 - `artisans-corps` → Rapport "Artisans corps"
 - `automobile` → Rapport "Automobile"
 
 **IMMOBILIER & HÉBERGEMENT (2 groupes)**
+
 - `immobilier` → Rapport "Immobilier"
 - `hebergement` → Rapport "Hébergement"
 
 **LOISIRS & ÉVÉNEMENTS (2 groupes)**
+
 - `activites-loisirs` → Rapport "Activités & Loisirs"
 - `evenementiel` → Rapport "Événementiel"
 
 **SANTÉ & EXPERTISE (2 groupes)**
+
 - `sante-paramedical` → Rapport "Santé & Paramédical"
 - `services-pro-conseil` → Rapport "Services pro & Conseil"
 
 **ARTISANAT & BTP (1 groupe)**
+
 - `artisans-btp` → Rapport "Artisans BTP"
 
 **FAMILLE & ANIMAUX (2 groupes)**
+
 - `enfance-famille` → Rapport "Enfance & Famille"
 - `animaux` → Rapport "Animaux"
 
@@ -92,34 +106,41 @@ Génère des scripts vidéos viraux pour commerces locaux basés sur de vraies d
 ### Formats Prioritaires par Type Commerce
 
 **Si Face-cam + Voice-over disponibles :**
+
 - **Priorité 1** : UGC/Talking Head (authentique, connexion immédiate)
 - **Priorité 2** : Voiceover avec B-roll (éducatif + professionnel)
 
 **Si Face-cam uniquement :**
+
 - **Priorité 1** : UGC/Talking Head silent avec sous-titres
 - **Priorité 2** : Slideshow avec texte animé
 
 **Si Voice-over uniquement :**
+
 - **Priorité 1** : Voiceover avec B-roll produit/commerce
 - **Priorité 2** : Subtitles avec B-roll (flexibilité audio)
 
 **Si aucun des deux :**
+
 - **Priorité 1** : Slideshow avec texte (budget minimal)
 - **Priorité 2** : Subtitles avec B-roll (texte uniquement)
 
 ### Formats Spécialisés par Industrie
 
 **Animaux/Toilettage :**
+
 - Transformation Avant/Après (15-60s, 500K-5M+ vues)
 - ASMR Grooming (30-90s, 500K-7M+ vues)
 - POV Animal (7-30s, 100K-1.2M+ vues)
 
 **Coiffure/Barbier :**
+
 - Transformation capillaire (30-60s)
 - Timelapse process (15-45s)
 - Avant/Après client (15-30s)
 
 **Restaurant/Food :**
+
 - Food preparation (15-45s)
 - Behind the scenes cuisine (30-60s)
 - Client reaction/testimonial (15-30s)
@@ -129,6 +150,7 @@ Génère des scripts vidéos viraux pour commerces locaux basés sur de vraies d
 ## ÉTAPE 4 : Sélection Hook Testé
 
 ### Hooks Universels Haute Performance
+
 - "Wait until the end..." / "Attendez la fin..." → **Millions de vues**
 - "Nobody is talking about this..." / "Personne ne parle de ça..." → **100K-300K vues**
 - "Watch this [business] transformation..." → **500K-5M+ vues**
@@ -136,15 +158,19 @@ Génère des scripts vidéos viraux pour commerces locaux basés sur de vraies d
 - "Before you [buy/do X], watch this" → **100K-400K vues**
 
 ### Hooks Spécialisés par Industrie
+
 **Animaux :**
+
 - "POV: You're a [pet] at the [service]" → **100K-1.2M+ vues**
 - "This [pet owner] had no idea..." → **200K-1M+ vues**
 
 **Food :**
+
 - "The secret ingredient restaurants don't tell you" → **300K-1M+ vues**
 - "Making [dish] the traditional way" → **200K-800K vues**
 
 **Beauty :**
+
 - "The transformation no one expected" → **500K-2M+ vues**
 - "Client asked for [X], got [Y] instead" → **300K-1M+ vues**
 
@@ -156,7 +182,7 @@ Génère des scripts vidéos viraux pour commerces locaux basés sur de vraies d
 
 ```markdown
 ═══════════════════════════════════════════════════════════════
-                    SCRIPT VIDÉO VIRAL — [Commerce]
+SCRIPT VIDÉO VIRAL — [Commerce]
 ═══════════════════════════════════════════════════════════════
 
 📋 MÉTADONNÉES
@@ -205,11 +231,13 @@ Génère des scripts vidéos viraux pour commerces locaux basés sur de vraies d
 **Option 3 :** [Option silencieuse avec sous-titres]
 
 ⚠️ ERREURS FATALES À ÉVITER
+
 - [Erreur du rapport industrie + solution]
 - [Erreur du rapport industrie + solution]
 - [Erreur du rapport industrie + solution]
 
 📊 POURQUOI CE SCRIPT VA PERFORMER
+
 1. **Format éprouvé :** [Stats du format dans l'industrie]
 2. **Hook testé :** [Performance documentée du hook utilisé]
 3. **Inspiration viral :** [Référence compte viral avec metrics]
@@ -226,11 +254,13 @@ Génère des scripts vidéos viraux pour commerces locaux basés sur de vraies d
 ## ÉTAPE 6 : Système de Crédits
 
 ### Coût par Génération
+
 - **Génération script :** 100 Sparks
 - **Régénération :** 50 Sparks
 - **Variante supplémentaire :** 30 Sparks
 
 ### Vérification Solde
+
 Avant génération, vérifier que l'utilisateur a suffisamment de Sparks dans son profil Supabase.
 
 ---
@@ -238,6 +268,7 @@ Avant génération, vérifier que l'utilisateur a suffisamment de Sparks dans so
 ## ÉTAPE 7 : Sauvegarde et Historique
 
 ### Données à sauvegarder (table `scripts`)
+
 - user_id
 - commerce_name
 - industry_group
@@ -249,6 +280,7 @@ Avant génération, vérifier que l'utilisateur a suffisamment de Sparks dans so
 - created_at
 
 ### Métadonnées JSON
+
 ```json
 {
   "industry": "animaux",
@@ -279,5 +311,5 @@ Avant génération, vérifier que l'utilisateur a suffisamment de Sparks dans so
 
 ---
 
-*Skill VuVenu Script Generator v2.0*
-*Basée sur 22 rapports d'industries avec 100+ comptes viraux analysés*
+_Skill VuVenu Script Generator v2.0_
+_Basée sur 22 rapports d'industries avec 100+ comptes viraux analysés_

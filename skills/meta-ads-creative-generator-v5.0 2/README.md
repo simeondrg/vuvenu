@@ -5,12 +5,14 @@
 Skill Claude pour générer des concepts publicitaires Meta Ads performants en appliquant la méthodologie complète Bourbon Média.
 
 **Nouveautés v5.0** :
+
 - ✨ Intégration complète des 14 formats Origins (6 vidéo + 8 image)
 - ✨ Decision tree formats par Type Business + Entonnoir + Template
 - ✨ Descriptions visuelles détaillées pour génération prompts Higgsfield
 - ✨ Justification systématique du format choisi
 
 **Héritées v4.0** :
+
 - Structure campagne adaptée au budget (<$1k = 1 CBO, >$1k = 2 Campagnes)
 - Min/Max Spend Limits pour CBO
 - Horizontal Scaling progressif
@@ -61,6 +63,7 @@ Budget [X]€/jour, CPA cible [Y]€.
 ### Informations recommandées
 
 Pour de meilleurs résultats, fournis :
+
 - Nom produit/service
 - Type (Produit physique / Service)
 - Budget journalier (critique)
@@ -182,6 +185,7 @@ Chaque type influence sélection formats et angles.
 ## 💡 Tips & Best Practices
 
 ### ✅ DO
+
 - Toujours spécifier format Origins exact avec justification
 - Lire fichiers `references/` avant génération
 - Adapter langage à l'avatar (pas jargon)
@@ -189,6 +193,7 @@ Chaque type influence sélection formats et angles.
 - Justifier chaque choix stratégique
 
 ### ❌ DON'T
+
 - Ne jamais dire "Image Static" sans préciser type
 - Ne pas inventer formats hors 14 formats Origins
 - Ne pas fragmenter audiences (Open Targeting)
@@ -209,6 +214,7 @@ Chaque type influence sélection formats et angles.
 ### 2. Format Selection Strategy
 
 Decision tree à 3 critères pour choisir format optimal :
+
 1. **Entonnoir** (TOF/MOF/BOF)
 2. **Type Business** (6 catégories)
 3. **Winning Template** (13 templates)
@@ -218,6 +224,7 @@ Résultat : Format précis + Justification en 1 ligne
 ### 3. Descriptions Visuelles Détaillées
 
 Chaque concept génère maintenant :
+
 - **Description visuelle ultra-précise** pour brief designer
 - **Éléments visuels** : composition, couleurs, texte overlay, produit positioning
 - **Ambiance et style** : pour génération prompts Higgsfield
@@ -232,6 +239,7 @@ Chaque concept génère maintenant :
 ### 5. Fichier ad-formats.md
 
 Nouveau fichier référence complet avec :
+
 - Descriptions détaillées 14 formats
 - Quand utiliser chaque format
 - Exemples visuels et liens
@@ -245,6 +253,7 @@ Nouveau fichier référence complet avec :
 ### Avec meta-ads-static-images-creator
 
 Workflow intégré :
+
 1. **meta-ads-creative-generator** génère concept + description visuelle détaillée
 2. **meta-ads-static-images-creator** utilise description pour créer prompt Higgsfield
 3. **Higgsfield** génère l'image finale
@@ -252,6 +261,7 @@ Workflow intégré :
 ### Avec bbp-script-writer
 
 Synergies possibles :
+
 - Adapter concepts TOF Vidéo UGC pour BBP
 - Langage réunionnais + angles locaux
 
@@ -260,6 +270,7 @@ Synergies possibles :
 ## 📞 Support & Questions
 
 Pour questions ou améliorations :
+
 - Créer une conversation avec Claude dans le projet
 - Référencer ce README et SKILL.md
 - Inclure contexte spécifique (budget, business type, etc.)

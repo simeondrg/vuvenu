@@ -1,0 +1,65 @@
+# =============================================
+# Configuration Supabase - VuVenu MVP
+# =============================================
+
+[api]
+port = 54321
+schemas = ["public", "auth"]
+extra_search_path = ["public", "auth"]
+max_rows = 1000
+
+[auth]
+# Auth settings
+enabled = true
+external_url = "http://localhost:3000"
+additional_redirect_urls = ["https://vuvenu.fr"]
+jwt_expiry = 3600
+refresh_token_rotation_enabled = true
+refresh_token_reuse_interval = 10
+enable_signup = true
+enable_anonymous_sign_ins = false
+
+# Email settings (à configurer selon votre SMTP)
+enable_confirmations = true
+secure_email_change_enabled = true
+double_confirm_changes_enabled = true
+
+[auth.email]
+enable_signup = true
+double_confirm_changes = true
+secure_password_change = true
+
+[auth.sms]
+enable_signup = false
+
+[auth.external.google]
+enabled = false
+client_id = ""
+secret = ""
+
+[db]
+port = 54322
+major_version = 15
+
+[studio]
+port = 54323
+
+[inbucket]
+port = 54324
+
+[storage]
+enabled = true
+file_size_limit = "50MiB"
+image_transformation_enabled = true
+
+[functions]
+verify_jwt = false
+
+[edge_runtime]
+ip_version = "ipv4"
+
+[analytics]
+enabled = false
+
+[migrations]
+version = "20240101000000"

@@ -1,4 +1,4 @@
-import Image from "next/image";
+import Image from 'next/image'
 
 export default function Home() {
   return (
@@ -6,12 +6,7 @@ export default function Home() {
       {/* Header temporaire */}
       <header className="p-6">
         <div className="flex items-center gap-2">
-          <Image
-            src="/images/logo.svg"
-            alt="VuVenu Logo"
-            width={120}
-            height={40}
-          />
+          <Image src="/images/logo.svg" alt="VuVenu Logo" width={120} height={40} />
         </div>
       </header>
 
@@ -23,19 +18,30 @@ export default function Home() {
             {/* Pixels décoratifs */}
             <div className="flex gap-2 mb-4">
               <div className="w-3 h-3 bg-vuvenu-lime animate-pixel-float"></div>
-              <div className="w-3 h-3 bg-vuvenu-blue animate-pixel-float" style={{animationDelay: '0.5s'}}></div>
-              <div className="w-3 h-3 bg-vuvenu-violet animate-pixel-float" style={{animationDelay: '1s'}}></div>
+              <div
+                className="w-3 h-3 bg-vuvenu-blue animate-pixel-float"
+                style={{ animationDelay: '0.5s' }}
+              ></div>
+              <div
+                className="w-3 h-3 bg-vuvenu-violet animate-pixel-float"
+                style={{ animationDelay: '1s' }}
+              ></div>
             </div>
 
             {/* Slogan principal */}
             <h1 className="text-5xl lg:text-6xl font-display font-bold text-vuvenu-dark leading-tight">
-              <span className="bg-vuvenu-lime px-2 py-1 rotate-1 inline-block">ils ont vu</span> —<br />
-              <span className="bg-vuvenu-blue px-2 py-1 -rotate-1 inline-block text-white">ils sont venu</span> !
+              <span className="bg-vuvenu-lime px-2 py-1 rotate-1 inline-block">ils ont vu</span> —
+              <br />
+              <span className="bg-vuvenu-blue px-2 py-1 -rotate-1 inline-block text-white">
+                ils sont venu
+              </span>{' '}
+              !
             </h1>
 
             {/* Sous-titre */}
             <p className="text-xl text-vuvenu-dark/80 leading-relaxed max-w-lg">
-              Le marketing digital <span className="bg-vuvenu-violet px-1 py-0.5">enfin simple</span> pour ton commerce.
+              Le marketing digital{' '}
+              <span className="bg-vuvenu-violet px-1 py-0.5">enfin simple</span> pour ton commerce.
               <br />
               <span className="font-medium">Scripts, publicités, tout automatisé.</span>
             </p>
@@ -73,7 +79,8 @@ export default function Home() {
                     <span className="text-2xl">📱</span>
                   </div>
                   <p className="text-vuvenu-dark font-medium">
-                    Interface VuVenu<br />
+                    Interface VuVenu
+                    <br />
                     <span className="text-sm opacity-60">Mockup à remplacer par Gemini</span>
                   </p>
                 </div>
@@ -92,5 +99,5 @@ export default function Home() {
         <p>VuVenu MVP V1 - Développement en cours 🚧</p>
       </footer>
     </div>
-  );
+  )
 }

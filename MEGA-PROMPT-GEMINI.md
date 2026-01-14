@@ -144,14 +144,51 @@ Design ALL screens with this sophisticated backend:
 - **Performance predictions** based on industry + format data
 - **Budget optimization tips** specific to business type
 
-**5. ENHANCED 7-STEP LAUNCH WIZARD**
-- **Step 1:** Business type confirmation with visual examples
-- **Step 2:** Product/service deep-dive with competitor analysis suggestions
-- **Step 3:** Budget optimization with Min/Max calculations shown
-- **Step 4:** **Format selection with justification:** "Video - UGC recommended for TOF DTS because..."
-- **Step 5:** Creative customization with real-time preview
-- **Step 6:** **Visual generation ready:** Complete prompts for Higgsfield/Midjourney
-- **Step 7:** Launch checklist with professional campaign review
+**5. META ADS LAUNCH WIZARD (🔑 DIFFÉRENTIATION CLÉ)**
+
+**LA** différentiation vs concurrence: Guider l'utilisateur de la campagne générée jusqu'au lancement RÉEL dans Meta Ads Manager.
+
+**Interface Design pour 7 Étapes:**
+
+**Étape 1 - Téléchargement Créatives:**
+- Progress bar: ●○○○○○○ (1/7)
+- **Header:** "TÉLÉCHARGE TES CRÉATIVES"
+- **Visual:** Galerie des 6 images (3 concepts × 2 variations)
+- **Actions:** Bouton ZIP + téléchargements individuels
+- **Validation:** Checkbox "J'ai mes images prêtes"
+
+**Étape 2 - Ouvrir Meta Ads Manager:**
+- Progress bar: ●●○○○○○ (2/7)
+- **Visual:** Screenshot Meta Ads Manager avec flèche vers bouton "Créer"
+- **CTA:** Lien direct vers business.facebook.com/adsmanager
+- **Guidance:** "Garde VuVenu ouvert dans un autre onglet"
+
+**Étape 3 - Configurer Campagne:**
+- **Visual:** Formulaire avec paramètres pre-filled + boutons "Copier"
+- **Smart defaults:** Objectif selon business type, budget optimisé, nom généré
+- **Tip boxes:** "Garde les autres paramètres par défaut"
+
+**Étape 4 - Configurer Audience:**
+- **Conditional UI:** Interface différente selon business type
+- **Drive-to-Store:** Map avec radius 15km
+- **Autres:** Audience Advantage+ recommandé
+- **Warning box:** "Évite de trop restreindre (< 100k personnes)"
+
+**Étape 5 - Ajouter Publicités:**
+- **3-concept layout:** Cards avec image miniature + textes copiables
+- **Copy buttons:** Primary Text, Headline, Description pour chaque concept
+- **Visual guide:** Screenshots Meta avec annotations
+
+**Étape 6 - Vérification Finale:**
+- **Checklist visuelle:** Budget ✓, 3 pubs ✓, Images qualité ✓, Paiement ✓
+- **Preview link:** Aperçu dans Meta
+- **Warning prominent:** "Frais appliqués dès publication"
+
+**Étape 7 - Succès & Suivi:**
+- **Animation:** Confettis de célébration
+- **Timeline guidance:** "48h apprentissage algo, 3-5j pour premiers insights"
+- **Pro tips:** Screenshots métriques jour 1
+- **Actions:** Liens Meta Ads Manager + Dashboard VuVenu
 
 **6. ENHANCED DASHBOARD (Data-Rich)**
 - **Performance tracking:** Real metrics vs predictions
@@ -238,18 +275,21 @@ VuVenu = The viral marketing platform built on real data, not guesswork.
 ## 🔥 **PRINCIPALES AMÉLIORATIONS V2**
 
 ### **🎯 Data-Driven Credibility**
+
 - **22 rapports d'industries** intégrés dans l'interface
 - **Métriques réelles** affichées (@girlwithedogs: 7.1M, etc.)
 - **Performance prédictive** basée sur vraies données
 - **Crédibilité professionnelle** vs outils génériques
 
 ### **🧠 Intelligence Intégrée**
+
 - **Sélection industrie** avec aperçu des comptes viraux
 - **Classification business** avec arbre de décision (6 types)
 - **Sélection format** justifiée (14 Origins formats)
 - **Hooks prétestés** avec données de performance
 
 ### **📊 Interface Sophistiquée**
+
 - **Research Center** (nouvelle section)
 - **Performance prediction** en temps réel
 - **Optimisation budget** Min/Max automatique

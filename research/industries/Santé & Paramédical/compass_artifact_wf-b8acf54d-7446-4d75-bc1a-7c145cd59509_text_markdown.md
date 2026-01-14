@@ -8,18 +8,18 @@ Les formats gagnants privilégient l'immédiateté (hooks de 2 secondes), la val
 
 ## Tableau récapitulatif des comptes viraux de référence
 
-| Compte | Plateforme | Spécialité | Followers | Type de contenu | Origine |
-|--------|------------|------------|-----------|-----------------|---------|
-| **@dermdoctor** | TikTok | Dermatologue | 18M | Débunk skincare, duets réactifs | 🇺🇸 |
-| **@drpimplepopper** | TikTok/YouTube | Dermatologue | 17M TikTok, 8.5M YouTube | Extractions satisfaisantes | 🇺🇸 |
-| **@thebentist** | TikTok | Orthodontiste | 12.9M | Réactions DIY dentaires, transformations | 🇺🇸 |
-| **@tonyyounmd** | TikTok | Chirurgien plastique | 7M | Explications procédures, body positivity | 🇺🇸 |
-| **@drjuliesmith** | TikTok/Instagram | Psychologue | 5M TikTok, 2M Instagram | Props visuels, conseils thérapie | 🇬🇧 |
-| **@carla_med** | TikTok | Médecine générale | 2.7M TikTok | FAQ, vulgarisation médicale | 🇫🇷 |
-| **@drtik_tok** | TikTok | Cardiologue | 1.5M | Humour, curiosités médicales | 🇫🇷 |
-| **@majormouvement** | Instagram/YouTube | Kinésithérapeute | 1.3M YouTube, 485k Insta | Exercices pratiques, posture | 🇫🇷 |
-| **@dr.never** | TikTok | Dentiste | 3.2M | "Ne faites jamais ça!", éducation | 🇫🇷 |
-| **@drglaucomflecken** | TikTok | Ophtalmologiste | 2.6M | Sketchs humoristiques inter-spécialités | 🇺🇸 |
+| Compte                | Plateforme        | Spécialité           | Followers                | Type de contenu                          | Origine |
+| --------------------- | ----------------- | -------------------- | ------------------------ | ---------------------------------------- | ------- |
+| **@dermdoctor**       | TikTok            | Dermatologue         | 18M                      | Débunk skincare, duets réactifs          | 🇺🇸      |
+| **@drpimplepopper**   | TikTok/YouTube    | Dermatologue         | 17M TikTok, 8.5M YouTube | Extractions satisfaisantes               | 🇺🇸      |
+| **@thebentist**       | TikTok            | Orthodontiste        | 12.9M                    | Réactions DIY dentaires, transformations | 🇺🇸      |
+| **@tonyyounmd**       | TikTok            | Chirurgien plastique | 7M                       | Explications procédures, body positivity | 🇺🇸      |
+| **@drjuliesmith**     | TikTok/Instagram  | Psychologue          | 5M TikTok, 2M Instagram  | Props visuels, conseils thérapie         | 🇬🇧      |
+| **@carla_med**        | TikTok            | Médecine générale    | 2.7M TikTok              | FAQ, vulgarisation médicale              | 🇫🇷      |
+| **@drtik_tok**        | TikTok            | Cardiologue          | 1.5M                     | Humour, curiosités médicales             | 🇫🇷      |
+| **@majormouvement**   | Instagram/YouTube | Kinésithérapeute     | 1.3M YouTube, 485k Insta | Exercices pratiques, posture             | 🇫🇷      |
+| **@dr.never**         | TikTok            | Dentiste             | 3.2M                     | "Ne faites jamais ça!", éducation        | 🇫🇷      |
+| **@drglaucomflecken** | TikTok            | Ophtalmologiste      | 2.6M                     | Sketchs humoristiques inter-spécialités  | 🇺🇸      |
 
 ---
 
@@ -77,23 +77,23 @@ Les forts taux de sauvegarde ("je garde au cas où j'ai besoin") compensent des 
 
 ## Tableau des hooks testés avec performances
 
-| Hook | Vues | Type | Psychologie |
-|------|------|------|-------------|
-| **"This is something they don't teach you in medical school..."** | 500K-4.3M+ | Curiosité + Exclusivité | Information gap irrésistible, positionne comme source privilégiée |
-| **"If you do [X], stop immediately"** | 1M-5M+ | Choc + Urgence | Active la peur, format négatif = 2x plus d'attention |
-| **"I'm a [spécialité] and here's why I never [action]"** | 1M-10M+ | Autorité + Contrarian | Crédibilité + révélation surprenante |
-| **"As a doctor, this trend terrifies me"** | 1M-5M+ | Autorité + Émotion | Émotion forte + crédibilité = combo puissant |
-| **"The internet lied to you about [sujet]"** | 1M-10M+ | Confrontation + Vérité | Créé un ennemi (désinformation), positionne comme sauveur |
-| **"Let me tell you about the wildest case..."** | 1M-10M+ | Storytime + Curiosité | Promesse divertissement + éducation |
-| **"POV: You're my patient and..."** | 500K-5M | Immersion | Transforme le viewer en participant |
-| **"This symptom is a red flag you're ignoring"** | 500K-5M+ | Peur + Valeur | Active l'anxiété santé, impulsion à sauvegarder |
-| **"Your doctor won't tell you this, but..."** | 500K-3M | Secret + Contrarian | Opposition intrigante médecin/patient |
-| **"The #1 mistake I see patients make..."** | 300K-2M | Call-out + Valeur | Chiffre "#1" crée urgence |
-| **"Stop putting [produit] on your [corps]"** | 500K-5M | Impératif + Choc | Commande directe, pertinence personnelle |
-| **"Why 90% of [X] advice is wrong"** | 500K-3M | Statistique + Contrarian | Les chiffres captent le cerveau rationnel |
-| **"Here's what actually happens during [procédure]"** | 300K-2M | Démystification | Promet la "vraie" information |
-| **"Before you [action], watch this"** | 200K-2M | Urgence + Prévention | Sentiment d'être "sauvé" d'une erreur |
-| **"I see patients every day who don't know this..."** | 200K-1M | Fréquence + Exclusivité | "Tous les jours" = beaucoup concernés |
+| Hook                                                              | Vues       | Type                     | Psychologie                                                       |
+| ----------------------------------------------------------------- | ---------- | ------------------------ | ----------------------------------------------------------------- |
+| **"This is something they don't teach you in medical school..."** | 500K-4.3M+ | Curiosité + Exclusivité  | Information gap irrésistible, positionne comme source privilégiée |
+| **"If you do [X], stop immediately"**                             | 1M-5M+     | Choc + Urgence           | Active la peur, format négatif = 2x plus d'attention              |
+| **"I'm a [spécialité] and here's why I never [action]"**          | 1M-10M+    | Autorité + Contrarian    | Crédibilité + révélation surprenante                              |
+| **"As a doctor, this trend terrifies me"**                        | 1M-5M+     | Autorité + Émotion       | Émotion forte + crédibilité = combo puissant                      |
+| **"The internet lied to you about [sujet]"**                      | 1M-10M+    | Confrontation + Vérité   | Créé un ennemi (désinformation), positionne comme sauveur         |
+| **"Let me tell you about the wildest case..."**                   | 1M-10M+    | Storytime + Curiosité    | Promesse divertissement + éducation                               |
+| **"POV: You're my patient and..."**                               | 500K-5M    | Immersion                | Transforme le viewer en participant                               |
+| **"This symptom is a red flag you're ignoring"**                  | 500K-5M+   | Peur + Valeur            | Active l'anxiété santé, impulsion à sauvegarder                   |
+| **"Your doctor won't tell you this, but..."**                     | 500K-3M    | Secret + Contrarian      | Opposition intrigante médecin/patient                             |
+| **"The #1 mistake I see patients make..."**                       | 300K-2M    | Call-out + Valeur        | Chiffre "#1" crée urgence                                         |
+| **"Stop putting [produit] on your [corps]"**                      | 500K-5M    | Impératif + Choc         | Commande directe, pertinence personnelle                          |
+| **"Why 90% of [X] advice is wrong"**                              | 500K-3M    | Statistique + Contrarian | Les chiffres captent le cerveau rationnel                         |
+| **"Here's what actually happens during [procédure]"**             | 300K-2M    | Démystification          | Promet la "vraie" information                                     |
+| **"Before you [action], watch this"**                             | 200K-2M    | Urgence + Prévention     | Sentiment d'être "sauvé" d'une erreur                             |
+| **"I see patients every day who don't know this..."**             | 200K-1M    | Fréquence + Exclusivité  | "Tous les jours" = beaucoup concernés                             |
 
 ### Principe fondamental : la règle des 2 secondes
 

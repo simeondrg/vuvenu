@@ -6,19 +6,20 @@
 
 ## 🚀 JE VEUX... → LIRE CE DOCUMENT
 
-| Je veux... | Lire | Temps | Contenu |
-|-----------|------|-------|---------|
-| **Comprendre rapide** | `NETTOYAGE-PRIORITE.md` | 5 min | TL;DR, checklists, timelines |
-| **Comprendre complet** | `RAPPORT-FINAL-ANALYSE.md` | 15 min | Executive summary, statistiques, impact |
-| **Analyser technique** | `CLEANUP-ANALYSIS.md` | 30 min | Problèmes détaillés, solutions, architecture |
-| **Exécuter cleanup** | `CLEANUP-ACTION-PLAN.md` | 3h (exécution) | Bash commands step-by-step, tests |
-| **Configurer Ralph** | `RECOMMANDATIONS-RALPH.md` | 30 min | Best practices, configuration, quality gates |
+| Je veux...             | Lire                       | Temps          | Contenu                                      |
+| ---------------------- | -------------------------- | -------------- | -------------------------------------------- |
+| **Comprendre rapide**  | `NETTOYAGE-PRIORITE.md`    | 5 min          | TL;DR, checklists, timelines                 |
+| **Comprendre complet** | `RAPPORT-FINAL-ANALYSE.md` | 15 min         | Executive summary, statistiques, impact      |
+| **Analyser technique** | `CLEANUP-ANALYSIS.md`      | 30 min         | Problèmes détaillés, solutions, architecture |
+| **Exécuter cleanup**   | `CLEANUP-ACTION-PLAN.md`   | 3h (exécution) | Bash commands step-by-step, tests            |
+| **Configurer Ralph**   | `RECOMMANDATIONS-RALPH.md` | 30 min         | Best practices, configuration, quality gates |
 
 ---
 
 ## 📚 LES 5 DOCUMENTS
 
 ### 1️⃣ NETTOYAGE-PRIORITE.md
+
 **Pour décisions rapides (5 min read)**
 
 ```
@@ -34,6 +35,7 @@
 ---
 
 ### 2️⃣ RAPPORT-FINAL-ANALYSE.md
+
 **Pour résumé exécutif (15 min read)**
 
 ```
@@ -53,6 +55,7 @@
 ---
 
 ### 3️⃣ CLEANUP-ANALYSIS.md
+
 **Pour analyse technique détaillée (30 min read)**
 
 ```
@@ -75,6 +78,7 @@
 ---
 
 ### 4️⃣ CLEANUP-ACTION-PLAN.md
+
 **Pour exécution bash step-by-step (3h exécution)**
 
 ```
@@ -101,6 +105,7 @@
 ---
 
 ### 5️⃣ RECOMMANDATIONS-RALPH.md
+
 **Pour configuration Ralph Loop (30 min read)**
 
 ```
@@ -170,6 +175,7 @@ Step 8️⃣: Lancer Ralph Loop
 ## 📊 LECTEUR OPTIMAL PAR RÔLE
 
 ### 👨‍💼 Siméon (Propriétaire)
+
 ```
 1. NETTOYAGE-PRIORITE.md (5 min) - Décision
 2. RAPPORT-FINAL-ANALYSE.md (15 min) - Contexte
@@ -179,6 +185,7 @@ Step 8️⃣: Lancer Ralph Loop
 ```
 
 ### 🤖 Claude Code Agent (Exécution)
+
 ```
 1. CLEANUP-ANALYSIS.md (compréhension complète)
 2. CLEANUP-ACTION-PLAN.md (exécution détaillée)
@@ -187,6 +194,7 @@ Step 8️⃣: Lancer Ralph Loop
 ```
 
 ### 🧠 Ralph Loop (Implémentation)
+
 ```
 1. RECOMMANDATIONS-RALPH.md (30 min lecture)
 2. Respecter quality gates définies
@@ -200,18 +208,21 @@ Step 8️⃣: Lancer Ralph Loop
 ## 🔑 CONCEPTS CLÉS
 
 ### Problème 1 : Doublons Architecture
+
 ```
 AVANT : /skills (304K) + /src/lib/skills = confusion
 APRÈS : /docs/research-archive (archive) + /src/lib/skills (unique)
 ```
 
 ### Problème 2 : Redondances Documentation
+
 ```
 AVANT : 8 fichiers MD + redondances
 APRÈS : 3 fichiers essentiels + /docs organisé
 ```
 
 ### Problème 3 : Incohérences Version
+
 ```
 AVANT : Next.js 14 vs 16.1.1 vs package.json
 APRÈS : /docs/technical/VERSION-AUDIT.md (source unique)
@@ -222,6 +233,7 @@ APRÈS : /docs/technical/VERSION-AUDIT.md (source unique)
 ## ✅ VALIDATION GATES
 
 **Avant** : Exécution cleanup JAMAIS :
+
 ```
 ❌ Sans avoir backup (~backups-vuvenu/ créé)
 ❌ Sans avoir branche cleanup créée
@@ -229,6 +241,7 @@ APRÈS : /docs/technical/VERSION-AUDIT.md (source unique)
 ```
 
 **Après** : Ralph ne démarre JAMAIS si :
+
 ```
 ❌ npm run typecheck échoue
 ❌ npm run lint échoue
@@ -242,24 +255,31 @@ APRÈS : /docs/technical/VERSION-AUDIT.md (source unique)
 ## 📞 FAQ RAPIDE
 
 ### Q: Combien de temps le nettoyage ?
+
 **R:** 4-5 heures (peut être fait en une journée)
 
 ### Q: Risque de casse ?
+
 **R:** Faible (backup automatique, branche cleanup)
 
 ### Q: Faut exécuter AVANT Ralph ?
+
 **R:** Fortement recommandé (+20% Ralph productivité)
 
 ### Q: Puis-je skipper certains blocs ?
+
 **R:** Non, tous les 5 blocs importants
 
 ### Q: Que faire si blocage ?
+
 **R:** Lire CLEANUP-ACTION-PLAN.md Étape du problème
 
 ### Q: Git history sera pollué ?
+
 **R:** Non, cleanup = 2 propres commits conventionnels
 
 ### Q: Puis-je reverter après ?
+
 **R:** Oui, backup dans ~/backups-vuvenu/
 
 ---
@@ -322,12 +342,14 @@ ls -la /Users/simeon/projects/vuvenu/*.md | grep -E "CLEANUP|RAPPORT|NETTOYAGE|R
 ## 🎓 LEARNING RESOURCES
 
 ### Documents VuVenu Essentiels
+
 - `PRD-VuVenu-MVP.md` : Scope et features
 - `MASTER_CHECKLIST.md` : Timeline 4 semaines
 - `CLAUDE.md` : Conventions code
 - `/src/lib/skills/` : Documentation méthodologies
 
 ### Documents Nettoyage (À Lire)
+
 - `NETTOYAGE-PRIORITE.md` : Début ici
 - `RAPPORT-FINAL-ANALYSE.md` : Vue complète
 - `CLEANUP-ANALYSIS.md` : Détails techniques
@@ -371,7 +393,7 @@ Jours 3-28 :
 
 ---
 
-*Index créé : 13 janvier 2026*
-*Statut : ✅ READY*
+_Index créé : 13 janvier 2026_
+_Statut : ✅ READY_
 
 → **Prochaine lecture : NETTOYAGE-PRIORITE.md**

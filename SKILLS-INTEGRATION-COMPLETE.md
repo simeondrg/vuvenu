@@ -8,9 +8,11 @@
 ## ✅ **CE QUI A ÉTÉ ACCOMPLI**
 
 ### **🎨 MEGA-PROMPT GEMINI V2**
+
 **Fichier** : `MEGA-PROMPT-GEMINI.md`
 
 **Améliorations majeures vs V1** :
+
 - ✅ **22 rapports d'industries intégrés** dans l'interface
 - ✅ **Métriques réelles affichées** (@girlwithedogs: 7.1M, etc.)
 - ✅ **Sélection industrie intelligente** avec aperçu comptes viraux
@@ -27,10 +29,12 @@
 ### **🛠️ SKILLS CLAUDE CODE (3 SKILLS NATIVES)**
 
 #### **1. VuVenu Script Generator v2.0**
+
 **Fichier** : `src/lib/skills/vuvenu-script-generator.md`
 
 **Remplace** : Workflow n8n BLAYO
 **Apporte** :
+
 - ✅ **22 groupes d'industries** avec mapping automatique
 - ✅ **Formats spécialisés** par industrie avec métriques réelles
 - ✅ **Hooks testés** avec performances documentées
@@ -39,6 +43,7 @@
 - ✅ **Performance prédictive** basée sur vraies données
 
 **Exemple output** :
+
 ```
 Format recommandé : Transformation Avant/Après (15-60s, 500K-5M+ vues)
 Hook : "Wait until the end..." (Millions de vues)
@@ -46,10 +51,12 @@ Inspiration : @girlwithedogs (7.1M TikTok)
 ```
 
 #### **2. VuVenu Meta Ads Generator v2.0**
+
 **Fichier** : `src/lib/skills/vuvenu-meta-ads-generator.md`
 
 **Remplace** : Workflow Meta Ads v5.0 externe
 **Apporte** :
+
 - ✅ **Classification business** automatique (6 types : DTC, Lead Gen, RBS, DTS, Event, Subscription)
 - ✅ **Structure budget-based** avec calculs Min/Max automatiques
 - ✅ **14 Formats Origins** avec decision tree
@@ -58,6 +65,7 @@ Inspiration : @girlwithedogs (7.1M TikTok)
 - ✅ **Output copy-paste** ready pour Meta Ads Manager
 
 **Exemple output** :
+
 ```
 Type Business : DTS (Drive-To-Store)
 Structure : 1 CBO - Winners (48€/jour) + Testing (18€/jour)
@@ -65,10 +73,12 @@ Format : Video - UGC recommandé pour TOF DTS car authenticité...
 ```
 
 #### **3. VuVenu Image Generator v2.0**
+
 **Fichier** : `src/lib/skills/vuvenu-image-generator.md`
 
 **Remplace** : Workflow Higgsfield v3.1 externe
 **Apporte** :
+
 - ✅ **8 formats image Origins** avec prompts spécialisés
 - ✅ **Palette couleurs client** respectée (priorité absolue)
 - ✅ **Optimisation business type** (DTC, Lead Gen, etc.)
@@ -77,6 +87,7 @@ Format : Video - UGC recommandé pour TOF DTS car authenticité...
 - ✅ **A/B testing** variations automatiques
 
 **Exemple output** :
+
 ```
 Format Origins : Image - UGC style
 Prompt : "Authentic user-generated content for [restaurant créole],
@@ -86,9 +97,11 @@ Prompt : "Authentic user-generated content for [restaurant créole],
 ---
 
 ### **📊 MAPPING INTELLIGENT**
+
 **Fichier** : `src/lib/data/niche-mapping.ts`
 
 **Fonctionnalités** :
+
 - ✅ **237 niches spécifiques** → **22 groupes d'industries**
 - ✅ **Suggestion automatique** basée sur nom commerce
 - ✅ **Métadonnées enrichies** (comptes viraux, formats top)
@@ -96,6 +109,7 @@ Prompt : "Authentic user-generated content for [restaurant créole],
 - ✅ **TypeScript strict** avec fonctions utilitaires
 
 **Exemple usage** :
+
 ```typescript
 findIndustryGroup("toilettage") → "Animaux"
 suggestIndustryGroups("Restaurant Ti Kaz") → ["restauration-table", "fast-food-street"]
@@ -106,6 +120,7 @@ suggestIndustryGroups("Restaurant Ti Kaz") → ["restauration-table", "fast-food
 ## 🔄 **WORKFLOW INTÉGRÉ COMPLET**
 
 ### **1. Utilisateur lance Script Generator**
+
 ```
 Input : "Restaurant créole, toilettage chien, etc."
 ↓
@@ -117,6 +132,7 @@ Script optimisé avec hooks testés + formats performants
 ```
 
 ### **2. Utilisateur lance Meta Ads Generator**
+
 ```
 Input : Budget 25€/jour, Restaurant Ti Kaz
 ↓
@@ -128,6 +144,7 @@ Structure campagne → 1 CBO avec Min/Max calculés
 ```
 
 ### **3. Utilisateur lance Image Generator**
+
 ```
 Input : Descriptions visuelles des concepts Meta Ads
 ↓
@@ -143,6 +160,7 @@ Images 1:1 prêtes pour Meta Ads Manager
 ## 🏆 **AVANTAGES CONCURRENTIELS INTÉGRÉS**
 
 ### **VS Outils Génériques (Canva, ChatGPT, etc.)**
+
 - ✅ **Données réelles** vs prompts approximatifs
 - ✅ **22 rapports d'expertise** vs IA générale
 - ✅ **Métriques validées** (7M followers documentés) vs suppositions
@@ -150,12 +168,14 @@ Images 1:1 prêtes pour Meta Ads Manager
 - ✅ **Performance prédictive** vs espoir
 
 ### **VS Workflow n8n Précédent**
+
 - ✅ **Intégration native** vs dépendance externe
 - ✅ **UX fluide** vs redirections multiples
 - ✅ **Pas de maintenance** n8n vs serveur externe
 - ✅ **Évolution facile** vs workflow rigide
 
 ### **Position Marché**
+
 - 🥇 **Seul SaaS** avec 22 rapports d'industries virales
 - 🥇 **Seule plateforme** avec méthodologie Meta Ads v5.0 intégrée
 - 🥇 **Seul outil** alliant Script Viral + Meta Ads + Images IA
@@ -166,11 +186,13 @@ Images 1:1 prêtes pour Meta Ads Manager
 ## 🎯 **PROCHAINES ÉTAPES**
 
 ### **Immédiat**
+
 1. ✅ **Générer interface** avec MEGA-PROMPT V2 dans Gemini
 2. ✅ **Tester skills** avec cas réels (restaurant, toiletteur, etc.)
 3. ✅ **Intégrer dans Next.js** selon design Gemini
 
 ### **Développement (Semaines 1-4)**
+
 ```bash
 # Option Ralph Loop avec skills intégrées
 /ralph-vuvenu semaine-1 --max-iterations 50
@@ -183,6 +205,7 @@ Images 1:1 prêtes pour Meta Ads Manager
 ```
 
 ### **Optimisations Futures**
+
 - **Analytics performance** : Tracker prédictions vs réalité
 - **Machine learning** : Améliorer suggestions basées sur succès
 - **API Meta Ads** : Export direct campagnes vers Meta Ads Manager
@@ -193,11 +216,13 @@ Images 1:1 prêtes pour Meta Ads Manager
 ## 📈 **MÉTRIQUES DE SUCCÈS ATTENDUES**
 
 ### **Conversion Utilisateurs**
+
 - **+300%** qualité scripts (données réelles vs génériques)
 - **+200%** performance Meta Ads (formats Origins vs amateur)
 - **+150%** time-to-market (workflow intégré vs n8n)
 
 ### **Business Impact**
+
 - **Position unique** marché français commerces locaux
 - **Barrière à l'entrée** massive (22 rapports = mois de recherche)
 - **Retention** élevée (résultats réels vs promesses vides)
@@ -220,6 +245,6 @@ Images 1:1 prêtes pour Meta Ads Manager
 
 ---
 
-*Intégration skills VuVenu terminée le 13 janvier 2026*
-*3 skills natives + MEGA-PROMPT V2 + mapping intelligent*
-*Prêt pour phase de développement autonome*
+_Intégration skills VuVenu terminée le 13 janvier 2026_
+_3 skills natives + MEGA-PROMPT V2 + mapping intelligent_
+_Prêt pour phase de développement autonome_

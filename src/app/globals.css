@@ -1,7 +1,6 @@
-@import "tailwindcss";
+@import 'tailwindcss';
 
 @plugin "tailwindcss-animate";
-@import "tw-animate-css";
 
 @custom-variant dark (&:is(.dark *));
 
@@ -124,4 +123,170 @@
   body {
     @apply bg-background text-foreground;
   }
+}
+
+/* ===== OPTIMISATIONS CORE WEB VITALS ===== */
+
+@layer utilities {
+  /* Réduction du Cumulative Layout Shift (CLS) */
+  .aspect-ratio-box {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .aspect-ratio-box::before {
+    content: '';
+    display: block;
+    padding-top: var(--aspect-ratio, 56.25%); /* 16:9 par défaut */
+  }
+
+  .aspect-ratio-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  /* Optimisation du Largest Contentful Paint (LCP) */
+  .lcp-optimized {
+    content-visibility: auto;
+    contain-intrinsic-size: 1px 500px;
+  }
+
+  /* Animations optimisées pour les performances */
+  .gpu-accelerated {
+    transform: translateZ(0);
+    will-change: transform, opacity;
+  }
+
+  .smooth-scroll {
+    scroll-behavior: smooth;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .smooth-scroll {
+      scroll-behavior: auto;
+    }
+
+    * {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+
+  /* Optimisations de fonts pour réduire FOUT/FOIT */
+  .font-display-swap {
+    font-display: swap;
+  }
+
+  /* Skeleton loading optimisé */
+  .skeleton {
+    background: linear-gradient(110deg,
+      hsl(var(--muted)) 8%,
+      hsl(var(--background)) 18%,
+      hsl(var(--muted)) 33%
+    );
+    background-size: 200% 100%;
+    animation: skeleton-shimmer 1.5s ease-in-out infinite;
+  }
+
+  @keyframes skeleton-shimmer {
+    0% { background-position: -200% 0; }
+    100% { background-position: 200% 0; }
+  }
+
+  /* Optimisation First Input Delay (FID) */
+  .interactive-ready {
+    pointer-events: auto;
+    touch-action: manipulation;
+  }
+
+  /* Lazy loading optimisé */
+  .lazy-load {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  }
+
+  .lazy-load.loaded {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  /* Cache des ressources critiques */
+  .preload-critical {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(1px, 1px, 1px, 1px);
+  }
+}
+
+/* ===== ANIMATIONS VUVENU OPTIMISÉES ===== */
+
+@keyframes pixel-float {
+  0%, 100% { transform: translateY(0) rotate(0deg); }
+  33% { transform: translateY(-5px) rotate(1deg); }
+  66% { transform: translateY(-3px) rotate(-1deg); }
+}
+
+@keyframes pulse-glow {
+  0%, 100% {
+    box-shadow: 0 0 5px rgba(191, 255, 0, 0.3);
+    transform: scale(1);
+  }
+  50% {
+    box-shadow: 0 0 20px rgba(191, 255, 0, 0.6);
+    transform: scale(1.02);
+  }
+}
+
+/* Classes d'animation Vuvenu optimisées GPU */
+.animate-pixel-float {
+  animation: pixel-float 3s ease-in-out infinite;
+  will-change: transform;
+}
+
+.animate-pulse-glow {
+  animation: pulse-glow 2s ease-in-out infinite;
+  will-change: transform, box-shadow;
+}
+
+/* ===== OPTIMISATIONS CRITIQUES DE PERFORMANCE ===== */
+
+/* Évite le layout shift sur les images */
+img {
+  height: auto;
+  max-width: 100%;
+}
+
+/* Optimisation des transitions pour 60fps */
+.optimized-transition {
+  transition-property: transform, opacity, filter;
+  transition-duration: 0.2s;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Containment pour éviter les reflows */
+.contain-layout {
+  contain: layout style paint;
+}
+
+/* Optimisation du scroll */
+.scroll-container {
+  overflow: auto;
+  overscroll-behavior: contain;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* Préchargement invisible des polices critiques */
+@font-face {
+  font-family: 'Inter-Preload';
+  src: url('https://fonts.gstatic.com/s/inter/v13/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa1ZL7.woff2') format('woff2');
+  font-display: swap;
+  font-weight: 400;
 }

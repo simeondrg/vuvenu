@@ -15,6 +15,12 @@ const navigationItems = [
     description: 'Vue d&apos;ensemble et statistiques'
   },
   {
+    name: 'Dashboard Pro',
+    href: '/dashboard-advanced',
+    icon: '📈',
+    description: 'Analytics avancées & calendrier'
+  },
+  {
     name: 'Scripts Vidéo',
     href: '/scripts',
     icon: '🎬',
@@ -25,6 +31,12 @@ const navigationItems = [
     href: '/campaigns',
     icon: '🚀',
     description: 'Publicités Meta automatisées'
+  },
+  {
+    name: 'Images IA',
+    href: '/images',
+    icon: '🎨',
+    description: 'Générateur d&apos;images Gemini'
   },
   {
     name: 'Paramètres',

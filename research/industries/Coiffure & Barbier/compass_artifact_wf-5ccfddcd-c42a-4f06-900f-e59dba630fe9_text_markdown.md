@@ -20,13 +20,13 @@ La réussite sur TikTok et Instagram dans le secteur capillaire repose sur des m
 
 **@guy_tang** reste la référence des coloristes avec **2,3 millions de followers Instagram** et 1,9 million sur YouTube. Créateur du hashtag #HairBesties et de la ligne #Mydentity, il maîtrise les colorations "vivid" et métalliques. Ses tutoriels génèrent **6+ millions de vues** sur YouTube. **@chrisappleton1** incarne le celebrity stylist ultime en coiffant Kim Kardashian, Jennifer Lopez et Ariana Grande, créant notamment le trend "glass hair" devenu viral mondialement.
 
-| Compte | Plateforme | Followers | Contenu signature | Vues typiques |
-|--------|------------|-----------|-------------------|---------------|
-| @vicblends | TikTok | 15.7M | Coupes rue + motivation | 10-11M/vidéo |
-| @bradmondonyc | TikTok/YT | 10M+ | Réactions hair fails | 5-20M/vidéo |
-| @guy_tang | Instagram | 2.3M | Colorations métalliques | 6M+/tutoriel |
-| @danielemaullu | TikTok | 2M+ | ASMR rasage italien | 100M+/top vidéos |
-| @sharon.simplyinsane | TikTok | 1.9M | Transformations LA | Variable |
+| Compte               | Plateforme | Followers | Contenu signature       | Vues typiques    |
+| -------------------- | ---------- | --------- | ----------------------- | ---------------- |
+| @vicblends           | TikTok     | 15.7M     | Coupes rue + motivation | 10-11M/vidéo     |
+| @bradmondonyc        | TikTok/YT  | 10M+      | Réactions hair fails    | 5-20M/vidéo      |
+| @guy_tang            | Instagram  | 2.3M      | Colorations métalliques | 6M+/tutoriel     |
+| @danielemaullu       | TikTok     | 2M+       | ASMR rasage italien     | 100M+/top vidéos |
+| @sharon.simplyinsane | TikTok     | 1.9M      | Transformations LA      | Variable         |
 
 ### Le phénomène ASMR barbier
 
@@ -56,16 +56,16 @@ Le format tutoriel fade/technique montre step-by-step la réalisation d'un type 
 
 **@howtofade101** est devenu LA référence avec des tutoriels evergreen qui continuent de générer des vues pendant des mois. **@HH_Barbers** a obtenu **207K likes** sur un seul tutoriel mid fade. Ce format génère **100K à 5 millions de vues** car il combine valeur éducative et démonstration d'expertise.
 
-| Format | Durée optimale | Vues moyennes | Complexité | Mécanisme clé |
-|--------|----------------|---------------|------------|---------------|
-| Before/After | 20-30 sec | 500K-5M | ⭐⭐ | Gap curiosité + dopamine |
-| ASMR | 30s-3min | 500K-60M+ | ⭐⭐ | Relaxation sensorielle |
-| Time-lapse | 30-60 sec | 100K-2M | ⭐⭐⭐ | Fascination hypnotique |
-| Tutoriel Fade | 45-90 sec | 100K-5M | ⭐⭐⭐ | Valeur éducative |
-| Fails/Saves | 30-60 sec | 500K-10M+ | ⭐⭐ | Tension-résolution |
-| Réactions clients | 20-45 sec | 100K-5M | ⭐ | Émotion authentique |
-| POV Client | 15-45 sec | 50K-500K | ⭐ | Immersion totale |
-| Color Correction | 45-90 sec | 200K-2M | ⭐⭐⭐ | Arc de rédemption |
+| Format            | Durée optimale | Vues moyennes | Complexité | Mécanisme clé            |
+| ----------------- | -------------- | ------------- | ---------- | ------------------------ |
+| Before/After      | 20-30 sec      | 500K-5M       | ⭐⭐       | Gap curiosité + dopamine |
+| ASMR              | 30s-3min       | 500K-60M+     | ⭐⭐       | Relaxation sensorielle   |
+| Time-lapse        | 30-60 sec      | 100K-2M       | ⭐⭐⭐     | Fascination hypnotique   |
+| Tutoriel Fade     | 45-90 sec      | 100K-5M       | ⭐⭐⭐     | Valeur éducative         |
+| Fails/Saves       | 30-60 sec      | 500K-10M+     | ⭐⭐       | Tension-résolution       |
+| Réactions clients | 20-45 sec      | 100K-5M       | ⭐         | Émotion authentique      |
+| POV Client        | 15-45 sec      | 50K-500K      | ⭐         | Immersion totale         |
+| Color Correction  | 45-90 sec      | 200K-2M       | ⭐⭐⭐     | Arc de rédemption        |
 
 ### Le format fails/saves déclenche les algorithmes
 
@@ -93,15 +93,15 @@ Les accroches déterminent le succès ou l'échec d'une vidéo dans les **3 prem
 
 **"Her hair was DESTROYED"** / **"Ses cheveux étaient DÉTRUITS"** exploite l'empathie et la tension. Les vidéos color correction avec ce hook atteignent régulièrement **1M+ vues**.
 
-| Hook | Mécanisme | Efficacité | Sous-niche idéale |
-|------|-----------|------------|-------------------|
-| "Wait for it..." | Curiosité | ⭐⭐⭐⭐⭐ | Toutes |
-| "He said 'Fix me'" | Défi + anticipation | ⭐⭐⭐⭐⭐ | Barbier |
-| "Only 1% know this" | FOMO | ⭐⭐⭐⭐ | Tutoriels techniques |
-| "Hair was DESTROYED" | Empathie + tension | ⭐⭐⭐⭐⭐ | Coloristes |
-| "His reaction is priceless" | Émotion sociale | ⭐⭐⭐⭐⭐ | Transformations |
-| "DON'T make this mistake" | Peur de l'erreur | ⭐⭐⭐⭐ | Éducatif |
-| "My secret weapon" | Exclusivité | ⭐⭐⭐⭐ | Techniques |
+| Hook                        | Mécanisme           | Efficacité | Sous-niche idéale    |
+| --------------------------- | ------------------- | ---------- | -------------------- |
+| "Wait for it..."            | Curiosité           | ⭐⭐⭐⭐⭐ | Toutes               |
+| "He said 'Fix me'"          | Défi + anticipation | ⭐⭐⭐⭐⭐ | Barbier              |
+| "Only 1% know this"         | FOMO                | ⭐⭐⭐⭐   | Tutoriels techniques |
+| "Hair was DESTROYED"        | Empathie + tension  | ⭐⭐⭐⭐⭐ | Coloristes           |
+| "His reaction is priceless" | Émotion sociale     | ⭐⭐⭐⭐⭐ | Transformations      |
+| "DON'T make this mistake"   | Peur de l'erreur    | ⭐⭐⭐⭐   | Éducatif             |
+| "My secret weapon"          | Exclusivité         | ⭐⭐⭐⭐   | Techniques           |
 
 ### Les hooks POV immersifs fidélisent l'audience
 
@@ -135,15 +135,15 @@ Utiliser uniquement #FYP et #viral (non ciblés), surcharger avec 30 hashtags, o
 
 **Solution** : Utiliser **3-5 hashtags stratégiques** maximum. Mélanger hashtags larges (#barber, #haircut) et nichés (#taperfade, #beardtransformation). Placer dans la description, pas en commentaire. Ajouter des hashtags locaux (#barberparis, #coiffeurlyon).
 
-| Erreur | Impact algorithme | Solution |
-|--------|------------------|----------|
-| Pas de hook | Watch time tué → Distribution morte | Triple Hook System |
-| Mauvais éclairage | Qualité basse → Non poussé | Ring light + caméra arrière |
-| Durée inadaptée | Completion faible → Enterré | 15-60 sec optimales |
-| Contenu promotionnel | Engagement faible → Limité | Ratio 80/20 valeur/promo |
-| Hashtags génériques | Mauvais ciblage → Audience perdue | 3-5 hashtags nichés |
-| Timing incorrect | Test initial échoué → Pas viral | Poster 15min avant pic |
-| Cadrage amateur | Perception basse → Scroll | Zoom x2 + spot dédié |
+| Erreur               | Impact algorithme                   | Solution                    |
+| -------------------- | ----------------------------------- | --------------------------- |
+| Pas de hook          | Watch time tué → Distribution morte | Triple Hook System          |
+| Mauvais éclairage    | Qualité basse → Non poussé          | Ring light + caméra arrière |
+| Durée inadaptée      | Completion faible → Enterré         | 15-60 sec optimales         |
+| Contenu promotionnel | Engagement faible → Limité          | Ratio 80/20 valeur/promo    |
+| Hashtags génériques  | Mauvais ciblage → Audience perdue   | 3-5 hashtags nichés         |
+| Timing incorrect     | Test initial échoué → Pas viral     | Poster 15min avant pic      |
+| Cadrage amateur      | Perception basse → Scroll           | Zoom x2 + spot dédié        |
 
 ---
 
@@ -201,14 +201,14 @@ Pour le lissage/keratin, le produit Color Wow Dream Coat (spray mini-keratin pop
 
 ### Volumes de hashtags et portée potentielle
 
-| Hashtag | Volume | Usage recommandé |
-|---------|--------|------------------|
-| #HairTok | 15.4+ milliards de vues | Généraliste coiffure |
-| #hairextensions | 24.9M+ posts | Extensions |
-| #barber | 7.7M+ posts | Barbier généraliste |
-| #keratintreatment | 4.6M+ posts | Lissage/soins |
-| #curtainbangs | 4.5+ milliards de vues | Frange rideau |
-| #naturalhair | 3.9M+ posts | Cheveux afro |
+| Hashtag           | Volume                  | Usage recommandé     |
+| ----------------- | ----------------------- | -------------------- |
+| #HairTok          | 15.4+ milliards de vues | Généraliste coiffure |
+| #hairextensions   | 24.9M+ posts            | Extensions           |
+| #barber           | 7.7M+ posts             | Barbier généraliste  |
+| #keratintreatment | 4.6M+ posts             | Lissage/soins        |
+| #curtainbangs     | 4.5+ milliards de vues  | Frange rideau        |
+| #naturalhair      | 3.9M+ posts             | Cheveux afro         |
 
 ### Taux d'engagement moyens par segment
 

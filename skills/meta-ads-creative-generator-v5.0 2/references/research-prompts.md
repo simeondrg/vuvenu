@@ -34,6 +34,7 @@ Analyse le produit/service pour identifier processus, technologies, ou approches
 **Objectif** : Découvrir desires explicites online via research multi-plateforme
 
 **Plateformes à rechercher** :
+
 1. Reddit (subreddits pertinents)
 2. Amazon/e-commerce reviews
 3. Forums industrie
@@ -43,6 +44,7 @@ Analyse le produit/service pour identifier processus, technologies, ou approches
 7. Customer service complaints
 
 **Framework Desires** :
+
 - Mass Instincts (Health, Sex, Status, Belonging, Control, Comfort)
 - Mass Technological Problems (Complexity, Overwhelm, Fragility, etc.)
 - Forces of Change (Style Trends, Mass Education)

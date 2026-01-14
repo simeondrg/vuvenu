@@ -8,18 +8,18 @@ Le secteur bien-être/relaxation représente un potentiel viral majeur avec **16
 
 Les créateurs les plus performants combinent qualité audio exceptionnelle, "trigger stacking" ASMR et authenticité émotionnelle. Le Japanese Head Spa a généré **919 millions de vues** à lui seul.
 
-| Compte | Plateforme | Followers | Contenu signature | Pourquoi ça fonctionne |
-|--------|-----------|-----------|-------------------|------------------------|
-| **@lisanailvn** | TikTok | 2,6M | Head spa ASMR multi-outils | "Trigger stacking" avec vidéo à **90M vues** - succession de techniques maintenant l'attention |
-| **@GentleWhispering** | YouTube | 2,4M | ASMR spa, massages cuir chevelu | Pionnière du genre depuis 2011, **1,2 milliard de vues totales**, masseuse certifiée |
-| **@babyspaperth** | TikTok | Viral | Hydrothérapie bébé | Pattern interrupt : bébés flottant = **15M+ vues**, libération dopamine/ocytocine |
-| **@jan_massage_therapy** | Instagram | 385K | ASMR massage thérapeutique | Combinaison art + science, qualité sonore professionnelle |
-| **@ASMR_PPOMO** | YouTube | 2,43M | Deep ear triggers, scalp massage | Vidéo phare **13M vues**, mystère (ne montre jamais son visage complet) |
-| **@MassageASMR** | YouTube | 882K | Massage ASMR, role-plays | **27M vues** sur top vidéo, enregistrement binaural immersif |
-| **@elevatemedispa** | TikTok | Viral | Facial spa, contenus surprenants | "Baby's first facial" = **13M vues**, juxtaposition inattendue |
-| **@spatravelgal** | Instagram | 103K | Reviews spas de luxe | Top 100 Luxury Travel Influencer, **3000+ spas visités**, crédibilité |
-| **@bohomedspa** | TikTok | Viral | Dermaplaning ASMR, celebrity | Régulièrement **12M+ vues**, sons de coupe satisfaisants |
-| **@thescalpspa** | TikTok | Viral | Head spa japonais Sydney | **2,3M+ vues**, hooks textuels parfaits |
+| Compte                   | Plateforme | Followers | Contenu signature                | Pourquoi ça fonctionne                                                                         |
+| ------------------------ | ---------- | --------- | -------------------------------- | ---------------------------------------------------------------------------------------------- |
+| **@lisanailvn**          | TikTok     | 2,6M      | Head spa ASMR multi-outils       | "Trigger stacking" avec vidéo à **90M vues** - succession de techniques maintenant l'attention |
+| **@GentleWhispering**    | YouTube    | 2,4M      | ASMR spa, massages cuir chevelu  | Pionnière du genre depuis 2011, **1,2 milliard de vues totales**, masseuse certifiée           |
+| **@babyspaperth**        | TikTok     | Viral     | Hydrothérapie bébé               | Pattern interrupt : bébés flottant = **15M+ vues**, libération dopamine/ocytocine              |
+| **@jan_massage_therapy** | Instagram  | 385K      | ASMR massage thérapeutique       | Combinaison art + science, qualité sonore professionnelle                                      |
+| **@ASMR_PPOMO**          | YouTube    | 2,43M     | Deep ear triggers, scalp massage | Vidéo phare **13M vues**, mystère (ne montre jamais son visage complet)                        |
+| **@MassageASMR**         | YouTube    | 882K      | Massage ASMR, role-plays         | **27M vues** sur top vidéo, enregistrement binaural immersif                                   |
+| **@elevatemedispa**      | TikTok     | Viral     | Facial spa, contenus surprenants | "Baby's first facial" = **13M vues**, juxtaposition inattendue                                 |
+| **@spatravelgal**        | Instagram  | 103K      | Reviews spas de luxe             | Top 100 Luxury Travel Influencer, **3000+ spas visités**, crédibilité                          |
+| **@bohomedspa**          | TikTok     | Viral     | Dermaplaning ASMR, celebrity     | Régulièrement **12M+ vues**, sons de coupe satisfaisants                                       |
+| **@thescalpspa**         | TikTok     | Viral     | Head spa japonais Sydney         | **2,3M+ vues**, hooks textuels parfaits                                                        |
 
 **Facteurs communs de viralité** : Ces comptes maîtrisent tous le "trigger stacking" (superposition de stimuli sensoriels), l'anticipation narrative ("What's next?"), et créent une expérience de relaxation par procuration que le viewer ressent physiquement.
 
@@ -67,23 +67,23 @@ Close-up hypnotique sur le massage du cuir chevelu avec shampooing. Mouvements r
 
 Les hooks wellness les plus performants exploitent quatre leviers psychologiques : la relatabilité universelle, la curiosité, la transformation, et la permission de se faire du bien.
 
-| Hook exact | Type | Vues | Analyse |
-|-----------|------|------|---------|
-| "Tu sais quand tu te fais laver les cheveux au salon et tu rêves que ça ne finisse jamais... C'EST ce qu'on fait" | Relatabilité + ASMR | 2,3M+ | Expérience universelle, hochement de tête immédiat |
-| "POV: tu donnes un facial à ton entrepreneur qui a construit ton spa et tu le mets accidentellement en transe" | POV + Storytelling | 5-10M | Micro-narrative intrigant + humour situationnel |
-| "Quand les gens imaginent l'épilation laser, ils s'imaginent des positions de yoga qui ont mal tourné !" | Expectation vs Reality | 9M+ | Subversion des peurs avec humour, démystification |
-| "C'est LE soin sans lequel je ne peux pas vivre, tellement bon" (pendant dermaplaning) | Témoignage sensoriel | 12M+ | Social proof + audio ASMR, authenticité non-scriptée |
-| "Baby's first facial" / "Quand tes clients sont aussi mignons !" | Curiosité + Cute | 13-15M | Pattern interrupt maximal, scroll stoppé garanti |
-| "Lave tes cheveux, relaxe et endors-toi" (text overlay sur head spa) | Invitation ASMR | 2,4M-90M | CTA relaxant direct, promesse de l'expérience recherchée |
-| "Tu as ce problème de cuir chevelu ? On peut t'aider" (avec visuel) | Call-out + Solution | 3M+ | Interpellation directe, curiosité morbide |
-| "Viens vivre le facial de ta vie ici ✨" | Promesse aspirationnelle | 4,4M+ | Claim audacieux + emoji, invitation au rêve |
-| "30 jours. Pas de laser. Pas de Botox. Pas de filtres." | Transformation + Anti-hype | Multi-millions | Contraste avec promesses exagérées, crédibilité |
-| "Safe to say he'll be coming back LOL" (après client endormi) | Humour + Preuve | 5M+ | Punchline légère, humanise et prouve l'efficacité |
-| "Ce sérum à 15€ a surpassé des produits 5x plus chers" | Curiosité + Valeur | Viral récurrent | Spécificité du prix + promesse contre-intuitive |
-| "POV: ton mari découvre un spa et te convainc d'y aller..." | POV client authentique | Tendance | Storytelling personnel, recommandation organique |
-| "Ne perds pas la carte de check-in" → carte immédiatement avalée | Setup + Punchline | 2,7M+ | Subversion comique parfaite, timing = dopamine |
-| "On fait semblant d'être occupés quand le manager passe" | Behind-the-scenes humour | 700K+ | Relatabilité workplace, humanise le spa |
-| "Si tu n'es pas [célébrité], tu es plus que bienvenue" | Celebrity call-out | 1M+ | Curiosité parasociale, mobilise la fanbase |
+| Hook exact                                                                                                        | Type                       | Vues            | Analyse                                                  |
+| ----------------------------------------------------------------------------------------------------------------- | -------------------------- | --------------- | -------------------------------------------------------- |
+| "Tu sais quand tu te fais laver les cheveux au salon et tu rêves que ça ne finisse jamais... C'EST ce qu'on fait" | Relatabilité + ASMR        | 2,3M+           | Expérience universelle, hochement de tête immédiat       |
+| "POV: tu donnes un facial à ton entrepreneur qui a construit ton spa et tu le mets accidentellement en transe"    | POV + Storytelling         | 5-10M           | Micro-narrative intrigant + humour situationnel          |
+| "Quand les gens imaginent l'épilation laser, ils s'imaginent des positions de yoga qui ont mal tourné !"          | Expectation vs Reality     | 9M+             | Subversion des peurs avec humour, démystification        |
+| "C'est LE soin sans lequel je ne peux pas vivre, tellement bon" (pendant dermaplaning)                            | Témoignage sensoriel       | 12M+            | Social proof + audio ASMR, authenticité non-scriptée     |
+| "Baby's first facial" / "Quand tes clients sont aussi mignons !"                                                  | Curiosité + Cute           | 13-15M          | Pattern interrupt maximal, scroll stoppé garanti         |
+| "Lave tes cheveux, relaxe et endors-toi" (text overlay sur head spa)                                              | Invitation ASMR            | 2,4M-90M        | CTA relaxant direct, promesse de l'expérience recherchée |
+| "Tu as ce problème de cuir chevelu ? On peut t'aider" (avec visuel)                                               | Call-out + Solution        | 3M+             | Interpellation directe, curiosité morbide                |
+| "Viens vivre le facial de ta vie ici ✨"                                                                          | Promesse aspirationnelle   | 4,4M+           | Claim audacieux + emoji, invitation au rêve              |
+| "30 jours. Pas de laser. Pas de Botox. Pas de filtres."                                                           | Transformation + Anti-hype | Multi-millions  | Contraste avec promesses exagérées, crédibilité          |
+| "Safe to say he'll be coming back LOL" (après client endormi)                                                     | Humour + Preuve            | 5M+             | Punchline légère, humanise et prouve l'efficacité        |
+| "Ce sérum à 15€ a surpassé des produits 5x plus chers"                                                            | Curiosité + Valeur         | Viral récurrent | Spécificité du prix + promesse contre-intuitive          |
+| "POV: ton mari découvre un spa et te convainc d'y aller..."                                                       | POV client authentique     | Tendance        | Storytelling personnel, recommandation organique         |
+| "Ne perds pas la carte de check-in" → carte immédiatement avalée                                                  | Setup + Punchline          | 2,7M+           | Subversion comique parfaite, timing = dopamine           |
+| "On fait semblant d'être occupés quand le manager passe"                                                          | Behind-the-scenes humour   | 700K+           | Relatabilité workplace, humanise le spa                  |
+| "Si tu n'es pas [célébrité], tu es plus que bienvenue"                                                            | Celebrity call-out         | 1M+             | Curiosité parasociale, mobilise la fanbase               |
 
 **Catégories de hooks les plus efficaces** : Les hooks ASMR visuels génèrent la meilleure rétention, les hooks de relatabilité ("Tu connais ce moment quand...") maximisent les commentaires, les hooks de transformation augmentent les saves, et les hooks d'humour behind-the-scenes multiplient les partages.
 
@@ -268,12 +268,15 @@ Le modèle gagnant pour le groupe Bien-être & Relaxation s'articule autour d'un
 **ASMR SENSORIEL + TRANSFORMATION VISIBLE + IMMERSION EXPÉRIENTIELLE**
 
 ### ASMR Sensoriel (le hook)
+
 Capturer les sons et textures qui déclenchent une réponse physiologique chez le viewer : eau qui coule, mains sur la peau, produits qui glissent, instruments de massage. Le "trigger stacking" (superposition de stimuli) maintient l'attention. **Investir dans un micro adapté est non-négociable**.
 
 ### Transformation Visible (la preuve)
+
 Montrer le changement concret : peau avant/après, tension qui se relâche, client qui s'endort. Les transformations avec chiffres précis ("80% mieux en 30 jours", "30 jours sans laser ni Botox") renforcent la crédibilité et génèrent des saves.
 
 ### Immersion Expérientielle (la promesse)
+
 Faire vivre virtuellement l'expérience au viewer : POV client, parcours de soin complet, réactions authentiques. L'objectif est de créer une "relaxation par procuration" qui donne envie de réserver.
 
 **Application concrète** : Chaque vidéo devrait commencer par un élément ASMR captivant (3 premières secondes), montrer une transformation ou progression (corps de la vidéo), et se terminer sur une expérience complète ou la réaction satisfaite du client (payoff).

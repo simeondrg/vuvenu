@@ -21,17 +21,17 @@ Cette recherche couvre 8 niches du secteur loisirs et identifie les stratégies 
 
 ## Comptes viraux de référence
 
-| Compte | Plateforme | Followers | Contenu signature | Pourquoi ça marche |
-|--------|------------|-----------|-------------------|-------------------|
-| **@disneyparks** | TikTok | 11.8M | POV attractions, behind-the-scenes, rencontres personnages | Accès exclusif aux coulisses + storytelling émotionnel fort |
-| **@sandiegozoo** | TikTok | 2.7M | Animaux mignons (pandas roux stars), fun facts éducatifs | Balance parfaite éducation/divertissement + adaptation rapide aux trends |
-| **@aquariuminfo** | TikTok | 2.3M | Contenus éducatifs vie aquatique, axolotls viraux | Visuels satisfaisants + créatures fascinantes |
-| **@nowayout_dubai** | TikTok | N/A (1.5-3.3M likes/vidéo) | Horror escape rooms avec acteurs live, réactions de peur | Réactions authentiques et hilarantes + format terreur/humour |
-| **@escapegamede** | TikTok | N/A (3.3M likes top vidéo) | Moments où joueurs "outsmart" les acteurs | Retournements de situation inattendus |
-| **@ptdefiancezoo** | TikTok | 449.8K | Contenus variés zoo + aquarium combinés | Format snackable + diversité du contenu |
-| **@northumberlandzoo** | TikTok | N/A (6.7M vues top vidéo) | "Gen Z wrote the script" avec propriétaires en deadpan | Humour générationnel + authenticité décalée |
-| **@theescapegameofficial** | TikTok | 34.9K | Tips escape room, coulisses création de salles | Marque reconnue + contenu éducatif engageant |
-| **@columbuszooandaquarium** | TikTok | 131.8K | Écosystème complet (zoo, parc aquatique, golf) | Expérience multi-activités intégrée |
+| Compte                      | Plateforme | Followers                  | Contenu signature                                          | Pourquoi ça marche                                                       |
+| --------------------------- | ---------- | -------------------------- | ---------------------------------------------------------- | ------------------------------------------------------------------------ |
+| **@disneyparks**            | TikTok     | 11.8M                      | POV attractions, behind-the-scenes, rencontres personnages | Accès exclusif aux coulisses + storytelling émotionnel fort              |
+| **@sandiegozoo**            | TikTok     | 2.7M                       | Animaux mignons (pandas roux stars), fun facts éducatifs   | Balance parfaite éducation/divertissement + adaptation rapide aux trends |
+| **@aquariuminfo**           | TikTok     | 2.3M                       | Contenus éducatifs vie aquatique, axolotls viraux          | Visuels satisfaisants + créatures fascinantes                            |
+| **@nowayout_dubai**         | TikTok     | N/A (1.5-3.3M likes/vidéo) | Horror escape rooms avec acteurs live, réactions de peur   | Réactions authentiques et hilarantes + format terreur/humour             |
+| **@escapegamede**           | TikTok     | N/A (3.3M likes top vidéo) | Moments où joueurs "outsmart" les acteurs                  | Retournements de situation inattendus                                    |
+| **@ptdefiancezoo**          | TikTok     | 449.8K                     | Contenus variés zoo + aquarium combinés                    | Format snackable + diversité du contenu                                  |
+| **@northumberlandzoo**      | TikTok     | N/A (6.7M vues top vidéo)  | "Gen Z wrote the script" avec propriétaires en deadpan     | Humour générationnel + authenticité décalée                              |
+| **@theescapegameofficial**  | TikTok     | 34.9K                      | Tips escape room, coulisses création de salles             | Marque reconnue + contenu éducatif engageant                             |
+| **@columbuszooandaquarium** | TikTok     | 131.8K                     | Écosystème complet (zoo, parc aquatique, golf)             | Expérience multi-activités intégrée                                      |
 
 **Insight clé** : Les escape rooms avec acteurs live (horreur/suspense) génèrent **significativement plus d'engagement** que les escape rooms classiques. Pour le bowling, karting et mini-golf, la présence virale reste dominée par le contenu user-generated — une **opportunité de marché** pour les commerces locaux.
 
@@ -169,23 +169,23 @@ Cette recherche couvre 8 niches du secteur loisirs et identifie les stratégies 
 
 ## Hooks testés
 
-| Hook | Type | Pourquoi ça accroche |
-|------|------|---------------------|
-| **"POV: Tu es sur le point de..."** | POV Immersif | Projette instantanément le spectateur dans l'expérience à la première personne, activant l'imagination |
-| **"Personne n'en parle, mais..."** | Curiosité | Crée un "curiosity gap" — sentiment d'accéder à une information exclusive |
-| **"Essaie de ne pas... (impossible)"** | Défi | Déclenche l'ego et le désir de prouver le contraire — tension narrative |
-| **"Opinion impopulaire : ..."** | Controverse | Réponse émotionnelle forte (accord/désaccord) = commentaires et débats |
-| **"Le moment où..."** | Émotionnel | Crée une attente émotionnelle, le spectateur s'identifie à un moment précis |
-| **"Cette histoire est dingue..."** | Storytelling | Active les neurones miroirs et le désir narratif inné |
-| **"Arrête de faire ça si tu veux..."** | Avertissement | L'aversion à la perte est plus puissante que le désir de gain — FOMO inversé |
-| **"Ce qu'on ne te dit pas sur..."** | Révélation | Sentiment de privilège et d'accès exclusif — désir de faire partie des "initiés" |
-| **"X choses sur... qui vont tout changer"** | Liste numérotée | Les chiffres promettent une information structurée et mesurable |
-| **"Regarde ce qui se passe quand..."** | Avant/Après | Promet une transformation visible — le format le plus engageant |
-| **"Arrête de scroller si tu..."** | Question ciblée | Segmente l'audience immédiatement — connexion directe avec la cible |
-| **"Ça devrait être interdit de savoir ça..."** | Transgression | Le mot "interdit" crée une tension et suggère une info tellement précieuse qu'elle semble transgressive |
-| **"Je pensais que... jusqu'à ce que..."** | Transformation | Récit de transformation créant une connexion émotionnelle et de l'authenticité |
-| **"Dans les X prochaines secondes, tu vas voir..."** | Promesse temporelle | Engagement temporel clair — le spectateur sait exactement quoi attendre |
-| **"J'étais pas prêt(e) pour ça..."** | Réaction spontanée | Suggère une expérience tellement intense qu'elle dépasse les attentes |
+| Hook                                                 | Type                | Pourquoi ça accroche                                                                                    |
+| ---------------------------------------------------- | ------------------- | ------------------------------------------------------------------------------------------------------- |
+| **"POV: Tu es sur le point de..."**                  | POV Immersif        | Projette instantanément le spectateur dans l'expérience à la première personne, activant l'imagination  |
+| **"Personne n'en parle, mais..."**                   | Curiosité           | Crée un "curiosity gap" — sentiment d'accéder à une information exclusive                               |
+| **"Essaie de ne pas... (impossible)"**               | Défi                | Déclenche l'ego et le désir de prouver le contraire — tension narrative                                 |
+| **"Opinion impopulaire : ..."**                      | Controverse         | Réponse émotionnelle forte (accord/désaccord) = commentaires et débats                                  |
+| **"Le moment où..."**                                | Émotionnel          | Crée une attente émotionnelle, le spectateur s'identifie à un moment précis                             |
+| **"Cette histoire est dingue..."**                   | Storytelling        | Active les neurones miroirs et le désir narratif inné                                                   |
+| **"Arrête de faire ça si tu veux..."**               | Avertissement       | L'aversion à la perte est plus puissante que le désir de gain — FOMO inversé                            |
+| **"Ce qu'on ne te dit pas sur..."**                  | Révélation          | Sentiment de privilège et d'accès exclusif — désir de faire partie des "initiés"                        |
+| **"X choses sur... qui vont tout changer"**          | Liste numérotée     | Les chiffres promettent une information structurée et mesurable                                         |
+| **"Regarde ce qui se passe quand..."**               | Avant/Après         | Promet une transformation visible — le format le plus engageant                                         |
+| **"Arrête de scroller si tu..."**                    | Question ciblée     | Segmente l'audience immédiatement — connexion directe avec la cible                                     |
+| **"Ça devrait être interdit de savoir ça..."**       | Transgression       | Le mot "interdit" crée une tension et suggère une info tellement précieuse qu'elle semble transgressive |
+| **"Je pensais que... jusqu'à ce que..."**            | Transformation      | Récit de transformation créant une connexion émotionnelle et de l'authenticité                          |
+| **"Dans les X prochaines secondes, tu vas voir..."** | Promesse temporelle | Engagement temporel clair — le spectateur sait exactement quoi attendre                                 |
+| **"J'étais pas prêt(e) pour ça..."**                 | Réaction spontanée  | Suggère une expérience tellement intense qu'elle dépasse les attentes                                   |
 
 **Adaptations par niche** :
 

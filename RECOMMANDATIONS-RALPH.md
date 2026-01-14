@@ -7,6 +7,7 @@
 ## 📌 SITUATION ACTUELLE
 
 **État du Projet** :
+
 - ✅ Planification complète (206 tâches, 45 US)
 - ✅ Documentation exhaustive (PRD, Checklist, Branding)
 - ✅ Stack technique validée (Next.js, Supabase, Stripe, etc.)
@@ -241,6 +242,7 @@ Status: ✅ READY
 **Ralph a accès aux 3 skills** :
 
 ### vuvenu-script-generator.md
+
 ```
 Utilisé pour :
 - Tester Scripts Generator API
@@ -249,6 +251,7 @@ Utilisé pour :
 ```
 
 ### vuvenu-meta-ads-generator.md
+
 ```
 Utilisé pour :
 - Testing Meta Ads flow
@@ -257,6 +260,7 @@ Utilisé pour :
 ```
 
 ### vuvenu-image-generator.md
+
 ```
 Utilisé pour :
 - Testing Gemini integration
@@ -528,6 +532,6 @@ SI OUI à tous → /ralph-vuvenu semaine-1 --max-iterations 50
 
 ---
 
-*Document créé : 13 janvier 2026*
-*Audience : Ralph Loop + Siméon (supervision)*
-*Priorité : 🟡 Important (relire avant Ralph démarrage)*
+_Document créé : 13 janvier 2026_
+_Audience : Ralph Loop + Siméon (supervision)_
+_Priorité : 🟡 Important (relire avant Ralph démarrage)_
