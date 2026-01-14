@@ -6,13 +6,44 @@ import Link from 'next/link'
 import { supabase } from '@/lib/supabase/client'
 import { Button } from '@/components/ui/button'
 
+interface CampaignInputData {
+  industry?: string
+  objective?: string
+  budget?: string
+  customBudget?: string
+  targetLocation?: string
+  specialOffer?: string
+  [key: string]: unknown
+}
+
+interface Campaign {
+  id: string
+  title: string
+  status: string
+  input_data: CampaignInputData
+  created_at: string
+  wizard_step: number
+}
+
+interface Concept {
+  id: string
+  funnel_stage: string
+  name: string
+  angle: string | null
+  ad_type: string | null
+  primary_text: string
+  headline: string
+  description: string | null
+  image_url?: string | null
+}
+
 export default function CampaignDetailPage() {
   const params = useParams()
   const router = useRouter()
   const campaignId = params.id as string
 
-  const [campaign, setCampaign] = useState<any>(null)
-  const [concepts, setConcepts] = useState<any[]>([])
+  const [campaign, setCampaign] = useState<Campaign | null>(null)
+  const [concepts, setConcepts] = useState<Concept[]>([])
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState('')
 
@@ -38,7 +69,7 @@ export default function CampaignDetailPage() {
           return
         }
 
-        setCampaign(campaignData)
+        setCampaign(campaignData as Campaign)
 
         // Charger les concepts
         const { data: conceptsData, error: conceptsError } = await supabase

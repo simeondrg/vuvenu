@@ -61,11 +61,12 @@ export default function ResetPasswordPage() {
       setTimeout(() => {
         router.push('/login')
       }, 3000)
-    } catch (error: any) {
-      if (error.message.includes('session') || error.message.includes('token')) {
+    } catch (error: unknown) {
+      const errorMessage = error instanceof Error ? error.message : 'Erreur lors de la réinitialisation du mot de passe'
+      if (errorMessage.includes('session') || errorMessage.includes('token')) {
         setTokenError(true)
       } else {
-        setError(error.message || 'Erreur lors de la réinitialisation du mot de passe')
+        setError(errorMessage)
       }
     } finally {
       setLoading(false)
