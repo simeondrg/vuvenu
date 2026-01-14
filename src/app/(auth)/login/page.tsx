@@ -57,8 +57,8 @@ export default function LoginPage() {
           router.push('/onboarding')
         }
       }
-    } catch (error: any) {
-      setError(error.message || 'Erreur de connexion')
+    } catch (error: unknown) {
+      setError(error instanceof Error ? error.message : 'Erreur de connexion')
     } finally {
       setLoading(false)
     }
@@ -79,8 +79,8 @@ export default function LoginPage() {
       if (error) throw error
 
       setError('Lien magique envoyé ! Vérifiez votre email.')
-    } catch (error: any) {
-      setError(error.message || 'Erreur lors de l&apos;envoi du lien magique')
+    } catch (error: unknown) {
+      setError(error instanceof Error ? error.message : 'Erreur lors de l&apos;envoi du lien magique')
     } finally {
       setLoading(false)
     }

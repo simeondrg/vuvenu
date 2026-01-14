@@ -66,11 +66,12 @@ export default function RegisterPage() {
         setSuccess(true)
         setError('Email de confirmation envoyé ! Vérifiez votre boîte mail.')
       }
-    } catch (error: any) {
-      if (error.message.includes('already registered')) {
+    } catch (error: unknown) {
+      const errorMessage = error instanceof Error ? error.message : 'Erreur lors de l&apos;inscription'
+      if (errorMessage.includes('already registered')) {
         setError('Cet email est déjà utilisé. Essayez de vous connecter.')
       } else {
-        setError(error.message || 'Erreur lors de l&apos;inscription')
+        setError(errorMessage)
       }
     } finally {
       setLoading(false)

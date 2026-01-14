@@ -1,27 +1,22 @@
 import { NextRequest, NextResponse } from 'next/server'
 import { createServerClient } from '@supabase/ssr'
 import { cookies } from 'next/headers'
-import Anthropic from '@anthropic-ai/sdk'
 import { z } from 'zod'
 import { withRateLimit, RATE_LIMIT_CONFIGS } from '@/lib/rate-limit'
 import {
-  CampaignInputSchema,
   createCorsHeaders,
-  logApiUsage,
-  SECURITY_LIMITS
+  logApiUsage
 } from '@/lib/api-security'
-import { withResilience } from '@/lib/circuit-breaker'
-
-// Initialisation différée d'Anthropic avec timeout
-function getAnthropicClient() {
-  if (!process.env.ANTHROPIC_API_KEY) {
-    throw new Error('ANTHROPIC_API_KEY is not configured')
-  }
-  return new Anthropic({
-    apiKey: process.env.ANTHROPIC_API_KEY,
-    timeout: SECURITY_LIMITS.CLAUDE_TIMEOUT_MS
-  })
-}
+import {
+  generateWithCaching,
+  logGenerationMetrics
+} from '@/lib/ai/optimized-claude-client'
+import {
+  OPTIMIZED_CAMPAIGN_SYSTEM_PROMPT,
+  buildOptimizedUserPrompt,
+  parseClaudeJsonResponse,
+  GENERATION_OPTIONS
+} from '@/lib/ai/optimized-prompts'
 
 // Handler OPTIONS pour CORS
 export async function OPTIONS(request: NextRequest) {
@@ -44,52 +39,6 @@ const GenerateCampaignSchema = z.object({
     copy: z.string()
   }))
 })
-
-// Prompts système pour la génération
-const CAMPAIGN_SYSTEM_PROMPT = `Tu es un expert en publicités Facebook/Instagram qui génère des concepts publicitaires performants pour des commerces locaux.
-
-RÈGLES STRICTES :
-1. Génère EXACTEMENT 5 concepts publicitaires différents
-2. Chaque concept doit avoir : funnel_stage, name, angle, ad_type, primary_text, headline, description
-3. Réponds UNIQUEMENT avec un JSON valide, aucun autre texte
-4. Les textes doivent être COURTS et PERCUTANTS (max 125 caractères pour primary_text)
-5. Utilise des HOOKS VIRAUX et des ÉMOTIONS fortes
-6. Inclus des chiffres, urgence, exclusivité quand possible
-7. Adapte le vocabulaire au secteur (familier pour resto, plus pro pour services)
-
-STRUCTURE JSON ATTENDUE :
-{
-  "concepts": [
-    {
-      "funnel_stage": "awareness|consideration|conversion",
-      "name": "Nom court du concept",
-      "angle": "Angle marketing principal",
-      "ad_type": "Type de publicité",
-      "primary_text": "Texte principal accrocheur (max 125 chars)",
-      "headline": "Titre percutant (max 40 chars)",
-      "description": "Description courte (max 90 chars)"
-    }
-  ]
-}
-
-EXEMPLES DE HOOKS VIRAUX PAR SECTEUR :
-
-COIFFURE :
-- "Cette technique RÉVOLUTIONNAIRE transforme vos cheveux en 2h"
-- "Avant/après INCROYABLE : -10 ans en une séance"
-- "POURQUOI nos clients font 30min de route pour venir ?"
-
-RESTAURANT :
-- "4h du matin : le SECRET qui rend notre pain addictif"
-- "Cette recette fait PLEURER DE JOIE nos clients"
-- "INTERDIT de partir sans avoir goûté ça"
-
-BOULANGERIE :
-- "Pétrissage MANUEL depuis 5h : voilà la différence"
-- "SCANDALE : nos viennoiseries sortent du four toutes les 2h"
-- "Cette tradition OUBLIÉE va vous surprendre"
-
-Adapte ces hooks au secteur demandé avec la même intensité émotionnelle.`
 
 export async function POST(request: NextRequest) {
   const startTime = Date.now()
@@ -128,9 +77,11 @@ export async function POST(request: NextRequest) {
 
     if (rateLimitResult.error) {
       const errorResponse = rateLimitResult.error
-      corsHeaders && Object.entries(corsHeaders).forEach(([key, value]) => {
-        errorResponse.headers.set(key, value)
-      })
+      if (corsHeaders) {
+        Object.entries(corsHeaders).forEach(([key, value]) => {
+          errorResponse.headers.set(key, value)
+        })
+      }
       return errorResponse
     }
 
@@ -153,26 +104,23 @@ export async function POST(request: NextRequest) {
       )
     }
 
-    // Créer le prompt pour Claude
-    const userPrompt = `
-SECTEUR : ${validatedData.industry}
-OBJECTIF : ${validatedData.objective}
-BUDGET : ${validatedData.customBudget ? validatedData.customBudget + '€/jour' : validatedData.budget}
-COMMERCE : ${validatedData.businessName || 'Mon commerce'}
-${validatedData.targetLocation ? `ZONE : ${validatedData.targetLocation}` : ''}
-${validatedData.specialOffer ? `OFFRE SPÉCIALE : ${validatedData.specialOffer}` : ''}
+    // Créer le prompt utilisateur optimisé
+    const userPromptData = buildOptimizedUserPrompt('campaign', {
+      industry: validatedData.industry,
+      businessName: validatedData.businessName || 'Mon commerce',
+      objective: validatedData.objective,
+      budget: validatedData.customBudget ? `${validatedData.customBudget}€/jour` : validatedData.budget,
+      targetLocation: validatedData.targetLocation,
+      specialOffer: validatedData.specialOffer
+    })
 
-Génère 5 concepts publicitaires Meta Ads en utilisant ces angles comme inspiration :
+    // Ajouter les angles pour inspiration
+    const fullUserPrompt = `${userPromptData}
+
+Angles suggérés:
 ${validatedData.angles.map(a => `- ${a.stage}: ${a.copy}`).join('\n')}
 
-Chaque concept doit :
-1. Utiliser des hooks VIRAUX et émotionnels
-2. Être adapté au funnel stage (awareness/consideration/conversion)
-3. Inclure l'offre spéciale si fournie
-4. Respecter les limites de caractères Facebook/Instagram
-5. Utiliser le vocabulaire du secteur
-
-Génère des concepts DIFFÉRENTS avec des angles variés pour maximiser les performances.`
+Génère 5 concepts Meta Ads DIFFÉRENTS et PERFORMANTS.`
 
     console.log('Génération concepts pour:', {
       industry: validatedData.industry,
@@ -180,35 +128,39 @@ Génère des concepts DIFFÉRENTS avec des angles variés pour maximiser les per
       campaignId: validatedData.campaignId
     })
 
-    // Appeler Claude AI
-    const anthropic = getAnthropicClient()
-    const message = await withResilience(
-      () => anthropic.messages.create({
+    // Appeler Claude AI avec optimisations
+    const { content: responseText, metrics } = await generateWithCaching(
+      OPTIMIZED_CAMPAIGN_SYSTEM_PROMPT,
+      fullUserPrompt,
+      {
         model: 'claude-sonnet-4-5-20250929',
-        max_tokens: 2000,
-        temperature: 0.8,
-        system: CAMPAIGN_SYSTEM_PROMPT,
-        messages: [
-          {
-            role: 'user',
-            content: userPrompt
-          }
-        ]
-      }),
-      'claude'
+        maxTokens: GENERATION_OPTIONS.campaign.maxTokens,
+        temperature: GENERATION_OPTIONS.campaign.temperature
+      }
     )
-
-    const responseText = message.content[0].type === 'text' ? message.content[0].text : ''
 
     if (!responseText) {
       throw new Error('Pas de réponse de Claude AI')
     }
 
-    // Parser la réponse JSON
+    // Logger les métriques
+    logGenerationMetrics('/api/generate/campaign', user.id, metrics)
+
+    interface ConceptData {
+      funnel_stage: string
+      name: string
+      angle: string
+      ad_type: string
+      primary_text: string
+      headline: string
+      description: string
+    }
+
+    // Parser la réponse JSON avec la fonction optimisée
     let conceptsData
     try {
-      conceptsData = JSON.parse(responseText)
-    } catch (parseError) {
+      conceptsData = parseClaudeJsonResponse<{ concepts: ConceptData[] }>(responseText)
+    } catch {
       console.error('Erreur parsing JSON Claude:', responseText)
       throw new Error('Format de réponse invalide')
     }
@@ -218,7 +170,7 @@ Génère des concepts DIFFÉRENTS avec des angles variés pour maximiser les per
     }
 
     // Sauvegarder les concepts en base
-    const conceptsToInsert = conceptsData.concepts.map((concept: any) => ({
+    const conceptsToInsert = conceptsData.concepts.map((concept: ConceptData) => ({
       campaign_id: validatedData.campaignId,
       funnel_stage: concept.funnel_stage,
       name: concept.name,
@@ -252,10 +204,14 @@ Génère des concepts DIFFÉRENTS avec des angles variés pour maximiser les per
 
     console.log(`Concepts générés avec succès pour campagne ${validatedData.campaignId}:`, savedConcepts?.length)
 
-    // Logging succès
+    // Logging succès avec métriques
     logApiUsage({
       userId: user.id,
       endpoint: '/api/generate/campaign',
+      inputTokens: metrics.inputTokens,
+      outputTokens: metrics.outputTokens,
+      totalTokens: metrics.inputTokens + metrics.outputTokens,
+      cost: metrics.totalCost,
       duration: Date.now() - startTime,
       success: true,
       timestamp: Date.now()
@@ -264,7 +220,15 @@ Génère des concepts DIFFÉRENTS avec des angles variés pour maximiser les per
     return NextResponse.json({
       success: true,
       concepts: savedConcepts,
-      message: `${savedConcepts?.length} concepts générés avec succès`
+      message: `${savedConcepts?.length} concepts générés avec succès`,
+      // Inclure les métriques d'optimisation
+      metrics: {
+        inputTokens: metrics.inputTokens,
+        outputTokens: metrics.outputTokens,
+        cacheReadTokens: metrics.cacheReadTokens,
+        totalCost: metrics.totalCost,
+        estimatedSavings: metrics.estimatedSavings
+      }
     }, { headers: corsHeaders })
 
   } catch (error) {

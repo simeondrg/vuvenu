@@ -6,9 +6,30 @@ import { useRouter } from 'next/navigation'
 import { supabase } from '@/lib/supabase/client'
 import { Button } from '@/components/ui/button'
 
+interface CampaignInputData {
+  industry?: string
+  [key: string]: unknown
+}
+
+interface Campaign {
+  id: string
+  title: string
+  status: string
+  created_at: string
+  wizard_step: number
+  input_data: CampaignInputData
+}
+
+interface UserProfile {
+  id: string
+  business_name: string
+  subscription_tier?: string | null
+  campaigns_count_month?: number | null
+}
+
 export default function CampaignsPage() {
-  const [campaigns, setCampaigns] = useState<any[]>([])
-  const [userProfile, setUserProfile] = useState<any>(null)
+  const [campaigns, setCampaigns] = useState<Campaign[]>([])
+  const [userProfile, setUserProfile] = useState<UserProfile | null>(null)
   const [loading, setLoading] = useState(true)
   const router = useRouter()
 
@@ -37,7 +58,7 @@ export default function CampaignsPage() {
         if (error) {
           console.error('Erreur chargement campagnes:', error)
         } else {
-          setCampaigns(campaignsData || [])
+          setCampaigns((campaignsData as Campaign[]) || [])
         }
       } catch (error) {
         console.error('Erreur:', error)

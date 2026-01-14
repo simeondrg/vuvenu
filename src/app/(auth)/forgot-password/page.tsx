@@ -37,8 +37,8 @@ export default function ForgotPasswordPage() {
       if (error) throw error
 
       setSuccess(true)
-    } catch (error: any) {
-      setError(error.message || 'Erreur lors de l\'envoi de l\'email')
+    } catch (error: unknown) {
+      setError(error instanceof Error ? error.message : 'Erreur lors de l\'envoi de l\'email')
     } finally {
       setLoading(false)
     }

@@ -13,6 +13,19 @@ const eslintConfig = defineConfig([
     'build/**',
     'next-env.d.ts',
   ]),
+  {
+    rules: {
+      // Relaxer no-explicit-any dans les fichiers UI (focus sur les vrais bugs)
+      '@typescript-eslint/no-explicit-any': 'warn',
+      // Permet les apostrophes dans JSX (plus naturel en français)
+      'react/no-unescaped-entities': 'off',
+      // Autres règles utiles
+      '@typescript-eslint/no-unused-vars': ['warn', {
+        argsIgnorePattern: '^_',
+        varsIgnorePattern: '^_'
+      }],
+    },
+  },
 ])
 
 export default eslintConfig

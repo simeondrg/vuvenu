@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from 'react'
 import Link from 'next/link'
-import { useRouter, useSearchParams } from 'next/navigation'
+import { useRouter } from 'next/navigation'
 import { supabase } from '@/lib/supabase/client'
 import { Button } from '@/components/ui/button'
 
@@ -13,7 +13,6 @@ export default function VerifyEmailPage() {
   const [isVerifying, setIsVerifying] = useState(false)
   const [email, setEmail] = useState('')
   const router = useRouter()
-  const searchParams = useSearchParams()
 
   // Vérifier si l'email est déjà vérifié via URL token
   useEffect(() => {
@@ -55,8 +54,8 @@ export default function VerifyEmailPage() {
 
       setSuccess(true)
       setTimeout(() => setSuccess(false), 5000)
-    } catch (error: any) {
-      setError(error.message || 'Erreur lors de l\'envoi de l\'email')
+    } catch (error: unknown) {
+      setError(error instanceof Error ? error.message : 'Erreur lors de l\'envoi de l\'email')
     } finally {
       setLoading(false)
     }

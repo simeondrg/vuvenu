@@ -1,0 +1,181 @@
+{
+  "projectName": "VuVenu - AI Optimization Migration",
+  "description": "Migrer les endpoints de production vers le système d'optimisation avec prompt caching pour bénéficier des -50% de coûts",
+  "completionPromise": "OPTIMIZATION COMPLETE: All endpoints use prompt caching, metrics tracked, project clean",
+  "maxIterations": 30,
+  "qualityGates": {
+    "beforeCommit": [
+      "npm run typecheck",
+      "npm run lint"
+    ]
+  },
+  "userStories": [
+    {
+      "id": "migrate-script-endpoint",
+      "title": "Migrer /api/generate/script vers optimized-claude-client",
+      "description": "Remplacer l'appel direct à Anthropic par generateWithCaching() dans src/app/api/generate/script/route.ts",
+      "acceptanceCriteria": [
+        "L'endpoint utilise generateWithCaching() au lieu de anthropic.messages.create()",
+        "Le system prompt est passé séparément pour le caching",
+        "Les métriques (tokens, coût, savings) sont retournées dans la réponse",
+        "Le code compile sans erreur TypeScript",
+        "Le comportement fonctionnel est identique (même output)"
+      ],
+      "priority": 1,
+      "estimatedComplexity": "small"
+    },
+    {
+      "id": "migrate-campaign-endpoint",
+      "title": "Migrer /api/generate/campaign vers optimized-claude-client",
+      "description": "Remplacer l'appel direct à Anthropic par generateWithCaching() dans src/app/api/generate/campaign/route.ts",
+      "acceptanceCriteria": [
+        "L'endpoint utilise generateWithCaching() au lieu de anthropic.messages.create()",
+        "Le CAMPAIGN_SYSTEM_PROMPT est passé séparément pour le caching",
+        "Les métriques sont loggées avec logGenerationMetrics()",
+        "Le code compile sans erreur TypeScript",
+        "Le parsing JSON utilise parseClaudeJsonResponse()"
+      ],
+      "priority": 1,
+      "estimatedComplexity": "small"
+    },
+    {
+      "id": "add-metrics-logging",
+      "title": "Ajouter logging complet des métriques d'optimisation",
+      "description": "Logger les métriques de coût et savings dans les deux endpoints pour monitoring",
+      "acceptanceCriteria": [
+        "Chaque génération log les métriques avec logGenerationMetrics()",
+        "Les logs incluent: inputTokens, outputTokens, cacheReadTokens, totalCost, estimatedSavings",
+        "En dev mode, les logs sont visibles dans la console",
+        "Le userId est anonymisé dans les logs (8 premiers chars)"
+      ],
+      "priority": 2,
+      "estimatedComplexity": "small"
+    },
+    {
+      "id": "optimize-system-prompts",
+      "title": "Utiliser les prompts optimisés dans les endpoints",
+      "description": "Remplacer les prompts verbeux par OPTIMIZED_SCRIPT_SYSTEM_PROMPT et OPTIMIZED_CAMPAIGN_SYSTEM_PROMPT",
+      "acceptanceCriteria": [
+        "script/route.ts utilise OPTIMIZED_SCRIPT_SYSTEM_PROMPT",
+        "campaign/route.ts utilise OPTIMIZED_CAMPAIGN_SYSTEM_PROMPT",
+        "Les prompts utilisateur utilisent buildOptimizedUserPrompt()",
+        "La génération produit des outputs de même qualité (vérification manuelle)"
+      ],
+      "priority": 2,
+      "estimatedComplexity": "small"
+    },
+    {
+      "id": "adjust-max-tokens",
+      "title": "Ajuster max_tokens selon GENERATION_OPTIONS",
+      "description": "Utiliser les valeurs optimisées de max_tokens (800 pour script, 1200 pour campaign)",
+      "acceptanceCriteria": [
+        "script/route.ts utilise GENERATION_OPTIONS.script.maxTokens (800)",
+        "script/route.ts utilise GENERATION_OPTIONS.script.temperature (0.9)",
+        "campaign/route.ts utilise GENERATION_OPTIONS.campaign.maxTokens (1200)",
+        "campaign/route.ts utilise GENERATION_OPTIONS.campaign.temperature (0.85)",
+        "Les outputs sont toujours complets et de qualité"
+      ],
+      "priority": 2,
+      "estimatedComplexity": "small"
+    },
+    {
+      "id": "update-documentation",
+      "title": "Mettre à jour la documentation avec les optimisations déployées",
+      "description": "Documenter les optimisations réellement en production dans docs/AI-MODEL-DECISION.md",
+      "acceptanceCriteria": [
+        "Le fichier AI-MODEL-DECISION.md indique que les optimisations sont DEPLOYED",
+        "Section 'Phase 2: Optimisations' marquée comme COMPLÉTÉE",
+        "Ajout d'une section 'Monitoring' avec instructions pour vérifier les savings",
+        "CHANGELOG.md mis à jour avec v1.1.0 (AI Optimizations)"
+      ],
+      "priority": 3,
+      "estimatedComplexity": "small"
+    },
+    {
+      "id": "remove-old-example-endpoint",
+      "title": "Supprimer l'endpoint d'exemple script-optimized",
+      "description": "Supprimer src/app/api/generate/script-optimized/route.ts maintenant que l'optimisation est dans le vrai endpoint",
+      "acceptanceCriteria": [
+        "Le fichier script-optimized/route.ts est supprimé",
+        "Aucune référence à script-optimized dans le code",
+        "La documentation ne mentionne plus script-optimized"
+      ],
+      "priority": 3,
+      "estimatedComplexity": "small"
+    },
+    {
+      "id": "verify-typescript",
+      "title": "Vérifier que tout compile sans erreur",
+      "description": "Lancer npm run typecheck et corriger toutes les erreurs TypeScript",
+      "acceptanceCriteria": [
+        "npm run typecheck ne retourne aucune erreur",
+        "npm run lint ne retourne aucune erreur",
+        "Aucun 'any' inutile dans le code modifié",
+        "Tous les imports sont corrects"
+      ],
+      "priority": 1,
+      "estimatedComplexity": "small"
+    },
+    {
+      "id": "clean-project-structure",
+      "title": "Nettoyer la structure du projet",
+      "description": "S'assurer que tous les fichiers temporaires sont dans .archive/ et que la structure est propre",
+      "acceptanceCriteria": [
+        "Aucun fichier temporaire à la racine",
+        "Tous les rapports sont dans docs/reports/",
+        "Tous les documents de planning sont dans docs/planning/",
+        "Le fichier INDEX.md est à jour",
+        ".gitignore ignore .archive/ et ralph-progress.md"
+      ],
+      "priority": 3,
+      "estimatedComplexity": "small"
+    },
+    {
+      "id": "test-manual-generation",
+      "title": "Tester manuellement la génération avec les optimisations",
+      "description": "Lancer le serveur dev et tester la génération d'un script et d'une campagne",
+      "acceptanceCriteria": [
+        "Le serveur démarre sans erreur (npm run dev)",
+        "Les endpoints répondent correctement",
+        "Les logs montrent les métriques de caching",
+        "Les outputs sont de même qualité qu'avant",
+        "Documentation de test ajoutée dans docs/TESTING.md"
+      ],
+      "priority": 1,
+      "estimatedComplexity": "medium"
+    },
+    {
+      "id": "final-commit-and-push",
+      "title": "Commit final et push sur GitHub",
+      "description": "Créer un commit propre avec toutes les optimisations et pusher sur main",
+      "acceptanceCriteria": [
+        "Commit message conventionnel: 'feat: integrate AI cost optimizations in production'",
+        "Toutes les modifications sont commitées",
+        "Push sur origin/main réussi",
+        "Le repository GitHub est à jour"
+      ],
+      "priority": 1,
+      "estimatedComplexity": "small"
+    }
+  ],
+  "technicalNotes": {
+    "context": [
+      "Le système d'optimisation (prompt caching, prompts optimisés, max_tokens ajusté) a été créé",
+      "Les endpoints actuels utilisent déjà Claude Sonnet 4.5 mais n'utilisent pas le caching",
+      "objectif: réduire les coûts de 50% tout en gardant la même qualité",
+      "Le client optimized-claude-client.ts est prêt à l'emploi avec generateWithCaching()"
+    ],
+    "files": [
+      "src/app/api/generate/script/route.ts",
+      "src/app/api/generate/campaign/route.ts",
+      "src/lib/ai/optimized-claude-client.ts",
+      "src/lib/ai/optimized-prompts.ts",
+      "docs/AI-MODEL-DECISION.md"
+    ],
+    "risks": [
+      "Le prompt caching pourrait ne pas fonctionner si le system prompt change entre les appels",
+      "Les prompts optimisés pourraient légèrement changer la qualité des outputs (à tester)",
+      "Les max_tokens réduits pourraient tronquer certains outputs longs (surveillance nécessaire)"
+    ]
+  }
+}

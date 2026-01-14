@@ -262,7 +262,7 @@ describe('Circuit Breaker', () => {
 
     it('should apply exponential backoff', async () => {
       const startTime = Date.now()
-      let callTimes: number[] = []
+      const callTimes: number[] = []
 
       const failingApiCall = vi.fn().mockImplementation(() => {
         callTimes.push(Date.now() - startTime)
