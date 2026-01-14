@@ -119,10 +119,14 @@ async function handleSubscriptionUpdate(subscription: Stripe.Subscription, supab
       return
     }
 
+    // Déterminer la période de facturation (monthly ou yearly)
+    const billingPeriod = subscription.items.data[0]?.price.recurring?.interval === 'year' ? 'yearly' : 'monthly'
+
     // Mettre à jour le profil
     const updateData: any = {
       subscription_status: mapStripeStatusToApp(status),
       subscription_tier: tier,
+      billing_period: billingPeriod,
       updated_at: new Date().toISOString(),
     }
 
@@ -132,6 +136,8 @@ async function handleSubscriptionUpdate(subscription: Stripe.Subscription, supab
       updateData.campaigns_count_month = 0
       updateData.counts_reset_at = new Date().toISOString()
     }
+
+    console.log(`[Webhook] Subscription update: tier=${tier}, period=${billingPeriod}, status=${status}`)
 
     const { error: updateError } = await supabase
       .from('profiles')
@@ -262,6 +268,7 @@ async function handleCheckoutCompleted(session: Stripe.Checkout.Session, supabas
     const subscription = await stripe.subscriptions.retrieve(subscriptionId)
     const priceId = subscription.items.data[0]?.price.id
     const tier = getPlanTierFromPriceId(priceId)
+    const billingPeriod = subscription.items.data[0]?.price.recurring?.interval === 'year' ? 'yearly' : 'monthly'
 
     // Mettre à jour le profil avec le nouveau customer ID et abonnement
     const { data: profile, error: findError } = await supabase
@@ -276,6 +283,7 @@ async function handleCheckoutCompleted(session: Stripe.Checkout.Session, supabas
         .update({
           subscription_status: 'active',
           subscription_tier: tier,
+          billing_period: billingPeriod,
           scripts_count_month: 0,
           campaigns_count_month: 0,
           counts_reset_at: new Date().toISOString(),
@@ -283,7 +291,7 @@ async function handleCheckoutCompleted(session: Stripe.Checkout.Session, supabas
         })
         .eq('id', profile.id)
 
-      console.log(`Checkout complété pour user ${profile.id}: ${tier}`)
+      console.log(`[Webhook] Checkout completed: user=${profile.id}, tier=${tier}, period=${billingPeriod}`)
     }
 
   } catch (error) {

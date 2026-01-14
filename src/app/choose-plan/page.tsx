@@ -5,82 +5,16 @@ import { useRouter } from 'next/navigation'
 import { supabase } from '@/lib/supabase/client'
 import { Button } from '@/components/ui/button'
 import { CheckIcon } from '@heroicons/react/24/solid'
-
-const plans = [
-  {
-    id: 'starter',
-    name: 'Starter',
-    price: 59,
-    originalPrice: null,
-    description: 'Parfait pour débuter',
-    features: [
-      '10 scripts vidéo / mois',
-      'Générateur de scripts IA',
-      'Formats optimisés TikTok/Reels',
-      '5 industries supportées',
-      'Modèles de contenus',
-      'Support email',
-    ],
-    limitations: [
-      'Pas de campagnes publicitaires',
-      'Pas de génération d&apos;images IA',
-      'Pas d&apos;analytics avancées',
-    ],
-    cta: 'Choisir Starter',
-    recommended: false,
-    color: 'blue',
-  },
-  {
-    id: 'pro',
-    name: 'Pro',
-    price: 119,
-    originalPrice: 149,
-    description: 'Le plus choisi',
-    features: [
-      '30 scripts vidéo / mois',
-      '5 campagnes publicitaires / mois',
-      'Générateur de publicités Meta',
-      'Images IA incluses (Gemini Imagen)',
-      'Analytics de performance',
-      'Toutes les industries (22+)',
-      'Templates personnalisables',
-      'Support chat prioritaire',
-      'Formation vidéo incluse',
-    ],
-    limitations: [],
-    cta: 'Essayer Pro gratuitement',
-    recommended: true,
-    color: 'lime',
-  },
-  {
-    id: 'business',
-    name: 'Business',
-    price: 249,
-    originalPrice: 299,
-    description: 'Croissance illimitée',
-    features: [
-      'Scripts ILLIMITÉS',
-      'Campagnes ILLIMITÉES',
-      'API access privé',
-      'Account manager dédié',
-      'Formation personnalisée 1h',
-      'Intégrations sur mesure',
-      'Rapports avancés & insights',
-      'Support téléphonique prioritaire',
-      'Concierge service',
-    ],
-    limitations: [],
-    cta: 'Demander une démo',
-    recommended: false,
-    color: 'violet',
-  },
-]
+import { PRICING_PLANS, BillingPeriod, ANNUAL_DISCOUNT_PERCENTAGE } from '@/lib/constants/pricing'
 
 export default function ChoosePlanPage() {
+  const [billingPeriod, setBillingPeriod] = useState<BillingPeriod>('monthly')
   const [loading, setLoading] = useState(false)
   const [user, setUser] = useState<any>(null)
   const [userProfile, setUserProfile] = useState<any>(null)
   const router = useRouter()
+
+  const plans = Object.values(PRICING_PLANS)
 
   useEffect(() => {
     const checkAuth = async () => {
@@ -119,6 +53,7 @@ export default function ChoosePlanPage() {
           .update({
             subscription_tier: 'starter',
             subscription_status: 'active',
+            billing_period: billingPeriod,
             scripts_count_month: 0,
             campaigns_count_month: 0,
             counts_reset_at: new Date().toISOString(),
@@ -130,9 +65,26 @@ export default function ChoosePlanPage() {
         router.push('/dashboard')
 
       } else {
-        // Pour Pro et Business, rediriger vers Stripe (à implémenter)
-        // Pour l'instant, simulons une redirection
-        alert(`Redirection vers Stripe pour le plan ${planId} (à implémenter)`)
+        // Pour Pro et Business, rediriger vers Stripe checkout
+        const response = await fetch('/api/stripe/checkout', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            tier: planId,
+            billingPeriod: billingPeriod,
+          }),
+        })
+
+        const data = await response.json()
+
+        if (!response.ok) {
+          throw new Error(data.error || 'Erreur lors de la création du checkout')
+        }
+
+        // Rediriger vers Stripe Checkout
+        if (data.url) {
+          window.location.href = data.url
+        }
       }
     } catch (error) {
       console.error('Erreur sélection plan:', error)
@@ -204,19 +156,64 @@ export default function ChoosePlanPage() {
               Maintenant, choisis le plan qui correspond à tes ambitions.
             </p>
 
-            <div className="bg-vuvenu-violet/20 rounded-2xl p-6 max-w-md mx-auto">
+            <div className="bg-vuvenu-violet/20 rounded-2xl p-6 max-w-md mx-auto mb-8">
               <h3 className="font-semibold text-vuvenu-dark mb-2">🎁 Offre de lancement</h3>
               <p className="text-sm text-vuvenu-dark/80">
                 <strong>14 jours d&apos;essai gratuit</strong> sur tous les plans Pro et Business !
                 Aucun prélèvement avant la fin de la période d&apos;essai.
               </p>
             </div>
+
+            {/* Toggle Billing Period */}
+            <div className="flex items-center justify-center gap-4 mb-4">
+              <span
+                className={`text-lg font-medium transition-colors ${
+                  billingPeriod === 'monthly' ? 'text-vuvenu-dark' : 'text-vuvenu-dark/50'
+                }`}
+              >
+                Mensuel
+              </span>
+
+              <button
+                onClick={() => setBillingPeriod(billingPeriod === 'monthly' ? 'yearly' : 'monthly')}
+                className="relative w-16 h-8 bg-vuvenu-dark/20 rounded-full transition-colors hover:bg-vuvenu-dark/30 focus:outline-none focus:ring-2 focus:ring-vuvenu-lime focus:ring-offset-2"
+                aria-label="Changer de période de facturation"
+              >
+                <div
+                  className={`absolute top-1 left-1 w-6 h-6 bg-vuvenu-lime rounded-full transition-transform duration-300 ease-in-out ${
+                    billingPeriod === 'yearly' ? 'translate-x-8' : 'translate-x-0'
+                  }`}
+                />
+              </button>
+
+              <div className="flex items-center gap-2">
+                <span
+                  className={`text-lg font-medium transition-colors ${
+                    billingPeriod === 'yearly' ? 'text-vuvenu-dark' : 'text-vuvenu-dark/50'
+                  }`}
+                >
+                  Annuel
+                </span>
+                {billingPeriod === 'yearly' && (
+                  <span className="bg-green-100 text-green-700 text-xs font-semibold px-3 py-1 rounded-full animate-pulse">
+                    Économisez {ANNUAL_DISCOUNT_PERCENTAGE}%
+                  </span>
+                )}
+              </div>
+            </div>
+
+            {billingPeriod === 'yearly' && (
+              <p className="text-sm text-green-600 font-medium mb-8 animate-in fade-in duration-300">
+                🎉 2 mois offerts sur tous les plans annuels !
+              </p>
+            )}
           </div>
 
           {/* Bouton essai gratuit immédiat */}
           <div className="mb-16">
             <Button
               onClick={handleFreeTrial}
+              disabled={loading}
               className="bg-gradient-to-r from-vuvenu-lime to-vuvenu-blue text-vuvenu-dark font-bold px-8 py-4 text-lg rounded-xl hover:scale-105 transition-transform shadow-vuvenu-lg"
             >
               🚀 Commencer gratuitement maintenant
@@ -232,87 +229,94 @@ export default function ChoosePlanPage() {
       <section className="pb-20">
         <div className="container mx-auto px-6">
           <div className="grid lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
-            {plans.map((plan) => (
-              <div
-                key={plan.id}
-                className={`relative bg-white rounded-2xl p-8 shadow-vuvenu-lg border-2 transition-transform hover:scale-105 ${
-                  plan.recommended
-                    ? `border-vuvenu-${plan.color} transform scale-105`
-                    : 'border-vuvenu-rose/20'
-                }`}
-              >
-                {plan.recommended && (
-                  <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
-                    <span className="bg-vuvenu-lime text-vuvenu-dark font-semibold px-6 py-2 rounded-full text-sm">
-                      ⭐ Plus populaire
-                    </span>
-                  </div>
-                )}
+            {plans.map((plan) => {
+              const price = billingPeriod === 'monthly' ? plan.monthly.price : plan.yearly.price
+              const savings = billingPeriod === 'yearly' ? plan.yearly.savings : 0
 
-                {plan.originalPrice && (
-                  <div className="absolute top-4 right-4 bg-red-100 text-red-600 text-xs font-semibold px-3 py-1 rounded-full">
-                    -20%
-                  </div>
-                )}
-
-                {/* Header du plan */}
-                <div className="text-center mb-8">
-                  <h3 className="text-2xl font-display font-bold text-vuvenu-dark mb-2">
-                    {plan.name}
-                  </h3>
-                  <p className="text-vuvenu-dark/60 mb-6">{plan.description}</p>
-
-                  <div className="flex items-end justify-center gap-2 mb-6">
-                    <span className="text-5xl font-bold text-vuvenu-dark">{plan.price}€</span>
-                    <span className="text-vuvenu-dark/60 pb-2">/mois</span>
-                  </div>
-
-                  {plan.originalPrice && (
-                    <div className="text-sm text-vuvenu-dark/50 mb-4">
-                      <span className="line-through">{plan.originalPrice}€/mois</span>
-                      <span className="text-red-600 font-medium ml-2">Économise 20%</span>
+              return (
+                <div
+                  key={plan.id}
+                  className={`relative bg-white rounded-2xl p-8 shadow-vuvenu-lg border-2 transition-all duration-300 hover:scale-105 ${
+                    plan.recommended
+                      ? 'border-vuvenu-lime transform scale-105'
+                      : 'border-vuvenu-rose/20'
+                  }`}
+                >
+                  {plan.recommended && (
+                    <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
+                      <span className="bg-vuvenu-lime text-vuvenu-dark font-semibold px-6 py-2 rounded-full text-sm">
+                        ⭐ Plus populaire
+                      </span>
                     </div>
                   )}
 
-                  <Button
-                    onClick={() => handleSelectPlan(plan.id)}
-                    disabled={loading}
-                    className={`w-full py-4 px-6 rounded-lg font-semibold transition-all ${
-                      plan.recommended
-                        ? 'bg-vuvenu-lime text-vuvenu-dark hover:scale-105'
-                        : plan.color === 'violet'
-                        ? 'bg-vuvenu-violet text-white hover:bg-vuvenu-violet/90'
-                        : 'bg-vuvenu-blue text-white hover:bg-vuvenu-blue/90'
-                    }`}
-                  >
-                    {loading ? 'Chargement...' : plan.cta}
-                  </Button>
-                </div>
-
-                {/* Features */}
-                <div className="space-y-4">
-                  <h4 className="font-semibold text-vuvenu-dark mb-4">✅ Inclus :</h4>
-                  {plan.features.map((feature, idx) => (
-                    <div key={idx} className="flex items-start gap-3">
-                      <CheckIcon className="w-5 h-5 text-vuvenu-lime flex-shrink-0 mt-0.5" />
-                      <span className="text-vuvenu-dark/80 text-sm">{feature}</span>
+                  {/* Badge économie annuelle */}
+                  {billingPeriod === 'yearly' && savings > 0 && (
+                    <div className="absolute -top-4 right-4">
+                      <span className="bg-green-100 text-green-700 text-xs font-semibold px-3 py-1 rounded-full">
+                        Économisez {savings}€/an
+                      </span>
                     </div>
-                  ))}
-
-                  {plan.limitations.length > 0 && (
-                    <>
-                      <h4 className="font-semibold text-vuvenu-dark mb-4 mt-6">❌ Non inclus :</h4>
-                      {plan.limitations.map((limitation, idx) => (
-                        <div key={idx} className="flex items-start gap-3">
-                          <div className="w-5 h-5 text-vuvenu-dark/30 flex-shrink-0 mt-0.5">❌</div>
-                          <span className="text-vuvenu-dark/50 text-sm">{limitation}</span>
-                        </div>
-                      ))}
-                    </>
                   )}
+
+                  {/* Header du plan */}
+                  <div className="text-center mb-8">
+                    <h3 className="text-2xl font-display font-bold text-vuvenu-dark mb-2">
+                      {plan.name}
+                    </h3>
+                    <p className="text-vuvenu-dark/60 mb-6">{plan.description}</p>
+
+                    <div className="flex items-end justify-center gap-2 mb-2">
+                      <span className="text-5xl font-bold text-vuvenu-dark">{price}€</span>
+                      <span className="text-vuvenu-dark/60 pb-2">
+                        /{billingPeriod === 'monthly' ? 'mois' : 'an'}
+                      </span>
+                    </div>
+
+                    {billingPeriod === 'yearly' && (
+                      <p className="text-sm text-vuvenu-dark/60 mb-6">
+                        soit {Math.round(plan.yearly.pricePerMonth)}€/mois
+                      </p>
+                    )}
+
+                    <Button
+                      onClick={() => handleSelectPlan(plan.id)}
+                      disabled={loading}
+                      className={`w-full py-4 px-6 rounded-lg font-semibold transition-all ${
+                        plan.recommended
+                          ? 'bg-vuvenu-lime text-vuvenu-dark hover:scale-105'
+                          : 'bg-vuvenu-blue text-white hover:bg-vuvenu-blue/90'
+                      }`}
+                    >
+                      {loading ? 'Chargement...' : plan.cta}
+                    </Button>
+                  </div>
+
+                  {/* Features */}
+                  <div className="space-y-4">
+                    <h4 className="font-semibold text-vuvenu-dark mb-4">✅ Inclus :</h4>
+                    {plan.features.map((feature, idx) => (
+                      <div key={idx} className="flex items-start gap-3">
+                        <CheckIcon className="w-5 h-5 text-vuvenu-lime flex-shrink-0 mt-0.5" />
+                        <span className="text-vuvenu-dark/80 text-sm">{feature}</span>
+                      </div>
+                    ))}
+
+                    {plan.limitations.length > 0 && (
+                      <>
+                        <h4 className="font-semibold text-vuvenu-dark mb-4 mt-6">❌ Non inclus :</h4>
+                        {plan.limitations.map((limitation, idx) => (
+                          <div key={idx} className="flex items-start gap-3">
+                            <div className="w-5 h-5 text-vuvenu-dark/30 flex-shrink-0 mt-0.5">❌</div>
+                            <span className="text-vuvenu-dark/50 text-sm">{limitation}</span>
+                          </div>
+                        ))}
+                      </>
+                    )}
+                  </div>
                 </div>
-              </div>
-            ))}
+              )
+            })}
           </div>
         </div>
       </section>

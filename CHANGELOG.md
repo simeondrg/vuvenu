@@ -2,6 +2,69 @@
 
 Historique des versions de VuVenu.
 
+## [1.2.0] - 2026-01-14
+
+### 💰 Abonnements Annuels avec Réduction
+
+#### Ajouté
+- **Tarification Annuelle** : Option d'abonnement annuel avec 2 mois offerts (-17%)
+  - Starter : 590€/an (économie 118€)
+  - Pro : 1190€/an (économie 238€)
+  - Business : 2490€/an (économie 498€)
+
+- **Toggle Mensuel/Annuel** sur toutes les pages de tarification
+  - Page pricing publique
+  - Page choose-plan (onboarding)
+  - Animation smooth lors du changement
+  - Badge "Économisez 17%" visible
+
+- **API Stripe Checkout** : `/api/stripe/checkout`
+  - Création de sessions de paiement mensuel ou annuel
+  - Support des deux périodes de facturation
+  - Metadata enrichie avec `billing_period`
+
+- **API Stripe Portal** : `/api/stripe/portal`
+  - Accès au portail client Stripe
+  - Gestion de l'abonnement (upgrade/downgrade/cancel)
+  - Changement mensuel ↔ annuel via Stripe
+
+- **Base de Données** : Migration `002_add_billing_period.sql`
+  - Colonne `billing_period` ('monthly' | 'yearly' | null)
+  - Backward-compatible avec abonnements existants
+  - Index optimisé sur `billing_period`
+  - Vue `user_dashboard` mise à jour
+
+#### Changé
+- **Webhook Stripe** : Détection automatique de la période de facturation
+  - Extraction de `interval` depuis Stripe subscription
+  - Sauvegarde de `billing_period` dans profiles
+  - Logs enrichis pour debugging
+
+- **Page Settings** : Affichage du type d'abonnement
+  - Badge "Mensuel" ou "Annuel"
+  - Prix correct selon la période
+  - Affichage de l'économie pour les abonnements annuels
+  - Équivalent mensuel pour les abonnements annuels
+
+- **Types TypeScript** : Ajout du type `BillingPeriod`
+  - Interface `PricingPlan` avec détails yearly
+  - Types database mis à jour
+  - Fonctions utilitaires pour calculs de prix
+
+#### Technique
+- Constantes de tarification centralisées dans `/src/lib/constants/pricing.ts`
+- Configuration Stripe avec `yearlyPriceId` dans `/src/lib/stripe/config.ts`
+- Fonctions helper : `getPrice()`, `getAnnualSavings()`, `formatPrice()`
+- Variables d'environnement : `STRIPE_PRICE_*_YEARLY`
+
+#### UX
+- Badge économie sur chaque carte de prix annuel
+- Message "2 mois offerts" visible
+- Prix mensuel équivalent affiché (ex: "soit 49€/mois")
+- Animations et transitions smooth
+
+---
+
 ## [1.1.0] - 2026-01-14
 
 ### 🚀 Optimisations IA et Performance
