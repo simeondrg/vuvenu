@@ -4,15 +4,12 @@ import { cookies } from 'next/headers'
 import { z } from 'zod'
 import { withRateLimit, RATE_LIMIT_CONFIGS } from '@/lib/rate-limit'
 import {
-  CampaignInputSchema,
   createCorsHeaders,
-  logApiUsage,
-  SECURITY_LIMITS
+  logApiUsage
 } from '@/lib/api-security'
 import {
   generateWithCaching,
-  logGenerationMetrics,
-  type GenerationMetrics
+  logGenerationMetrics
 } from '@/lib/ai/optimized-claude-client'
 import {
   OPTIMIZED_CAMPAIGN_SYSTEM_PROMPT,
@@ -80,9 +77,11 @@ export async function POST(request: NextRequest) {
 
     if (rateLimitResult.error) {
       const errorResponse = rateLimitResult.error
-      corsHeaders && Object.entries(corsHeaders).forEach(([key, value]) => {
-        errorResponse.headers.set(key, value)
-      })
+      if (corsHeaders) {
+        Object.entries(corsHeaders).forEach(([key, value]) => {
+          errorResponse.headers.set(key, value)
+        })
+      }
       return errorResponse
     }
 
@@ -147,11 +146,21 @@ Génère 5 concepts Meta Ads DIFFÉRENTS et PERFORMANTS.`
     // Logger les métriques
     logGenerationMetrics('/api/generate/campaign', user.id, metrics)
 
+    interface ConceptData {
+      funnel_stage: string
+      name: string
+      angle: string
+      ad_type: string
+      primary_text: string
+      headline: string
+      description: string
+    }
+
     // Parser la réponse JSON avec la fonction optimisée
     let conceptsData
     try {
-      conceptsData = parseClaudeJsonResponse<{ concepts: any[] }>(responseText)
-    } catch (parseError) {
+      conceptsData = parseClaudeJsonResponse<{ concepts: ConceptData[] }>(responseText)
+    } catch {
       console.error('Erreur parsing JSON Claude:', responseText)
       throw new Error('Format de réponse invalide')
     }
@@ -161,7 +170,7 @@ Génère 5 concepts Meta Ads DIFFÉRENTS et PERFORMANTS.`
     }
 
     // Sauvegarder les concepts en base
-    const conceptsToInsert = conceptsData.concepts.map((concept: any) => ({
+    const conceptsToInsert = conceptsData.concepts.map((concept: ConceptData) => ({
       campaign_id: validatedData.campaignId,
       funnel_stage: concept.funnel_stage,
       name: concept.name,

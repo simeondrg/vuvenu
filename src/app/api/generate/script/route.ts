@@ -6,14 +6,12 @@ import {
   withSecurity,
   GenerationInputSchema,
   createCorsHeaders,
-  logApiUsage,
-  SECURITY_LIMITS
+  logApiUsage
 } from '@/lib/api-security'
-import { createUserFriendlyError, logError, ErrorCode } from '@/lib/error-handler'
+import { createUserFriendlyError, logError } from '@/lib/error-handler'
 import {
   generateWithCaching,
-  logGenerationMetrics,
-  type GenerationMetrics
+  logGenerationMetrics
 } from '@/lib/ai/optimized-claude-client'
 import {
   OPTIMIZED_SCRIPT_SYSTEM_PROMPT,
@@ -64,9 +62,11 @@ export async function POST(request: NextRequest) {
     if (rateLimitResult.error) {
       // Ajouter CORS headers aux réponses d'erreur rate limit
       const errorResponse = rateLimitResult.error
-      corsHeaders && Object.entries(corsHeaders).forEach(([key, value]) => {
-        errorResponse.headers.set(key, value)
-      })
+      if (corsHeaders) {
+        Object.entries(corsHeaders).forEach(([key, value]) => {
+          errorResponse.headers.set(key, value)
+        })
+      }
       return errorResponse
     }
 
@@ -193,9 +193,11 @@ export async function POST(request: NextRequest) {
     if (securityResult.error) {
       // Ajouter CORS headers aux erreurs de validation
       const errorResponse = securityResult.error
-      corsHeaders && Object.entries(corsHeaders).forEach(([key, value]) => {
-        errorResponse.headers.set(key, value)
-      })
+      if (corsHeaders) {
+        Object.entries(corsHeaders).forEach(([key, value]) => {
+          errorResponse.headers.set(key, value)
+        })
+      }
       return errorResponse
     }
 
@@ -243,8 +245,13 @@ export async function POST(request: NextRequest) {
   }
 }
 
+interface UserProfile {
+  subscription_tier?: string
+  scripts_count_month?: number
+}
+
 // Vérifier les limites d'utilisation selon le plan
-function checkUserLimits(profile: any): { allowed: boolean; reason?: string } {
+function checkUserLimits(profile: UserProfile): { allowed: boolean; reason?: string } {
   const tier = profile.subscription_tier || 'starter'
   const count = profile.scripts_count_month || 0
 
@@ -274,8 +281,13 @@ function checkUserLimits(profile: any): { allowed: boolean; reason?: string } {
 }
 
 
+interface ScriptData {
+  format: string
+  topic?: string
+}
+
 // Générer un titre pour le script
-function generateScriptTitle(data: any): string {
+function generateScriptTitle(data: ScriptData): string {
   const format = data.format.charAt(0).toUpperCase() + data.format.slice(1)
   const subject = data.topic || 'Script personnalisé'
 
