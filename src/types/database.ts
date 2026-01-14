@@ -28,6 +28,7 @@ export type Database = {
           stripe_customer_id: string | null
           subscription_status: 'none' | 'active' | 'past_due' | 'canceled'
           subscription_tier: 'starter' | 'pro' | 'business' | null
+          billing_period: 'monthly' | 'yearly' | null
           scripts_count_month: number
           campaigns_count_month: number
           counts_reset_at: string
@@ -44,6 +45,7 @@ export type Database = {
           stripe_customer_id?: string | null
           subscription_status?: 'none' | 'active' | 'past_due' | 'canceled'
           subscription_tier?: 'starter' | 'pro' | 'business' | null
+          billing_period?: 'monthly' | 'yearly' | null
           scripts_count_month?: number
           campaigns_count_month?: number
           counts_reset_at?: string
@@ -60,6 +62,7 @@ export type Database = {
           stripe_customer_id?: string | null
           subscription_status?: 'none' | 'active' | 'past_due' | 'canceled'
           subscription_tier?: 'starter' | 'pro' | 'business' | null
+          billing_period?: 'monthly' | 'yearly' | null
           scripts_count_month?: number
           campaigns_count_month?: number
           counts_reset_at?: string

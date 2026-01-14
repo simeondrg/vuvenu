@@ -1,66 +1,15 @@
 'use client'
 
+import { useState } from 'react'
 import Link from 'next/link'
 import { CheckIcon } from '@heroicons/react/24/solid'
-
-const plans = [
-  {
-    name: 'Starter',
-    price: 59,
-    description: 'Pour débuter en douceur',
-    features: [
-      '10 scripts vidéo / mois',
-      'Générateur de scripts IA',
-      'Formats optimisés TikTok/Reels',
-      '5 industries supportées',
-      'Support email',
-    ],
-    limitations: [
-      'Pas de campagnes publicitaires',
-      'Pas de génération d&apos;images IA',
-    ],
-    cta: 'Commencer gratuitement',
-    popular: false,
-  },
-  {
-    name: 'Pro',
-    price: 119,
-    description: 'Le choix des professionnels',
-    features: [
-      '30 scripts vidéo / mois',
-      '5 campagnes publicitaires / mois',
-      'Générateur de publicités Meta',
-      'Images IA incluses (Gemini Imagen)',
-      'Analytics de performance',
-      '22 industries supportées',
-      'Templates personnalisables',
-      'Support prioritaire',
-    ],
-    limitations: [],
-    cta: 'Essayer 14 jours gratuits',
-    popular: true,
-  },
-  {
-    name: 'Business',
-    price: 249,
-    description: 'Croissance illimitée',
-    features: [
-      'Scripts illimités',
-      'Campagnes illimitées',
-      'API access privé',
-      'Formation personnalisée 1h',
-      'Account manager dédié',
-      'Intégrations sur mesure',
-      'Rapports avancés',
-      'Support téléphonique',
-    ],
-    limitations: [],
-    cta: 'Demander une démo',
-    popular: false,
-  },
-]
+import { PRICING_PLANS, BillingPeriod, formatPrice, ANNUAL_DISCOUNT_PERCENTAGE } from '@/lib/constants/pricing'
 
 export default function PricingPage() {
+  const [billingPeriod, setBillingPeriod] = useState<BillingPeriod>('monthly')
+
+  const plans = Object.values(PRICING_PLANS)
+
   return (
     <div className="min-h-screen bg-vuvenu-cream">
       {/* Header */}
@@ -126,6 +75,50 @@ export default function PricingPage() {
               Sans engagement ·
               Résiliation en 1 clic
             </p>
+
+            {/* Toggle Billing Period */}
+            <div className="flex items-center justify-center gap-4 mb-8">
+              <span
+                className={`text-lg font-medium transition-colors ${
+                  billingPeriod === 'monthly' ? 'text-vuvenu-dark' : 'text-vuvenu-dark/50'
+                }`}
+              >
+                Mensuel
+              </span>
+
+              <button
+                onClick={() => setBillingPeriod(billingPeriod === 'monthly' ? 'yearly' : 'monthly')}
+                className="relative w-16 h-8 bg-vuvenu-dark/20 rounded-full transition-colors hover:bg-vuvenu-dark/30 focus:outline-none focus:ring-2 focus:ring-vuvenu-lime focus:ring-offset-2"
+                aria-label="Changer de période de facturation"
+              >
+                <div
+                  className={`absolute top-1 left-1 w-6 h-6 bg-vuvenu-lime rounded-full transition-transform duration-300 ease-in-out ${
+                    billingPeriod === 'yearly' ? 'translate-x-8' : 'translate-x-0'
+                  }`}
+                />
+              </button>
+
+              <div className="flex items-center gap-2">
+                <span
+                  className={`text-lg font-medium transition-colors ${
+                    billingPeriod === 'yearly' ? 'text-vuvenu-dark' : 'text-vuvenu-dark/50'
+                  }`}
+                >
+                  Annuel
+                </span>
+                {billingPeriod === 'yearly' && (
+                  <span className="bg-green-100 text-green-700 text-xs font-semibold px-3 py-1 rounded-full animate-pulse">
+                    Économisez {ANNUAL_DISCOUNT_PERCENTAGE}%
+                  </span>
+                )}
+              </div>
+            </div>
+
+            {billingPeriod === 'yearly' && (
+              <p className="text-sm text-green-600 font-medium mb-8 animate-in fade-in duration-300">
+                🎉 2 mois offerts sur tous les plans annuels !
+              </p>
+            )}
           </div>
         </div>
       </section>
@@ -134,70 +127,93 @@ export default function PricingPage() {
       <section className="pb-20">
         <div className="container mx-auto px-6">
           <div className="grid lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
-            {plans.map((plan) => (
-              <div
-                key={plan.name}
-                className={`relative bg-white rounded-2xl p-8 shadow-vuvenu-lg border-2 transition-transform hover:scale-105 ${
-                  plan.popular
-                    ? 'border-vuvenu-lime transform scale-105'
-                    : 'border-vuvenu-rose/20'
-                }`}
-              >
-                {plan.popular && (
-                  <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
-                    <span className="bg-vuvenu-lime text-vuvenu-dark font-semibold px-6 py-2 rounded-full text-sm">
-                      ⭐ Plus populaire
-                    </span>
-                  </div>
-                )}
+            {plans.map((plan) => {
+              const price = billingPeriod === 'monthly' ? plan.monthly.price : plan.yearly.price
+              const priceDisplay = formatPrice(plan.id, billingPeriod)
+              const savings = billingPeriod === 'yearly' ? plan.yearly.savings : 0
 
-                {/* Header du plan */}
-                <div className="text-center mb-8">
-                  <h3 className="text-2xl font-display font-bold text-vuvenu-dark mb-2">
-                    {plan.name}
-                  </h3>
-                  <p className="text-vuvenu-dark/60 mb-6">{plan.description}</p>
-
-                  <div className="flex items-end justify-center gap-2 mb-6">
-                    <span className="text-5xl font-bold text-vuvenu-dark">{plan.price}€</span>
-                    <span className="text-vuvenu-dark/60 pb-2">/mois</span>
-                  </div>
-
-                  <button
-                    className={`w-full py-4 px-6 rounded-lg font-semibold transition-all ${
-                      plan.popular
-                        ? 'bg-vuvenu-lime text-vuvenu-dark hover:scale-105'
-                        : 'bg-vuvenu-blue text-white hover:bg-vuvenu-blue/90'
-                    }`}
-                  >
-                    {plan.cta}
-                  </button>
-                </div>
-
-                {/* Features */}
-                <div className="space-y-4">
-                  <h4 className="font-semibold text-vuvenu-dark mb-4">✅ Inclus :</h4>
-                  {plan.features.map((feature, idx) => (
-                    <div key={idx} className="flex items-start gap-3">
-                      <CheckIcon className="w-5 h-5 text-vuvenu-lime flex-shrink-0 mt-0.5" />
-                      <span className="text-vuvenu-dark/80">{feature}</span>
+              return (
+                <div
+                  key={plan.id}
+                  className={`relative bg-white rounded-2xl p-8 shadow-vuvenu-lg border-2 transition-all duration-300 hover:scale-105 ${
+                    plan.recommended
+                      ? 'border-vuvenu-lime transform scale-105'
+                      : 'border-vuvenu-rose/20'
+                  }`}
+                >
+                  {plan.recommended && (
+                    <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
+                      <span className="bg-vuvenu-lime text-vuvenu-dark font-semibold px-6 py-2 rounded-full text-sm">
+                        ⭐ Plus populaire
+                      </span>
                     </div>
-                  ))}
-
-                  {plan.limitations.length > 0 && (
-                    <>
-                      <h4 className="font-semibold text-vuvenu-dark mb-4 mt-6">❌ Non inclus :</h4>
-                      {plan.limitations.map((limitation, idx) => (
-                        <div key={idx} className="flex items-start gap-3">
-                          <div className="w-5 h-5 text-vuvenu-dark/30 flex-shrink-0 mt-0.5">❌</div>
-                          <span className="text-vuvenu-dark/50">{limitation}</span>
-                        </div>
-                      ))}
-                    </>
                   )}
+
+                  {/* Badge économie annuelle */}
+                  {billingPeriod === 'yearly' && savings > 0 && (
+                    <div className="absolute -top-4 right-4">
+                      <span className="bg-green-100 text-green-700 text-xs font-semibold px-3 py-1 rounded-full">
+                        Économisez {savings}€/an
+                      </span>
+                    </div>
+                  )}
+
+                  {/* Header du plan */}
+                  <div className="text-center mb-8">
+                    <h3 className="text-2xl font-display font-bold text-vuvenu-dark mb-2">
+                      {plan.name}
+                    </h3>
+                    <p className="text-vuvenu-dark/60 mb-6">{plan.description}</p>
+
+                    <div className="flex items-end justify-center gap-2 mb-2">
+                      <span className="text-5xl font-bold text-vuvenu-dark">{price}€</span>
+                      <span className="text-vuvenu-dark/60 pb-2">
+                        /{billingPeriod === 'monthly' ? 'mois' : 'an'}
+                      </span>
+                    </div>
+
+                    {billingPeriod === 'yearly' && (
+                      <p className="text-sm text-vuvenu-dark/60 mb-6">
+                        soit {Math.round(plan.yearly.pricePerMonth)}€/mois
+                      </p>
+                    )}
+
+                    <button
+                      className={`w-full py-4 px-6 rounded-lg font-semibold transition-all ${
+                        plan.recommended
+                          ? 'bg-vuvenu-lime text-vuvenu-dark hover:scale-105'
+                          : 'bg-vuvenu-blue text-white hover:bg-vuvenu-blue/90'
+                      }`}
+                    >
+                      {plan.cta}
+                    </button>
+                  </div>
+
+                  {/* Features */}
+                  <div className="space-y-4">
+                    <h4 className="font-semibold text-vuvenu-dark mb-4">✅ Inclus :</h4>
+                    {plan.features.map((feature, idx) => (
+                      <div key={idx} className="flex items-start gap-3">
+                        <CheckIcon className="w-5 h-5 text-vuvenu-lime flex-shrink-0 mt-0.5" />
+                        <span className="text-vuvenu-dark/80">{feature}</span>
+                      </div>
+                    ))}
+
+                    {plan.limitations.length > 0 && (
+                      <>
+                        <h4 className="font-semibold text-vuvenu-dark mb-4 mt-6">❌ Non inclus :</h4>
+                        {plan.limitations.map((limitation, idx) => (
+                          <div key={idx} className="flex items-start gap-3">
+                            <div className="w-5 h-5 text-vuvenu-dark/30 flex-shrink-0 mt-0.5">❌</div>
+                            <span className="text-vuvenu-dark/50">{limitation}</span>
+                          </div>
+                        ))}
+                      </>
+                    )}
+                  </div>
                 </div>
-              </div>
-            ))}
+              )
+            })}
           </div>
         </div>
       </section>
@@ -231,6 +247,16 @@ export default function PricingPage() {
                     Sinon, tu peux attendre le mois suivant.
                   </p>
                 </div>
+
+                <div>
+                  <h3 className="font-semibold text-vuvenu-dark mb-2">
+                    Puis-je passer d&apos;un abonnement mensuel à annuel ?
+                  </h3>
+                  <p className="text-vuvenu-dark/70">
+                    Oui, à tout moment. Le changement se fait au prorata et tu bénéficieras
+                    immédiatement de la réduction annuelle.
+                  </p>
+                </div>
               </div>
 
               <div className="space-y-6">
@@ -251,6 +277,16 @@ export default function PricingPage() {
                   <p className="text-vuvenu-dark/70">
                     Email pour tous, chat prioritaire pour Pro+, et téléphone pour Business.
                     Réponse sous 24h garantie.
+                  </p>
+                </div>
+
+                <div>
+                  <h3 className="font-semibold text-vuvenu-dark mb-2">
+                    L&apos;abonnement annuel est-il remboursable ?
+                  </h3>
+                  <p className="text-vuvenu-dark/70">
+                    Oui, nous offrons une garantie satisfait ou remboursé de 30 jours
+                    sur tous nos abonnements.
                   </p>
                 </div>
               </div>

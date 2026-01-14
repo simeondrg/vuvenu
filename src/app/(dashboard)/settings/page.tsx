@@ -4,11 +4,13 @@ import { useEffect, useState } from 'react'
 import { useRouter } from 'next/navigation'
 import { supabase } from '@/lib/supabase/client'
 import { Button } from '@/components/ui/button'
+import { PRICING_PLANS } from '@/lib/constants/pricing'
 
 export default function SettingsPage() {
   const [userProfile, setUserProfile] = useState<any>(null)
   const [loading, setLoading] = useState(true)
   const [updating, setUpdating] = useState(false)
+  const [loadingPortal, setLoadingPortal] = useState(false)
   const router = useRouter()
 
   // Form states
@@ -88,6 +90,32 @@ export default function SettingsPage() {
     }
   }
 
+  const handleManageSubscription = async () => {
+    setLoadingPortal(true)
+
+    try {
+      const response = await fetch('/api/stripe/portal', {
+        method: 'POST',
+      })
+
+      const data = await response.json()
+
+      if (!response.ok) {
+        throw new Error(data.error || 'Erreur lors de la création de la session')
+      }
+
+      // Rediriger vers le portail Stripe
+      if (data.url) {
+        window.location.href = data.url
+      }
+    } catch (error) {
+      console.error('Erreur portail Stripe:', error)
+      alert('Erreur lors de l\'accès au portail de gestion. Réessayez.')
+    } finally {
+      setLoadingPortal(false)
+    }
+  }
+
   const handleDeleteAccount = async () => {
     if (!userProfile) return
 
@@ -129,30 +157,37 @@ export default function SettingsPage() {
 
   const getPlanDetails = () => {
     const tier = userProfile?.subscription_tier || 'starter'
-    const status = userProfile?.subscription_status || 'none'
+    const billingPeriod = userProfile?.billing_period || 'monthly'
+    const plan = PRICING_PLANS[tier as keyof typeof PRICING_PLANS]
 
-    switch (tier) {
-      case 'pro':
-        return {
-          name: 'Pro',
-          price: '119€/mois',
-          features: ['30 scripts/mois', '5 campagnes/mois', 'Images IA', 'Support prioritaire'],
-          color: 'bg-vuvenu-lime'
-        }
-      case 'business':
-        return {
-          name: 'Business',
-          price: '249€/mois',
-          features: ['Scripts illimités', 'Campagnes illimitées', 'API access', 'Account manager'],
-          color: 'bg-vuvenu-violet'
-        }
-      default:
-        return {
-          name: 'Starter',
-          price: '59€/mois',
-          features: ['10 scripts/mois', 'Générateur IA', 'Support email'],
-          color: 'bg-vuvenu-blue'
-        }
+    if (!plan) {
+      return {
+        name: 'Starter',
+        price: '59€/mois',
+        billingPeriod: 'monthly',
+        features: ['10 scripts/mois', 'Générateur IA', 'Support email'],
+        color: 'bg-vuvenu-blue'
+      }
+    }
+
+    const price = billingPeriod === 'yearly'
+      ? `${plan.yearly.price}€/an`
+      : `${plan.monthly.price}€/mois`
+
+    const priceDetail = billingPeriod === 'yearly'
+      ? `(soit ${Math.round(plan.yearly.pricePerMonth)}€/mois)`
+      : ''
+
+    const savings = billingPeriod === 'yearly' ? plan.yearly.savings : 0
+
+    return {
+      name: plan.name,
+      price,
+      priceDetail,
+      billingPeriod,
+      savings,
+      features: plan.features,
+      color: plan.id === 'pro' ? 'bg-vuvenu-lime' : plan.id === 'business' ? 'bg-vuvenu-violet' : 'bg-vuvenu-blue'
     }
   }
 
@@ -244,10 +279,32 @@ export default function SettingsPage() {
                 <span className="text-xl text-white">⭐</span>
               </div>
               <div>
-                <h3 className="text-2xl font-bold text-vuvenu-dark">
-                  Plan {planDetails.name}
-                </h3>
-                <p className="text-vuvenu-dark/60">{planDetails.price}</p>
+                <div className="flex items-center gap-2 mb-1">
+                  <h3 className="text-2xl font-bold text-vuvenu-dark">
+                    Plan {planDetails.name}
+                  </h3>
+                  {planDetails.billingPeriod === 'yearly' && (
+                    <span className="bg-green-100 text-green-700 text-xs font-semibold px-2 py-1 rounded-full">
+                      Annuel
+                    </span>
+                  )}
+                  {planDetails.billingPeriod === 'monthly' && (
+                    <span className="bg-blue-100 text-blue-700 text-xs font-semibold px-2 py-1 rounded-full">
+                      Mensuel
+                    </span>
+                  )}
+                </div>
+                <p className="text-vuvenu-dark/60">
+                  {planDetails.price}
+                  {planDetails.priceDetail && (
+                    <span className="text-sm ml-1">{planDetails.priceDetail}</span>
+                  )}
+                </p>
+                {planDetails.savings > 0 && (
+                  <p className="text-sm text-green-600 font-medium mt-1">
+                    Vous économisez {planDetails.savings}€/an
+                  </p>
+                )}
               </div>
             </div>
 
@@ -269,10 +326,12 @@ export default function SettingsPage() {
               </Button>
               {userProfile.subscription_status === 'active' && (
                 <Button
+                  onClick={handleManageSubscription}
+                  disabled={loadingPortal}
                   variant="outline"
                   className="border-red-300 text-red-600 hover:bg-red-50"
                 >
-                  Gérer l&apos;abonnement
+                  {loadingPortal ? 'Chargement...' : 'Gérer l\'abonnement'}
                 </Button>
               )}
             </div>
