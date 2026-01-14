@@ -174,119 +174,56 @@ export default function NewScriptPage() {
     setLoading(true)
 
     try {
-      const industry = industries.find(i => i.id === selectedIndustry)
-      const format = formats.find(f => f.id === selectedFormat)
-      const tone = tones.find(t => t.id === selectedTone)
-
-      // Préparer le prompt pour Claude
-      const prompt = `Tu es un expert en marketing digital et création de contenu viral pour les réseaux sociaux.
-
-CONTEXTE BUSINESS:
-- Secteur: ${industry?.name}
-- Business: ${userProfile.business_name}
-- Audience cible: ${userProfile.target_audience}
-
-BRIEF CRÉATION:
-- Format: ${format?.name} (${format?.duration})
-- Sujet/Hook: ${selectedHook || customTopic}
-- Ton: ${tone?.name} - ${tone?.description}
-- Instructions spéciales: ${customInstructions || 'Aucune'}
-
-MISSION:
-Génère un script vidéo viral et engageant qui respecte ces critères:
-
-1. STRUCTURE OPTIMISÉE:
-   - Hook percutant dans les 3 premières secondes
-   - Contenu de valeur ou divertissement
-   - Call-to-action clair à la fin
-
-2. STYLE ${format?.name}:
-   - Adapté aux codes de la plateforme
-   - Durée respectée (${format?.duration})
-   - Language naturel et authentique
-
-3. OPTIMISATIONS VIRALES:
-   - Émotion forte (surprise, curiosité, joie)
-   - Storytelling captivant
-   - Moments "wow" ou révélations
-
-4. COMMERCE LOCAL:
-   - Met en valeur l'expertise
-   - Crée de la proximité avec l'audience
-   - Incite à l'action (visite, appel, suivi)
-
-Génère UNIQUEMENT le script final, prêt à être tourné. Utilise des indications [PLAN], [ACTION] si nécessaire pour la réalisation.`
-
-      // Appel API de génération (simulé pour le moment)
-      // TODO: Remplacer par l'appel réel à l'API Claude
-      const mockResponse = await new Promise<string>((resolve) => {
-        setTimeout(() => {
-          resolve(`🎬 SCRIPT ${format?.name?.toUpperCase()} - ${industry?.name}
-
-**HOOK (0-3s)**
-[PLAN SERRÉ VISAGE - REGARD DIRECT CAMÉRA]
-"Attendez... vous faites VRAIMENT cette erreur avec ${selectedHook.includes('cheveux') ? 'vos cheveux' : 'ça'} ?"
-
-**DÉVELOPPEMENT (3-20s)**
-[PLAN DÉMONSTRATION - MONTRER L'ERREUR]
-"90% des gens font exactement ça... et c'est pourquoi ça ne marche jamais !"
-
-[TRANSITION RAPIDE - MONTRER LA BONNE MÉTHODE]
-"Mais voici comment on fait VRAIMENT chez ${userProfile.business_name}..."
-
-[PLAN RÉSULTAT - AVANT/APRÈS OU DÉMONSTRATION]
-"Et regardez la différence ! C'est exactement pourquoi nos clients..."
-
-**CALL-TO-ACTION (20-30s)**
-[RETOUR PLAN SERRÉ]
-"Si tu veux le même résultat, passe nous voir chez ${userProfile.business_name} !
-Et dis-moi en commentaire : est-ce que toi aussi tu faisais cette erreur ? 👇"
-
-**NOTES RÉALISATION:**
-- Montage rythmé (changement plan toutes les 2-3s)
-- Musique trending énergique
-- Sous-titres pour accessibilité
-- Hashtags: #${selectedIndustry} #${userProfile.business_name.replace(/\s+/g, '')} #astuce #viral`)
-        }, 3000)
-      })
-
-      setGeneratedScript(mockResponse)
-
-      // Sauvegarder en base
-      const { data: { session } } = await supabase.auth.getSession()
-      if (session) {
-        const { error } = await supabase.from('scripts').insert({
-          user_id: session.user.id,
-          title: selectedHook || customTopic || `Script ${format?.name}`,
-          input_data: {
-            industry: selectedIndustry,
-            topic: customTopic,
-            hook: selectedHook,
-            format: selectedFormat,
-            tone: selectedTone,
-            instructions: customInstructions
-          },
-          content: mockResponse,
+      // Appeler l'API de génération avec Claude
+      const response = await fetch('/api/generate/script', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          industry: selectedIndustry,
+          topic: customTopic,
+          hook: selectedHook,
           format: selectedFormat,
           tone: selectedTone,
-          tokens_used: 450 // Mock
-        })
+          customInstructions: customInstructions,
+        }),
+      })
 
-        if (!error) {
-          // Incrémenter le compteur
-          await supabase
-            .from('profiles')
-            .update({
-              scripts_count_month: (userProfile.scripts_count_month || 0) + 1
-            })
-            .eq('id', session.user.id)
-        }
+      const data = await response.json()
+
+      if (!response.ok) {
+        throw new Error(data.error || 'Erreur lors de la génération')
       }
 
-      setCurrentStep(3)
-    } catch (error) {
+      if (data.success && data.script) {
+        setGeneratedScript(data.script.content)
+
+        // Mettre à jour le profil utilisateur localement
+        setUserProfile((prev: any) => ({
+          ...prev,
+          scripts_count_month: (prev.scripts_count_month || 0) + 1
+        }))
+
+        setCurrentStep(3)
+      } else {
+        throw new Error('Réponse invalide du serveur')
+      }
+
+    } catch (error: any) {
       console.error('Erreur génération:', error)
-      alert('Erreur lors de la génération. Réessayez.')
+
+      // Messages d'erreur spécifiques
+      if (error.message.includes('Limite')) {
+        alert(error.message)
+        router.push('/settings')
+      } else if (error.message.includes('Données invalides')) {
+        alert('Vérifiez vos paramètres et réessayez.')
+      } else if (error.message.includes('génération IA')) {
+        alert('Le service IA est temporairement indisponible. Réessayez dans quelques minutes.')
+      } else {
+        alert('Erreur lors de la génération. Vérifiez votre connexion et réessayez.')
+      }
     } finally {
       setLoading(false)
     }
