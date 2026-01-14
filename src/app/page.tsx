@@ -32,7 +32,7 @@ export default function Home() {
             </div>
 
             {/* Slogan principal */}
-            <h1 className="text-5xl lg:text-6xl font-display font-bold text-vuvenu-dark leading-tight">
+            <h1 className="text-3xl sm:text-4xl lg:text-6xl font-display font-bold text-vuvenu-dark leading-tight">
               <span className="bg-vuvenu-lime px-2 py-1 rotate-1 inline-block">ils ont vu</span> —
               <br />
               <span className="bg-vuvenu-blue px-2 py-1 -rotate-1 inline-block text-white">
@@ -42,7 +42,7 @@ export default function Home() {
             </h1>
 
             {/* Sous-titre */}
-            <p className="text-xl text-vuvenu-dark/80 leading-relaxed max-w-lg">
+            <p className="text-lg sm:text-xl text-vuvenu-dark/80 leading-relaxed max-w-lg">
               Le marketing digital{' '}
               <span className="bg-vuvenu-violet px-1 py-0.5">enfin simple</span> pour ton commerce.
               <br />
@@ -50,11 +50,11 @@ export default function Home() {
             </p>
 
             {/* CTA Buttons */}
-            <div className="flex gap-4 pt-4">
-              <button className="bg-vuvenu-lime text-vuvenu-dark font-semibold px-8 py-4 rounded-lg hover:scale-105 transition-transform shadow-vuvenu">
+            <div className="flex flex-col sm:flex-row gap-4 pt-4">
+              <button className="bg-vuvenu-lime text-vuvenu-dark font-semibold px-6 sm:px-8 py-3 sm:py-4 rounded-lg hover:scale-105 transition-transform shadow-vuvenu text-center">
                 Essayer gratuitement
               </button>
-              <button className="border-2 border-vuvenu-dark text-vuvenu-dark font-semibold px-8 py-4 rounded-lg hover:bg-vuvenu-dark hover:text-white transition-colors">
+              <button className="border-2 border-vuvenu-dark text-vuvenu-dark font-semibold px-6 sm:px-8 py-3 sm:py-4 rounded-lg hover:bg-vuvenu-dark hover:text-white transition-colors text-center">
                 Voir comment ça marche
               </button>
             </div>
