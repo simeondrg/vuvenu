@@ -1,0 +1,310 @@
+{
+  "projectName": "VuVenu - Abonnements Annuels avec Réduction",
+  "description": "Ajouter l'option d'abonnements annuels avec 2 mois offerts (réduction de ~17%) sur tous les plans",
+  "completionPromise": "ANNUAL SUBSCRIPTIONS COMPLETE: Toggle UI, annual pricing, Stripe integration, backend logic, all working",
+  "maxIterations": 40,
+  "qualityGates": {
+    "beforeCommit": [
+      "npm run typecheck",
+      "npm run lint"
+    ]
+  },
+  "userStories": [
+    {
+      "id": "update-env-example",
+      "title": "Ajouter les variables d'environnement pour prix annuels",
+      "description": "Ajouter STRIPE_PRICE_STARTER_YEARLY, STRIPE_PRICE_PRO_YEARLY, STRIPE_PRICE_BUSINESS_YEARLY dans .env.example et .env.local",
+      "acceptanceCriteria": [
+        "Les 3 nouvelles variables sont dans .env.example",
+        "Les 3 nouvelles variables sont dans .env.local avec commentaires",
+        "Documentation claire sur comment obtenir ces Price IDs"
+      ],
+      "priority": 1,
+      "estimatedComplexity": "small"
+    },
+    {
+      "id": "update-stripe-config",
+      "title": "Mettre à jour la config Stripe avec les prix annuels",
+      "description": "Ajouter les price IDs annuels dans src/lib/stripe/config.ts et créer les constantes pour les calculs",
+      "acceptanceCriteria": [
+        "STRIPE_PRICES contient yearlyPriceId pour chaque tier",
+        "Constantes ANNUAL_DISCOUNT_PERCENTAGE = 17 (2 mois offerts)",
+        "Fonction getAnnualPrice() pour calculer le prix annuel",
+        "Fonction getAnnualSavings() pour calculer l'économie",
+        "Export des nouvelles constantes et fonctions"
+      ],
+      "priority": 1,
+      "estimatedComplexity": "small"
+    },
+    {
+      "id": "create-pricing-constants",
+      "title": "Créer les constantes de tarification annuelle",
+      "description": "Créer un fichier src/lib/constants/pricing.ts avec tous les tarifs mensuels et annuels",
+      "acceptanceCriteria": [
+        "Interface PricingPlan avec monthly et yearly",
+        "PRICING_PLANS avec Starter, Pro, Business",
+        "Starter: 59€/mois, 590€/an (économie 118€)",
+        "Pro: 119€/mois, 1190€/an (économie 238€)",
+        "Business: 249€/mois, 2490€/an (économie 498€)",
+        "Fonction pour calculer l'économie en pourcentage"
+      ],
+      "priority": 1,
+      "estimatedComplexity": "small"
+    },
+    {
+      "id": "update-pricing-page-ui",
+      "title": "Ajouter le toggle mensuel/annuel sur la page pricing",
+      "description": "Modifier src/app/(marketing)/pricing/page.tsx pour ajouter un toggle Switch mensuel/annuel avec animation",
+      "acceptanceCriteria": [
+        "Toggle Switch en haut de la section pricing (avant les cartes)",
+        "State billingPeriod: 'monthly' | 'yearly'",
+        "Animation smooth lors du changement",
+        "Badge 'Économisez 17%' ou '2 mois offerts' visible sur l'option annuelle",
+        "Design cohérent avec le reste de l'UI (couleur vuvenu-coral)"
+      ],
+      "priority": 1,
+      "estimatedComplexity": "medium"
+    },
+    {
+      "id": "update-pricing-cards",
+      "title": "Mettre à jour les cartes de prix pour afficher mensuel/annuel",
+      "description": "Modifier les cartes de pricing pour afficher le prix selon le toggle sélectionné",
+      "acceptanceCriteria": [
+        "Prix affiché change selon billingPeriod",
+        "Format: '59€/mois' ou '590€/an' avec 'soit 49,17€/mois'",
+        "Badge 'Économisez 118€/an' visible en mode annuel",
+        "Animation smooth lors du changement de prix",
+        "Tous les textes s'adaptent (mensuel vs annuel)"
+      ],
+      "priority": 1,
+      "estimatedComplexity": "medium"
+    },
+    {
+      "id": "update-checkout-api",
+      "title": "Mettre à jour l'API checkout pour supporter les prix annuels",
+      "description": "Modifier src/app/api/stripe/checkout/route.ts pour accepter billingPeriod et utiliser le bon price ID",
+      "acceptanceCriteria": [
+        "Body accepte billingPeriod: 'monthly' | 'yearly'",
+        "Validation Zod pour billingPeriod",
+        "Sélection du bon priceId selon tier et billingPeriod",
+        "Metadata Stripe inclut billingPeriod",
+        "Gestion d'erreur si priceId manquant"
+      ],
+      "priority": 1,
+      "estimatedComplexity": "medium"
+    },
+    {
+      "id": "update-webhook-stripe",
+      "title": "Mettre à jour le webhook Stripe pour les abonnements annuels",
+      "description": "Modifier src/app/api/webhooks/stripe/route.ts pour gérer les abonnements annuels correctement",
+      "acceptanceCriteria": [
+        "Détection du billingPeriod depuis subscription.items.data[0].price.recurring.interval",
+        "Sauvegarde de billing_period dans profiles table",
+        "Calcul correct des dates de renouvellement annuelles",
+        "Gestion de l'upgrade/downgrade mensuel ↔ annuel",
+        "Logs clairs pour debugging"
+      ],
+      "priority": 1,
+      "estimatedComplexity": "medium"
+    },
+    {
+      "id": "update-database-schema",
+      "title": "Ajouter le champ billing_period dans la table profiles",
+      "description": "Créer une migration Supabase pour ajouter billing_period ('monthly' | 'yearly' | null) dans profiles",
+      "acceptanceCriteria": [
+        "Fichier de migration dans supabase/migrations/",
+        "Colonne billing_period TEXT avec CHECK constraint",
+        "Default NULL (pour compatibilité avec données existantes)",
+        "Documentation de la migration dans README",
+        "Instruction pour appliquer la migration"
+      ],
+      "priority": 1,
+      "estimatedComplexity": "small"
+    },
+    {
+      "id": "update-choose-plan-page",
+      "title": "Ajouter le toggle sur la page choose-plan (onboarding)",
+      "description": "Modifier src/app/choose-plan/page.tsx pour ajouter le même toggle mensuel/annuel",
+      "acceptanceCriteria": [
+        "Toggle identique à celui de la page pricing",
+        "Même logique d'affichage des prix",
+        "État billingPeriod passé lors du choix de plan",
+        "Redirection vers checkout avec le bon billingPeriod",
+        "UI cohérente avec le flow d'onboarding"
+      ],
+      "priority": 2,
+      "estimatedComplexity": "medium"
+    },
+    {
+      "id": "update-settings-subscription",
+      "title": "Afficher le billing period dans les settings",
+      "description": "Modifier src/app/(dashboard)/settings/page.tsx pour afficher 'Abonnement Mensuel' ou 'Abonnement Annuel'",
+      "acceptanceCriteria": [
+        "Section abonnement affiche le billing_period",
+        "Badge visuel pour différencier mensuel/annuel",
+        "Date de prochain renouvellement affichée correctement",
+        "Lien vers Stripe portal pour changer (géré automatiquement par Stripe)",
+        "Affichage de l'économie annuelle si applicable"
+      ],
+      "priority": 2,
+      "estimatedComplexity": "small"
+    },
+    {
+      "id": "update-stripe-setup-docs",
+      "title": "Mettre à jour la documentation Stripe setup",
+      "description": "Modifier docs/stripe-setup.md pour expliquer la création des prix annuels",
+      "acceptanceCriteria": [
+        "Étape 3.4 complétée avec captures d'écran/instructions",
+        "Prix annuels avec calculs corrects (-17%)",
+        "Starter: 590€/an, Pro: 1190€/an, Business: 2490€/an",
+        "Instructions pour copier les Price IDs dans .env.local",
+        "Section FAQ sur les abonnements annuels"
+      ],
+      "priority": 2,
+      "estimatedComplexity": "small"
+    },
+    {
+      "id": "add-pricing-components",
+      "title": "Créer des composants réutilisables pour le pricing",
+      "description": "Créer src/components/pricing/BillingToggle.tsx et PricingCard.tsx pour réutilisabilité",
+      "acceptanceCriteria": [
+        "BillingToggle component avec props onChange et value",
+        "PricingCard component avec props plan et billingPeriod",
+        "Styling cohérent et réutilisable",
+        "Documentation des props avec TypeScript",
+        "Utilisé dans pricing page et choose-plan page"
+      ],
+      "priority": 3,
+      "estimatedComplexity": "medium"
+    },
+    {
+      "id": "add-annual-badge-component",
+      "title": "Créer un composant Badge pour l'économie annuelle",
+      "description": "Créer src/components/ui/savings-badge.tsx pour afficher l'économie de manière cohérente",
+      "acceptanceCriteria": [
+        "Composant SavingsBadge avec props amount et percentage",
+        "Design attractif (fond vert, texte clair)",
+        "Animation subtile (pulse ou glow)",
+        "Variantes: small, medium, large",
+        "Utilisé partout où on affiche l'économie"
+      ],
+      "priority": 3,
+      "estimatedComplexity": "small"
+    },
+    {
+      "id": "test-checkout-flow",
+      "title": "Tester manuellement le flow complet d'abonnement annuel",
+      "description": "Tester le parcours complet : pricing → checkout → webhook → dashboard pour les abonnements annuels",
+      "acceptanceCriteria": [
+        "Toggle fonctionne sur pricing et choose-plan",
+        "Checkout redirige vers Stripe avec le bon prix annuel",
+        "Webhook met à jour correctement billing_period dans DB",
+        "Dashboard affiche 'Abonnement Annuel'",
+        "Documentation de test dans docs/TESTING.md"
+      ],
+      "priority": 1,
+      "estimatedComplexity": "large"
+    },
+    {
+      "id": "update-prd",
+      "title": "Mettre à jour le PRD avec les abonnements annuels",
+      "description": "Modifier PRD-VuVenu-MVP.md pour documenter la feature d'abonnements annuels",
+      "acceptanceCriteria": [
+        "Section 'Plans & Pricing' mise à jour avec tarifs annuels",
+        "Tableau comparatif mensuel vs annuel",
+        "Économies par plan documentées",
+        "User flow d'abonnement annuel ajouté"
+      ],
+      "priority": 3,
+      "estimatedComplexity": "small"
+    },
+    {
+      "id": "update-changelog",
+      "title": "Créer le CHANGELOG pour la v1.2.0",
+      "description": "Ajouter une entrée dans CHANGELOG.md pour la version 1.2.0 avec les abonnements annuels",
+      "acceptanceCriteria": [
+        "Version 1.2.0 créée",
+        "Section 'Abonnements Annuels' complète",
+        "Liste des changements front + back",
+        "Économies documentées",
+        "Date du jour"
+      ],
+      "priority": 2,
+      "estimatedComplexity": "small"
+    },
+    {
+      "id": "verify-typescript",
+      "title": "Vérifier que tout compile sans erreur",
+      "description": "Lancer npm run typecheck et corriger toutes les erreurs TypeScript",
+      "acceptanceCriteria": [
+        "npm run typecheck passe sans erreur",
+        "npm run lint passe (seulement warnings autorisés)",
+        "Tous les types sont corrects",
+        "Aucun any non justifié"
+      ],
+      "priority": 1,
+      "estimatedComplexity": "small"
+    },
+    {
+      "id": "final-commit-push",
+      "title": "Commit et push final sur GitHub",
+      "description": "Créer un commit propre et pusher sur main",
+      "acceptanceCriteria": [
+        "Commit message conventionnel: 'feat: add annual subscriptions with 17% discount'",
+        "Toutes les modifications commitées",
+        "Push sur origin/main réussi",
+        "GitHub est à jour"
+      ],
+      "priority": 1,
+      "estimatedComplexity": "small"
+    }
+  ],
+  "technicalNotes": {
+    "context": [
+      "VuVenu propose actuellement seulement des abonnements mensuels",
+      "Les utilisateurs veulent des abonnements annuels avec réduction",
+      "Réduction standard: 2 mois offerts = ~17% de réduction",
+      "Nécessite modifications front-end (UI/UX) et back-end (Stripe, DB)"
+    ],
+    "pricing": {
+      "starter": {
+        "monthly": 59,
+        "yearly": 590,
+        "savings": 118,
+        "savingsPercentage": 16.7
+      },
+      "pro": {
+        "monthly": 119,
+        "yearly": 1190,
+        "savings": 238,
+        "savingsPercentage": 16.7
+      },
+      "business": {
+        "monthly": 249,
+        "yearly": 2490,
+        "savings": 498,
+        "savingsPercentage": 16.7
+      }
+    },
+    "files": [
+      ".env.example",
+      ".env.local",
+      "src/lib/stripe/config.ts",
+      "src/lib/constants/pricing.ts",
+      "src/app/(marketing)/pricing/page.tsx",
+      "src/app/choose-plan/page.tsx",
+      "src/app/(dashboard)/settings/page.tsx",
+      "src/app/api/stripe/checkout/route.ts",
+      "src/app/api/webhooks/stripe/route.ts",
+      "supabase/migrations/",
+      "docs/stripe-setup.md",
+      "CHANGELOG.md"
+    ],
+    "risks": [
+      "Migration DB pourrait nécessiter redémarrage Supabase",
+      "Les abonnements existants doivent rester mensuels par défaut",
+      "Stripe webhook doit gérer les 2 types d'intervals (month, year)",
+      "UI toggle doit être testé sur mobile (responsive)"
+    ]
+  }
+}
