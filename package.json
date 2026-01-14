@@ -6,11 +6,21 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint . --ext .ts,.tsx",
+    "lint:fix": "eslint . --ext .ts,.tsx --fix",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest",
+    "test:run": "vitest run",
+    "test:coverage": "vitest run --coverage",
+    "test:ui": "vitest --ui",
+    "test:watch": "vitest --watch"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.71.2",
     "@google/generative-ai": "^0.24.1",
+    "@heroicons/react": "^2.2.0",
     "@hookform/resolvers": "^5.2.2",
     "@stripe/stripe-js": "^8.6.1",
     "@supabase/ssr": "^0.8.0",
@@ -29,12 +39,25 @@
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",
+    "@testing-library/jest-dom": "^6.9.1",
+    "@testing-library/react": "^16.3.1",
+    "@testing-library/user-event": "^14.6.1",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
+    "@typescript-eslint/eslint-plugin": "^8.53.0",
+    "@typescript-eslint/parser": "^8.53.0",
+    "@vitejs/plugin-react": "^5.1.2",
     "eslint": "^9",
     "eslint-config-next": "16.1.1",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-import": "^2.32.0",
+    "eslint-plugin-jsx-a11y": "^6.10.2",
+    "happy-dom": "^20.1.0",
+    "jsdom": "^27.4.0",
+    "prettier": "^3.7.4",
     "tailwindcss": "^4",
-    "typescript": "^5"
+    "typescript": "^5",
+    "vitest": "^4.0.17"
   }
 }
