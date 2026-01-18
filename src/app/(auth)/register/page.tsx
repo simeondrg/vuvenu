@@ -1,12 +1,12 @@
 'use client'
 
-import { useState, useEffect } from 'react'
+import { useState, useEffect, Suspense } from 'react'
 import Link from 'next/link'
-import { useRouter } from 'next/navigation'
+import { useRouter, useSearchParams } from 'next/navigation'
 import { supabase } from '@/lib/supabase/client'
 import { Button } from '@/components/ui/button'
 
-export default function RegisterPage() {
+function RegisterForm() {
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
   const [confirmPassword, setConfirmPassword] = useState('')
@@ -14,6 +14,11 @@ export default function RegisterPage() {
   const [error, setError] = useState<string | null>(null)
   const [success, setSuccess] = useState(false)
   const router = useRouter()
+  const searchParams = useSearchParams()
+
+  // Récupérer le plan sélectionné depuis l'URL
+  const selectedPlan = searchParams.get('plan')
+  const selectedBilling = searchParams.get('billing')
 
   // Vérifier si l'utilisateur est déjà connecté
   useEffect(() => {
@@ -63,6 +68,11 @@ export default function RegisterPage() {
       if (error) throw error
 
       if (data.user) {
+        // Stocker le plan sélectionné pour le récupérer après l'onboarding
+        if (selectedPlan) {
+          localStorage.setItem('vuvenu_selected_plan', selectedPlan)
+          localStorage.setItem('vuvenu_selected_billing', selectedBilling || 'monthly')
+        }
         setSuccess(true)
         setError('Email de confirmation envoyé ! Vérifiez votre boîte mail.')
       }
@@ -99,6 +109,16 @@ export default function RegisterPage() {
             <div className="w-4 h-4 bg-vuvenu-blue animate-pixel-float" style={{animationDelay: '0.5s'}}></div>
             <div className="w-4 h-4 bg-vuvenu-violet animate-pixel-float" style={{animationDelay: '1s'}}></div>
           </div>
+
+          {/* Badge plan sélectionné */}
+          {selectedPlan && (
+            <div className="bg-vuvenu-lime/20 border border-vuvenu-lime rounded-lg p-3 mb-6 text-center">
+              <p className="text-sm text-vuvenu-dark">
+                Plan sélectionné : <strong className="capitalize">{selectedPlan}</strong>
+                {selectedBilling === 'yearly' && ' (annuel)'}
+              </p>
+            </div>
+          )}
 
           {/* Titre */}
           <div className="text-center mb-8">
@@ -295,5 +315,22 @@ export default function RegisterPage() {
         </div>
       </div>
     </div>
+  )
+}
+
+export default function RegisterPage() {
+  return (
+    <Suspense fallback={
+      <div className="min-h-screen bg-vuvenu-cream flex items-center justify-center">
+        <div className="text-center">
+          <div className="w-16 h-16 bg-vuvenu-lime rounded-full mx-auto mb-4 flex items-center justify-center animate-pulse">
+            <span className="text-2xl">V</span>
+          </div>
+          <p className="text-vuvenu-dark">Chargement...</p>
+        </div>
+      </div>
+    }>
+      <RegisterForm />
+    </Suspense>
   )
 }

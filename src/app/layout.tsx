@@ -1,15 +1,23 @@
 import type { Metadata, Viewport } from 'next'
-import { Inter } from 'next/font/google'
+import { Inter, Playfair_Display } from 'next/font/google'
 import './globals.css'
 import { createMetadata } from '@/lib/seo'
 import { StructuredData } from '@/components/seo/structured-data'
 
-// Optimisation des polices avec Inter (plus performant que Geist pour le web)
+// Optimisation des polices avec Inter
 const inter = Inter({
   subsets: ['latin'],
   variable: '--font-inter',
-  display: 'swap', // Optimisation de chargement
+  display: 'swap',
   preload: true,
+})
+
+// Playfair Display pour les accents typographiques
+const playfair = Playfair_Display({
+  subsets: ['latin'],
+  variable: '--font-playfair',
+  display: 'swap',
+  weight: ['400', '700'],
 })
 
 // Métadonnées SEO optimisées
@@ -38,6 +46,10 @@ export default function RootLayout({
         {/* Preconnect aux domaines externes pour améliorer les performances */}
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link rel="preconnect" href="https://api.fontshare.com" crossOrigin="anonymous" />
+
+        {/* Satoshi font from Fontshare */}
+        <link href="https://api.fontshare.com/v2/css?f[]=satoshi@400,500,700,900&display=swap" rel="stylesheet" />
 
         {/* Favicon optimisé */}
         <link rel="icon" href="/favicon.ico" sizes="any" />
@@ -54,7 +66,7 @@ export default function RootLayout({
         <link rel="dns-prefetch" href="//js.stripe.com" />
       </head>
       <body
-        className={`${inter.variable} font-sans antialiased bg-vuvenu-cream text-vuvenu-dark`}
+        className={`${inter.variable} ${playfair.variable} font-sans antialiased bg-vuvenu-cream text-vuvenu-dark`}
         suppressHydrationWarning={true}
       >
         {/* Détection du navigateur pour les optimisations */}

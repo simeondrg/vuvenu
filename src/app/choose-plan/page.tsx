@@ -37,10 +37,83 @@ export default function ChoosePlanPage() {
       // Si déjà un plan actif, rediriger vers dashboard
       if (profile?.subscription_status === 'active') {
         router.push('/dashboard')
+        return
+      }
+
+      // Récupérer le plan pré-sélectionné depuis localStorage
+      const storedPlan = localStorage.getItem('vuvenu_selected_plan')
+      const storedBilling = localStorage.getItem('vuvenu_selected_billing') as BillingPeriod
+
+      if (storedPlan) {
+        // Nettoyer le localStorage
+        localStorage.removeItem('vuvenu_selected_plan')
+        localStorage.removeItem('vuvenu_selected_billing')
+
+        // Appliquer la période de facturation
+        if (storedBilling) {
+          setBillingPeriod(storedBilling)
+        }
+
+        // Auto-déclencher le checkout pour les plans payants
+        if (storedPlan !== 'starter') {
+          // Délai pour laisser le state se mettre à jour
+          setTimeout(() => {
+            handleSelectPlanAuto(storedPlan, storedBilling || 'monthly')
+          }, 500)
+        }
       }
     }
     checkAuth()
   }, [router])
+
+  // Version avec billing period explicite (pour auto-selection)
+  const handleSelectPlanAuto = async (planId: string, billing: BillingPeriod) => {
+    setLoading(true)
+
+    try {
+      if (planId === 'starter') {
+        const { error } = await supabase
+          .from('profiles')
+          .update({
+            subscription_tier: 'starter',
+            subscription_status: 'active',
+            billing_period: billing,
+            scripts_count_month: 0,
+            campaigns_count_month: 0,
+            counts_reset_at: new Date().toISOString(),
+            updated_at: new Date().toISOString()
+          })
+          .eq('id', user.id)
+
+        if (error) throw error
+        router.push('/dashboard')
+      } else {
+        const response = await fetch('/api/stripe/checkout', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            tier: planId,
+            billingPeriod: billing,
+          }),
+        })
+
+        const data = await response.json()
+
+        if (!response.ok) {
+          throw new Error(data.error || 'Erreur lors de la création du checkout')
+        }
+
+        if (data.url) {
+          window.location.href = data.url
+        }
+      }
+    } catch (error) {
+      console.error('Erreur sélection plan:', error)
+      alert('Erreur lors de la sélection du plan')
+    } finally {
+      setLoading(false)
+    }
+  }
 
   const handleSelectPlan = async (planId: string) => {
     setLoading(true)

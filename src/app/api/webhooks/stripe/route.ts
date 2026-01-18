@@ -82,6 +82,10 @@ export async function POST(request: NextRequest) {
         await handleCheckoutCompleted(event.data.object as Stripe.Checkout.Session, supabase)
         break
 
+      case 'customer.subscription.trial_will_end':
+        await handleTrialWillEnd(event.data.object as Stripe.Subscription, supabase)
+        break
+
       default:
         console.log(`Événement Stripe non géré: ${event.type}`)
     }
@@ -130,8 +134,13 @@ async function handleSubscriptionUpdate(subscription: Stripe.Subscription, supab
       updated_at: new Date().toISOString(),
     }
 
-    // Reset des compteurs si nouveau cycle ou upgrade
-    if (status === 'active') {
+    // Stocker la date de fin du trial si applicable
+    if (status === 'trialing' && subscription.trial_end) {
+      updateData.trial_ends_at = new Date(subscription.trial_end * 1000).toISOString()
+    }
+
+    // Reset des compteurs si nouveau cycle, upgrade, ou début de trial
+    if (status === 'active' || status === 'trialing') {
       updateData.scripts_count_month = 0
       updateData.campaigns_count_month = 0
       updateData.counts_reset_at = new Date().toISOString()
@@ -278,20 +287,31 @@ async function handleCheckoutCompleted(session: Stripe.Checkout.Session, supabas
       .single()
 
     if (profile) {
+      // Déterminer le statut (trialing ou active)
+      const status = subscription.status
+      const isTrialing = status === 'trialing'
+
+      const updateData: any = {
+        subscription_status: isTrialing ? 'trialing' : 'active',
+        subscription_tier: tier,
+        billing_period: billingPeriod,
+        scripts_count_month: 0,
+        campaigns_count_month: 0,
+        counts_reset_at: new Date().toISOString(),
+        updated_at: new Date().toISOString(),
+      }
+
+      // Stocker la date de fin du trial si applicable
+      if (isTrialing && subscription.trial_end) {
+        updateData.trial_ends_at = new Date(subscription.trial_end * 1000).toISOString()
+      }
+
       await supabase
         .from('profiles')
-        .update({
-          subscription_status: 'active',
-          subscription_tier: tier,
-          billing_period: billingPeriod,
-          scripts_count_month: 0,
-          campaigns_count_month: 0,
-          counts_reset_at: new Date().toISOString(),
-          updated_at: new Date().toISOString(),
-        })
+        .update(updateData)
         .eq('id', profile.id)
 
-      console.log(`[Webhook] Checkout completed: user=${profile.id}, tier=${tier}, period=${billingPeriod}`)
+      console.log(`[Webhook] Checkout completed: user=${profile.id}, tier=${tier}, period=${billingPeriod}, status=${status}`)
     }
 
   } catch (error) {
@@ -299,12 +319,40 @@ async function handleCheckoutCompleted(session: Stripe.Checkout.Session, supabas
   }
 }
 
+// Gérer l'alerte de fin de période d'essai (7 jours avant)
+async function handleTrialWillEnd(subscription: Stripe.Subscription, supabase: any) {
+  try {
+    const customerId = subscription.customer as string
+    const trialEndDate = subscription.trial_end ? new Date(subscription.trial_end * 1000) : null
+
+    const { data: profile, error: findError } = await supabase
+      .from('profiles')
+      .select('id, business_name')
+      .eq('stripe_customer_id', customerId)
+      .single()
+
+    if (findError || !profile) {
+      console.error('Utilisateur non trouvé pour trial_will_end:', customerId)
+      return
+    }
+
+    console.log(`[Webhook] Trial will end for user ${profile.id} (${profile.business_name}) on ${trialEndDate?.toISOString()}`)
+
+    // TODO: Envoyer un email de rappel à l'utilisateur
+    // await sendTrialEndingEmail(profile.id, trialEndDate)
+
+  } catch (error) {
+    console.error('Erreur handleTrialWillEnd:', error)
+  }
+}
+
 // Mapper les statuts Stripe vers les statuts application
 function mapStripeStatusToApp(stripeStatus: string): string {
   switch (stripeStatus) {
     case 'active':
-    case 'trialing':
       return 'active'
+    case 'trialing':
+      return 'trialing'
     case 'past_due':
       return 'past_due'
     case 'canceled':

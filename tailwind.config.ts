@@ -39,9 +39,9 @@ const config: Config = {
         },
       },
       fontFamily: {
-        sans: ['Inter', 'system-ui', 'sans-serif'],
-        display: ['Satoshi', 'Inter', 'sans-serif'],
-        accent: ['Playfair Display', 'serif'],
+        sans: ['var(--font-inter)', 'Inter', 'system-ui', 'sans-serif'],
+        display: ['Satoshi', 'var(--font-inter)', 'Inter', 'sans-serif'],
+        accent: ['var(--font-playfair)', 'Playfair Display', 'serif'],
       },
       borderRadius: {
         lg: '16px',
@@ -51,6 +51,11 @@ const config: Config = {
       boxShadow: {
         vuvenu: '0 4px 6px -1px rgba(0, 0, 0, 0.1)',
         'vuvenu-lg': '0 10px 15px -3px rgba(0, 0, 0, 0.1)',
+        // Pixel shadow style (Vogue Business x Archrival)
+        pixel: '4px 4px 0px 0px #0F172A',
+        'pixel-sm': '2px 2px 0px 0px #0F172A',
+        'pixel-lime': '4px 4px 0px 0px #BFFF00',
+        'pixel-blue': '4px 4px 0px 0px #60A5FA',
       },
       animation: {
         'pixel-float': 'pixelFloat 3s ease-in-out infinite',

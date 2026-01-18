@@ -60,7 +60,7 @@ export const PRICING_PLANS: Record<PlanTier, PricingPlan> = {
       'Pas de campagnes publicitaires',
       'Pas de génération d\'images IA',
     ],
-    cta: 'Commencer gratuitement',
+    cta: 'Essayer 14 jours gratuit',
     recommended: false,
     scriptsPerMonth: 10,
     campaignsPerMonth: 0,
@@ -91,7 +91,7 @@ export const PRICING_PLANS: Record<PlanTier, PricingPlan> = {
       'Support prioritaire',
     ],
     limitations: [],
-    cta: 'Essayer 14 jours gratuits',
+    cta: 'Essayer 14 jours gratuit',
     recommended: true,
     scriptsPerMonth: 30,
     campaignsPerMonth: 5,
@@ -122,7 +122,7 @@ export const PRICING_PLANS: Record<PlanTier, PricingPlan> = {
       'Support téléphonique',
     ],
     limitations: [],
-    cta: 'Demander une démo',
+    cta: 'Essayer 14 jours gratuit',
     recommended: false,
     scriptsPerMonth: 'unlimited',
     campaignsPerMonth: 'unlimited',
@@ -184,3 +184,8 @@ export function formatPrice(
  */
 export const ANNUAL_DISCOUNT_MONTHS = 2
 export const ANNUAL_DISCOUNT_PERCENTAGE = 16.7
+
+/**
+ * Période d'essai gratuit (en jours)
+ */
+export const TRIAL_PERIOD_DAYS = 14

@@ -2,13 +2,19 @@
 
 import { useState } from 'react'
 import Link from 'next/link'
+import { useRouter } from 'next/navigation'
 import { CheckIcon } from '@heroicons/react/24/solid'
 import { PRICING_PLANS, BillingPeriod, formatPrice, ANNUAL_DISCOUNT_PERCENTAGE } from '@/lib/constants/pricing'
 
 export default function PricingPage() {
   const [billingPeriod, setBillingPeriod] = useState<BillingPeriod>('monthly')
+  const router = useRouter()
 
   const plans = Object.values(PRICING_PLANS)
+
+  const handleSelectPlan = (planId: string) => {
+    router.push(`/register?plan=${planId}&billing=${billingPeriod}`)
+  }
 
   return (
     <div className="min-h-screen bg-vuvenu-cream">
@@ -179,6 +185,7 @@ export default function PricingPage() {
                     )}
 
                     <button
+                      onClick={() => handleSelectPlan(plan.id)}
                       className={`w-full py-4 px-6 rounded-lg font-semibold transition-all ${
                         plan.recommended
                           ? 'bg-vuvenu-lime text-vuvenu-dark hover:scale-105'
